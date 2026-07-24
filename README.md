@@ -7,9 +7,9 @@ A Minecraft mod which overhauls Minecraft's equipment progression system by emph
 Also adds a myriad of Quality-of-Life features, including new Building Blocks, Crafting Recipes and Potions with useful effects!
 
 ### Download
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-tools-and-armor)
-[Modrinth](https://modrinth.com/mod/better-tools-and-armor)
-[MCreator](https://mcreator.net/modification/91216/better-tools-and-armor)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-tools-and-armor)
+- [Modrinth](https://modrinth.com/mod/better-tools-and-armor)
+- [MCreator](https://mcreator.net/modification/91216/better-tools-and-armor)
 
 ### Need Help?
 For any information about BT+A which is not covered in-game, please refer to the Knowledge Base.<br>
