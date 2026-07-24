@@ -54,7 +54,7 @@ public class FreezeBoom3Particle extends TextureSheetParticle {
 	public void tick() {
 		super.tick();
 		if (!this.removed) {
-			this.setSprite(this.spriteSet.get((this.age / 1) % 12 + 1, 12));
+			this.setSprite(this.spriteSet.get((this.age / 1) % 1 + 1, 1));
 		}
 	}
 }
