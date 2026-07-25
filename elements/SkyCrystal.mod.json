@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sky_crystal_new",
+    "texture": "wind_crystal",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Sky Crystal",
+    "name": "Wind Crystal",
     "rarity": "COMMON",
     "creativeTabs": [
       "CUSTOM:CrystalliteTab"

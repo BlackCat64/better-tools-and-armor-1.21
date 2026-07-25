@@ -7,8 +7,8 @@
     "better_tools:sapphire_ore",
     "better_tools:topaz_ore",
     "better_tools:nether_diamond_ore",
-    "better_tools:topaz_block",
     "better_tools:random_ore",
+    "better_tools:topaz_block",
     "better_tools:nether_diamond_block"
   ]
 }

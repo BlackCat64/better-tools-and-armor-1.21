@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "better_tools:item/sky_crystal_new"
+    "layer0": "better_tools:item/wind_crystal"
   }
 }

@@ -2799,41 +2799,6 @@
       "path": "~/Advancements/Consumables"
     },
     {
-      "name": "RandomOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "random_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RandomOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mixed Ore"
-    },
-    {
       "name": "RubyOreXpProcedure",
       "type": "procedure",
       "compiles": true,
@@ -3431,7 +3396,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/worldgen/placed_feature/sapphire_ore.json",
-          "src/main/resources/data/better_tools/loot_table/blocks/sapphire_ore.json",
           "src/main/resources/data/better_tools/worldgen/configured_feature/sapphire_ore.json",
           "src/main/resources/assets/better_tools/models/item/sapphire_ore.json",
           "src/main/java/net/mcreator/bettertoolsandarmor/block/SapphireOreBlock.java",
@@ -3652,76 +3616,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/recipe/topaz_block_reverse_recipe.json"
-        ]
-      },
-      "path": "~/Topaz"
-    },
-    {
-      "name": "SapphireOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sapphire_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Sapphire"
-    },
-    {
-      "name": "TopazOreXpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "topaz_ore_xp_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazOreXpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Topaz"
@@ -4957,41 +4851,6 @@
           "src/main/resources/data/better_tools/worldgen/configured_feature/nether_diamond_ore.json",
           "src/main/resources/assets/better_tools/blockstates/nether_diamond_ore.json",
           "src/main/resources/data/better_tools/worldgen/placed_feature/nether_diamond_ore.json"
-        ]
-      },
-      "path": "~/Nether Diamond"
-    },
-    {
-      "name": "NetherDiamondOreXp",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nether_diamond_ore_xp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/NetherDiamondOreXpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Nether Diamond"
@@ -35636,6 +35495,13 @@
       "CUSTOM:BlueSlimeball"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
+      "~RandomOre@CUSTOM:RandomOre",
+      "~SapphireOre@CUSTOM:SapphireOre",
+      "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
+      "~RubyOre@CUSTOM:RubyOre",
+      "~TopazOre@CUSTOM:TopazOre",
+      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~LightPolishedAmethystWall@CUSTOM:LightPolishedAmethystWall",
       "~PolishedAmethystWall@CUSTOM:PolishedAmethystWall",
       "~LightPolishedNetherDiamondWall@CUSTOM:LightPolishedNetherDiamondWall",
@@ -35737,22 +35603,15 @@
       "~DarkPolishedCoalSlab@CUSTOM:DarkPolishedCoalSlab",
       "~DarkPolishedCoalBlock@CUSTOM:DarkPolishedCoalBlock",
       "~FlintBlockwood@CUSTOM:FlintBlockwood",
-      "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
-      "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
       "~CutCrystalliteBlock@CUSTOM:CutCrystalliteBlock",
       "~CrystalliteBlock@CUSTOM:CrystalliteBlock",
-      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~TopazBlock@CUSTOM:TopazBlock",
-      "~TopazOre@CUSTOM:TopazOre",
       "~SapphireBlock@CUSTOM:SapphireBlock",
-      "~SapphireOre@CUSTOM:SapphireOre",
       "~ChargedIceOn@CUSTOM:ChargedIceOn",
       "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~EndTitaniumBlock@CUSTOM:EndTitaniumBlock",
       "~EndTitaniumOre@CUSTOM:EndTitaniumOre",
-      "~RandomOre@CUSTOM:RandomOre",
       "~RubyBlock@CUSTOM:RubyBlock",
-      "~RubyOre@CUSTOM:RubyOre",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock",
       "TAG:mod:all_metal_signs"
     ],
@@ -37329,13 +37188,13 @@
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
+      "~RandomOre@CUSTOM:RandomOre",
+      "~SapphireOre@CUSTOM:SapphireOre",
+      "~TopazOre@CUSTOM:TopazOre",
       "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~TopazBlock@CUSTOM:TopazBlock",
-      "~TopazOre@CUSTOM:TopazOre",
       "~SapphireBlock@CUSTOM:SapphireBlock",
-      "~SapphireOre@CUSTOM:SapphireOre",
       "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
-      "~RandomOre@CUSTOM:RandomOre",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
@@ -37482,12 +37341,12 @@
       "~SugarBlock@CUSTOM:SugarBlock"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
-      "~ClimbableWall@CUSTOM:ClimbableWall",
       "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
+      "~RubyOre@CUSTOM:RubyOre",
+      "~ClimbableWall@CUSTOM:ClimbableWall",
       "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
       "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
-      "~RubyBlock@CUSTOM:RubyBlock",
-      "~RubyOre@CUSTOM:RubyOre"
+      "~RubyBlock@CUSTOM:RubyBlock"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
       "~Ensorcellation@CUSTOM:Ensorcellation",
@@ -38064,7 +37923,7 @@
       "advancements.reflect_projectile_adv.descr": "Reflect a projectile at an enemy",
       "item.minecraft.potion.effect.ore_vision_potion_long": "Potion of Ore Vision",
       "block.better_tools.polished_topaz_block": "Orange Metal Block",
-      "item.better_tools.sky_crystal": "Sky Crystal",
+      "item.better_tools.sky_crystal": "Wind Crystal",
       "item.minecraft.lingering_potion.effect.potion_of_decay_long": "Lingering Potion of Decay",
       "advancements.ice_staff_adv.title": "Cool Staff!",
       "item.better_tools.crystallite_sword_nether_diamond": "Crystallite Sword",

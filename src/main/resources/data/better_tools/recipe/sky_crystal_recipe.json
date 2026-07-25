@@ -4,27 +4,21 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
-    "efe"
+    "bcb",
+    "ada"
   ],
   "key": {
     "a": {
-      "item": "minecraft:feather"
+      "item": "minecraft:wind_charge"
     },
     "b": {
-      "item": "better_tools:sapphire_block"
+      "item": "minecraft:breeze_rod"
     },
     "c": {
-      "item": "better_tools:sapphire"
-    },
-    "d": {
       "item": "better_tools:crystallite_gem"
     },
-    "e": {
+    "d": {
       "item": "minecraft:phantom_membrane"
-    },
-    "f": {
-      "item": "minecraft:end_crystal"
     }
   },
   "result": {

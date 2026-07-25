@@ -12,15 +12,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "Items.FEATHER",
-      "CUSTOM:SapphireBlock",
-      "Items.FEATHER",
-      "CUSTOM:Sapphire",
+      "Items.WIND_CHARGE",
+      "Items.BREEZE_ROD",
+      "Items.WIND_CHARGE",
+      "Items.BREEZE_ROD",
       "CUSTOM:CrystaliteGem",
-      "CUSTOM:Sapphire",
+      "Items.BREEZE_ROD",
+      "Items.WIND_CHARGE",
       "Items.PHANTOM_MEMBRANE",
-      "Items.END_CRYSTAL",
-      "Items.PHANTOM_MEMBRANE"
+      "Items.WIND_CHARGE"
     ],
     "recipeReturnStack": "CUSTOM:SkyCrystal",
     "name": "sky_crystal_recipe",
