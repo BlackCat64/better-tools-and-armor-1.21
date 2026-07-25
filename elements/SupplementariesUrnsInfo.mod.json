@@ -1,44 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:PurpleMushroom"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:GoldenPotato"
-      },
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      },
-      {
-        "value": "CUSTOM:BerryPie"
-      },
-      {
-        "value": "CUSTOM:SugarClump"
-      },
-      {
-        "value": "CUSTOM:AscensionPotion"
-      },
-      {
-        "value": "CUSTOM:DescensionPotion"
-      },
-      {
-        "value": "CUSTOM:RecallPotion"
-      },
-      {
-        "value": "CUSTOM:LostSoulsPotion"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      }
+      "CUSTOM:Ruby",
+      "CUSTOM:PurpleMushroom",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:GoldenPotato",
+      "CUSTOM:ExperiencePotion",
+      "CUSTOM:BerryPie",
+      "CUSTOM:SugarClump",
+      "CUSTOM:AscensionPotion",
+      "CUSTOM:DescensionPotion",
+      "CUSTOM:RecallPotion",
+      "CUSTOM:LostSoulsPotion",
+      "CUSTOM:CrystalliteCharmBase"
     ],
     "information": [
       "If Supplementaries is installed:",

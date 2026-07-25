@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:HealCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
-      },
-      {
-        "value": "CUSTOM:HeartCharm"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowRedstone"
-      }
+      "CUSTOM:HealCrystal",
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:HeartCharm",
+      "CUSTOM:CrystalliteBowRedstone"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

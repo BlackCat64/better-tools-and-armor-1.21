@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Topaz"
-            },
+            "item": "CUSTOM:Topaz",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TopazOre"
-            },
+            "item": "CUSTOM:TopazOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "POTION:CUSTOM:PotionOfDecay"
-    },
-    "brewingIngredientStack": {
-      "value": "Items.REDSTONE"
-    },
-    "brewingReturnStack": {
-      "value": "POTION:CUSTOM:PotionOfDecayLong"
-    },
+    "brewingInputStack": "POTION:CUSTOM:PotionOfDecay",
+    "brewingIngredientStack": "Items.REDSTONE",
+    "brewingReturnStack": "POTION:CUSTOM:PotionOfDecayLong",
     "name": "potion_of_decay_long_recipe",
     "namespace": "mod"
   }

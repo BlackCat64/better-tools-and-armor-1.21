@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "CUSTOM:MysticPotion"
-    },
-    "brewingIngredientStack": {
-      "value": "Items.EXPERIENCE_BOTTLE"
-    },
-    "brewingReturnStack": {
-      "value": "CUSTOM:ExperiencePotion"
-    },
+    "brewingInputStack": "CUSTOM:MysticPotion",
+    "brewingIngredientStack": "Items.EXPERIENCE_BOTTLE",
+    "brewingReturnStack": "CUSTOM:ExperiencePotion",
     "name": "experience_potion_recipe",
     "namespace": "mod"
   }

@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteArmorTopaz.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorTopaz.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorTopaz.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorTopaz.boots"
-      }
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorTopaz.boots"
     ],
     "information": [
       "§lFull-set bonus:§r",

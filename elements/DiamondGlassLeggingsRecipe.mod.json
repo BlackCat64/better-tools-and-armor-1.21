@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.legs"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:IronGlassArmor.legs",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Blocks.GLASS",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondGlassArmor.legs"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondGlassArmor.legs",
     "name": "diamond_glass_leggings_recipe",
     "namespace": "mod"
   }

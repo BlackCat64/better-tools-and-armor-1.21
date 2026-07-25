@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "Items.WHEAT_SEEDS",
+      "",
+      "",
+      "Blocks.DIRT#0",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.GRASS"
-    },
+    "recipeReturnStack": "Blocks.GRASS",
     "name": "grass_block_recipe",
     "namespace": "mod"
   }

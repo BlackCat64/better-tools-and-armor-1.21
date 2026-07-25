@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.BLAZE_POWDER"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "Blocks.NETHER_WART"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      }
+      "Items.BLAZE_POWDER",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.NETHER_WART",
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:CrystaliteGem",
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:ExperiencePotion",
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:ExperiencePotion"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MagicCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:MagicCrystal",
     "name": "magic_crystal_recipe",
     "namespace": "mod"
   }

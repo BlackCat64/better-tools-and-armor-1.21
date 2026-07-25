@@ -1,104 +1,68 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "villagertrade",
   "definition": {
-    "tradeEntries": [
+    "villagerProfession": "WANDERING_TRADER",
+    "trades": [
       {
-        "villagerProfession": {
-          "value": "WANDERING_TRADER"
-        },
-        "entries": [
-          {
-            "price1": {
-              "value": "Items.EMERALD"
-            },
-            "countPrice1": 2,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlueMushroom"
-            },
-            "countOffer": 1,
-            "level": 1,
-            "maxTrades": 12,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "Items.EMERALD"
-            },
-            "countPrice1": 2,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:PurpleMushroom"
-            },
-            "countOffer": 1,
-            "level": 1,
-            "maxTrades": 12,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "Items.EMERALD"
-            },
-            "countPrice1": 1,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:FourLeafClover"
-            },
-            "countOffer": 1,
-            "level": 1,
-            "maxTrades": 12,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "Items.EMERALD"
-            },
-            "countPrice1": 6,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:SugarBlock"
-            },
-            "countOffer": 1,
-            "level": 1,
-            "maxTrades": 4,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "Items.EMERALD"
-            },
-            "countPrice1": 3,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackstoneMagma"
-            },
-            "countOffer": 1,
-            "level": 1,
-            "maxTrades": 5,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          }
-        ]
+        "price1": "Items.EMERALD",
+        "countPrice1": 2,
+        "price2": "",
+        "countPrice2": 1,
+        "offer": "CUSTOM:BlueMushroom",
+        "countOffer": 1,
+        "level": 1,
+        "maxTrades": 12,
+        "xp": 5,
+        "priceMultiplier": 0.05
+      },
+      {
+        "price1": "Items.EMERALD",
+        "countPrice1": 2,
+        "price2": "",
+        "countPrice2": 1,
+        "offer": "CUSTOM:PurpleMushroom",
+        "countOffer": 1,
+        "level": 1,
+        "maxTrades": 12,
+        "xp": 5,
+        "priceMultiplier": 0.05
+      },
+      {
+        "price1": "Items.EMERALD",
+        "countPrice1": 1,
+        "price2": "",
+        "countPrice2": 1,
+        "offer": "CUSTOM:FourLeafClover",
+        "countOffer": 1,
+        "level": 1,
+        "maxTrades": 12,
+        "xp": 5,
+        "priceMultiplier": 0.05
+      },
+      {
+        "price1": "Items.EMERALD",
+        "countPrice1": 6,
+        "price2": "",
+        "countPrice2": 1,
+        "offer": "CUSTOM:SugarBlock",
+        "countOffer": 1,
+        "level": 1,
+        "maxTrades": 4,
+        "xp": 5,
+        "priceMultiplier": 0.05
+      },
+      {
+        "price1": "Items.EMERALD",
+        "countPrice1": 3,
+        "price2": "",
+        "countPrice2": 1,
+        "offer": "CUSTOM:BlackstoneMagma",
+        "countOffer": 1,
+        "level": 1,
+        "maxTrades": 5,
+        "xp": 5,
+        "priceMultiplier": 0.05
       }
     ]
   }

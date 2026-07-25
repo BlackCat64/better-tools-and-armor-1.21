@@ -22,7 +22,7 @@ import net.mcreator.bettertoolsandarmor.network.DoubleJumpKeyMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class BetterToolsModKeyMappings {
-	public static final KeyMapping DOUBLE_JUMP_KEY = new KeyMapping("key.better_tools.double_jump_key", GLFW.GLFW_KEY_SPACE, "key.categories.better_tools") {
+	public static final KeyMapping DOUBLE_JUMP_KEY = new KeyMapping("key.better_tools.double_jump_key", GLFW.GLFW_KEY_SPACE, "key.category.better_tools.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -35,7 +35,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping FLOAT_KEY = new KeyMapping("key.better_tools.float_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.categories.better_tools") {
+	public static final KeyMapping FLOAT_KEY = new KeyMapping("key.better_tools.float_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.category.better_tools.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -48,7 +48,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.categories.better_tools") {
+	public static final KeyMapping STICK_TO_CEILING_KEY = new KeyMapping("key.better_tools.stick_to_ceiling_key", GLFW.GLFW_KEY_SPACE, "key.category.better_tools.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -66,7 +66,7 @@ public class BetterToolsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_V, "key.categories.better_tools") {
+	public static final KeyMapping ENERGY_VIAL_TOGGLE_KEY = new KeyMapping("key.better_tools.energy_vial_toggle_key", GLFW.GLFW_KEY_V, "key.category.better_tools.better_tools") {
 		private boolean isDownOld = false;
 
 		@Override

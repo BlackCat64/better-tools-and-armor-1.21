@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "dark_oak_treehouse",
@@ -8,9 +8,7 @@
     "spacing": 18,
     "separation": 7,
     "restrictionBiomes": [
-      {
-        "value": "roofed_forest"
-      }
+      "roofed_forest"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",

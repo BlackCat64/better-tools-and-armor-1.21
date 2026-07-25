@@ -1,18 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "itemextension",
   "definition": {
-    "item": {
-      "value": "CUSTOM:FireStaff"
-    },
+    "item": "CUSTOM:FireStaff",
     "enableFuel": false,
     "fuelPower": {
       "fixedValue": 1600.0
     },
     "hasDispenseBehavior": true,
-    "dispenseResultItemstack": {
-      "name": "FireStaffDispensed"
-    },
+    "dispenseResultItemstack": "FireStaffDispensed",
     "compostLayerChance": 0.0
   }
 }

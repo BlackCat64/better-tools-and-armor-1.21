@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteSwordIron"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeIron"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeIron"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelIron"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeIron"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerIron"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorIron.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorIron.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorIron.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorIron.boots"
-      },
-      {
-        "value": "CUSTOM:ToughCrystal"
-      },
-      {
-        "value": "CUSTOM:ToughNecklace"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowIron"
-      }
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteHoeIron",
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:ToughCrystal",
+      "CUSTOM:ToughNecklace",
+      "CUSTOM:CrystalliteBowIron"
     ],
     "information": [
       "§lCrystallite Upgrades:",

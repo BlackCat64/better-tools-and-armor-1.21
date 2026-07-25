@@ -17,11 +17,11 @@ public class VeinMiningProcedureProcedure {
 		BlockState block = Blocks.AIR.defaultBlockState();
 		if (recursion_depth < 4) {
 			x_offset = 0;
-			for (int index0 = 0; index0 < 3; index0++) {
+			for (int index62 = 0; index62 < 3; index62++) {
 				y_offset = 0;
-				for (int index1 = 0; index1 < 3; index1++) {
+				for (int index63 = 0; index63 < 3; index63++) {
 					z_offset = 0;
-					for (int index2 = 0; index2 < 3; index2++) {
+					for (int index64 = 0; index64 < 3; index64++) {
 						if (!(x_offset == 0 && y_offset == 0 && z_offset == 0) && (world.getBlockState(BlockPos.containing(x + x_offset, y + y_offset, z + z_offset))).getBlock() == blockstate.getBlock()) {
 							BreakBlockWithPickaxeProcedure.execute(world, x + x_offset, y + y_offset, z + z_offset, blockstate, entity);
 							count = count + 1;

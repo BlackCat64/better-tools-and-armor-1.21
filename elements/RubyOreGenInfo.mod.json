@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:RubyOre"
-      },
-      {
-        "value": "CUSTOM:DeepslateRubyOre"
-      }
+      "CUSTOM:RubyOre",
+      "CUSTOM:DeepslateRubyOre"
     ],
     "information": [
       "§lOre Generation§r",

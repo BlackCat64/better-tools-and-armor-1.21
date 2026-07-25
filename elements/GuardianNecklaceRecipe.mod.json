@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.NAUTILUS_SHELL"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "Items.NAUTILUS_SHELL"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "Items.NAUTILUS_SHELL"
-      },
-      {
-        "value": "CUSTOM:GuardianCrystal"
-      },
-      {
-        "value": "Items.NAUTILUS_SHELL"
-      }
+      "Items.NAUTILUS_SHELL",
+      "Items.STRING",
+      "Items.NAUTILUS_SHELL",
+      "Items.STRING",
+      "CUSTOM:CrystalliteCharmBase",
+      "Items.STRING",
+      "Items.NAUTILUS_SHELL",
+      "CUSTOM:GuardianCrystal",
+      "Items.NAUTILUS_SHELL"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:GuardianNecklace"
-    },
+    "recipeReturnStack": "CUSTOM:GuardianNecklace",
     "name": "guardian_necklace_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.LEATHER"
-            },
+            "item": "Items.LEATHER",
             "weight": 1,
             "minCount": 0,
             "maxCount": 2,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.BEEF"
-            },
+            "item": "Items.BEEF",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,

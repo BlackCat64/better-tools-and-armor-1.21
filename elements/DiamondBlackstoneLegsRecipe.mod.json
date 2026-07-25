@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.MAGMA_CREAM"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:BlackstoneLegs.legs"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND",
+      "Items.MAGMA_CREAM",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:BlackstoneLegs.legs",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Blocks.GILDED_BLACKSTONE",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondBlackstoneLegs.legs"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondBlackstoneLegs.legs",
     "name": "diamond_blackstone_legs_recipe",
     "namespace": "mod"
   }

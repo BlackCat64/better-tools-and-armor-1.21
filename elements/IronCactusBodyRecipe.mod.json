@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:CactusBody.body"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Items.IRON_INGOT",
+      "Blocks.CACTUS",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:CactusBody.body",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Blocks.IRON_BLOCK",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronCactusBody.body"
-    },
+    "recipeReturnStack": "CUSTOM:IronCactusBody.body",
     "name": "iron_cactus_body_recipe",
     "namespace": "mod"
   }

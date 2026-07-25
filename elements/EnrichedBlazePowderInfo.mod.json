@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:EnrichedBlazePowder"
-      },
-      {
-        "value": "CUSTOM:SuperEnrichedBlazePowder"
-      },
-      {
-        "value": "CUSTOM:UltraEnrichedBlazePowder"
-      }
+      "CUSTOM:EnrichedBlazePowder",
+      "CUSTOM:SuperEnrichedBlazePowder",
+      "CUSTOM:UltraEnrichedBlazePowder"
     ],
     "information": [
       "Use this to fuel an Energy Vial with Effect Energy.",

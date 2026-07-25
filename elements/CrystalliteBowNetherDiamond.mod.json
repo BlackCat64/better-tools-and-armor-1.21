@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,9 +7,7 @@
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {
-      "pulling": {
-        "name": "CrystalliteBowPullState"
-      }
+      "pulling": "CrystalliteBowPullState"
     },
     "states": [
       {
@@ -65,31 +63,21 @@
     "name": "Crystallite Bow",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "stackSize": 1,
     "enchantability": 20,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 2400,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": true,
     "isPiglinCurrency": false,
     "repairItems": [
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      }
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem"
     ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
@@ -115,25 +103,19 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:ElectricStaffProjectile"
-    },
+    "projectile": "CUSTOM:ElectricStaffProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],
     "attributeModifiers": []

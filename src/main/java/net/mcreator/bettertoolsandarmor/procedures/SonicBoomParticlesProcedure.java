@@ -16,7 +16,7 @@ public class SonicBoomParticlesProcedure {
 		dy = (y2 - y) / distance;
 		dz = (z2 - z) / distance;
 		if (distance > 0) {
-			for (int index0 = 0; index0 < (int) Math.floor(distance); index0++) {
+			for (int index72 = 0; index72 < (int) Math.floor(distance); index72++) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.SONIC_BOOM, (x + i * dx), (y + i * dy), (z + i * dz), 1, 0, 0, 0, 0);
 				i = i + 1;

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:BlueSlimeBlock",
+      "",
+      "CUSTOM:BlueSlimeBlock",
+      "CUSTOM:ObsidianStick",
+      "CUSTOM:BlueSlimeBlock",
+      "",
+      "CUSTOM:ObsidianStick",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlueSlimeStick"
-    },
+    "recipeReturnStack": "CUSTOM:BlueSlimeStick",
     "name": "blue_slime_stick_recipe",
     "namespace": "mod"
   }

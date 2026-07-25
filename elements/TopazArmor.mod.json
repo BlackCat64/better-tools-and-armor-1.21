@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "topaz_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "armorTextureFile": "topaz_",
     "helmetName": "Topaz Helmet",
@@ -104,14 +102,11 @@
     "enchantability": 16,
     "toughness": 0.5,
     "knockbackResistance": 0.03,
-    "equipSound": {
-      "value": "item.armor.equip_iron"
-    },
+    "equipSound": "item.armor.equip_iron",
     "repairItems": [
-      {
-        "value": "CUSTOM:Topaz"
-      }
+      "CUSTOM:Topaz"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

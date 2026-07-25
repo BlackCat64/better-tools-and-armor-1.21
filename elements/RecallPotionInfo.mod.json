@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:RecallPotion"
-      }
+      "CUSTOM:RecallPotion"
     ],
     "information": [
       "Teleports you to your current spawn point, if it is in the same dimension.",

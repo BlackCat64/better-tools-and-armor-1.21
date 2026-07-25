@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RickRollDisc"
-            },
+            "item": "CUSTOM:RickRollDisc",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.DIAMOND"
-            },
+            "item": "Items.DIAMOND",
             "weight": 59,
             "minCount": 0,
             "maxCount": 0,
@@ -50,9 +46,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.STICK"
-            },
+            "item": "Items.STICK",
             "weight": 2,
             "minCount": 4,
             "maxCount": 8,
@@ -64,9 +58,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.STRING"
-            },
+            "item": "Items.STRING",
             "weight": 2,
             "minCount": 1,
             "maxCount": 4,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.COBBLESTONE"
-            },
+            "item": "Blocks.COBBLESTONE",
             "weight": 2,
             "minCount": 5,
             "maxCount": 10,
@@ -92,9 +82,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.FLINT"
-            },
+            "item": "Items.FLINT",
             "weight": 2,
             "minCount": 1,
             "maxCount": 5,
@@ -106,9 +94,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FlintBlock"
-            },
+            "item": "CUSTOM:FlintBlock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -129,9 +115,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FourLeafClover"
-            },
+            "item": "CUSTOM:FourLeafClover",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -143,9 +127,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.IRON_INGOT"
-            },
+            "item": "Items.IRON_INGOT",
             "weight": 3,
             "minCount": 1,
             "maxCount": 4,
@@ -157,9 +139,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Ruby"
-            },
+            "item": "CUSTOM:Ruby",
             "weight": 2,
             "minCount": 1,
             "maxCount": 3,
@@ -171,9 +151,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.ARROW"
-            },
+            "item": "Items.ARROW",
             "weight": 3,
             "minCount": 2,
             "maxCount": 6,
@@ -185,9 +163,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.COPPER_INGOT"
-            },
+            "item": "Items.COPPER_INGOT",
             "weight": 3,
             "minCount": 4,
             "maxCount": 8,
@@ -199,9 +175,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.COAL#0"
-            },
+            "item": "Items.COAL#0",
             "weight": 3,
             "minCount": 3,
             "maxCount": 6,
@@ -213,9 +187,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.LEATHER"
-            },
+            "item": "Items.LEATHER",
             "weight": 2,
             "minCount": 1,
             "maxCount": 2,
@@ -227,9 +199,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.TORCH"
-            },
+            "item": "Blocks.TORCH",
             "weight": 2,
             "minCount": 2,
             "maxCount": 5,
@@ -250,9 +220,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.CARROT"
-            },
+            "item": "Items.CARROT",
             "weight": 10,
             "minCount": 1,
             "maxCount": 4,
@@ -264,9 +232,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.POTATO"
-            },
+            "item": "Items.POTATO",
             "weight": 10,
             "minCount": 1,
             "maxCount": 4,
@@ -278,9 +244,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.MELON"
-            },
+            "item": "Items.MELON",
             "weight": 8,
             "minCount": 1,
             "maxCount": 6,
@@ -292,9 +256,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.APPLE"
-            },
+            "item": "Items.APPLE",
             "weight": 8,
             "minCount": 1,
             "maxCount": 4,
@@ -306,9 +268,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.HONEY_BOTTLE"
-            },
+            "item": "Items.HONEY_BOTTLE",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -320,9 +280,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.PORKCHOP"
-            },
+            "item": "Items.PORKCHOP",
             "weight": 3,
             "minCount": 1,
             "maxCount": 3,
@@ -334,9 +292,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.BEEF"
-            },
+            "item": "Items.BEEF",
             "weight": 3,
             "minCount": 1,
             "maxCount": 3,
@@ -348,9 +304,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.MUTTON"
-            },
+            "item": "Items.MUTTON",
             "weight": 5,
             "minCount": 1,
             "maxCount": 3,
@@ -362,9 +316,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CHICKEN"
-            },
+            "item": "Items.CHICKEN",
             "weight": 5,
             "minCount": 1,
             "maxCount": 3,
@@ -376,9 +328,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.RABBIT"
-            },
+            "item": "Items.RABBIT",
             "weight": 5,
             "minCount": 1,
             "maxCount": 3,
@@ -399,9 +349,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.BOW"
-            },
+            "item": "Items.BOW",
             "weight": 8,
             "minCount": 1,
             "maxCount": 1,
@@ -413,9 +361,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FlintSword"
-            },
+            "item": "CUSTOM:FlintSword",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -427,9 +373,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FlintDagger"
-            },
+            "item": "CUSTOM:FlintDagger",
             "weight": 8,
             "minCount": 1,
             "maxCount": 1,
@@ -441,9 +385,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FlintPickaxe"
-            },
+            "item": "CUSTOM:FlintPickaxe",
             "weight": 4,
             "minCount": 1,
             "maxCount": 1,
@@ -455,9 +397,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FlintAxe"
-            },
+            "item": "CUSTOM:FlintAxe",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -469,9 +409,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CROSSBOW"
-            },
+            "item": "Items.CROSSBOW",
             "weight": 8,
             "minCount": 1,
             "maxCount": 1,
@@ -483,9 +421,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.LEATHER_HELMET"
-            },
+            "item": "Items.LEATHER_HELMET",
             "weight": 6,
             "minCount": 1,
             "maxCount": 1,
@@ -497,9 +433,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.LEATHER_CHESTPLATE"
-            },
+            "item": "Items.LEATHER_CHESTPLATE",
             "weight": 6,
             "minCount": 1,
             "maxCount": 1,
@@ -511,9 +445,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.LEATHER_LEGGINGS"
-            },
+            "item": "Items.LEATHER_LEGGINGS",
             "weight": 6,
             "minCount": 1,
             "maxCount": 1,
@@ -525,9 +457,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.LEATHER_BOOTS"
-            },
+            "item": "Items.LEATHER_BOOTS",
             "weight": 6,
             "minCount": 1,
             "maxCount": 1,
@@ -539,9 +469,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CHAINMAIL_HELMET"
-            },
+            "item": "Items.CHAINMAIL_HELMET",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -553,9 +481,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CHAINMAIL_CHESTPLATE"
-            },
+            "item": "Items.CHAINMAIL_CHESTPLATE",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -567,9 +493,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CHAINMAIL_LEGGINGS"
-            },
+            "item": "Items.CHAINMAIL_LEGGINGS",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -581,9 +505,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CHAINMAIL_BOOTS"
-            },
+            "item": "Items.CHAINMAIL_BOOTS",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

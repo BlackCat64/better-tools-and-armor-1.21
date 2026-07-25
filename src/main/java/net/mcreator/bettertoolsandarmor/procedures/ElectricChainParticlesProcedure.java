@@ -16,7 +16,7 @@ public class ElectricChainParticlesProcedure {
 		dy = (y2 - y) / distance;
 		dz = (z2 - z) / distance;
 		if (distance > 0) {
-			for (int index0 = 0; index0 < (int) Math.floor(distance); index0++) {
+			for (int index67 = 0; index67 < (int) Math.floor(distance); index67++) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.WAX_ON, (x + i * dx), (y + i * dy), (z + i * dz), 3, 0.02, 0.02, 0.02, 0.0025);
 				i = i + 1;

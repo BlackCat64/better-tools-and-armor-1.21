@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:PolishedAmethystBlock"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:PolishedAmethystStairs"
-    },
+    "stoneCuttingInputStack": "CUSTOM:PolishedAmethystBlock",
+    "stoneCuttingReturnStack": "CUSTOM:PolishedAmethystStairs",
     "name": "polished_amethyst_stairs_stonecut",
     "namespace": "mod"
   }

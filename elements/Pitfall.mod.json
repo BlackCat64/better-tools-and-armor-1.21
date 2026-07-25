@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Pitfall",
@@ -8,26 +8,16 @@
       "value": -12961731,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": ""
-    },
+    "onAddedSound": "",
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "PitfallEffectApplied"
-    },
-    "onActiveTick": {
-      "name": "TrappedInGroundStopMovement"
-    },
-    "onExpired": {
-      "name": "PitfallEffectExpires"
-    },
-    "onMobRemoved": {
-      "name": "DeleteEntityMudBlockDisplay"
-    }
+    "onStarted": "PitfallEffectApplied",
+    "onActiveTick": "TrappedInGroundStopMovement",
+    "onExpired": "PitfallEffectExpires",
+    "onMobRemoved": "DeleteEntityMudBlockDisplay"
   }
 }

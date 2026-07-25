@@ -25,7 +25,7 @@ public class PurpleMooshroomShearProcedure {
 		if (entity == null)
 			return;
 		if (itemstack.getItem() == Items.SHEARS && !(entity instanceof LivingEntity _livEnt2 && _livEnt2.isBaby())) {
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 3, 5); index0++) {
+			for (int index10 = 0; index10 < Mth.nextInt(RandomSource.create(), 3, 5); index10++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(BetterToolsModBlocks.PURPLE_MUSHROOM.get()));
 					entityToSpawn.setPickUpDelay(10);

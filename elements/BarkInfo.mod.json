@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:Bark"
-      }
+      "CUSTOM:Bark"
     ],
     "information": [
       "Obtained by stripping any Log with an Axe.",

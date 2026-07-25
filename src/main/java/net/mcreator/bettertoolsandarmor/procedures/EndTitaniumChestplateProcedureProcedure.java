@@ -50,11 +50,11 @@ public class EndTitaniumChestplateProcedureProcedure {
 			chance = 0.2;
 			chance = chance + (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity2.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 			if (!(sourceentity instanceof Player) && Math.random() <= chance) {
-				for (int index0 = 0; index0 < 40; index0++) {
+				for (int index4 = 0; index4 < 40; index4++) {
 					rndx = sourceentity.getX() - 20 + Mth.nextInt(RandomSource.create(), 0, 40);
 					rndy = Math.max(-60, sourceentity.getY() - 20) + Mth.nextInt(RandomSource.create(), 0, 40);
 					rndz = sourceentity.getZ() - 20 + Mth.nextInt(RandomSource.create(), 0, 40);
-					for (int index1 = 0; index1 < 40; index1++) {
+					for (int index5 = 0; index5 < 40; index5++) {
 						if (!(world.getBlockState(BlockPos.containing(rndx, rndy - 1, rndz)).canOcclude() && !world.getBlockState(BlockPos.containing(rndx, rndy, rndz)).canOcclude()
 								&& !world.getBlockState(BlockPos.containing(rndx, rndy + 1, rndz)).canOcclude())) {
 							rndy = rndy - 1;
@@ -66,9 +66,12 @@ public class EndTitaniumChestplateProcedureProcedure {
 					if (valid == true) {
 						{
 							Entity _ent = sourceentity;
-							_ent.teleportTo(rndx, rndy, rndz);
+							double _tx = rndx;
+							double _ty = rndy;
+							double _tz = rndz;
+							_ent.teleportTo(_tx, _ty, _tz);
 							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport(rndx, rndy, rndz, _ent.getYRot(), _ent.getXRot());
+								_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {

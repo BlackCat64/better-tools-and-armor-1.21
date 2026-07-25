@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Double Jump",
@@ -8,9 +8,7 @@
     "arrowName": "Arrow of Double Jump",
     "effects": [
       {
-        "effect": {
-          "value": "CUSTOM:DoubleJump"
-        },
+        "effect": "CUSTOM:DoubleJump",
         "duration": 1800,
         "infinite": false,
         "amplifier": 1,

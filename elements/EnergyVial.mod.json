@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,12 +7,8 @@
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {
-      "energy": {
-        "name": "EnergyVialEnergyValue"
-      },
-      "active": {
-        "name": "EnergyVialActive"
-      }
+      "energy": "EnergyVialEnergyValue",
+      "active": "EnergyVialActive"
     },
     "states": [
       {
@@ -152,18 +148,14 @@
     "name": "Energy Vial",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -184,29 +176,21 @@
     },
     "inventorySize": 6,
     "inventoryStackSize": 1,
-    "onRightClickedInAir": {
-      "name": "EnergyVialOpenGui"
-    },
+    "onRightClickedInAir": "EnergyVialOpenGui",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:ElectricStaffProjectile"
-    },
+    "projectile": "CUSTOM:ElectricStaffProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,

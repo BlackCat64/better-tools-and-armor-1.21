@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "pirate_adv_0": {
+    "pirate_adv_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

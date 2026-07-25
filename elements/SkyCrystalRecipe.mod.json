@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.FEATHER"
-      },
-      {
-        "value": "CUSTOM:SapphireBlock"
-      },
-      {
-        "value": "Items.FEATHER"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      },
-      {
-        "value": "Items.END_CRYSTAL"
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      }
+      "Items.FEATHER",
+      "CUSTOM:SapphireBlock",
+      "Items.FEATHER",
+      "CUSTOM:Sapphire",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:Sapphire",
+      "Items.PHANTOM_MEMBRANE",
+      "Items.END_CRYSTAL",
+      "Items.PHANTOM_MEMBRANE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SkyCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:SkyCrystal",
     "name": "sky_crystal_recipe",
     "namespace": "mod"
   }

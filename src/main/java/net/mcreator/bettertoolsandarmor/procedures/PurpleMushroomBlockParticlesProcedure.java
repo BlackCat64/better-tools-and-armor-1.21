@@ -17,7 +17,7 @@ public class PurpleMushroomBlockParticlesProcedure {
 					|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.MOSS_CARPET || (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:wool_carpets")))
 					|| (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:doors")))) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.DRAGON_BREATH, (x + 0.5), (y + 1.25), (z + 0.5), 1, 0.6, 0.1, 0.6, 0.0001);
+					_level.sendParticles(ParticleTypes.CRIT, (x + 0.5), (y + 1.25), (z + 0.5), 1, 0.6, 0.1, 0.6, 0.0001);
 			}
 		}
 	}

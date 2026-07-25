@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "curiosbauble",
   "definition": {
     "item": "DiamondHardPlate",
@@ -9,18 +9,12 @@
     "enderMask": false,
     "friendlyPigs": false,
     "snowWalk": false,
-    "equipSound": {
-      "value": "CUSTOM:crystallite_place"
-    },
+    "equipSound": "CUSTOM:crystallite_place",
     "hasModel": false,
     "baubleModel": "Default",
     "baubleModelTexture": "",
-    "onEquip": {
-      "name": "DiamondHardPlateEquipped"
-    },
-    "onUnequip": {
-      "name": "DiamondHardPlateUnequipped"
-    },
+    "onEquip": "DiamondHardPlateEquipped",
+    "onUnequip": "DiamondHardPlateUnequipped",
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",

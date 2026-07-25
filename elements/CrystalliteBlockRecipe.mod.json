@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteShards"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CrystalliteBlock"
-    },
+    "recipeReturnStack": "CUSTOM:CrystalliteBlock",
     "name": "crystallite_block_recipe",
     "namespace": "mod"
   }

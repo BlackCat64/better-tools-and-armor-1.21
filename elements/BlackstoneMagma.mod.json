@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "blackstone_magma_animated",
@@ -51,14 +51,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:BetterToolsAndArmorMisc"
-      }
+      "CUSTOM:BetterToolsAndArmorMisc"
     ],
     "destroyTool": "pickaxe",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -78,9 +74,7 @@
     },
     "colorOnMap": "ADOBE",
     "noteBlockInstrument": "basedrum",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DAMAGE_FIRE",
     "ignitedByLava": false,
@@ -92,25 +86,13 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "NETHERRACK",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "NETHERRACK"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
     "luminance": {
       "fixedValue": 3.0
     },
@@ -135,19 +117,13 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityWalksOn": {
-      "name": "MagmaDamageProcedure"
-    },
+    "onEntityWalksOn": "MagmaDamageProcedure",
     "generateFeature": false,
     "restrictionBiomes": [
-      {
-        "value": "basalt_deltas"
-      }
+      "basalt_deltas"
     ],
     "blocksToReplace": [
-      {
-        "value": "Blocks.BLACKSTONE"
-      }
+      "Blocks.BLACKSTONE"
     ],
     "generationShape": "TRIANGLE",
     "frequencyPerChunks": 16,

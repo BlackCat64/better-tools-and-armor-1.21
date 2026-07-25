@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      }
+      "Items.SPECKLED_MELON",
+      "Items.LEATHER",
+      "Items.SPECKLED_MELON",
+      "Items.SPECKLED_MELON",
+      "Items.SPECKLED_MELON",
+      "Items.SPECKLED_MELON",
+      "Items.SPECKLED_MELON",
+      "Items.SPECKLED_MELON",
+      "Items.SPECKLED_MELON"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HeartyBody.body"
-    },
+    "recipeReturnStack": "CUSTOM:HeartyBody.body",
     "name": "hearty_body_recipe",
     "namespace": "mod"
   }

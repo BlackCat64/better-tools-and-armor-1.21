@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlackstoneMagma"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:BlackstoneMagma",
+      "",
+      "",
+      "CUSTOM:NetherDiamond",
+      "",
+      "",
+      "CUSTOM:ObsidianStick",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:NetherDiamondDagger"
-    },
+    "recipeReturnStack": "CUSTOM:NetherDiamondDagger",
     "name": "nether_diamond_dagger_recipe",
     "namespace": "mod"
   }

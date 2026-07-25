@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,13 +10,9 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "onHelmetTick": {
-      "name": "GoldCarrotHatProcedure"
-    },
+    "onHelmetTick": "GoldCarrotHatProcedure",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "armorTextureFile": "gold_carrot_",
     "helmetName": "Golden Carrot Hat",
@@ -99,14 +95,11 @@
     "enchantability": 4,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_leather"
-    },
+    "equipSound": "item.armor.equip_leather",
     "repairItems": [
-      {
-        "value": "Items.GOLDEN_CARROT"
-      }
+      "Items.GOLDEN_CARROT"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

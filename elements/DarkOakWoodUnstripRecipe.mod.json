@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.STRIPPED_DARK_OAK_WOOD"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "Blocks.STRIPPED_DARK_OAK_WOOD",
+      "",
+      "",
+      "CUSTOM:Bark",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.DARK_OAK_WOOD"
-    },
+    "recipeReturnStack": "Blocks.DARK_OAK_WOOD",
     "name": "dark_oak_wood_unstrip_recipe",
     "namespace": "mod"
   }

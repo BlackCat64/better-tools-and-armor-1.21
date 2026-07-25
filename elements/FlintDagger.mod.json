@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -15,12 +15,8 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "efficiency": 5.0,
     "attackSpeed": 2.5,
@@ -31,9 +27,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.FLINT"
-      }
+      "Items.FLINT"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",
@@ -41,17 +35,13 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "mainhand",
-        "attribute": {
-          "value": "CUSTOM:CriticalHitMultiplier"
-        },
+        "attribute": "CUSTOM:CriticalHitMultiplier",
         "amount": 0.25,
         "operation": "ADD_VALUE"
       }
     ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "FlintToolsProcedure"
-    }
+    "onItemInInventoryTick": "FlintToolsProcedure"
   }
 }

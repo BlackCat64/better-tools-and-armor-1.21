@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Frozen",
@@ -8,26 +8,16 @@
       "value": -5650177,
       "falpha": 0.0
     },
-    "particle": {
-      "value": "CUSTOM:IceParticle"
-    },
-    "onAddedSound": {
-      "value": "item.trident.return"
-    },
+    "particle": "CUSTOM:IceParticle",
+    "onAddedSound": "item.trident.return",
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "FrozenEffectApplied"
-    },
-    "onActiveTick": {
-      "name": "FrozenEffectParticles"
-    },
-    "onExpired": {
-      "name": "FrozenEffectExpires"
-    }
+    "onStarted": "FrozenEffectApplied",
+    "onActiveTick": "FrozenEffectParticles",
+    "onExpired": "FrozenEffectExpires"
   }
 }

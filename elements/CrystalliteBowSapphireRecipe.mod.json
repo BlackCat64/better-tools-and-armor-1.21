@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:mod:crystallite_bows"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:IceCore"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteBowSapphire"
-    },
+    "smithingInputStack": "TAG:mod:crystallite_bows",
+    "smithingInputAdditionStack": "CUSTOM:IceCore",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteBowSapphire",
     "name": "crystallite_bow_sapphire_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.SMITHING_TABLE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "Items.DIAMOND",
+      "Items.GOLD_INGOT",
+      "Items.DIAMOND",
+      "",
+      "Blocks.SMITHING_TABLE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:JewelleryTable"
-    },
+    "recipeReturnStack": "CUSTOM:JewelleryTable",
     "name": "jewellery_table_recipe",
     "namespace": "mod"
   }

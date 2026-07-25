@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:EndTitaniumOre"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:EndTitaniumScrap"
-    },
+    "blastingInputStack": "CUSTOM:EndTitaniumOre",
+    "blastingReturnStack": "CUSTOM:EndTitaniumScrap",
     "name": "end_titanium_scrap_blast",
     "namespace": "mod"
   }

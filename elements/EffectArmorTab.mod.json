@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tab",
   "definition": {
     "name": "BT+A - Effect Armor",
-    "icon": {
-      "value": "CUSTOM:GoldCarrotArmor.helmet"
-    },
+    "icon": "CUSTOM:GoldCarrotArmor.helmet",
     "showSearch": false
   }
 }

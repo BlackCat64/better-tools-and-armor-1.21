@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteSwordEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerEmerald"
-      },
-      {
-        "value": "CUSTOM:EmeraldSword"
-      },
-      {
-        "value": "CUSTOM:EmeraldDagger"
-      }
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:EmeraldSword",
+      "CUSTOM:EmeraldDagger"
     ],
     "information": [
       "§lPitfall Effect§r",

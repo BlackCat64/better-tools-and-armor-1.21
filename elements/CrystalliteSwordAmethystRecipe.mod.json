@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_swords"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:EarthCrystal"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteSwordAmethyst"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_swords",
+    "smithingInputAdditionStack": "CUSTOM:EarthCrystal",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteSwordAmethyst",
     "name": "crystallite_sword_amethyst_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "sapphire_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "armorTextureFile": "sapphire_",
     "helmetName": "Sapphire Helmet",
@@ -104,14 +102,11 @@
     "enchantability": 10,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_iron"
-    },
+    "equipSound": "item.armor.equip_iron",
     "repairItems": [
-      {
-        "value": "CUSTOM:Sapphire"
-      }
+      "CUSTOM:Sapphire"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

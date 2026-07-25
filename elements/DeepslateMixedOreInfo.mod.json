@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:DeepslateRandomOre"
-      }
+      "CUSTOM:DeepslateRandomOre"
     ],
     "information": [
       "Chance - Item",

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      }
+      "",
+      "",
+      "",
+      "Items.PHANTOM_MEMBRANE",
+      "",
+      "Items.PHANTOM_MEMBRANE",
+      "Items.PHANTOM_MEMBRANE",
+      "Items.LEATHER",
+      "Items.PHANTOM_MEMBRANE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PhantomBoots.boots"
-    },
+    "recipeReturnStack": "CUSTOM:PhantomBoots.boots",
     "name": "phantom_boots_recipe",
     "namespace": "mod"
   }

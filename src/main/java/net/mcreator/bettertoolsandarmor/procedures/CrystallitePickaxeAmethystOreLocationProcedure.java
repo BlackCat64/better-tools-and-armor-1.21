@@ -32,17 +32,17 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 		if (entity.isShiftKeyDown()) {
 			found = false;
 			radius = 0;
-			for (int index0 = 0; index0 < 19; index0++) {
+			for (int index32 = 0; index32 < 19; index32++) {
 				radius = radius + 1;
 				if (radius == 1) {
 					repeats = 1;
 				}
 				sx = radius * (-1);
-				for (int index1 = 0; index1 < 2; index1++) {
+				for (int index33 = 0; index33 < 2; index33++) {
 					sy = radius * (-1);
-					for (int index2 = 0; index2 < (int) (radius * 2); index2++) {
+					for (int index34 = 0; index34 < (int) (radius * 2); index34++) {
 						sz = radius * (-1);
-						for (int index3 = 0; index3 < (int) (radius * 2); index3++) {
+						for (int index35 = 0; index35 < (int) (radius * 2); index35++) {
 							if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("better_tools:loot_blocks")))) {
 								found = true;
 								break;
@@ -63,14 +63,14 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 					break;
 				}
 				sz = radius * (-1);
-				for (int index4 = 0; index4 < 2; index4++) {
+				for (int index36 = 0; index36 < 2; index36++) {
 					sx = 1 - radius;
 					if (radius > 1) {
 						repeats = (radius - 1) * 2;
 					}
-					for (int index5 = 0; index5 < (int) repeats; index5++) {
+					for (int index37 = 0; index37 < (int) repeats; index37++) {
 						sy = radius * (-1);
-						for (int index6 = 0; index6 < (int) (radius * 2); index6++) {
+						for (int index38 = 0; index38 < (int) (radius * 2); index38++) {
 							if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("better_tools:loot_blocks")))) {
 								found = true;
 								break;
@@ -91,17 +91,17 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 					break;
 				}
 				sy = radius * (-1);
-				for (int index7 = 0; index7 < 2; index7++) {
+				for (int index39 = 0; index39 < 2; index39++) {
 					sx = 1 - radius;
 					if (radius > 1) {
 						repeats = (radius - 1) * 2;
 					}
-					for (int index8 = 0; index8 < (int) repeats; index8++) {
+					for (int index40 = 0; index40 < (int) repeats; index40++) {
 						sz = 1 - radius;
 						if (radius > 1) {
 							repeats = (radius - 1) * 2;
 						}
-						for (int index9 = 0; index9 < (int) repeats; index9++) {
+						for (int index41 = 0; index41 < (int) repeats; index41++) {
 							if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("better_tools:loot_blocks")))) {
 								found = true;
 								break;

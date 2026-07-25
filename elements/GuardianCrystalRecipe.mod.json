@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:GuardianSpike"
-      },
-      {
-        "value": "Items.HEART_OF_THE_SEA"
-      },
-      {
-        "value": "CUSTOM:GuardianSpike"
-      },
-      {
-        "value": "Blocks.PRISMARINE#0"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Blocks.PRISMARINE#2"
-      },
-      {
-        "value": "CUSTOM:GuardianSpike"
-      },
-      {
-        "value": "Blocks.PRISMARINE#1"
-      },
-      {
-        "value": "CUSTOM:GuardianSpike"
-      }
+      "CUSTOM:GuardianSpike",
+      "Items.HEART_OF_THE_SEA",
+      "CUSTOM:GuardianSpike",
+      "Blocks.PRISMARINE#0",
+      "CUSTOM:CrystaliteGem",
+      "Blocks.PRISMARINE#2",
+      "CUSTOM:GuardianSpike",
+      "Blocks.PRISMARINE#1",
+      "CUSTOM:GuardianSpike"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:GuardianCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:GuardianCrystal",
     "name": "guardian_crystal_recipe",
     "namespace": "mod"
   }

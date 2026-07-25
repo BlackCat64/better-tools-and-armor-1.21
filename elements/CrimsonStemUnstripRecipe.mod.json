@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.STRIPPED_CRIMSON_STEM"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "Blocks.STRIPPED_CRIMSON_STEM",
+      "",
+      "",
+      "CUSTOM:Bark",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.CRIMSON_STEM"
-    },
+    "recipeReturnStack": "Blocks.CRIMSON_STEM",
     "name": "crimson_stem_unstrip_recipe",
     "namespace": "mod"
   }

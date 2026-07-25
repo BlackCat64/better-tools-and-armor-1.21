@@ -42,11 +42,11 @@ public class CrystalliteHoeSapphirePlantClearanceProcedure {
 		if (IsPlantProcedure.execute(world, x, y, z) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:plant_clearance_tools")))
 				&& !entity.isShiftKeyDown()) {
 			i_x = -2;
-			for (int index0 = 0; index0 < 5; index0++) {
+			for (int index68 = 0; index68 < 5; index68++) {
 				i_y = -2;
-				for (int index1 = 0; index1 < 5; index1++) {
+				for (int index69 = 0; index69 < 5; index69++) {
 					i_z = -2;
-					for (int index2 = 0; index2 < 5; index2++) {
+					for (int index70 = 0; index70 < 5; index70++) {
 						if (IsPlantProcedure.execute(world, x + i_x, y + i_y, z + i_z)) {
 							if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
 								world.destroyBlock(BlockPos.containing(x + i_x, y + i_y, z + i_z), false);

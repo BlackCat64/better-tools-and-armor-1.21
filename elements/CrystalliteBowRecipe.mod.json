@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.STRING"
-      }
+      "",
+      "CUSTOM:CrystaliteGem",
+      "Items.STRING",
+      "CUSTOM:CrystaliteGem",
+      "",
+      "Items.STRING",
+      "",
+      "CUSTOM:CrystaliteGem",
+      "Items.STRING"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CrystalliteBow"
-    },
+    "recipeReturnStack": "CUSTOM:CrystalliteBow",
     "name": "crystallite_bow_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Luck",
@@ -8,9 +8,7 @@
     "arrowName": "Arrow of Luck",
     "effects": [
       {
-        "effect": {
-          "value": "LUCK"
-        },
+        "effect": "LUCK",
         "duration": 3000,
         "infinite": false,
         "amplifier": 1,

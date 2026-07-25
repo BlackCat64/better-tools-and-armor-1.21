@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Double Jump",
@@ -8,9 +8,7 @@
       "value": -3355444,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": ""
-    },
+    "onAddedSound": "",
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
@@ -19,9 +17,7 @@
     "modifiers": [
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "SAFE_FALL_DISTANCE"
-        },
+        "attribute": "SAFE_FALL_DISTANCE",
         "amount": 1.0,
         "operation": "ADD_VALUE"
       }

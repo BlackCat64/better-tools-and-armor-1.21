@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:SugarBlock"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:SugarBoots.boots"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Items.IRON_INGOT",
+      "CUSTOM:SugarBlock",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:SugarBoots.boots",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Blocks.IRON_BLOCK",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronSugarBoots.boots"
-    },
+    "recipeReturnStack": "CUSTOM:IronSugarBoots.boots",
     "name": "iron_sugar_boots_recipe",
     "namespace": "mod"
   }

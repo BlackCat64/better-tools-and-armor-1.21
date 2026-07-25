@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Ore Vision",
@@ -8,9 +8,7 @@
     "arrowName": "Arrow of Ore Vision",
     "effects": [
       {
-        "effect": {
-          "value": "CUSTOM:OreVision"
-        },
+        "effect": "CUSTOM:OreVision",
         "duration": 9600,
         "infinite": false,
         "amplifier": 0,

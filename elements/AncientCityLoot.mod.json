@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CrystalliteCharmBase"
-            },
+            "item": "CUSTOM:CrystalliteCharmBase",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ExperiencePotion"
-            },
+            "item": "CUSTOM:ExperiencePotion",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AscensionPotion"
-            },
+            "item": "CUSTOM:AscensionPotion",
             "weight": 8,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DescensionPotion"
-            },
+            "item": "CUSTOM:DescensionPotion",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RecallPotion"
-            },
+            "item": "CUSTOM:RecallPotion",
             "weight": 9,
             "minCount": 1,
             "maxCount": 1,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LostSoulsPotion"
-            },
+            "item": "CUSTOM:LostSoulsPotion",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -97,9 +85,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:NetherDiamond"
-            },
+            "item": "CUSTOM:NetherDiamond",
             "weight": 20,
             "minCount": 0,
             "maxCount": 0,

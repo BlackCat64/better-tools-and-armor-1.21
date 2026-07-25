@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.REDSTONE"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "Items.REDSTONE"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "Blocks.BLUE_ICE"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "Items.REDSTONE"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "Items.REDSTONE"
-      }
+      "Items.REDSTONE",
+      "CUSTOM:Ruby",
+      "Items.REDSTONE",
+      "CUSTOM:Ruby",
+      "Blocks.BLUE_ICE",
+      "CUSTOM:Ruby",
+      "Items.REDSTONE",
+      "CUSTOM:Ruby",
+      "Items.REDSTONE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ChargedIceOn"
-    },
+    "recipeReturnStack": "CUSTOM:ChargedIceOn",
     "name": "ruby_ice_recipe",
     "namespace": "mod"
   }

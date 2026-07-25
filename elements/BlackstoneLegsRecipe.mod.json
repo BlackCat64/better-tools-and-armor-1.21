@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Items.MAGMA_CREAM"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      },
-      {
-        "value": "Items.MAGMA_CREAM"
-      },
-      {
-        "value": "Blocks.GILDED_BLACKSTONE"
-      }
+      "Blocks.GILDED_BLACKSTONE",
+      "Blocks.GILDED_BLACKSTONE",
+      "Blocks.GILDED_BLACKSTONE",
+      "Blocks.GILDED_BLACKSTONE",
+      "Items.MAGMA_CREAM",
+      "Blocks.GILDED_BLACKSTONE",
+      "Blocks.GILDED_BLACKSTONE",
+      "Items.MAGMA_CREAM",
+      "Blocks.GILDED_BLACKSTONE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlackstoneLegs.legs"
-    },
+    "recipeReturnStack": "CUSTOM:BlackstoneLegs.legs",
     "name": "blackstone_legs_recipe",
     "namespace": "mod"
   }

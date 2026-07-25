@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -19,9 +19,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "efficiency": 12.0,
     "attackSpeed": 4.0,
@@ -32,18 +30,10 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.PRISMARINE_SHARD"
-      },
-      {
-        "value": "Items.PRISMARINE_CRYSTALS"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.PRISMARINE_SHARD",
+      "Items.PRISMARINE_CRYSTALS"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
@@ -51,9 +41,7 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "mainhand",
-        "attribute": {
-          "value": "SUBMERGED_MINING_SPEED"
-        },
+        "attribute": "SUBMERGED_MINING_SPEED",
         "amount": 0.8,
         "operation": "ADD_VALUE"
       }

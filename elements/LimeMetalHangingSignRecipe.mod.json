@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CHAIN"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CHAIN"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      }
+      "Blocks.CHAIN",
+      "",
+      "Blocks.CHAIN",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock"
     ],
-    "recipeReturnStack": {
-      "value": "Items.OAK_HANGING_SIGN"
-    },
+    "recipeReturnStack": "Items.OAK_HANGING_SIGN",
     "name": "lime_metal_hanging_sign_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.PRISMARINE_SHARD"
-            },
+            "item": "Items.PRISMARINE_SHARD",
             "weight": 1,
             "minCount": 0,
             "maxCount": 2,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.PRISMARINE_CRYSTALS"
-            },
+            "item": "Items.PRISMARINE_CRYSTALS",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -50,9 +46,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.FISH#0"
-            },
+            "item": "Items.FISH#0",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -64,9 +58,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:GuardianSpike"
-            },
+            "item": "CUSTOM:GuardianSpike",
             "weight": 1,
             "minCount": 0,
             "maxCount": 3,

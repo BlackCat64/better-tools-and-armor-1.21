@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -11,12 +11,8 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "armorTextureFile": "reinforced_cactus_",
     "helmetName": "Iron Cactus Body Helmet",
@@ -101,17 +97,12 @@
     "enchantability": 8,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_iron"
-    },
+    "equipSound": "item.armor.equip_iron",
     "repairItems": [
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Blocks.CACTUS",
+      "Items.IRON_INGOT"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

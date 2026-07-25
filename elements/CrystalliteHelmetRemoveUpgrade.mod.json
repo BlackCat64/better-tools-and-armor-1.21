@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:mod:crystallite_helmets"
-    },
-    "smithingInputAdditionStack": {
-      "value": "Blocks.GLASS"
-    },
-    "smithingInputTemplateStack": {
-      "value": "Blocks.GLASS"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteArmor.helmet"
-    },
+    "smithingInputStack": "TAG:mod:crystallite_helmets",
+    "smithingInputAdditionStack": "Blocks.GLASS",
+    "smithingInputTemplateStack": "Blocks.GLASS",
+    "smithingReturnStack": "CUSTOM:CrystalliteArmor.helmet",
     "name": "crystallite_helmet_remove_upgrade",
     "namespace": "mod"
   }

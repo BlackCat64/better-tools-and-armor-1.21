@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_boots"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:ElectricCore"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteArmorTopaz.boots"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_boots",
+    "smithingInputAdditionStack": "CUSTOM:ElectricCore",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteArmorTopaz.boots",
     "name": "crystallite_boots_topaz_recipe",
     "namespace": "mod"
   }

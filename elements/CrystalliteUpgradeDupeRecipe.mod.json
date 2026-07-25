@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND",
+      "CUSTOM:CrystalliteShards",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
+    "recipeReturnStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
     "name": "crystallite_upgrade_duplication",
     "namespace": "mod"
   }

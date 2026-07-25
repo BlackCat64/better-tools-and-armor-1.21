@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      }
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot",
+      "CUSTOM:EndTitaniumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EndTitaniumBlock"
-    },
+    "recipeReturnStack": "CUSTOM:EndTitaniumBlock",
     "name": "end_titanium_block_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -19,9 +19,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "efficiency": 14.0,
     "attackSpeed": 4.0,
@@ -32,15 +30,9 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.ECHO_SHARD"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.ECHO_SHARD"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",

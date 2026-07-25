@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -10,13 +10,9 @@
     "textureLeggings": "crystal_leggings",
     "enableBoots": false,
     "textureBoots": "",
-    "onLeggingsTick": {
-      "name": "CrystalLegsProcedure"
-    },
+    "onLeggingsTick": "CrystalLegsProcedure",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "armorTextureFile": "leather_",
     "helmetName": "Crystal Legs Helmet",
@@ -75,14 +71,11 @@
     "enchantability": 8,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_iron"
-    },
+    "equipSound": "item.armor.equip_iron",
     "repairItems": [
-      {
-        "value": "Items.PRISMARINE_CRYSTALS"
-      }
+      "Items.PRISMARINE_CRYSTALS"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

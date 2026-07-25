@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:BlackstoneMagma"
-      }
+      "CUSTOM:BlackstoneMagma"
     ],
     "information": [
       "Generates in the Nether, only in §4Basalt Deltas§r.",

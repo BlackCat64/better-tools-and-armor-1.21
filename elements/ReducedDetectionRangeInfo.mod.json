@@ -1,56 +1,24 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:GlassArmor.helmet"
-      },
-      {
-        "value": "CUSTOM:GlassArmor.body"
-      },
-      {
-        "value": "CUSTOM:GlassArmor.legs"
-      },
-      {
-        "value": "CUSTOM:GlassArmor.boots"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSculk.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSculk.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSculk.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSculk.boots"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.helmet"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.body"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.legs"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.boots"
-      },
-      {
-        "value": "CUSTOM:DiamondGlassArmor.helmet"
-      },
-      {
-        "value": "CUSTOM:DiamondGlassArmor.body"
-      },
-      {
-        "value": "CUSTOM:DiamondGlassArmor.legs"
-      },
-      {
-        "value": "CUSTOM:DiamondGlassArmor.boots"
-      }
+      "CUSTOM:GlassArmor.helmet",
+      "CUSTOM:GlassArmor.body",
+      "CUSTOM:GlassArmor.legs",
+      "CUSTOM:GlassArmor.boots",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:IronGlassArmor.helmet",
+      "CUSTOM:IronGlassArmor.body",
+      "CUSTOM:IronGlassArmor.legs",
+      "CUSTOM:IronGlassArmor.boots",
+      "CUSTOM:DiamondGlassArmor.helmet",
+      "CUSTOM:DiamondGlassArmor.body",
+      "CUSTOM:DiamondGlassArmor.legs",
+      "CUSTOM:DiamondGlassArmor.boots"
     ],
     "information": [
       "Reduced Detection Range effect only works in singleplayer worlds."

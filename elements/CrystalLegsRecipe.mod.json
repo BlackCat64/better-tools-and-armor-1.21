@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.SEA_LANTERN"
-      },
-      {
-        "value": "Blocks.SEA_LANTERN"
-      },
-      {
-        "value": "Blocks.SEA_LANTERN"
-      },
-      {
-        "value": "Blocks.SEA_LANTERN"
-      },
-      {
-        "value": "Items.HEART_OF_THE_SEA"
-      },
-      {
-        "value": "Blocks.SEA_LANTERN"
-      },
-      {
-        "value": "Blocks.SEA_LANTERN"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.SEA_LANTERN"
-      }
+      "Blocks.SEA_LANTERN",
+      "Blocks.SEA_LANTERN",
+      "Blocks.SEA_LANTERN",
+      "Blocks.SEA_LANTERN",
+      "Items.HEART_OF_THE_SEA",
+      "Blocks.SEA_LANTERN",
+      "Blocks.SEA_LANTERN",
+      "",
+      "Blocks.SEA_LANTERN"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CrystalLegs.legs"
-    },
+    "recipeReturnStack": "CUSTOM:CrystalLegs.legs",
     "name": "crystal_legs_recipe",
     "namespace": "mod"
   }

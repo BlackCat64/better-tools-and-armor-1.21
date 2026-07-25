@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_shovels"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:HealCrystal"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteShovelRedstone"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_shovels",
+    "smithingInputAdditionStack": "CUSTOM:HealCrystal",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteShovelRedstone",
     "name": "crystallite_shovel_redstone_recipe",
     "namespace": "mod"
   }

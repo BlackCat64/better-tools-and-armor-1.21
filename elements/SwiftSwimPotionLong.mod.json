@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Rapidity",
@@ -8,9 +8,7 @@
     "arrowName": "Arrow of Rapidity",
     "effects": [
       {
-        "effect": {
-          "value": "CUSTOM:SwiftSwim"
-        },
+        "effect": "CUSTOM:SwiftSwim",
         "duration": 9600,
         "infinite": false,
         "amplifier": 0,

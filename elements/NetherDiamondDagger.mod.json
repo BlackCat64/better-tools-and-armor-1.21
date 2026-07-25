@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -16,9 +16,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "efficiency": 8.0,
     "attackSpeed": 2.5,
@@ -29,9 +27,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:NetherDiamond"
-      }
+      "CUSTOM:NetherDiamond"
     ],
     "immuneToFire": true,
     "blockDropsTier": "DIAMOND",

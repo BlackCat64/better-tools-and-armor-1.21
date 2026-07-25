@@ -1,56 +1,24 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:ToughCrystal"
-      },
-      {
-        "value": "CUSTOM:GildedCrystal"
-      },
-      {
-        "value": "CUSTOM:MagicCrystal"
-      },
-      {
-        "value": "CUSTOM:HealCrystal"
-      },
-      {
-        "value": "CUSTOM:DiamondHardCrystal"
-      },
-      {
-        "value": "CUSTOM:SpikedCrystal"
-      },
-      {
-        "value": "CUSTOM:SpeedyCrystal"
-      },
-      {
-        "value": "CUSTOM:SkyCrystal"
-      },
-      {
-        "value": "CUSTOM:NatureCrystal"
-      },
-      {
-        "value": "CUSTOM:EchoCrystal"
-      },
-      {
-        "value": "CUSTOM:EarthCrystal"
-      },
-      {
-        "value": "CUSTOM:GuardianCrystal"
-      },
-      {
-        "value": "CUSTOM:HiveCrystal"
-      },
-      {
-        "value": "CUSTOM:FireCore"
-      },
-      {
-        "value": "CUSTOM:IceCore"
-      },
-      {
-        "value": "CUSTOM:ElectricCore"
-      }
+      "CUSTOM:ToughCrystal",
+      "CUSTOM:GildedCrystal",
+      "CUSTOM:MagicCrystal",
+      "CUSTOM:HealCrystal",
+      "CUSTOM:DiamondHardCrystal",
+      "CUSTOM:SpikedCrystal",
+      "CUSTOM:SpeedyCrystal",
+      "CUSTOM:SkyCrystal",
+      "CUSTOM:NatureCrystal",
+      "CUSTOM:EchoCrystal",
+      "CUSTOM:EarthCrystal",
+      "CUSTOM:GuardianCrystal",
+      "CUSTOM:HiveCrystal",
+      "CUSTOM:FireCore",
+      "CUSTOM:IceCore",
+      "CUSTOM:ElectricCore"
     ],
     "information": [
       "§lElemental Crystals§r",

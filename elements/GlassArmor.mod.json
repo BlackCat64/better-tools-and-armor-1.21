@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "glass_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "armorTextureFile": "invisible_",
     "helmetName": "Glass Helmet",
@@ -96,14 +94,11 @@
     "enchantability": 3,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "block.glass.place"
-    },
+    "equipSound": "block.glass.place",
     "repairItems": [
-      {
-        "value": "Blocks.GLASS"
-      }
+      "Blocks.GLASS"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
-      }
+      "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
     ],
     "information": [
       "Found with a 1/16 chance in End City chest loot."

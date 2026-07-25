@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -18,9 +18,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "efficiency": 12.0,
     "attackSpeed": 1.0,
@@ -31,15 +29,9 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:Sapphire"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
@@ -47,8 +39,6 @@
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "CrystalliteSwordSapphireProcedure2"
-    }
+    "onEntityHitWith": "CrystalliteSwordSapphireProcedure2"
   }
 }

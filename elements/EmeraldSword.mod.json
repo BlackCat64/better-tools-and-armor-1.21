@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -16,12 +16,8 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "efficiency": 6.0,
     "attackSpeed": 1.6,
@@ -32,9 +28,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.EMERALD"
-      }
+      "Items.EMERALD"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",

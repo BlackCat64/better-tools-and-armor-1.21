@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:FourLeafClover"
-      },
-      {
-        "value": "CUSTOM:LuckyCharm"
-      }
+      "CUSTOM:FourLeafClover",
+      "CUSTOM:LuckyCharm"
     ],
     "information": [
       "Four Leaf Clovers can be found in Treehouse chest loot, and they are used to brew Luck Potions.",

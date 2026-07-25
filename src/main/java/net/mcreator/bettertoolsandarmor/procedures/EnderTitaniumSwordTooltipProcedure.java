@@ -56,9 +56,8 @@ public class EnderTitaniumSwordTooltipProcedure {
 					damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));
 				}
 				replaceLine = GetTooltipLineContainingProcedure.execute("Attack Damage", tooltip);
-				ReplaceTooltipLineWithComponentProcedure.execute(
-						Component.literal(" ").append(Component.literal((new java.text.DecimalFormat("##.##").format(damage))).withStyle(ChatFormatting.BOLD).withColor(0xa62bff)).append(Component.literal(" Attack Damage")).withColor(0x00aa00),
-						replaceLine, tooltip);
+				ReplaceTooltipLineWithComponentProcedure.execute(Component.literal(" ").append(Component.literal((new java.text.DecimalFormat("##.##").format(damage))).withStyle(ChatFormatting.BOLD).withColor((int) 0xa62bff))
+						.append(Component.literal(" Attack Damage")).withColor((int) 0x00aa00), replaceLine, tooltip);
 			} else {
 				tooltip.add(Component.literal("\u00A77When in The End:"));
 				tooltip.add(Component.literal("\u00A79+3 Attack Damage"));

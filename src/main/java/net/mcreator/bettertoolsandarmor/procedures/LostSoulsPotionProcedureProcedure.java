@@ -62,9 +62,12 @@ public class LostSoulsPotionProcedureProcedure {
 		} else if (IsLocationSafeProcedure.execute(world, death_x, death_y, death_z) && death_y > void_height) {
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(death_x, death_y, death_z);
+				double _tx = death_x;
+				double _ty = death_y;
+				double _tz = death_z;
+				_ent.teleportTo(_tx, _ty, _tz);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(death_x, death_y, death_z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -85,9 +88,12 @@ public class LostSoulsPotionProcedureProcedure {
 			if (death_y <= void_height) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(death_x, (void_height + 1), death_z);
+					double _tx = death_x;
+					double _ty = (void_height + 1);
+					double _tz = death_z;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(death_x, (void_height + 1), death_z, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -111,9 +117,12 @@ public class LostSoulsPotionProcedureProcedure {
 			} else {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(death_x, death_y, death_z);
+					double _tx = death_x;
+					double _ty = death_y;
+					double _tz = death_z;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(death_x, death_y, death_z, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

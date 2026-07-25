@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:SkyCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordSky"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeSky"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeSky"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelSky"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeSky"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerSky"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSky.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSky.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSky.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSky.boots"
-      },
-      {
-        "value": "CUSTOM:ReflectCharm"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowSky"
-      }
+      "CUSTOM:SkyCrystal",
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteHoeSky",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:ReflectCharm",
+      "CUSTOM:CrystalliteBowSky"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

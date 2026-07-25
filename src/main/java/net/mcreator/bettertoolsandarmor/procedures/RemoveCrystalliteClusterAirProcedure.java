@@ -12,11 +12,11 @@ public class RemoveCrystalliteClusterAirProcedure {
 		double sy = 0;
 		double sz = 0;
 		sx = -16;
-		for (int index0 = 0; index0 < 32; index0++) {
+		for (int index55 = 0; index55 < 32; index55++) {
 			sy = -16;
-			for (int index1 = 0; index1 < 32; index1++) {
+			for (int index56 = 0; index56 < 32; index56++) {
 				sz = -16;
-				for (int index2 = 0; index2 < 32; index2++) {
+				for (int index57 = 0; index57 < 32; index57++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
 						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), Blocks.AIR.defaultBlockState(), 3);
 					}

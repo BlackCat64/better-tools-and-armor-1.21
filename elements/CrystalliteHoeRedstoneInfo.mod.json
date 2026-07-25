@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteHoeRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeRedstoneUpgrade1"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
-      }
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
     ],
     "information": [
       "After 1000 uses:",

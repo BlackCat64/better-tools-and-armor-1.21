@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.END_STONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.END_STONE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Blocks.END_STONE",
+      "",
+      "Blocks.CRYING_OBSIDIAN",
+      "CUSTOM:EnderTitaniumUpgradeSmithingTemplate",
+      "Items.NETHERITE_INGOT",
+      "",
+      "Blocks.END_STONE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
-    },
+    "recipeReturnStack": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate",
     "name": "ender_titanium_upgrade_duplication",
     "namespace": "mod"
   }

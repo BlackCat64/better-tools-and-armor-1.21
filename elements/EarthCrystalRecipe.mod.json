@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.POINTED_DRIPSTONE"
-      },
-      {
-        "value": "Blocks.AMETHYST_CLUSTER"
-      },
-      {
-        "value": "Blocks.POINTED_DRIPSTONE"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      }
+      "Blocks.POINTED_DRIPSTONE",
+      "Blocks.AMETHYST_CLUSTER",
+      "Blocks.POINTED_DRIPSTONE",
+      "Items.AMETHYST_SHARD",
+      "CUSTOM:CrystaliteGem",
+      "Items.AMETHYST_SHARD",
+      "Items.AMETHYST_SHARD",
+      "Blocks.AMETHYST_BLOCK",
+      "Items.AMETHYST_SHARD"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EarthCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:EarthCrystal",
     "name": "earth_crystal_recipe",
     "namespace": "mod"
   }

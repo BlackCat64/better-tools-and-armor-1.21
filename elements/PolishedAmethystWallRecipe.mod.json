@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedAmethystBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedAmethystBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedAmethystBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedAmethystBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedAmethystBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedAmethystBlock"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PolishedAmethystWall"
-    },
+    "recipeReturnStack": "CUSTOM:PolishedAmethystWall",
     "name": "polished_amethyst_wall_recipe",
     "namespace": "mod"
   }

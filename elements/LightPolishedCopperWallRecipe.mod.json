@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:LightPolishedCopperBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedCopperBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedCopperBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedCopperBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedCopperBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedCopperBlock"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:LightPolishedCopperBlock",
+      "CUSTOM:LightPolishedCopperBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LightPolishedCopperWall"
-    },
+    "recipeReturnStack": "CUSTOM:LightPolishedCopperWall",
     "name": "light_polished_copper_wall_recipe",
     "namespace": "mod"
   }

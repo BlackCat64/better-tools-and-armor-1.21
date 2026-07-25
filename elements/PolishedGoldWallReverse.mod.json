@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:PolishedGoldWall"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:PolishedGoldBlock"
-    },
+    "stoneCuttingInputStack": "CUSTOM:PolishedGoldWall",
+    "stoneCuttingReturnStack": "CUSTOM:PolishedGoldBlock",
     "name": "polished_gold_wall_reverse",
     "namespace": "mod"
   }

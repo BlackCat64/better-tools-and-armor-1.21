@@ -1,12 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "keybind",
   "definition": {
     "triggerKey": "LSHIFT",
     "keyBindingName": "Float when wearing Ender Titanium Boots",
     "keyBindingCategoryKey": "better_tools",
-    "onKeyPressed": {
-      "name": "EnderTitaniumBootsFloat"
-    }
+    "onKeyPressed": "EnderTitaniumBootsFloat"
   }
 }

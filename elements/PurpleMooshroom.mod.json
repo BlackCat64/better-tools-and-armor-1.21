@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Purple Mooshroom",
@@ -22,31 +22,17 @@
       "falpha": 0.0
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:BetterToolsAndArmorMisc"
-      }
+      "CUSTOM:BetterToolsAndArmorMisc"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 0,
@@ -83,61 +69,37 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": "entity.cow.ambient"
-    },
-    "hurtSound": {
-      "value": "entity.cow.hurt"
-    },
-    "deathSound": {
-      "value": "entity.cow.death"
-    },
-    "stepSound": {
-      "value": "entity.cow.step"
-    },
+    "mobDrop": "",
+    "livingSound": "entity.cow.ambient",
+    "hurtSound": "entity.cow.hurt",
+    "deathSound": "entity.cow.death",
+    "stepSound": "entity.cow.step",
     "entityDataEntries": [],
-    "whenMobDies": {
-      "name": "PurpleMooshroomFireDeath"
-    },
-    "whenMobIsHurt": {
-      "name": "PurpleMooshroomHitProcedure"
-    },
-    "onRightClickedOn": {
-      "name": "PurpleMooshroomShear"
-    },
+    "whenMobDies": "PurpleMooshroomFireDeath",
+    "whenMobIsHurt": "PurpleMooshroomHitProcedure",
+    "onRightClickedOn": "PurpleMooshroomShear",
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"breed\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.6</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [
-      {
-        "value": "Items.WHEAT"
-      }
+      "Items.WHEAT"
     ],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningCondition": {
-      "name": "PurpleMooshroomSpawnCondition"
-    },
+    "spawningCondition": "PurpleMooshroomSpawnCondition",
     "spawningProbability": 60,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:FungalCaves"
-      }
+      "CUSTOM:FungalCaves"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

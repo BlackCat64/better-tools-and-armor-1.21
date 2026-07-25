@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.boots"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Blocks.GLASS",
+      "Blocks.GLASS",
+      "Blocks.GLASS",
+      "Items.DIAMOND",
+      "CUSTOM:IronGlassArmor.boots",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondGlassArmor.boots"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondGlassArmor.boots",
     "name": "diamond_glass_boots_recipe",
     "namespace": "mod"
   }

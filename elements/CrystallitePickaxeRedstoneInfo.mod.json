@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystallitePickaxeRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeRedstoneUpgrade1"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
-      }
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "information": [
       "After 5000 blocks have been mined:",

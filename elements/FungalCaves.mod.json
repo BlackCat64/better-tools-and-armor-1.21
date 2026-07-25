@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Fungal Caves",
-    "groundBlock": {
-      "value": "Blocks.MYCELIUM"
-    },
-    "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "Blocks.MYCELIUM",
+    "undergroundBlock": "Blocks.DIRT#0",
+    "underwaterBlock": "",
     "grassColor": {
       "value": -11155137,
       "falpha": 0.0
@@ -28,23 +22,13 @@
       "value": -12618012,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": ""
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "DRAGON_BREATH"
-    },
+    "particleToSpawn": "DRAGON_BREATH",
     "particlesProbability": 0.25,
     "rainingPossibility": 0.5,
     "temperature": 0.9,
@@ -79,18 +63,10 @@
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
       "Ores",
       "FrozenTopLayer",
@@ -119,18 +95,14 @@
     "spawnRuinedPortal": "NONE",
     "spawnEntries": [
       {
-        "entity": {
-          "value": "EntityBat"
-        },
+        "entity": "EntityBat",
         "minGroup": 1,
         "maxGroup": 5,
         "weight": 10,
         "spawnType": "ambient"
       },
       {
-        "entity": {
-          "value": "EntityGlowSquid"
-        },
+        "entity": "EntityGlowSquid",
         "minGroup": 2,
         "maxGroup": 4,
         "weight": 10,

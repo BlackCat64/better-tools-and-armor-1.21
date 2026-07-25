@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -16,12 +16,8 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "efficiency": 5.0,
     "attackSpeed": 2.5,
@@ -32,9 +28,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.REDSTONE"
-      }
+      "Items.REDSTONE"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",

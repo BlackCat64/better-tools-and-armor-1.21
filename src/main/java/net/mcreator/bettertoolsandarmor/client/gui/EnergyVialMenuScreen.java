@@ -110,8 +110,8 @@ public class EnergyVialMenuScreen extends AbstractContainerScreen<EnergyVialMenu
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(IMAGE_0, this.leftPos + 32, this.topPos + 50, 0, 0, -1, -1, -1, -1);
-		guiGraphics.blit(IMAGE_1, this.leftPos + 86, this.topPos + 50, 0, 0, -1, -1, -1, -1);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 32, this.topPos + 50, 0, 0, 22, 15, 22, 15);
+		guiGraphics.blit(IMAGE_1, this.leftPos + 86, this.topPos + 50, 0, 0, 22, 15, 22, 15);
 		RenderSystem.disableBlend();
 	}
 

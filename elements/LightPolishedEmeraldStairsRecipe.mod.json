@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:LightPolishedEmeraldBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:LightPolishedEmeraldBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedEmeraldBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:LightPolishedEmeraldBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedEmeraldBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedEmeraldBlock"
-      }
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "",
+      "",
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "",
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:LightPolishedEmeraldBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LightPolishedEmeraldStairs"
-    },
+    "recipeReturnStack": "CUSTOM:LightPolishedEmeraldStairs",
     "name": "light_polished_emerald_stairs_recipe",
     "namespace": "mod"
   }

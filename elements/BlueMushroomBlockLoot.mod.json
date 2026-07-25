@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BlueMushroom"
-            },
+            "item": "CUSTOM:BlueMushroom",
             "weight": 1,
             "minCount": 0,
             "maxCount": 2,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BlueMushroomBlock"
-            },
+            "item": "CUSTOM:BlueMushroomBlock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

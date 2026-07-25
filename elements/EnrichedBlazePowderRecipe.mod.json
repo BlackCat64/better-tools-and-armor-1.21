@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "Blocks.NETHER_WART"
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "Items.BLAZE_POWDER"
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "Blocks.NETHER_WART"
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      }
+      "Items.GOLD_NUGGET",
+      "Blocks.NETHER_WART",
+      "Items.GOLD_NUGGET",
+      "Items.GOLD_NUGGET",
+      "Items.BLAZE_POWDER",
+      "Items.GOLD_NUGGET",
+      "Items.GOLD_NUGGET",
+      "Blocks.NETHER_WART",
+      "Items.GOLD_NUGGET"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EnrichedBlazePowder"
-    },
+    "recipeReturnStack": "CUSTOM:EnrichedBlazePowder",
     "name": "enriched_blaze_powder_recipe",
     "namespace": "mod"
   }

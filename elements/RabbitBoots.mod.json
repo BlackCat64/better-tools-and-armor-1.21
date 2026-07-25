@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -10,13 +10,9 @@
     "textureLeggings": "",
     "enableBoots": true,
     "textureBoots": "rabbit_boots",
-    "onBootsTick": {
-      "name": "RabbitBootsProcedure"
-    },
+    "onBootsTick": "RabbitBootsProcedure",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "armorTextureFile": "rabbit_",
     "helmetName": "Rabbit Boots Helmet",
@@ -75,14 +71,11 @@
     "enchantability": 4,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_leather"
-    },
+    "equipSound": "item.armor.equip_leather",
     "repairItems": [
-      {
-        "value": "Items.RABBIT_FOOT"
-      }
+      "Items.RABBIT_FOOT"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

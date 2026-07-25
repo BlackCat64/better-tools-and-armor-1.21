@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -18,9 +18,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "efficiency": 12.0,
     "attackSpeed": 2.5,
@@ -31,15 +29,9 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.AMETHYST_SHARD"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
@@ -47,8 +39,6 @@
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "CrystalliteSwordAmethystEcholocation"
-    }
+    "onRightClickedInAir": "CrystalliteSwordAmethystEcholocation"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PolishedNetherDiamondBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedNetherDiamondBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedNetherDiamondBlock"
-      }
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "",
+      "",
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "",
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "CUSTOM:PolishedNetherDiamondBlock",
+      "CUSTOM:PolishedNetherDiamondBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PolishedNetherDiamondStairs"
-    },
+    "recipeReturnStack": "CUSTOM:PolishedNetherDiamondStairs",
     "name": "polished_nether_diamond_stairs_recipe",
     "namespace": "mod"
   }

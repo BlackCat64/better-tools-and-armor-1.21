@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "crystallite_boots_emerald",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "armorTextureFile": "crystallite_emerald_",
     "helmetName": "Crystallite Helmet",
@@ -112,20 +110,13 @@
     "enchantability": 20,
     "toughness": 2.5,
     "knockbackResistance": 0.125,
-    "equipSound": {
-      "value": "CUSTOM:crystallite_step"
-    },
+    "equipSound": "CUSTOM:crystallite_step",
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.EMERALD"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.EMERALD"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

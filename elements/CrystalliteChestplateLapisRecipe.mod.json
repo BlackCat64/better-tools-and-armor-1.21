@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_chestplates"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:MagicCrystal"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteArmorLapis.body"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_chestplates",
+    "smithingInputAdditionStack": "CUSTOM:MagicCrystal",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteArmorLapis.body",
     "name": "crystallite_chestplate_lapis_recipe",
     "namespace": "mod"
   }

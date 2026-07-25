@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -19,9 +19,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "efficiency": 14.0,
     "attackSpeed": 1.6,
@@ -32,15 +30,9 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:CrystalliteShards",
+      "Items.DIAMOND"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",

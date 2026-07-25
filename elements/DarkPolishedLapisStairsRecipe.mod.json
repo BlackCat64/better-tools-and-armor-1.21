@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      }
+      "CUSTOM:DarkPolishedLapisBlock",
+      "",
+      "",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DarkPolishedLapisStairs"
-    },
+    "recipeReturnStack": "CUSTOM:DarkPolishedLapisStairs",
     "name": "dark_polished_lapis_stairs_recipe",
     "namespace": "mod"
   }

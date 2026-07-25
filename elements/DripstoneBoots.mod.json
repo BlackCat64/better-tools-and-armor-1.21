@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -11,12 +11,8 @@
     "enableBoots": true,
     "textureBoots": "dripstone_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "armorTextureFile": "dripstone_",
     "helmetName": "Dripstone Boots Helmet",
@@ -101,17 +97,12 @@
     "enchantability": 5,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "block.dripstone_block.place"
-    },
+    "equipSound": "block.dripstone_block.place",
     "repairItems": [
-      {
-        "value": "Blocks.DRIPSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.POINTED_DRIPSTONE"
-      }
+      "Blocks.DRIPSTONE_BLOCK",
+      "Blocks.POINTED_DRIPSTONE"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

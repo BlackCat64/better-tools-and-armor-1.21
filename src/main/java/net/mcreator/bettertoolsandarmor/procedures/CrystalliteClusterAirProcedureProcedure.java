@@ -60,11 +60,11 @@ public class CrystalliteClusterAirProcedureProcedure {
 				BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer = 200;
 				BetterToolsModVariables.MapVariables.get(world).markSyncDirty();
 				sx = -40;
-				for (int index0 = 0; index0 < 80; index0++) {
+				for (int index29 = 0; index29 < 80; index29++) {
 					sy = -40;
-					for (int index1 = 0; index1 < 80; index1++) {
+					for (int index30 = 0; index30 < 80; index30++) {
 						sz = -40;
-						for (int index2 = 0; index2 < 80; index2++) {
+						for (int index31 = 0; index31 < 80; index31++) {
 							if (!found && (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == BetterToolsModBlocks.CRYSTALLITE_CLUSTER_AIR.get()) {
 								found = true;
 								found_x = x + sx;

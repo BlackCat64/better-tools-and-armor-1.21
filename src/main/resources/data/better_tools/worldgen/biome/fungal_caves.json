@@ -5,7 +5,7 @@
   "effects": {
     "particle": {
       "options": {
-        "type": "dragon_breath"
+        "type": "crit"
       },
       "probability": 0.0025
     },

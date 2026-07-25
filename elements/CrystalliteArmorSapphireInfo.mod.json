@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
-      }
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots"
     ],
     "information": [
       "§lFull-set bonus:§r",

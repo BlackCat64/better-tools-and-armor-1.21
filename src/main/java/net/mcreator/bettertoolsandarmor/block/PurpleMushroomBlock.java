@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
@@ -28,8 +26,8 @@ import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomGrowProcedurePr
 
 public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBlock {
 	public PurpleMushroomBlock() {
-		super(MobEffects.SATURATION, 0,
-				BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 4).noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(state -> 4).noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ)
+				.pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

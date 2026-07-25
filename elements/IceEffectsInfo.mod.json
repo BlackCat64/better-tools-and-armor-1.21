@@ -1,59 +1,25 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:SapphireSword"
-      },
-      {
-        "value": "CUSTOM:SapphireAxe"
-      },
-      {
-        "value": "CUSTOM:SapphireDagger"
-      },
-      {
-        "value": "CUSTOM:SapphireArmor.helmet"
-      },
-      {
-        "value": "CUSTOM:SapphireArmor.body"
-      },
-      {
-        "value": "CUSTOM:SapphireArmor.legs"
-      },
-      {
-        "value": "CUSTOM:SapphireArmor.boots"
-      },
-      {
-        "value": "CUSTOM:IceStaff"
-      },
-      {
-        "value": "CUSTOM:IcyBracelet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordSapphire"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeSapphire"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerSapphire"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorSapphire.boots"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowSapphire"
-      }
+      "CUSTOM:SapphireSword",
+      "CUSTOM:SapphireAxe",
+      "CUSTOM:SapphireDagger",
+      "CUSTOM:SapphireArmor.helmet",
+      "CUSTOM:SapphireArmor.body",
+      "CUSTOM:SapphireArmor.legs",
+      "CUSTOM:SapphireArmor.boots",
+      "CUSTOM:IceStaff",
+      "CUSTOM:IcyBracelet",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:CrystalliteBowSapphire"
     ],
     "information": [
       "Effect improves when used in a cold biome"

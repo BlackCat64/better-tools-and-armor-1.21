@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteAxeRedstone"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeRedstoneUpgrade1"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
-      }
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
     "information": [
       "After 1000 blocks have been mined:",

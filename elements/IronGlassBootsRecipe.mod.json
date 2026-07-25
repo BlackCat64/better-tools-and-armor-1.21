@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:GlassArmor.boots"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Blocks.GLASS",
+      "Blocks.GLASS",
+      "Blocks.GLASS",
+      "Items.IRON_INGOT",
+      "CUSTOM:GlassArmor.boots",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronGlassArmor.boots"
-    },
+    "recipeReturnStack": "CUSTOM:IronGlassArmor.boots",
     "name": "iron_glass_boots_recipe",
     "namespace": "mod"
   }

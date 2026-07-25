@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.HONEY_BLOCK"
-      },
-      {
-        "value": "Blocks.SLIME_BLOCK"
-      },
-      {
-        "value": "Blocks.HONEY_BLOCK"
-      },
-      {
-        "value": "Blocks.HONEYCOMB_BLOCK"
-      },
-      {
-        "value": "Blocks.HONEYCOMB_BLOCK"
-      },
-      {
-        "value": "Blocks.HONEYCOMB_BLOCK"
-      },
-      {
-        "value": "Blocks.HONEYCOMB_BLOCK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.HONEYCOMB_BLOCK"
-      }
+      "Blocks.HONEY_BLOCK",
+      "Blocks.SLIME_BLOCK",
+      "Blocks.HONEY_BLOCK",
+      "Blocks.HONEYCOMB_BLOCK",
+      "Blocks.HONEYCOMB_BLOCK",
+      "Blocks.HONEYCOMB_BLOCK",
+      "Blocks.HONEYCOMB_BLOCK",
+      "",
+      "Blocks.HONEYCOMB_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HoneycombHelmet.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:HoneycombHelmet.helmet",
     "name": "honeycomb_helmet_recipe",
     "namespace": "mod"
   }

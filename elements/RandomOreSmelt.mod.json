@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RandomOre"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:RandomGem"
-    },
+    "blastingInputStack": "CUSTOM:RandomOre",
+    "blastingReturnStack": "CUSTOM:RandomGem",
     "name": "random_ore_smelt",
     "namespace": "mod"
   }

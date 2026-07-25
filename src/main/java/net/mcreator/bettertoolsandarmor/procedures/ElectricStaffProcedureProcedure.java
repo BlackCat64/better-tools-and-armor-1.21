@@ -26,7 +26,7 @@ public class ElectricStaffProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double radius = 0;
-		for (int index0 = 0; index0 < (int) immediatesourceentity.getPersistentData().getDouble("strikes"); index0++) {
+		for (int index1 = 0; index1 < (int) immediatesourceentity.getPersistentData().getDouble("strikes"); index1++) {
 			radius = immediatesourceentity.getPersistentData().getDouble("radius");
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level,

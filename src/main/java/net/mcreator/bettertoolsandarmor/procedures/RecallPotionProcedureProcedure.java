@@ -205,24 +205,16 @@ public class RecallPotionProcedureProcedure {
 			if (safe_y > -64) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(
-							(((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-									: 0) + 0.5),
-							safe_y,
-							(((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-									: 0) + 0.5));
+					double _tx = (((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+							? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
+							: 0) + 0.5);
+					double _ty = safe_y;
+					double _tz = (((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+							? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
+							: 0) + 0.5);
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(
-								(((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-										? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-										: 0) + 0.5),
-								safe_y,
-								(((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-										? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-										: 0) + 0.5),
-								_ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -265,9 +257,12 @@ public class RecallPotionProcedureProcedure {
 			if (safe_y > -64) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo((world.getLevelData().getSpawnPos().getX() + 0.5), safe_y, (world.getLevelData().getSpawnPos().getZ() + 0.5));
+					double _tx = (world.getLevelData().getSpawnPos().getX() + 0.5);
+					double _ty = safe_y;
+					double _tz = (world.getLevelData().getSpawnPos().getZ() + 0.5);
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((world.getLevelData().getSpawnPos().getX() + 0.5), safe_y, (world.getLevelData().getSpawnPos().getZ() + 0.5), _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "acacia_treehouse",
@@ -8,9 +8,7 @@
     "spacing": 25,
     "separation": 10,
     "restrictionBiomes": [
-      {
-        "value": "savanna"
-      }
+      "savanna"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",

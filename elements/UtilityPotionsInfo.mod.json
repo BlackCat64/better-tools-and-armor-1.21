@@ -1,23 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      },
-      {
-        "value": "CUSTOM:AscensionPotion"
-      },
-      {
-        "value": "CUSTOM:DescensionPotion"
-      },
-      {
-        "value": "CUSTOM:RecallPotion"
-      },
-      {
-        "value": "CUSTOM:LostSoulsPotion"
-      }
+      "CUSTOM:ExperiencePotion",
+      "CUSTOM:AscensionPotion",
+      "CUSTOM:DescensionPotion",
+      "CUSTOM:RecallPotion",
+      "CUSTOM:LostSoulsPotion"
     ],
     "information": [
       "§lUtility Potions§r",

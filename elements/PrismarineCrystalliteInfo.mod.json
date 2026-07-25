@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:GuardianCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordPrismarine"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxePrismarine"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxePrismarine"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelPrismarine"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoePrismarine"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerPrismarine"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorPrismarine.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorPrismarine.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorPrismarine.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorPrismarine.boots"
-      },
-      {
-        "value": "CUSTOM:GuardianNecklace"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowPrismarine"
-      }
+      "CUSTOM:GuardianCrystal",
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteHoePrismarine",
+      "CUSTOM:CrystalliteDaggerPrismarine",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "CUSTOM:GuardianNecklace",
+      "CUSTOM:CrystalliteBowPrismarine"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

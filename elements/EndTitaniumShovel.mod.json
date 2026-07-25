@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -16,9 +16,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "efficiency": 16.0,
     "attackSpeed": 1.0,
@@ -29,112 +27,44 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      }
+      "CUSTOM:EndTitaniumIngot"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [
-      {
-        "value": "CUSTOM:SugarBlock"
-      },
-      {
-        "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.GRASS_PATH"
-      },
-      {
-        "value": "Blocks.MYCELIUM"
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.DIRT#1"
-      },
-      {
-        "value": "Blocks.DIRT#2"
-      },
-      {
-        "value": "Blocks.SAND#0"
-      },
-      {
-        "value": "Blocks.SAND#1"
-      },
-      {
-        "value": "Blocks.GRAVEL"
-      },
-      {
-        "value": "Blocks.FARMLAND"
-      },
-      {
-        "value": "Blocks.SNOW_LAYER"
-      },
-      {
-        "value": "Blocks.SNOW"
-      },
-      {
-        "value": "Blocks.CLAY"
-      },
-      {
-        "value": "Blocks.SOUL_SAND"
-      },
-      {
-        "value": "Blocks.SOUL_SOIL"
-      },
-      {
-        "value": "Blocks.END_STONE"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#0"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#1"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#2"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#3"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#4"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#5"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#6"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#7"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#8"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#9"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#10"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#11"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#12"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#13"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#14"
-      },
-      {
-        "value": "Blocks.CONCRETE_POWDER#15"
-      }
+      "CUSTOM:SugarBlock",
+      "Blocks.GRASS",
+      "Blocks.GRASS_PATH",
+      "Blocks.MYCELIUM",
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "Blocks.SAND#0",
+      "Blocks.SAND#1",
+      "Blocks.GRAVEL",
+      "Blocks.FARMLAND",
+      "Blocks.SNOW_LAYER",
+      "Blocks.SNOW",
+      "Blocks.CLAY",
+      "Blocks.SOUL_SAND",
+      "Blocks.SOUL_SOIL",
+      "Blocks.END_STONE",
+      "Blocks.CONCRETE_POWDER#0",
+      "Blocks.CONCRETE_POWDER#1",
+      "Blocks.CONCRETE_POWDER#2",
+      "Blocks.CONCRETE_POWDER#3",
+      "Blocks.CONCRETE_POWDER#4",
+      "Blocks.CONCRETE_POWDER#5",
+      "Blocks.CONCRETE_POWDER#6",
+      "Blocks.CONCRETE_POWDER#7",
+      "Blocks.CONCRETE_POWDER#8",
+      "Blocks.CONCRETE_POWDER#9",
+      "Blocks.CONCRETE_POWDER#10",
+      "Blocks.CONCRETE_POWDER#11",
+      "Blocks.CONCRETE_POWDER#12",
+      "Blocks.CONCRETE_POWDER#13",
+      "Blocks.CONCRETE_POWDER#14",
+      "Blocks.CONCRETE_POWDER#15"
     ],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -10,13 +10,9 @@
     "textureLeggings": "ruby_leggings",
     "enableBoots": false,
     "textureBoots": "",
-    "onLeggingsTick": {
-      "name": "RubyLegsProcedure"
-    },
+    "onLeggingsTick": "RubyLegsProcedure",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "armorTextureFile": "diamond_",
     "helmetName": "Ruby Armor Helmet",
@@ -75,10 +71,9 @@
     "enchantability": 8,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_diamond"
-    },
+    "equipSound": "item.armor.equip_diamond",
     "repairItems": [],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

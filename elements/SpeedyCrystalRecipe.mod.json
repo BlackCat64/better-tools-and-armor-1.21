@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:SugarBlock"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      },
-      {
-        "value": "CUSTOM:SugarBlock"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      }
+      "CUSTOM:SugarBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:SugarBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:RubyBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SpeedyCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:SpeedyCrystal",
     "name": "speedy_crystal_recipe",
     "namespace": "mod"
   }

@@ -61,7 +61,7 @@ public class CrystalliteBootsAmethystShockwaveDamageProcedure {
 				damage = 12 + blocks_distance;
 			}
 			if (damage > 0) {
-				for (int index0 = 0; index0 < 5; index0++) {
+				for (int index48 = 0; index48 < 5; index48++) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.CLOUD, x, (y + 0.5), z, (int) Math.pow(Math.ceil(radius), 2), (radius * 0.5), 0, (radius * 0.5), 0.0025);
 				}

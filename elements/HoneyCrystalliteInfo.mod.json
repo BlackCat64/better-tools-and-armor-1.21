@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteSwordHoney"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorHoney.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorHoney.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorHoney.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorHoney.boots"
-      },
-      {
-        "value": "CUSTOM:HiveCrystal"
-      },
-      {
-        "value": "CUSTOM:CuringCharm"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowHoney"
-      }
+      "CUSTOM:CrystalliteSwordHoney",
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteShovelHoney",
+      "CUSTOM:CrystalliteHoeHoney",
+      "CUSTOM:CrystalliteDaggerHoney",
+      "CUSTOM:CrystalliteArmorHoney.helmet",
+      "CUSTOM:CrystalliteArmorHoney.body",
+      "CUSTOM:CrystalliteArmorHoney.legs",
+      "CUSTOM:CrystalliteArmorHoney.boots",
+      "CUSTOM:HiveCrystal",
+      "CUSTOM:CuringCharm",
+      "CUSTOM:CrystalliteBowHoney"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

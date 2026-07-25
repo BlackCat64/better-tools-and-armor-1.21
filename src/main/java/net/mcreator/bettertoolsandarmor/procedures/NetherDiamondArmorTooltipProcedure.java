@@ -43,7 +43,7 @@ public class NetherDiamondArmorTooltipProcedure {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				crystallite = true;
 			}
-			for (int index0 = 0; index0 < 4; index0++) {
+			for (int index74 = 0; index74 < 4; index74++) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 					public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 						for (EquipmentSlot _slot : EquipmentSlot.values()) {

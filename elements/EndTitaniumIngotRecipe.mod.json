@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumScrap"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Items.ENDER_EYE"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumScrap"
-      },
-      {
-        "value": "Items.ENDER_EYE"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumScrap"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      }
+      "Blocks.CRYING_OBSIDIAN",
+      "CUSTOM:EndTitaniumScrap",
+      "Blocks.CRYING_OBSIDIAN",
+      "Items.ENDER_EYE",
+      "CUSTOM:EndTitaniumScrap",
+      "Items.ENDER_EYE",
+      "Blocks.CRYING_OBSIDIAN",
+      "CUSTOM:EndTitaniumScrap",
+      "Blocks.CRYING_OBSIDIAN"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EndTitaniumIngot"
-    },
+    "recipeReturnStack": "CUSTOM:EndTitaniumIngot",
     "name": "end_titanium_ingot_recipe",
     "namespace": "mod"
   }

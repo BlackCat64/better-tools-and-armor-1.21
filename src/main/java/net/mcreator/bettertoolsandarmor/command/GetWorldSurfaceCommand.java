@@ -1,7 +1,5 @@
 package net.mcreator.bettertoolsandarmor.command;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -19,7 +17,7 @@ import net.mcreator.bettertoolsandarmor.procedures.GetWorldSurfaceProcedureProce
 public class GetWorldSurfaceCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("getworldsurface").requires(s -> s.hasPermission(2)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("getworldsurface").requires(source -> source.hasPermission(2)).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();

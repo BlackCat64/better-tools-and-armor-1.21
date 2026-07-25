@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "enchantment",
   "definition": {
     "name": "Smelting Touch",
@@ -9,18 +9,15 @@
     "maxLevel": 1,
     "damageModifier": 0,
     "incompatibleEnchantments": [
-      {
-        "value": "SILK_TOUCH"
-      }
+      "SILK_TOUCH"
     ],
     "supportedItems": [
-      {
-        "value": "TAG:minecraft:pickaxes"
-      }
+      "TAG:minecraft:pickaxes"
     ],
     "isTreasureEnchantment": true,
     "isCurse": false,
     "canGenerateInLootTables": true,
-    "canVillagerTrade": true
+    "canVillagerTrade": true,
+    "effectsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"enchantment_effects_start\" deletable=\"false\" x=\"40\" y=\"80\"></block></xml>"
   }
 }

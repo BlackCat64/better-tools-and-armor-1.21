@@ -57,8 +57,8 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 				sx = -1;
 				sz = -1;
 				tilled = 0;
-				for (int index0 = 0; index0 < 3; index0++) {
-					for (int index1 = 0; index1 < 3; index1++) {
+				for (int index46 = 0; index46 < 3; index46++) {
+					for (int index47 = 0; index47 < 3; index47++) {
 						if (!(sx == 0 && sz == 0)) {
 							current = (world.getBlockState(BlockPos.containing(x + sx, y, z + sz)));
 							if (!world.getBlockState(BlockPos.containing(x + sx, y + 1, z + sz)).canOcclude()) {

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "Items.DYE#18"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      }
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "Items.DYE#18",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DarkPolishedLapisBlock"
-    },
+    "recipeReturnStack": "CUSTOM:DarkPolishedLapisBlock",
     "name": "dark_polished_lapis_block_recipe",
     "namespace": "mod"
   }

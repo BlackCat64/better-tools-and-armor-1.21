@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:IceStaff"
-      }
+      "CUSTOM:IceStaff"
     ],
     "information": [
       "§9When enchanted with Ensorcellation:§r",

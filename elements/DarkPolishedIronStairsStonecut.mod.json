@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:DarkPolishedIronBlock"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:DarkPolishedIronStairs"
-    },
+    "stoneCuttingInputStack": "CUSTOM:DarkPolishedIronBlock",
+    "stoneCuttingReturnStack": "CUSTOM:DarkPolishedIronStairs",
     "name": "dark_polished_iron_stairs_stonecut",
     "namespace": "mod"
   }

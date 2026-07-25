@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:RandomOre"
-      },
-      {
-        "value": "CUSTOM:DeepslateRandomOre"
-      }
+      "CUSTOM:RandomOre",
+      "CUSTOM:DeepslateRandomOre"
     ],
     "information": [
       "§lOre Generation§r",

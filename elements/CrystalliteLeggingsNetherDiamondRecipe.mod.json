@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_leggings"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:FireCore"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_leggings",
+    "smithingInputAdditionStack": "CUSTOM:FireCore",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteArmorNetherDiamond.legs",
     "name": "crystallite_leggings_nether_diamond_recipe",
     "namespace": "mod"
   }

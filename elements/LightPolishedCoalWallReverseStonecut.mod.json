@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:LightPolishedCoalWall"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:LightPolishedCoalBlock"
-    },
+    "stoneCuttingInputStack": "CUSTOM:LightPolishedCoalWall",
+    "stoneCuttingReturnStack": "CUSTOM:LightPolishedCoalBlock",
     "name": "light_polished_coal_wall_reverse_stonecut",
     "namespace": "mod"
   }

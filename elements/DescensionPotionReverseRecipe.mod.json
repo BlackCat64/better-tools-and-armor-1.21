@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "CUSTOM:DescensionPotion"
-    },
-    "brewingIngredientStack": {
-      "value": "Items.FERMENTED_SPIDER_EYE"
-    },
-    "brewingReturnStack": {
-      "value": "CUSTOM:AscensionPotion"
-    },
+    "brewingInputStack": "CUSTOM:DescensionPotion",
+    "brewingIngredientStack": "Items.FERMENTED_SPIDER_EYE",
+    "brewingReturnStack": "CUSTOM:AscensionPotion",
     "name": "descension_potion_reverse_recipe",
     "namespace": "mod"
   }

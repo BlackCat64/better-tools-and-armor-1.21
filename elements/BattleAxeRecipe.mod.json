@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND_AXE"
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": "Items.DIAMOND_AXE"
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "Items.NETHERITE_INGOT"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.DIAMOND_AXE",
+      "CUSTOM:NetherDiamond",
+      "Items.NETHERITE_INGOT",
+      "CUSTOM:ObsidianStick",
+      "Items.DIAMOND_AXE",
+      "CUSTOM:NetherDiamond",
+      "Items.NETHERITE_INGOT",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BattleAxe"
-    },
+    "recipeReturnStack": "CUSTOM:BattleAxe",
     "name": "battle_axe_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.RABBIT_FOOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:IronRabbitBoots.boots"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.RABBIT_FOOT"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "",
+      "Items.RABBIT_FOOT",
+      "",
+      "Items.DIAMOND",
+      "CUSTOM:IronRabbitBoots.boots",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.RABBIT_FOOT",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondRabbitBoots.boots"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondRabbitBoots.boots",
     "name": "diamond_rabbit_boots_recipe",
     "namespace": "mod"
   }

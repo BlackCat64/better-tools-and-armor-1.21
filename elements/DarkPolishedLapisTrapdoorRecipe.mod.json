@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedLapisBlock"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "",
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DarkPolishedLapisTrapdoor"
-    },
+    "recipeReturnStack": "CUSTOM:DarkPolishedLapisTrapdoor",
     "name": "dark_polished_lapis_trapdoor_recipe",
     "namespace": "mod"
   }

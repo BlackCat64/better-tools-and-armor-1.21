@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:LightPolishedNetherDiamondWall"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-    },
+    "stoneCuttingInputStack": "CUSTOM:LightPolishedNetherDiamondWall",
+    "stoneCuttingReturnStack": "CUSTOM:LightPolishedNetherDiamondBlock",
     "name": "light_polished_nether_diamond_reverse_stonecut",
     "namespace": "mod"
   }

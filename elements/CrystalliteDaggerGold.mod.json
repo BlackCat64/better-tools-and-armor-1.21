@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -19,9 +19,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "efficiency": 12.0,
     "attackSpeed": 2.5,
@@ -32,15 +30,9 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.GOLD_INGOT"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
@@ -48,17 +40,13 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "mainhand",
-        "attribute": {
-          "value": "BLOCK_REACH"
-        },
+        "attribute": "BLOCK_REACH",
         "amount": 3.0,
         "operation": "ADD_VALUE"
       }
     ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntitySwing": {
-      "name": "CrystalliteSwordGoldSplashDamage"
-    }
+    "onEntitySwing": "CrystalliteSwordGoldSplashDamage"
   }
 }

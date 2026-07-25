@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,16 +10,10 @@
     "textureLeggings": "crystallite_leggings_prismarine",
     "enableBoots": true,
     "textureBoots": "crystallite_boots_prismarine",
-    "onHelmetTick": {
-      "name": "CrystalliteHelmetPrismarineConduitPower"
-    },
-    "onBodyTick": {
-      "name": "CrystalliteChestplatePrismarineMiningFatigueRemove"
-    },
+    "onHelmetTick": "CrystalliteHelmetPrismarineConduitPower",
+    "onBodyTick": "CrystalliteChestplatePrismarineMiningFatigueRemove",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "armorTextureFile": "crystallite_prismarine_",
     "helmetName": "Crystallite Helmet",
@@ -120,23 +114,14 @@
     "enchantability": 20,
     "toughness": 2.5,
     "knockbackResistance": 0.125,
-    "equipSound": {
-      "value": "CUSTOM:crystallite_step"
-    },
+    "equipSound": "CUSTOM:crystallite_step",
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.PRISMARINE_SHARD"
-      },
-      {
-        "value": "Items.PRISMARINE_CRYSTALS"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.PRISMARINE_SHARD",
+      "Items.PRISMARINE_CRYSTALS"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

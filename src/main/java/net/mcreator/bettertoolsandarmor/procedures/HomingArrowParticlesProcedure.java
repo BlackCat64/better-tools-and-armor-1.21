@@ -18,7 +18,7 @@ public class HomingArrowParticlesProcedure {
 		dy = (y2 - y) / distance;
 		dz = (z2 - z) / distance;
 		if (distance > 0) {
-			for (int index0 = 0; index0 < (int) Math.floor(distance); index0++) {
+			for (int index65 = 0; index65 < (int) Math.floor(distance); index65++) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (BetterToolsModParticleTypes.ARROW_HOMING_PARTICLE.get()), (x + i * dx), (y + i * dy), (z + i * dz), 3, 0.02, 0.02, 0.02, 0.0025);
 				i = i + 1;

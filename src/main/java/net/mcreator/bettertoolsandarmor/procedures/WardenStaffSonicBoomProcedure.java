@@ -44,7 +44,7 @@ public class WardenStaffSonicBoomProcedure {
 		look_y = y + entity.getBbHeight() / 2 + vec_y;
 		look_z = z + vec_z;
 		range = 10 + 3 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation"))));
-		for (int index0 = 0; index0 < (int) range; index0++) {
+		for (int index49 = 0; index49 < (int) range; index49++) {
 			look_x = look_x + vec_x;
 			look_y = look_y + vec_y;
 			look_z = look_z + vec_z;

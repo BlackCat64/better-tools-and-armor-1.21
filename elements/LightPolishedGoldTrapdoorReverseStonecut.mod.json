@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:LightPolishedGoldTrapdoor"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:LightPolishedGoldBlock"
-    },
+    "stoneCuttingInputStack": "CUSTOM:LightPolishedGoldTrapdoor",
+    "stoneCuttingReturnStack": "CUSTOM:LightPolishedGoldBlock",
     "name": "light_polished_gold_trapdoor_reverse_stonecut",
     "namespace": "mod"
   }

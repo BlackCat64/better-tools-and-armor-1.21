@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,12 +11,8 @@
     "enableBoots": true,
     "textureBoots": "wooden_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "armorTextureFile": "wood_",
     "helmetName": "Wooden Helmet",
@@ -99,14 +95,11 @@
     "enchantability": 15,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "block.wood.step"
-    },
+    "equipSound": "block.wood.step",
     "repairItems": [
-      {
-        "value": "CUSTOM:Bark"
-      }
+      "CUSTOM:Bark"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

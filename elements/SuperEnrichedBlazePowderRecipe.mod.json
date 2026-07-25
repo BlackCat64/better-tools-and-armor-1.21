@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.REDSTONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.QUARTZ"
-      },
-      {
-        "value": "CUSTOM:EnrichedBlazePowder"
-      },
-      {
-        "value": "Items.QUARTZ"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.REDSTONE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.REDSTONE",
+      "",
+      "Items.QUARTZ",
+      "CUSTOM:EnrichedBlazePowder",
+      "Items.QUARTZ",
+      "",
+      "Items.REDSTONE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SuperEnrichedBlazePowder"
-    },
+    "recipeReturnStack": "CUSTOM:SuperEnrichedBlazePowder",
     "name": "super_enriched_blaze_powder_recipe",
     "namespace": "mod"
   }

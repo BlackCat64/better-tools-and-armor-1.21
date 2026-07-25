@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_SWORD"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:EndTitaniumIngot"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:EndTitaniumSword"
-    },
+    "smithingInputStack": "Items.NETHERITE_SWORD",
+    "smithingInputAdditionStack": "CUSTOM:EndTitaniumIngot",
+    "smithingInputTemplateStack": "CUSTOM:EnderTitaniumUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:EndTitaniumSword",
     "name": "end_titanium_sword_smith",
     "namespace": "mod"
   }

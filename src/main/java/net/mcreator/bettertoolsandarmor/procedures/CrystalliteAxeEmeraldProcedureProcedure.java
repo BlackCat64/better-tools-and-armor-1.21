@@ -42,7 +42,7 @@ public class CrystalliteAxeEmeraldProcedureProcedure {
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)
 				&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !entity.isShiftKeyDown()) {
 			y_distance = 0;
-			for (int index0 = 0; index0 < 16; index0++) {
+			for (int index15 = 0; index15 < 16; index15++) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()) {
 					if (world instanceof Level _level)
 						_level.updateNeighborsAt(BlockPos.containing(x, y + y_distance, z), _level.getBlockState(BlockPos.containing(x, y + y_distance, z)).getBlock());

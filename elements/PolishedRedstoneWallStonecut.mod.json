@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:PolishedRedstoneBlock"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:PolishedRedstoneWall"
-    },
+    "stoneCuttingInputStack": "CUSTOM:PolishedRedstoneBlock",
+    "stoneCuttingReturnStack": "CUSTOM:PolishedRedstoneWall",
     "name": "polished_redstone_wall_stonecut",
     "namespace": "mod"
   }

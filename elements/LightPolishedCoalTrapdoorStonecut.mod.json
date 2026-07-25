@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:LightPolishedCoalBlock"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:LightPolishedCoalTrapdoor"
-    },
+    "stoneCuttingInputStack": "CUSTOM:LightPolishedCoalBlock",
+    "stoneCuttingReturnStack": "CUSTOM:LightPolishedCoalTrapdoor",
     "name": "light_polished_coal_trapdoor_stonecut",
     "namespace": "mod"
   }

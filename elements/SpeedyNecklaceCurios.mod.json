@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "curiosbauble",
   "definition": {
     "item": "SpeedyNecklace",
@@ -9,18 +9,12 @@
     "enderMask": false,
     "friendlyPigs": false,
     "snowWalk": false,
-    "equipSound": {
-      "value": "CUSTOM:crystallite_place"
-    },
+    "equipSound": "CUSTOM:crystallite_place",
     "hasModel": false,
     "baubleModel": "Default",
     "baubleModelTexture": "",
-    "onEquip": {
-      "name": "SpeedyNecklaceEquipped"
-    },
-    "onUnequip": {
-      "name": "SpeedyNecklaceUnequipped"
-    },
+    "onEquip": "SpeedyNecklaceEquipped",
+    "onUnequip": "SpeedyNecklaceUnequipped",
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",

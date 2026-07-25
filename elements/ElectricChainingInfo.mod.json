@@ -1,26 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:TopazSword"
-      },
-      {
-        "value": "CUSTOM:TopazAxe"
-      },
-      {
-        "value": "CUSTOM:TopazDagger"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordTopaz"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeTopaz"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerTopaz"
-      }
+      "CUSTOM:TopazSword",
+      "CUSTOM:TopazAxe",
+      "CUSTOM:TopazDagger",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteDaggerTopaz"
     ],
     "information": [
       "§6Electric Chaining§r",

@@ -1,41 +1,19 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:NetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:RubyBlock"
-      },
-      {
-        "value": "CUSTOM:EndTitaniumBlock"
-      },
-      {
-        "value": "CUSTOM:SapphireBlock"
-      },
-      {
-        "value": "CUSTOM:TopazBlock"
-      },
-      {
-        "value": "CUSTOM:CutCrystalliteBlock"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "Blocks.QUARTZ_BLOCK#3"
-      },
-      {
-        "value": "Blocks.COPPER_BLOCK"
-      },
-      {
-        "value": "Blocks.WAXED_COPPER_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      }
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CutCrystalliteBlock",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.QUARTZ_BLOCK#3",
+      "Blocks.COPPER_BLOCK",
+      "Blocks.WAXED_COPPER_BLOCK",
+      "Blocks.AMETHYST_BLOCK"
     ],
     "information": [
       "Better Tools and Armor allows these blocks to be used as Beacon bases."

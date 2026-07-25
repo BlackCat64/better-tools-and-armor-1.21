@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:NatureCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerEmerald"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorEmerald.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorEmerald.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorEmerald.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorEmerald.boots"
-      },
-      {
-        "value": "CUSTOM:NatureRing"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowEmerald"
-      }
+      "CUSTOM:NatureCrystal",
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystalliteAxeEmerald",
+      "CUSTOM:CrystalliteShovelEmerald",
+      "CUSTOM:CrystalliteHoeEmerald",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:NatureRing",
+      "CUSTOM:CrystalliteBowEmerald"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

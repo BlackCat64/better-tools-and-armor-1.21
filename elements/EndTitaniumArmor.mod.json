@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,13 +10,9 @@
     "textureLeggings": "end_titanium_leggings",
     "enableBoots": true,
     "textureBoots": "end_titanium_boots",
-    "onLeggingsTick": {
-      "name": "EndTitaniumLeggingsProcedure"
-    },
+    "onLeggingsTick": "EndTitaniumLeggingsProcedure",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "armorTextureFile": "end_titanium_",
     "helmetName": "Ender Titanium Helmet",
@@ -119,14 +115,11 @@
     "enchantability": 18,
     "toughness": 4.0,
     "knockbackResistance": 0.15,
-    "equipSound": {
-      "value": "item.armor.equip_netherite"
-    },
+    "equipSound": "item.armor.equip_netherite",
     "repairItems": [
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      }
+      "CUSTOM:EndTitaniumIngot"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

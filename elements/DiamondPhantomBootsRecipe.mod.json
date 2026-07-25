@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:IronPhantomBoots.boots"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.PHANTOM_MEMBRANE"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "",
+      "Items.PHANTOM_MEMBRANE",
+      "",
+      "Items.DIAMOND",
+      "CUSTOM:IronPhantomBoots.boots",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.PHANTOM_MEMBRANE",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondPhantomBoots.boots"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondPhantomBoots.boots",
     "name": "diamond_phantom_boots_recipe",
     "namespace": "mod"
   }

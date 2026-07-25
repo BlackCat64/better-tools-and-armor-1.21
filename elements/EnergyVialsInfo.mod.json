@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:EnergyVial"
-      },
-      {
-        "value": "CUSTOM:EmeraldEnergyVial"
-      },
-      {
-        "value": "CUSTOM:NetheriteEnergyVial"
-      }
+      "CUSTOM:EnergyVial",
+      "CUSTOM:EmeraldEnergyVial",
+      "CUSTOM:NetheriteEnergyVial"
     ],
     "information": [
       "Store Effect Energy in this vial to power your Effect Armor.",

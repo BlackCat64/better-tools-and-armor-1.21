@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -16,9 +16,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "efficiency": 16.0,
     "attackSpeed": 1.2,
@@ -29,9 +27,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:EndTitaniumIngot"
-      }
+      "CUSTOM:EndTitaniumIngot"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",

@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteBowEmerald"
-      }
+      "CUSTOM:CrystalliteBowEmerald"
     ],
     "information": [
       "When no Arrows are in the user's inventory, this bow will shoot regular Arrows.",

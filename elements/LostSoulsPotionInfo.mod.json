@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:LostSoulsPotion"
-      }
+      "CUSTOM:LostSoulsPotion"
     ],
     "information": [
       "Teleports you to your last death location, if it is in the same dimension.",

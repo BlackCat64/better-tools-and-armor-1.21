@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "Blocks.AMETHYST_CLUSTER"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      }
+      "Items.AMETHYST_SHARD",
+      "Blocks.AMETHYST_CLUSTER",
+      "Items.AMETHYST_SHARD",
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.AMETHYST_BLOCK",
+      "",
+      "Blocks.AMETHYST_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AmethystHelmet.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:AmethystHelmet.helmet",
     "name": "amethyst_helmet_recipe",
     "namespace": "mod"
   }

@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRedstone.boots"
-      }
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorRedstone.boots"
     ],
     "information": [
       "§lFull-set bonus:§r",

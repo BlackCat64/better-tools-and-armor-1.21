@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_swords"
-    },
-    "smithingInputAdditionStack": {
-      "value": "Blocks.GLASS"
-    },
-    "smithingInputTemplateStack": {
-      "value": "Blocks.GLASS"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteSword"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_swords",
+    "smithingInputAdditionStack": "Blocks.GLASS",
+    "smithingInputTemplateStack": "Blocks.GLASS",
+    "smithingReturnStack": "CUSTOM:CrystalliteSword",
     "name": "crystallite_sword_remove_upgrade",
     "namespace": "mod"
   }

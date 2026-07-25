@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.RABBIT_FOOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.RABBIT_FOOT"
-      },
-      {
-        "value": "Items.RABBIT_FOOT"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.RABBIT_FOOT"
-      }
+      "",
+      "",
+      "",
+      "Items.RABBIT_FOOT",
+      "",
+      "Items.RABBIT_FOOT",
+      "Items.RABBIT_FOOT",
+      "Items.LEATHER",
+      "Items.RABBIT_FOOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RabbitBoots.boots"
-    },
+    "recipeReturnStack": "CUSTOM:RabbitBoots.boots",
     "name": "rabbit_boots_recipe",
     "namespace": "mod"
   }

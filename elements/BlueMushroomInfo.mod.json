@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:BlueMushroom"
-      },
-      {
-        "value": "CUSTOM:BlueMushroomBlock"
-      }
+      "CUSTOM:BlueMushroom",
+      "CUSTOM:BlueMushroomBlock"
     ],
     "information": [
       "Blue Mushrooms generate exclusively on Mushroom Islands, along with giant variants.",

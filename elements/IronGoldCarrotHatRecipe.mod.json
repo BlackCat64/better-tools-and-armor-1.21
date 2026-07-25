@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.GOLDEN_CARROT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:GoldCarrotArmor.helmet"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Items.IRON_INGOT",
+      "Items.GOLDEN_CARROT",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:GoldCarrotArmor.helmet",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Blocks.IRON_BLOCK",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronGoldCarrotHat.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:IronGoldCarrotHat.helmet",
     "name": "iron_gold_carrot_hat_recipe",
     "namespace": "mod"
   }

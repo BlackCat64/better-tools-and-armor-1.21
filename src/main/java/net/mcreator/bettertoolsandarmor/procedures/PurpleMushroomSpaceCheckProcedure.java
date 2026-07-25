@@ -11,11 +11,11 @@ public class PurpleMushroomSpaceCheckProcedure {
 		double sz = 0;
 		sx = -2;
 		found = false;
-		for (int index0 = 0; index0 < 5; index0++) {
+		for (int index6 = 0; index6 < 5; index6++) {
 			sy = 0;
-			for (int index1 = 0; index1 < 9; index1++) {
+			for (int index7 = 0; index7 < 9; index7++) {
 				sz = -2;
-				for (int index2 = 0; index2 < 5; index2++) {
+				for (int index8 = 0; index8 < 5; index8++) {
 					if (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
 						found = true;
 					}

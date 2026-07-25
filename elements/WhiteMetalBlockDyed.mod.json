@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "Items.DYE#19"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      },
-      {
-        "value": "TAG:better_tools:metal_blocks"
-      }
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "Items.DYE#19",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks",
+      "TAG:better_tools:metal_blocks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LightPolishedIronBlock"
-    },
+    "recipeReturnStack": "CUSTOM:LightPolishedIronBlock",
     "name": "white_metal_block_dyed",
     "namespace": "mod"
   }

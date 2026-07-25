@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteSwordHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerHoney"
-      }
+      "CUSTOM:CrystalliteSwordHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteDaggerHoney"
     ],
     "information": [
       "Attack Damage Combo will be lost after 2s of no attacks."

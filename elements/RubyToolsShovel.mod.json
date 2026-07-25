@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -14,9 +14,7 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "efficiency": 12.0,
     "attackSpeed": 1.4,
@@ -24,9 +22,7 @@
     "damageVsEntity": 3.5,
     "usageCount": 300,
     "repairItems": [
-      {
-        "value": "CUSTOM:Ruby"
-      }
+      "CUSTOM:Ruby"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",

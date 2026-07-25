@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:IronGlassArmor.helmet"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
-      }
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:IronGlassArmor.helmet",
+      "Items.DIAMOND",
+      "Blocks.GLASS",
+      "Blocks.GLASS",
+      "Blocks.GLASS"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondGlassArmor.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondGlassArmor.helmet",
     "name": "diamond_glass_helmet_recipe",
     "namespace": "mod"
   }

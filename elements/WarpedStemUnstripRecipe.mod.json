@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.STRIPPED_WARPED_STEM"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "Blocks.STRIPPED_WARPED_STEM",
+      "",
+      "",
+      "CUSTOM:Bark",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.WARPED_STEM"
-    },
+    "recipeReturnStack": "Blocks.WARPED_STEM",
     "name": "warped_stem_unstrip_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "small_jungle_treehouse",
@@ -8,12 +8,8 @@
     "spacing": 28,
     "separation": 12,
     "restrictionBiomes": [
-      {
-        "value": "jungle"
-      },
-      {
-        "value": "jungle_edge"
-      }
+      "jungle",
+      "jungle_edge"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",

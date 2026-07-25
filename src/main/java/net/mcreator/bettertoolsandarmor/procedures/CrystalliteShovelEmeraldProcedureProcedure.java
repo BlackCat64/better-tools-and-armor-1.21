@@ -45,7 +45,7 @@ public class CrystalliteShovelEmeraldProcedureProcedure {
 			if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 				if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:sand"))) || blockstate.is(BlockTags.create(ResourceLocation.parse("forge:gravel")))) {
 					y_distance = 0;
-					for (int index0 = 0; index0 < 16; index0++) {
+					for (int index16 = 0; index16 < 16; index16++) {
 						y_distance = y_distance + 1;
 						if (!((world.getBlockState(BlockPos.containing(x, y + y_distance, z))).getBlock() == blockstate.getBlock())) {
 							break;

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.TORCH"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:soul_fire_base_blocks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "Blocks.TORCH",
+      "",
+      "",
+      "TAG:soul_fire_base_blocks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.SOUL_TORCH"
-    },
+    "recipeReturnStack": "Blocks.SOUL_TORCH",
     "name": "soul_torch_single_recipe",
     "namespace": "mod"
   }

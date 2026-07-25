@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_hoes"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:GuardianCrystal"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteHoePrismarine"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_hoes",
+    "smithingInputAdditionStack": "CUSTOM:GuardianCrystal",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteHoePrismarine",
     "name": "crystallite_hoe_prismarine_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PolishedDiamondBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedDiamondBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedDiamondBlock"
-      }
+      "CUSTOM:PolishedDiamondBlock",
+      "",
+      "",
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:PolishedDiamondBlock",
+      "",
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:PolishedDiamondBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PolishedDiamondStairs"
-    },
+    "recipeReturnStack": "CUSTOM:PolishedDiamondStairs",
     "name": "polished_diamond_stairs_recipe",
     "namespace": "mod"
   }

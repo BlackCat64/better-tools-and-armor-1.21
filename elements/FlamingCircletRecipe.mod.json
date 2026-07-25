@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:FireCore"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:ObsidianStick",
+      "",
+      "CUSTOM:ObsidianStick",
+      "CUSTOM:CrystalliteCharmBase",
+      "CUSTOM:ObsidianStick",
+      "",
+      "CUSTOM:FireCore",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:FlamingCirclet"
-    },
+    "recipeReturnStack": "CUSTOM:FlamingCirclet",
     "name": "flaming_circlet_recipe",
     "namespace": "mod"
   }

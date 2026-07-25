@@ -13,7 +13,7 @@ public class GlassArmorEnergyCostProcedure {
 			return 0;
 		double i = 0;
 		double cost = 0;
-		for (int index0 = 0; index0 < 4; index0++) {
+		for (int index58 = 0; index58 < 4; index58++) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 				public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 					for (EquipmentSlot _slot : EquipmentSlot.values()) {

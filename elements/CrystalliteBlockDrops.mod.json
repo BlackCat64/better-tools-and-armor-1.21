@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CrystalliteShards"
-            },
+            "item": "CUSTOM:CrystalliteShards",
             "weight": 10,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CrystalliteBlock"
-            },
+            "item": "CUSTOM:CrystalliteBlock",
             "weight": 10,
             "minCount": 1,
             "maxCount": 1,

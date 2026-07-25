@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Items.TOTEM_OF_UNDYING"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "Blocks.CRYING_OBSIDIAN",
+      "Blocks.CRYING_OBSIDIAN",
+      "Blocks.CRYING_OBSIDIAN",
+      "Blocks.CRYING_OBSIDIAN",
+      "Items.TOTEM_OF_UNDYING",
+      "Blocks.CRYING_OBSIDIAN",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CryingObsidianHelmet.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:CryingObsidianHelmet.helmet",
     "name": "crying_obsidian_helmet_recipe",
     "namespace": "mod"
   }

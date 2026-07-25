@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.FLINT"
-      },
-      {
-        "value": "Items.FLINT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.FLINT"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
+      "Items.FLINT",
+      "Items.FLINT",
+      "",
+      "Items.FLINT",
+      "Items.STICK",
+      "",
+      "",
+      "Items.STICK",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:FlintAxe"
-    },
+    "recipeReturnStack": "CUSTOM:FlintAxe",
     "name": "flint_axe_recipe",
     "namespace": "mod"
   }

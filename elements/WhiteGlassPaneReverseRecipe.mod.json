@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      },
-      {
-        "value": "Blocks.STAINED_GLASS_PANE#0"
-      }
+      "Blocks.STAINED_GLASS_PANE#0",
+      "Blocks.STAINED_GLASS_PANE#0",
+      "Blocks.STAINED_GLASS_PANE#0",
+      "Blocks.STAINED_GLASS_PANE#0",
+      "",
+      "Blocks.STAINED_GLASS_PANE#0",
+      "Blocks.STAINED_GLASS_PANE#0",
+      "Blocks.STAINED_GLASS_PANE#0",
+      "Blocks.STAINED_GLASS_PANE#0"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.STAINED_GLASS#0"
-    },
+    "recipeReturnStack": "Blocks.STAINED_GLASS#0",
     "name": "white_glass_pane_reverse_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "end_titanium_ore",
@@ -51,14 +51,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "destroyTool": "pickaxe",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -78,9 +74,7 @@
     },
     "colorOnMap": "SAND",
     "noteBlockInstrument": "basedrum",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "ignitedByLava": false,
@@ -92,33 +86,19 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "STONE",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "STONE"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
     "luminance": {
       "fixedValue": 0.0
     },
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "additionalHarvestCondition": {
-      "name": "CheckForNetheriteTierTool"
-    },
+    "additionalHarvestCondition": "CheckForNetheriteTierTool",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
@@ -140,23 +120,13 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [
-      {
-        "value": "small_end_islands"
-      },
-      {
-        "value": "end_midlands"
-      },
-      {
-        "value": "end_highlands"
-      },
-      {
-        "value": "end_barrens"
-      }
+      "small_end_islands",
+      "end_midlands",
+      "end_highlands",
+      "end_barrens"
     ],
     "blocksToReplace": [
-      {
-        "value": "Blocks.END_STONE"
-      }
+      "Blocks.END_STONE"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 5,

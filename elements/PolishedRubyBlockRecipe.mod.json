@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      },
-      {
-        "value": "CUSTOM:PolishedRedstoneBlock"
-      }
+      "Items.DYE#16",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PolishedRubyBlock"
-    },
+    "recipeReturnStack": "CUSTOM:PolishedRubyBlock",
     "name": "polished_ruby_block_recipe",
     "namespace": "mod"
   }

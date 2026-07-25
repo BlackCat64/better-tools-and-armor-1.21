@@ -22,13 +22,13 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 @EventBusSubscriber
 public class BetterToolsModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, BetterToolsMod.MODID);
-	public static final DeferredHolder<MobEffect, MobEffect> KARMA_POTION = REGISTRY.register("karma_potion", () -> new KarmaPotionMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> DOUBLE_JUMP = REGISTRY.register("double_jump", () -> new DoubleJumpMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> SWIFT_SWIM = REGISTRY.register("swift_swim", () -> new SwiftSwimMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> FROZEN = REGISTRY.register("frozen", () -> new FrozenMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> CRITICALITY = REGISTRY.register("criticality", () -> new CriticalityMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> PITFALL = REGISTRY.register("pitfall", () -> new PitfallMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> ORE_VISION = REGISTRY.register("ore_vision", () -> new OreVisionMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> KARMA_POTION = REGISTRY.register("karma_potion", KarmaPotionMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> DOUBLE_JUMP = REGISTRY.register("double_jump", DoubleJumpMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> SWIFT_SWIM = REGISTRY.register("swift_swim", SwiftSwimMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> FROZEN = REGISTRY.register("frozen", FrozenMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> CRITICALITY = REGISTRY.register("criticality", CriticalityMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> PITFALL = REGISTRY.register("pitfall", PitfallMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ORE_VISION = REGISTRY.register("ore_vision", OreVisionMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "Blocks.IRON_BLOCK"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:LightPolishedIronBlock"
-    },
+    "stoneCuttingInputStack": "Blocks.IRON_BLOCK",
+    "stoneCuttingReturnStack": "CUSTOM:LightPolishedIronBlock",
     "name": "light_polished_iron_block_stonecut",
     "namespace": "mod"
   }

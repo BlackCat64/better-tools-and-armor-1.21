@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "mangrove_treehouse",
@@ -8,9 +8,7 @@
     "spacing": 12,
     "separation": 5,
     "restrictionBiomes": [
-      {
-        "value": "mangrove_swamp"
-      }
+      "mangrove_swamp"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",

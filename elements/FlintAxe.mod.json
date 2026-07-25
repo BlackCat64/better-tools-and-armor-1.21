@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -15,15 +15,9 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "TOOLS"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "TOOLS",
+      "COMBAT"
     ],
     "efficiency": 5.0,
     "attackSpeed": 0.8,
@@ -34,9 +28,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.FLINT"
-      }
+      "Items.FLINT"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",
@@ -44,9 +36,7 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "mainhand",
-        "attribute": {
-          "value": "CUSTOM:CriticalHitMultiplier"
-        },
+        "attribute": "CUSTOM:CriticalHitMultiplier",
         "amount": 0.25,
         "operation": "ADD_VALUE"
       }

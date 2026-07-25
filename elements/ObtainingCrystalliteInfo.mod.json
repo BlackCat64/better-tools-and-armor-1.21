@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteBlock"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:CutCrystalliteBlock"
-      }
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:CutCrystalliteBlock"
     ],
     "information": [
       "§lObtaining Crystallite§r",

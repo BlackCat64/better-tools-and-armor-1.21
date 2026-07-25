@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.ROTTEN_FLESH"
-      },
-      {
-        "value": "Items.ROTTEN_FLESH"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.ROTTEN_FLESH"
-      },
-      {
-        "value": "Items.ROTTEN_FLESH"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "Items.ROTTEN_FLESH",
+      "Items.ROTTEN_FLESH",
+      "",
+      "Items.ROTTEN_FLESH",
+      "Items.ROTTEN_FLESH",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Items.RABBIT_HIDE"
-    },
+    "recipeReturnStack": "Items.RABBIT_HIDE",
     "name": "rabbit_hide_recipe",
     "namespace": "mod"
   }

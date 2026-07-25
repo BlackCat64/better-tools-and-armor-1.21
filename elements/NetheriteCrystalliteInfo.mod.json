@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:SpikedCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordNetherite"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeNetherite"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeNetherite"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelNetherite"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeNetherite"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerNetherite"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherite.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherite.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherite.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherite.boots"
-      },
-      {
-        "value": "CUSTOM:WitheredGauntlet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowNetherite"
-      }
+      "CUSTOM:SpikedCrystal",
+      "CUSTOM:CrystalliteSwordNetherite",
+      "CUSTOM:CrystallitePickaxeNetherite",
+      "CUSTOM:CrystalliteAxeNetherite",
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteHoeNetherite",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:WitheredGauntlet",
+      "CUSTOM:CrystalliteBowNetherite"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

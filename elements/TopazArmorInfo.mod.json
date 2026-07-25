@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:TopazArmor.helmet"
-      },
-      {
-        "value": "CUSTOM:TopazArmor.body"
-      },
-      {
-        "value": "CUSTOM:TopazArmor.legs"
-      },
-      {
-        "value": "CUSTOM:TopazArmor.boots"
-      }
+      "CUSTOM:TopazArmor.helmet",
+      "CUSTOM:TopazArmor.body",
+      "CUSTOM:TopazArmor.legs",
+      "CUSTOM:TopazArmor.boots"
     ],
     "information": [
       "§lFull-set bonus:§r",

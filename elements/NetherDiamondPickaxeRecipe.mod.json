@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:NetherDiamond",
+      "",
+      "CUSTOM:ObsidianStick",
+      "",
+      "",
+      "CUSTOM:ObsidianStick",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:NetherDiamondPickaxe"
-    },
+    "recipeReturnStack": "CUSTOM:NetherDiamondPickaxe",
     "name": "nether_diamond_pickaxe_recipe",
     "namespace": "mod"
   }

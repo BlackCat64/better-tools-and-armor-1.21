@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "POTION:AWKWARD"
-    },
-    "brewingIngredientStack": {
-      "value": "Items.REDSTONE"
-    },
-    "brewingReturnStack": {
-      "value": "POTION:CUSTOM:KarmaPotionLong"
-    },
+    "brewingInputStack": "POTION:AWKWARD",
+    "brewingIngredientStack": "Items.REDSTONE",
+    "brewingReturnStack": "POTION:CUSTOM:KarmaPotionLong",
     "name": "karma_potion_long_recipe",
     "namespace": "mod"
   }

@@ -52,7 +52,7 @@ public class SafeHoneyHarvestProcedureProcedure {
 				if (_bs.getBlock().getStateDefinition().getProperty("honey_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
-			for (int index0 = 0; index0 < 3; index0++) {
+			for (int index71 = 0; index71 < 3; index71++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5 + direction.getStepX()), y, (z + 0.5 + direction.getStepZ()), new ItemStack(Items.HONEYCOMB));
 					entityToSpawn.setPickUpDelay(10);

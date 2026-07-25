@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:PolishedTopazBlock"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:PolishedTopazTrapdoor"
-    },
+    "stoneCuttingInputStack": "CUSTOM:PolishedTopazBlock",
+    "stoneCuttingReturnStack": "CUSTOM:PolishedTopazTrapdoor",
     "name": "polished_topaz_trapdoor_stonecut",
     "namespace": "mod"
   }

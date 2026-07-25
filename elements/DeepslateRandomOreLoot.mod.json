@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.COAL#0"
-            },
+            "item": "Items.COAL#0",
             "weight": 28,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.REDSTONE"
-            },
+            "item": "Items.REDSTONE",
             "weight": 25,
             "minCount": 4,
             "maxCount": 5,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.RAW_GOLD"
-            },
+            "item": "Items.RAW_GOLD",
             "weight": 15,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.DYE#4"
-            },
+            "item": "Items.DYE#4",
             "weight": 15,
             "minCount": 4,
             "maxCount": 8,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.EMERALD"
-            },
+            "item": "Items.EMERALD",
             "weight": 10,
             "minCount": 1,
             "maxCount": 1,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.DIAMOND"
-            },
+            "item": "Items.DIAMOND",
             "weight": 7,
             "minCount": 1,
             "maxCount": 1,
@@ -106,9 +94,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DeepslateRandomOre"
-            },
+            "item": "CUSTOM:DeepslateRandomOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

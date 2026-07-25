@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "crystallite_boots_sculk",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "armorTextureFile": "crystallite_sculk_",
     "helmetName": "Crystallite Helmet",
@@ -117,20 +115,13 @@
     "enchantability": 20,
     "toughness": 3.5,
     "knockbackResistance": 0.125,
-    "equipSound": {
-      "value": "CUSTOM:crystallite_step"
-    },
+    "equipSound": "CUSTOM:crystallite_step",
     "repairItems": [
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.ECHO_SHARD"
-      }
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystaliteGem",
+      "Items.ECHO_SHARD"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

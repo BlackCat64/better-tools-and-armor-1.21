@@ -46,9 +46,12 @@ public class AscensionPotionProcedureProcedure {
 				}
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(x, y_iterator, z);
+					double _tx = x;
+					double _ty = y_iterator;
+					double _tz = z;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(x, y_iterator, z, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

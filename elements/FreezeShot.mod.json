@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "enchantment",
   "definition": {
     "name": "Freeze Shot",
@@ -9,21 +9,16 @@
     "maxLevel": 3,
     "damageModifier": 0,
     "incompatibleEnchantments": [
-      {
-        "value": "CUSTOM:ThunderShot"
-      },
-      {
-        "value": "FLAME"
-      }
+      "CUSTOM:ThunderShot",
+      "FLAME"
     ],
     "supportedItems": [
-      {
-        "value": "TAG:minecraft:enchantable/bow"
-      }
+      "TAG:minecraft:enchantable/bow"
     ],
     "isTreasureEnchantment": false,
     "isCurse": false,
     "canGenerateInLootTables": true,
-    "canVillagerTrade": true
+    "canVillagerTrade": true,
+    "effectsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"enchantment_effects_start\" deletable=\"false\" x=\"40\" y=\"80\"></block></xml>"
   }
 }

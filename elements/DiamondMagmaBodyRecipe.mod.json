@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:BlackstoneMagma"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:MagmaBody.body"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:BlackstoneMagma"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND",
+      "CUSTOM:BlackstoneMagma",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:MagmaBody.body",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:BlackstoneMagma",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondMagmaBody.body"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondMagmaBody.body",
     "name": "diamond_magma_body_recipe",
     "namespace": "mod"
   }

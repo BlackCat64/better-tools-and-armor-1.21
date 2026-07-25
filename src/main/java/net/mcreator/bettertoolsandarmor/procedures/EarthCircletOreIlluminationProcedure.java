@@ -57,18 +57,18 @@ public class EarthCircletOreIlluminationProcedure {
 			}
 			radius = 24;
 			sx = radius * (-1);
-			for (int index0 = 0; index0 < (int) (radius * 2); index0++) {
+			for (int index42 = 0; index42 < (int) (radius * 2); index42++) {
 				sy = radius * (-1);
-				for (int index1 = 0; index1 < (int) (radius * 2); index1++) {
+				for (int index43 = 0; index43 < (int) (radius * 2); index43++) {
 					sz = radius * (-1);
-					for (int index2 = 0; index2 < (int) (radius * 2); index2++) {
+					for (int index44 = 0; index44 < (int) (radius * 2); index44++) {
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("forge:ores")))) {
 							block_x = Math.floor(x) + sx + 0.5;
 							block_y = Math.floor(y) + sy + 0.5;
 							block_z = Math.floor(z) + sz + 0.5;
 							for (Direction directioniterator : Direction.values()) {
 								if (world.isEmptyBlock(BlockPos.containing(block_x + directioniterator.getStepX(), block_y + directioniterator.getStepY(), block_z + directioniterator.getStepZ()))) {
-									for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 1, 3); index3++) {
+									for (int index45 = 0; index45 < Mth.nextInt(RandomSource.create(), 1, 3); index45++) {
 										world.addParticle((SimpleParticleType) (BetterToolsModParticleTypes.ORE_VISION_PARTICLE.get()), (block_x + (directioniterator.getStepX() == 0 ? Math.random() - 0.5 : directioniterator.getStepX() * 0.6)),
 												(block_y + (directioniterator.getStepY() == 0 ? Math.random() - 0.5 : directioniterator.getStepY() * 0.6)),
 												(block_z + (directioniterator.getStepZ() == 0 ? Math.random() - 0.5 : directioniterator.getStepZ() * 0.6)), 0, 0, 0);

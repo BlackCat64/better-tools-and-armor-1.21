@@ -1,12 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "keybind",
   "definition": {
     "triggerKey": "V",
     "keyBindingName": "Energy Vial Menu",
     "keyBindingCategoryKey": "better_tools",
-    "onKeyPressed": {
-      "name": "EnergyVialKeybindOpenGui"
-    }
+    "onKeyPressed": "EnergyVialKeybindOpenGui"
   }
 }

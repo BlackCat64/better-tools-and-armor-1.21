@@ -19,7 +19,7 @@ public class StandardEffectArmorEnergyCostProcedure {
 		double piece_cost = 0;
 		armor_pieces = EnergyVialActiveArmorPiecesProcedure.execute(entity, itemstack);
 		i = 0;
-		for (int index0 = 0; index0 < 4; index0++) {
+		for (int index59 = 0; index59 < 4; index59++) {
 			if (i == 0 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("boots_active")
 					|| i == 1 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("leggings_active")
 					|| i == 2 && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("chestplate_active")

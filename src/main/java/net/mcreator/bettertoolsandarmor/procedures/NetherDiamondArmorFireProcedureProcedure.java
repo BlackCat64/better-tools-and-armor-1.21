@@ -52,7 +52,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))
 				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))) && entity.isOnFire()
 				&& !(entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.FIRE_RESISTANCE))) {
-			for (int index0 = 0; index0 < 4; index0++) {
+			for (int index2 = 0; index2 < 4; index2++) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 					public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 						for (EquipmentSlot _slot : EquipmentSlot.values()) {
@@ -117,7 +117,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 						_vars.markSyncDirty();
 					}
 					i = 0;
-					for (int index1 = 0; index1 < 4; index1++) {
+					for (int index3 = 0; index3 < 4; index3++) {
 						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 							public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 								for (EquipmentSlot _slot : EquipmentSlot.values()) {

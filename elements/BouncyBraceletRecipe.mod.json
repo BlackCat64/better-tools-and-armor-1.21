@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueSlimeBlock"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:BlueSlimeBlock",
+      "",
+      "CUSTOM:BlueSlimeBlock",
+      "CUSTOM:CrystalliteCharmBase",
+      "CUSTOM:BlueSlimeBlock",
+      "",
+      "CUSTOM:BlueSlimeBlock",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BouncyBracelet"
-    },
+    "recipeReturnStack": "CUSTOM:BouncyBracelet",
     "name": "bouncy_bracelet_recipe",
     "namespace": "mod"
   }

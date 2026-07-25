@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:SpeedyCrystal"
-      },
-      {
-        "value": "CUSTOM:SpeedyNecklace"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordRuby"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeRuby"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeRuby"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelRuby"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeRuby"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerRuby"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.boots"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowRuby"
-      }
+      "CUSTOM:SpeedyCrystal",
+      "CUSTOM:SpeedyNecklace",
+      "CUSTOM:CrystalliteSwordRuby",
+      "CUSTOM:CrystallitePickaxeRuby",
+      "CUSTOM:CrystalliteAxeRuby",
+      "CUSTOM:CrystalliteShovelRuby",
+      "CUSTOM:CrystalliteHoeRuby",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:CrystalliteBowRuby"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

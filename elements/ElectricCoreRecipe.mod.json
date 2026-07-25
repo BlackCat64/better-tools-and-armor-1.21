@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:TopazBlock"
-      },
-      {
-        "value": "Blocks.LIGHTNING_ROD"
-      },
-      {
-        "value": "Blocks.LIGHTNING_ROD"
-      },
-      {
-        "value": "CUSTOM:TopazBlock"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:TopazBlock"
-      },
-      {
-        "value": "Blocks.LIGHTNING_ROD"
-      },
-      {
-        "value": "Blocks.LIGHTNING_ROD"
-      },
-      {
-        "value": "CUSTOM:TopazBlock"
-      }
+      "CUSTOM:TopazBlock",
+      "Blocks.LIGHTNING_ROD",
+      "Blocks.LIGHTNING_ROD",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:TopazBlock",
+      "Blocks.LIGHTNING_ROD",
+      "Blocks.LIGHTNING_ROD",
+      "CUSTOM:TopazBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ElectricCore"
-    },
+    "recipeReturnStack": "CUSTOM:ElectricCore",
     "name": "electric_core_recipe",
     "namespace": "mod"
   }

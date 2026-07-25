@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherDiamond.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherDiamond.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherDiamond.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorNetherDiamond.boots"
-      }
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots"
     ],
     "information": [
       "§lFull-set bonus:§r",

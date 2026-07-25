@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedCoalBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalBlock",
+      "",
+      "Items.IRON_NUGGET",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Items.SIGN"
-    },
+    "recipeReturnStack": "Items.SIGN",
     "name": "lime_metal_sign_recipe",
     "namespace": "mod"
   }

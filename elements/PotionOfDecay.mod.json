@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Decay",
@@ -8,9 +8,7 @@
     "arrowName": "Arrow of Decay",
     "effects": [
       {
-        "effect": {
-          "value": "WITHER"
-        },
+        "effect": "WITHER",
         "duration": 800,
         "infinite": false,
         "amplifier": 0,

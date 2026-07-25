@@ -1,65 +1,27 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:PurpleMushroom"
-      },
-      {
-        "value": "CUSTOM:GoldenPotato"
-      },
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      },
-      {
-        "value": "CUSTOM:BerryPie"
-      },
-      {
-        "value": "CUSTOM:SugarClump"
-      },
-      {
-        "value": "CUSTOM:AscensionPotion"
-      },
-      {
-        "value": "CUSTOM:DescensionPotion"
-      },
-      {
-        "value": "CUSTOM:RecallPotion"
-      },
-      {
-        "value": "CUSTOM:LostSoulsPotion"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShards"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      },
-      {
-        "value": "CUSTOM:RubyToolsPickaxe"
-      },
-      {
-        "value": "CUSTOM:RubyToolsSword"
-      },
-      {
-        "value": "CUSTOM:RabbitBoots.boots"
-      },
-      {
-        "value": "CUSTOM:CactusBody.body"
-      },
-      {
-        "value": "CUSTOM:SugarBoots.boots"
-      },
-      {
-        "value": "CUSTOM:HeartyBody.body"
-      },
-      {
-        "value": "CUSTOM:GoldCarrotArmor.helmet"
-      }
+      "CUSTOM:Ruby",
+      "CUSTOM:PurpleMushroom",
+      "CUSTOM:GoldenPotato",
+      "CUSTOM:ExperiencePotion",
+      "CUSTOM:BerryPie",
+      "CUSTOM:SugarClump",
+      "CUSTOM:AscensionPotion",
+      "CUSTOM:DescensionPotion",
+      "CUSTOM:RecallPotion",
+      "CUSTOM:LostSoulsPotion",
+      "CUSTOM:CrystalliteShards",
+      "CUSTOM:CrystalliteCharmBase",
+      "CUSTOM:RubyToolsPickaxe",
+      "CUSTOM:RubyToolsSword",
+      "CUSTOM:RabbitBoots.boots",
+      "CUSTOM:CactusBody.body",
+      "CUSTOM:SugarBoots.boots",
+      "CUSTOM:HeartyBody.body",
+      "CUSTOM:GoldCarrotArmor.helmet"
     ],
     "information": [
       "If Quark is installed:",

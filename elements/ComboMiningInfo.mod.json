@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystallitePickaxeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeHoney"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeHoney"
-      }
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteHoeHoney"
     ],
     "information": [
       "Mining Combo will be lost after 2s of not mining the same block."

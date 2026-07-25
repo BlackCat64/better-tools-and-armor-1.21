@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DYE#1"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      },
-      {
-        "value": "CUSTOM:LightPolishedNetherDiamondBlock"
-      }
+      "Items.DYE#1",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PolishedNetherDiamondBlock"
-    },
+    "recipeReturnStack": "CUSTOM:PolishedNetherDiamondBlock",
     "name": "polished_nether_diamond_block_recipe",
     "namespace": "mod"
   }

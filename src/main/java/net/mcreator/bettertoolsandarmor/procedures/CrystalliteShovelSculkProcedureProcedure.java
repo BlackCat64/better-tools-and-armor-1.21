@@ -22,9 +22,9 @@ public class CrystalliteShovelSculkProcedureProcedure {
 		if (!entity.isShiftKeyDown() && blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
 			if (entity.getXRot() > 40 || entity.getXRot() < -40) {
 				x_disp = -1;
-				for (int index0 = 0; index0 < 3; index0++) {
+				for (int index17 = 0; index17 < 3; index17++) {
 					z_disp = -1;
-					for (int index1 = 0; index1 < 3; index1++) {
+					for (int index18 = 0; index18 < 3; index18++) {
 						if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
 							if ((world.getBlockState(BlockPos.containing(x + x_disp, y, z + z_disp))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
 								BreakBlockWithShovelProcedure.execute(world, x + x_disp, y, z + z_disp, entity, itemstack);
@@ -36,9 +36,9 @@ public class CrystalliteShovelSculkProcedureProcedure {
 				}
 			} else if ((entity.getDirection()) == Direction.NORTH || (entity.getDirection()) == Direction.SOUTH) {
 				x_disp = -1;
-				for (int index2 = 0; index2 < 3; index2++) {
+				for (int index19 = 0; index19 < 3; index19++) {
 					y_disp = -1;
-					for (int index3 = 0; index3 < 3; index3++) {
+					for (int index20 = 0; index20 < 3; index20++) {
 						if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
 							if ((world.getBlockState(BlockPos.containing(x + x_disp, y + y_disp, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
 								BreakBlockWithShovelProcedure.execute(world, x + x_disp, y + y_disp, z, entity, itemstack);
@@ -50,9 +50,9 @@ public class CrystalliteShovelSculkProcedureProcedure {
 				}
 			} else if ((entity.getDirection()) == Direction.WEST || (entity.getDirection()) == Direction.EAST) {
 				z_disp = -1;
-				for (int index4 = 0; index4 < 3; index4++) {
+				for (int index21 = 0; index21 < 3; index21++) {
 					y_disp = -1;
-					for (int index5 = 0; index5 < 3; index5++) {
+					for (int index22 = 0; index22 < 3; index22++) {
 						if (!(x_disp == 0 && y_disp == 0 && z_disp == 0)) {
 							if ((world.getBlockState(BlockPos.containing(x, y + y_disp, z + z_disp))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/shovel")))) {
 								BreakBlockWithShovelProcedure.execute(world, x, y + y_disp, z + z_disp, entity, itemstack);

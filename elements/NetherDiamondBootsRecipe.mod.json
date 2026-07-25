@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      },
-      {
-        "value": "CUSTOM:BlackstoneMagma"
-      },
-      {
-        "value": "CUSTOM:NetherDiamond"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:NetherDiamond",
+      "",
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:BlackstoneMagma",
+      "CUSTOM:NetherDiamond"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:NetherDiamondArmor.boots"
-    },
+    "recipeReturnStack": "CUSTOM:NetherDiamondArmor.boots",
     "name": "nether_diamond_boots_recipe",
     "namespace": "mod"
   }

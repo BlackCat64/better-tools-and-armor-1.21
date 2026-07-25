@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:mod:crystallite_chestplates"
-    },
-    "smithingInputAdditionStack": {
-      "value": "Blocks.GLASS"
-    },
-    "smithingInputTemplateStack": {
-      "value": "Blocks.GLASS"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteArmor.body"
-    },
+    "smithingInputStack": "TAG:mod:crystallite_chestplates",
+    "smithingInputAdditionStack": "Blocks.GLASS",
+    "smithingInputTemplateStack": "Blocks.GLASS",
+    "smithingReturnStack": "CUSTOM:CrystalliteArmor.body",
     "name": "crystallite_chestplate_remove_upgrade",
     "namespace": "mod"
   }

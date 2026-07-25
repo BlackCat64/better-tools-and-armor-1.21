@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,12 +11,8 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "TOOLS"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "TOOLS"
     ],
     "armorTextureFile": "honeycomb_",
     "helmetName": "Honeycomb Helmet",
@@ -101,14 +97,11 @@
     "enchantability": 4,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "block.honey_block.place"
-    },
+    "equipSound": "block.honey_block.place",
     "repairItems": [
-      {
-        "value": "Items.HONEYCOMB"
-      }
+      "Items.HONEYCOMB"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

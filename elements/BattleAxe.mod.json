@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -14,12 +14,8 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "efficiency": 8.0,
     "attackSpeed": 0.6,
@@ -30,9 +26,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:NetherDiamond"
-      }
+      "CUSTOM:NetherDiamond"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",

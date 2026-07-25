@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      },
-      {
-        "value": "Blocks.LAPIS_BLOCK"
-      },
-      {
-        "value": "CUSTOM:ExperiencePotion"
-      },
-      {
-        "value": "Items.COPPER_INGOT"
-      },
-      {
-        "value": "Items.COPPER_INGOT"
-      },
-      {
-        "value": "Items.COPPER_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:ExperiencePotion",
+      "Blocks.LAPIS_BLOCK",
+      "CUSTOM:ExperiencePotion",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT",
+      "",
+      "Items.GLASS_BOTTLE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EnergyVial"
-    },
+    "recipeReturnStack": "CUSTOM:EnergyVial",
     "name": "energy_vial_recipe",
     "namespace": "mod"
   }

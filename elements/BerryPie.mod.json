@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -11,21 +11,15 @@
     "name": "Sweet Berry Pie",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:BetterToolsAndArmorMisc"
-      },
-      {
-        "value": "FOOD"
-      }
+      "CUSTOM:BetterToolsAndArmorMisc",
+      "FOOD"
     ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 0.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -49,21 +43,17 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:ElectricStaffProjectile"
-    },
+    "projectile": "CUSTOM:ElectricStaffProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 0.75,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],
     "attributeModifiers": []

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Bark"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:Bark",
+      "CUSTOM:Bark",
+      "CUSTOM:Bark",
+      "CUSTOM:Bark",
+      "",
+      "CUSTOM:Bark",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WoodenArmor.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:WoodenArmor.helmet",
     "name": "wooden_helmet_recipe",
     "namespace": "mod"
   }

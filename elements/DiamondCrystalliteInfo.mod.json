@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:DiamondHardCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerDiamond"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorDiamond.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorDiamond.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorDiamond.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorDiamond.boots"
-      },
-      {
-        "value": "CUSTOM:DiamondHardPlate"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowDiamond"
-      }
+      "CUSTOM:DiamondHardCrystal",
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystallitePickaxeDiamond",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteShovelDiamond",
+      "CUSTOM:CrystalliteHoeDiamond",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:DiamondHardPlate",
+      "CUSTOM:CrystalliteBowDiamond"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

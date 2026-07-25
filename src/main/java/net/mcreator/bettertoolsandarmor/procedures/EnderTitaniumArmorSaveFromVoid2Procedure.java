@@ -75,11 +75,12 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 					}
 					{
 						Entity _ent = entity;
-						_ent.teleportTo(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
-								entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z);
+						double _tx = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x;
+						double _ty = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y;
+						double _tz = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z;
+						_ent.teleportTo(_tx, _ty, _tz);
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
-									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_HELMET.get(), 12000);
@@ -95,7 +96,7 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 						_vars.markSyncDirty();
 					}
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.DRAGON_BREATH, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y + 0.25),
+						_level.sendParticles(ParticleTypes.CRIT, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y + 0.25),
 								entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, 8, 3, 0.1, 1, 0.1);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

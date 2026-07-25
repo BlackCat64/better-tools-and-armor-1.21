@@ -11,11 +11,11 @@ public class BlueMushroomSpaceCheckProcedure {
 		double sz = 0;
 		sx = -5;
 		found = false;
-		for (int index0 = 0; index0 < 10; index0++) {
+		for (int index12 = 0; index12 < 10; index12++) {
 			sy = 0;
-			for (int index1 = 0; index1 < 9; index1++) {
+			for (int index13 = 0; index13 < 9; index13++) {
 				sz = -5;
-				for (int index2 = 0; index2 < 10; index2++) {
+				for (int index14 = 0; index14 < 10; index14++) {
 					if (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)).canOcclude()) {
 						found = true;
 					}

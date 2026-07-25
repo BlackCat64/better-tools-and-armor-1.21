@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.DRIPSTONE_BLOCK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.DRIPSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.DRIPSTONE_BLOCK"
-      },
-      {
-        "value": "Items.IRON_BOOTS"
-      },
-      {
-        "value": "Blocks.DRIPSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.POINTED_DRIPSTONE"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "Blocks.POINTED_DRIPSTONE"
-      }
+      "Blocks.DRIPSTONE_BLOCK",
+      "",
+      "Blocks.DRIPSTONE_BLOCK",
+      "Blocks.DRIPSTONE_BLOCK",
+      "Items.IRON_BOOTS",
+      "Blocks.DRIPSTONE_BLOCK",
+      "Blocks.POINTED_DRIPSTONE",
+      "Items.AMETHYST_SHARD",
+      "Blocks.POINTED_DRIPSTONE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DripstoneBoots.boots"
-    },
+    "recipeReturnStack": "CUSTOM:DripstoneBoots.boots",
     "name": "dripstone_boots_recipe",
     "namespace": "mod"
   }

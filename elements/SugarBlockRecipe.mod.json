@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.SUGAR"
-      }
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "Items.SUGAR"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SugarBlock"
-    },
+    "recipeReturnStack": "CUSTOM:SugarBlock",
     "name": "sugar_block_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "curiosbauble",
   "definition": {
     "item": "GildedBracelet",
@@ -9,18 +9,12 @@
     "enderMask": false,
     "friendlyPigs": true,
     "snowWalk": false,
-    "equipSound": {
-      "value": "CUSTOM:crystallite_place"
-    },
+    "equipSound": "CUSTOM:crystallite_place",
     "hasModel": false,
     "baubleModel": "Default",
     "baubleModelTexture": "",
-    "onEquip": {
-      "name": "GildedBraceletEquipped"
-    },
-    "onUnequip": {
-      "name": "GildedBraceletUnequipped"
-    },
+    "onEquip": "GildedBraceletEquipped",
+    "onUnequip": "GildedBraceletUnequipped",
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",

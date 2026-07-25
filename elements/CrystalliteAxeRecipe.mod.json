@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ObsidianStick"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:CrystaliteGem",
+      "",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:ObsidianStick",
+      "",
+      "",
+      "CUSTOM:ObsidianStick",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CrystalliteAxe"
-    },
+    "recipeReturnStack": "CUSTOM:CrystalliteAxe",
     "name": "crystallite_axe_recipe",
     "namespace": "mod"
   }

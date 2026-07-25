@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -17,9 +17,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      }
+      "CUSTOM:ToolsAndArmorTab"
     ],
     "efficiency": 5.0,
     "attackSpeed": 0.75,
@@ -30,9 +28,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:Sapphire"
-      }
+      "CUSTOM:Sapphire"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",
@@ -40,8 +36,6 @@
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "SapphireToolsSilkTouch"
-    }
+    "onItemInInventoryTick": "SapphireToolsSilkTouch"
   }
 }

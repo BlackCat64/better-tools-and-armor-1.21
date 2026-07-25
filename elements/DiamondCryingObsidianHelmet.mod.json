@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,12 +11,8 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "armorTextureFile": "diamond_crying_",
     "helmetName": "Crying Obsidian Helmet",
@@ -101,17 +97,12 @@
     "enchantability": 10,
     "toughness": 1.0,
     "knockbackResistance": 0.1,
-    "equipSound": {
-      "value": "item.armor.equip_diamond"
-    },
+    "equipSound": "item.armor.equip_diamond",
     "repairItems": [
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Blocks.CRYING_OBSIDIAN",
+      "Items.DIAMOND"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

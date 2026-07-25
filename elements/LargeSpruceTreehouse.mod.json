@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "large_spruce_treehouse",
@@ -8,12 +8,8 @@
     "spacing": 25,
     "separation": 10,
     "restrictionBiomes": [
-      {
-        "value": "redwood_taiga"
-      },
-      {
-        "value": "mutated_redwood_taiga"
-      }
+      "redwood_taiga",
+      "mutated_redwood_taiga"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",

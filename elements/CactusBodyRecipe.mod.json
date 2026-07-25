@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": "Blocks.CACTUS"
-      }
+      "Blocks.CACTUS",
+      "Items.LEATHER",
+      "Blocks.CACTUS",
+      "Blocks.CACTUS",
+      "Blocks.CACTUS",
+      "Blocks.CACTUS",
+      "Blocks.CACTUS",
+      "Blocks.CACTUS",
+      "Blocks.CACTUS"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CactusBody.body"
-    },
+    "recipeReturnStack": "CUSTOM:CactusBody.body",
     "name": "cactus_body_recipe",
     "namespace": "mod"
   }

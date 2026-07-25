@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -15,12 +15,8 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "TOOLS"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "TOOLS"
     ],
     "efficiency": 5.0,
     "attackSpeed": 1.0,
@@ -31,9 +27,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.FLINT"
-      }
+      "Items.FLINT"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",
@@ -41,9 +35,7 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "mainhand",
-        "attribute": {
-          "value": "CUSTOM:CriticalHitMultiplier"
-        },
+        "attribute": "CUSTOM:CriticalHitMultiplier",
         "amount": 0.25,
         "operation": "ADD_VALUE"
       }

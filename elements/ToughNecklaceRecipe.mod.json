@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToughCrystal"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.STRING",
+      "",
+      "Items.STRING",
+      "CUSTOM:CrystalliteCharmBase",
+      "Items.STRING",
+      "",
+      "CUSTOM:ToughCrystal",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ToughNecklace"
-    },
+    "recipeReturnStack": "CUSTOM:ToughNecklace",
     "name": "tough_necklace_recipe",
     "namespace": "mod"
   }

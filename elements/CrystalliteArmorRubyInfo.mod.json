@@ -1,20 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorRuby.boots"
-      }
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorRuby.boots"
     ],
     "information": [
       "§lFull-set bonus:§r",

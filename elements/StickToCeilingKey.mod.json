@@ -1,15 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "keybind",
   "definition": {
     "triggerKey": "SPACE",
     "keyBindingName": "Stick to Ceiling",
     "keyBindingCategoryKey": "better_tools",
-    "onKeyPressed": {
-      "name": "StickToCeilingKeyDown"
-    },
-    "onKeyReleased": {
-      "name": "StickToCeilingKeyUp"
-    }
+    "onKeyPressed": "StickToCeilingKeyDown",
+    "onKeyReleased": "StickToCeilingKeyUp"
   }
 }

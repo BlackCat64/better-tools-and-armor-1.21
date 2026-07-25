@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -14,12 +14,8 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:ToolsAndArmorTab"
-      },
-      {
-        "value": "COMBAT"
-      }
+      "CUSTOM:ToolsAndArmorTab",
+      "COMBAT"
     ],
     "efficiency": 4.0,
     "attackSpeed": 2.5,
@@ -30,9 +26,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Blocks.COBBLESTONE"
-      }
+      "Blocks.COBBLESTONE"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",

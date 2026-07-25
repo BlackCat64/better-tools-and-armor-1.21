@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.SCULK_SENSOR"
-      },
-      {
-        "value": "Items.ECHO_SHARD"
-      },
-      {
-        "value": "Blocks.SCULK_SENSOR"
-      },
-      {
-        "value": "Items.ECHO_SHARD"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Items.ECHO_SHARD"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.SCULK_CATALYST"
-      },
-      {
-        "value": ""
-      }
+      "Blocks.SCULK_SENSOR",
+      "Items.ECHO_SHARD",
+      "Blocks.SCULK_SENSOR",
+      "Items.ECHO_SHARD",
+      "CUSTOM:CrystaliteGem",
+      "Items.ECHO_SHARD",
+      "",
+      "Blocks.SCULK_CATALYST",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EchoCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:EchoCrystal",
     "name": "echo_crystal_recipe",
     "namespace": "mod"
   }

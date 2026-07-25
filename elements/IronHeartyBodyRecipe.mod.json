@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:HeartyBody.body"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Items.IRON_INGOT",
+      "Items.SPECKLED_MELON",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:HeartyBody.body",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Blocks.IRON_BLOCK",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronHeartyBody.body"
-    },
+    "recipeReturnStack": "CUSTOM:IronHeartyBody.body",
     "name": "iron_hearty_body_recipe",
     "namespace": "mod"
   }

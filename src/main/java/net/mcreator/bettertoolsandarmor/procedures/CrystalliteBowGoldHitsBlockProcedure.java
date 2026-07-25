@@ -39,9 +39,12 @@ public class CrystalliteBowGoldHitsBlockProcedure {
 			if (!(arrow == null)) {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo((arrow.getX()), (arrow.getY()), (arrow.getZ()));
+					double _tx = (arrow.getX());
+					double _ty = (arrow.getY());
+					double _tz = (arrow.getZ());
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((arrow.getX()), (arrow.getY()), (arrow.getZ()), _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (GetEntityLogicDataProcedure.execute(arrow, "inGround")) {
 					player_uuid = entity.getPersistentData().getString("player");

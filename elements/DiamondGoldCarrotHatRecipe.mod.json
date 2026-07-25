@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GOLDEN_CARROT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:IronGoldCarrotHat.helmet"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.GOLDEN_CARROT"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "",
+      "Items.GOLDEN_CARROT",
+      "",
+      "Items.DIAMOND",
+      "CUSTOM:IronGoldCarrotHat.helmet",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Items.GOLDEN_CARROT",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondGoldCarrotHat.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondGoldCarrotHat.helmet",
     "name": "diamond_gold_carrot_hat_recipe",
     "namespace": "mod"
   }

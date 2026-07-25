@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,9 +7,7 @@
     "customModelName": "Ranged item",
     "guiTexture": "",
     "customProperties": {
-      "pulling": {
-        "name": "CrystalliteBowPullState"
-      }
+      "pulling": "CrystalliteBowPullState"
     },
     "states": [
       {
@@ -65,18 +63,14 @@
     "name": "Crystallite Bow",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CrystalliteTab"
-      }
+      "CUSTOM:CrystalliteTab"
     ],
     "stackSize": 1,
     "enchantability": 20,
     "useDuration": 72000,
     "toolType": 1.0,
     "damageCount": 2400,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": true,
     "isPiglinCurrency": false,
@@ -99,31 +93,23 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "everyTickWhileUsing": {
-      "name": "CrystalliteBowGetPullTime"
-    },
+    "everyTickWhileUsing": "CrystalliteBowGetPullTime",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": true,
-    "projectile": {
-      "value": "Arrow"
-    },
+    "projectile": "Arrow",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "bow",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,
     "providedBannerPatterns": [],
     "attributeModifiers": []

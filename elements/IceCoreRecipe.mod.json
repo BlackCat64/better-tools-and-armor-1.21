@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.BLUE_ICE"
-      },
-      {
-        "value": "CUSTOM:SapphireBlock"
-      },
-      {
-        "value": "Blocks.BLUE_ICE"
-      },
-      {
-        "value": "CUSTOM:SapphireBlock"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "CUSTOM:SapphireBlock"
-      },
-      {
-        "value": "Blocks.BLUE_ICE"
-      },
-      {
-        "value": "CUSTOM:SapphireBlock"
-      },
-      {
-        "value": "Blocks.BLUE_ICE"
-      }
+      "Blocks.BLUE_ICE",
+      "CUSTOM:SapphireBlock",
+      "Blocks.BLUE_ICE",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:SapphireBlock",
+      "Blocks.BLUE_ICE",
+      "CUSTOM:SapphireBlock",
+      "Blocks.BLUE_ICE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IceCore"
-    },
+    "recipeReturnStack": "CUSTOM:IceCore",
     "name": "ice_core_recipe",
     "namespace": "mod"
   }

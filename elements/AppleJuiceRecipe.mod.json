@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.APPLE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "Items.APPLE",
+      "",
+      "",
+      "Items.GLASS_BOTTLE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AppleJuice"
-    },
+    "recipeReturnStack": "CUSTOM:AppleJuice",
     "name": "apple_juice_recipe",
     "namespace": "mod"
   }

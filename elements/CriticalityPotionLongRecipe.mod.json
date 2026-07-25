@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "POTION:CUSTOM:CriticalityPotion"
-    },
-    "brewingIngredientStack": {
-      "value": "Items.REDSTONE"
-    },
-    "brewingReturnStack": {
-      "value": "POTION:CUSTOM:CriticalityPotionLong"
-    },
+    "brewingInputStack": "POTION:CUSTOM:CriticalityPotion",
+    "brewingIngredientStack": "Items.REDSTONE",
+    "brewingReturnStack": "POTION:CUSTOM:CriticalityPotionLong",
     "name": "criticality_potion_long_recipe",
     "namespace": "mod"
   }

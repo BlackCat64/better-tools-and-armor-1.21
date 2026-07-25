@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkPolishedIronBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedIronBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedIronBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedIronBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedIronBlock"
-      },
-      {
-        "value": "CUSTOM:DarkPolishedIronBlock"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DarkPolishedIronWall"
-    },
+    "recipeReturnStack": "CUSTOM:DarkPolishedIronWall",
     "name": "dark_polished_iron_wall_recipe",
     "namespace": "mod"
   }

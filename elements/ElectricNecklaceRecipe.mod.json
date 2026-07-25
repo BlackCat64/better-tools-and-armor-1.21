@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "CUSTOM:CrystalliteCharmBase"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ElectricCore"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.STRING",
+      "",
+      "Items.STRING",
+      "CUSTOM:CrystalliteCharmBase",
+      "Items.STRING",
+      "",
+      "CUSTOM:ElectricCore",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ElectricNecklace"
-    },
+    "recipeReturnStack": "CUSTOM:ElectricNecklace",
     "name": "electric_necklace_recipe",
     "namespace": "mod"
   }

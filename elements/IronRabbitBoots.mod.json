@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -10,13 +10,9 @@
     "textureLeggings": "",
     "enableBoots": true,
     "textureBoots": "reinforced_rabbit_boots",
-    "onBootsTick": {
-      "name": "RabbitBootsProcedure"
-    },
+    "onBootsTick": "RabbitBootsProcedure",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:EffectArmorTab"
-      }
+      "CUSTOM:EffectArmorTab"
     ],
     "armorTextureFile": "reinforced_rabbit_",
     "helmetName": "Iron Rabbit Boots Helmet",
@@ -77,17 +73,12 @@
     "enchantability": 8,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_iron"
-    },
+    "equipSound": "item.armor.equip_iron",
     "repairItems": [
-      {
-        "value": "Items.RABBIT_FOOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Items.RABBIT_FOOT",
+      "Items.IRON_INGOT"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

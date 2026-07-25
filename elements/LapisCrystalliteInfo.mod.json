@@ -1,47 +1,21 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:MagicCrystal"
-      },
-      {
-        "value": "CUSTOM:CrystalliteSwordLapis"
-      },
-      {
-        "value": "CUSTOM:CrystallitePickaxeLapis"
-      },
-      {
-        "value": "CUSTOM:CrystalliteAxeLapis"
-      },
-      {
-        "value": "CUSTOM:CrystalliteShovelLapis"
-      },
-      {
-        "value": "CUSTOM:CrystalliteHoeLapis"
-      },
-      {
-        "value": "CUSTOM:CrystalliteDaggerLapis"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorLapis.helmet"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorLapis.body"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorLapis.legs"
-      },
-      {
-        "value": "CUSTOM:CrystalliteArmorLapis.boots"
-      },
-      {
-        "value": "CUSTOM:MagicRing"
-      },
-      {
-        "value": "CUSTOM:CrystalliteBowLapis"
-      }
+      "CUSTOM:MagicCrystal",
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystallitePickaxeLapis",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteShovelLapis",
+      "CUSTOM:CrystalliteHoeLapis",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:MagicRing",
+      "CUSTOM:CrystalliteBowLapis"
     ],
     "information": [
       "§lCrystallite Upgrades: ",

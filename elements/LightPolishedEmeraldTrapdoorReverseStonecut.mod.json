@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:LightPolishedEmeraldTrapdoor"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:LightPolishedEmeraldBlock"
-    },
+    "stoneCuttingInputStack": "CUSTOM:LightPolishedEmeraldTrapdoor",
+    "stoneCuttingReturnStack": "CUSTOM:LightPolishedEmeraldBlock",
     "name": "light_polished_emerald_trapdoor_reverse_stonecut",
     "namespace": "mod"
   }

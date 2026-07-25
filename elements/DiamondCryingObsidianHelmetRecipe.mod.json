@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "CUSTOM:CryingObsidianHelmet.helmet"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Blocks.CRYING_OBSIDIAN"
-      },
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND",
+      "Blocks.CRYING_OBSIDIAN",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "CUSTOM:CryingObsidianHelmet.helmet",
+      "Items.DIAMOND",
+      "Items.DIAMOND",
+      "Blocks.CRYING_OBSIDIAN",
+      "Items.DIAMOND"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DiamondCryingObsidianHelmet.helmet"
-    },
+    "recipeReturnStack": "CUSTOM:DiamondCryingObsidianHelmet.helmet",
     "name": "diamond_crying_obsidian_helmet_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "CUSTOM:CrystaliteGem"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Items.SPECKLED_MELON"
-      }
+      "Blocks.REDSTONE_BLOCK",
+      "Items.SPECKLED_MELON",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "CUSTOM:CrystaliteGem",
+      "Blocks.REDSTONE_BLOCK",
+      "Items.SPECKLED_MELON",
+      "Blocks.REDSTONE_BLOCK",
+      "Items.SPECKLED_MELON"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HealCrystal"
-    },
+    "recipeReturnStack": "CUSTOM:HealCrystal",
     "name": "heal_crystal_recipe",
     "namespace": "mod"
   }

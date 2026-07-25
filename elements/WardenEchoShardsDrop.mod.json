@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.ECHO_SHARD"
-            },
+            "item": "Items.ECHO_SHARD",
             "weight": 1,
             "minCount": 3,
             "maxCount": 5,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.SCULK_CATALYST"
-            },
+            "item": "Blocks.SCULK_CATALYST",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

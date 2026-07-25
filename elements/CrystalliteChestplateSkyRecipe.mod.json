@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:better_tools:crystallite_chestplates"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:SkyCrystal"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:CrystalliteUpgradeSmithingTemplate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:CrystalliteArmorSky.body"
-    },
+    "smithingInputStack": "TAG:better_tools:crystallite_chestplates",
+    "smithingInputAdditionStack": "CUSTOM:SkyCrystal",
+    "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
+    "smithingReturnStack": "CUSTOM:CrystalliteArmorSky.body",
     "name": "crystallite_chestplate_sky_recipe",
     "namespace": "mod"
   }
