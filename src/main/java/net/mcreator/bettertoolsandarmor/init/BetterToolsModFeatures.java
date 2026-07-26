@@ -15,6 +15,8 @@ import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 public class BetterToolsModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(Registries.FEATURE, BetterToolsMod.MODID);
 	public static final DeferredHolder<Feature<?>, Feature<?>> RUBY_ORE_FEATURE = REGISTRY.register("ruby_ore_feature", RubyOreFeatureFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> GIANT_BLUE_MUSHROOM_FEATURE = REGISTRY.register("giant_blue_mushroom_feature", GiantBlueMushroomFeatureFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> GIANT_PURPLE_MUSHROOM_FEATURE = REGISTRY.register("giant_purple_mushroom_feature", GiantPurpleMushroomFeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> TOPAZ_ORE_FEATURE = REGISTRY.register("topaz_ore_feature", TopazOreFeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> CRYSTALLITE_CLUSTER_30_FEATURE = REGISTRY.register("crystallite_cluster_30_feature", CrystalliteCluster30FeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> CRYSTALLITE_CLUSTER_32_FEATURE = REGISTRY.register("crystallite_cluster_32_feature", CrystalliteCluster32FeatureFeature::new);

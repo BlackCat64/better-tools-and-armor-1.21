@@ -3,12 +3,6 @@
   "temperature": 0.9,
   "downfall": 0.5,
   "effects": {
-    "particle": {
-      "options": {
-        "type": "crit"
-      },
-      "probability": 0.0025
-    },
     "foliage_color": -13911281,
     "grass_color": -11155137,
     "sky_color": 7972607,
@@ -41,10 +35,18 @@
     "misc": []
   },
   "spawn_costs": {},
-  "carvers": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
   "features": [
     [],
-    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
     [
       "minecraft:amethyst_geode"
     ],
@@ -76,8 +78,6 @@
     [],
     [],
     [],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    []
   ]
 }

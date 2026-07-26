@@ -1,12 +1,12 @@
 {
-  "type": "better_tools:structure_feature",
+  "type": "better_tools:giant_purple_mushroom_feature",
   "config": {
-    "structure": "better_tools:giant_purple_mushroom",
+    "structure": "better_tools:giant_purple_mushroom_generated",
     "ignored_blocks": "minecraft:structure_block",
     "offset": [
+      -3,
       0,
-      -1,
-      0
+      -3
     ]
   }
 }

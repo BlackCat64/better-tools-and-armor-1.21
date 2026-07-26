@@ -73,6 +73,8 @@ public class BetterToolsModBiomes {
 		List<SurfaceRules.RuleSource> customSurfaceRules = new ArrayList<>();
 		customSurfaceRules
 				.add(anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("better_tools", "fungal_caves")), Blocks.MYCELIUM.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
+		customSurfaceRules.add(preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("better_tools", "fungal_caves")), Blocks.MYCELIUM.defaultBlockState(), Blocks.DIRT.defaultBlockState(),
+				Blocks.DIRT.defaultBlockState()));
 		if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 			customSurfaceRules.addAll(sequenceRuleSource.sequence());
 			return SurfaceRules.sequence(customSurfaceRules.toArray(SurfaceRules.RuleSource[]::new));
@@ -84,9 +86,22 @@ public class BetterToolsModBiomes {
 
 	public static <T> Climate.ParameterList<T> modifyOverworldParameterPoints(Climate.ParameterList<T> originalList, Function<ResourceKey<Biome>, T> lookup) {
 		List<Pair<Climate.ParameterPoint, T>> parameters = new ArrayList<>(originalList.values());
-		parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.2466666667f, 0.2866666667f), Climate.Parameter.span(-0.02f, 0.02f), Climate.Parameter.span(0.48f, 0.52f), Climate.Parameter.span(-0.02f, 0.02f),
-				Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.1023015888f, -0.0623015888f), 0), lookup.apply(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("better_tools", "fungal_caves")))));
+		parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.65f, 1f), Climate.Parameter.span(-1f, 0.4f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.point(0.0f),
+				Climate.Parameter.span(-1f, 1f), 0), lookup.apply(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("better_tools", "fungal_caves")))));
+		parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.65f, 1f), Climate.Parameter.span(-1f, 0.4f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.point(1.0f),
+				Climate.Parameter.span(-1f, 1f), 0), lookup.apply(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("better_tools", "fungal_caves")))));
+		parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.65f, 1f), Climate.Parameter.span(-1f, 0.4f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.span(0.3f, 1f),
+				Climate.Parameter.span(-1f, 1f), 0), lookup.apply(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("better_tools", "fungal_caves")))));
 		return new Climate.ParameterList<>(parameters);
+	}
+
+	private static SurfaceRules.RuleSource preliminarySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock, BlockState underwaterBlock) {
+		return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
+				SurfaceRules.ifTrue(SurfaceRules.abovePreliminarySurface(),
+						SurfaceRules.sequence(
+								SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
+										SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
+								SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock)))));
 	}
 
 	private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock, BlockState underwaterBlock) {

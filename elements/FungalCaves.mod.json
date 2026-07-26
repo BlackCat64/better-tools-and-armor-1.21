@@ -27,37 +27,37 @@
     "music": "",
     "moodSound": "",
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
-    "particleToSpawn": "DRAGON_BREATH",
+    "spawnParticles": false,
+    "particleToSpawn": "CUSTOM:CrystalliteSparkle",
     "particlesProbability": 0.25,
     "rainingPossibility": 0.5,
     "temperature": 0.9,
-    "spawnBiome": false,
+    "spawnBiome": true,
     "spawnInCaves": true,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": 0.24666666666666662,
-      "max": 0.2866666666666666
+      "min": 0.5,
+      "max": 1.0
     },
     "genHumidity": {
-      "min": -0.02,
-      "max": 0.02
+      "min": 0.65,
+      "max": 1.0
     },
     "genContinentalness": {
-      "min": 0.48,
-      "max": 0.52
+      "min": -1.0,
+      "max": 0.4
     },
     "genErosion": {
-      "min": -0.02,
-      "max": 0.02
+      "min": -0.3,
+      "max": 0.3
     },
     "genWeirdness": {
-      "min": -0.10230158875472449,
-      "max": -0.06230158875472448
+      "min": -1.0,
+      "max": 1.0
     },
     "genDepth": {
-      "min": 0.2,
-      "max": 0.9
+      "min": 0.3,
+      "max": 1.0
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
@@ -69,9 +69,9 @@
     "treeFruits": "",
     "defaultFeatures": [
       "Ores",
-      "FrozenTopLayer",
       "AmethystGeodes",
-      "MonsterRooms"
+      "MonsterRooms",
+      "Caves"
     ],
     "spawnStronghold": true,
     "spawnMineshaft": true,

@@ -1,14 +1,14 @@
 {
-  "type": "better_tools:structure_feature",
+  "type": "better_tools:giant_blue_mushroom_feature",
   "config": {
-    "structure": "better_tools:giant_blue_mushroom",
+    "structure": "better_tools:giant_blue_mushroom_generated",
     "random_rotation": true,
     "random_mirror": true,
     "ignored_blocks": "minecraft:structure_block",
     "offset": [
+      -5,
       0,
-      -1,
-      0
+      -2
     ]
   }
 }

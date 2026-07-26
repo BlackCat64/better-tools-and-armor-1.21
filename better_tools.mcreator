@@ -10377,7 +10377,7 @@
       "name": "PurpleMushroomBlockParticles",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "purple_mushroom_block_particles",
       "metadata": {
         "files": [
@@ -19158,6 +19158,7 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/worldgen/configured_feature/giant_blue_mushroom_feature.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/world/features/GiantBlueMushroomFeatureFeature.java",
           "src/main/resources/data/better_tools/worldgen/placed_feature/giant_blue_mushroom_feature.json",
           "src/main/resources/data/better_tools/neoforge/biome_modifier/giant_blue_mushroom_feature_biome_modifier.json"
         ],
@@ -19174,6 +19175,7 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/worldgen/placed_feature/giant_purple_mushroom_feature.json",
+          "src/main/java/net/mcreator/bettertoolsandarmor/world/features/GiantPurpleMushroomFeatureFeature.java",
           "src/main/resources/data/better_tools/worldgen/configured_feature/giant_purple_mushroom_feature.json",
           "src/main/resources/data/better_tools/neoforge/biome_modifier/giant_purple_mushroom_feature_biome_modifier.json"
         ],
@@ -34433,6 +34435,38 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "GiantPurpleMushroomFeatureAdditionalGenerationCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giant_purple_mushroom_feature_additional_generation_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GiantPurpleMushroomFeatureAdditionalGenerationConditionProcedure.java"
+        ]
+      },
+      "path": "~/Purple Mushrooms"
     }
   ],
   "variable_elements": [
@@ -37397,14 +37431,14 @@
       "~SmeltingTouch@CUSTOM:SmeltingTouch",
       "~ThunderShot@CUSTOM:ThunderShot"
     ],
+    "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
+      "~Jeweller@CUSTOM:Jeweller"
+    ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~FungalCaves@CUSTOM:FungalCaves"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~FungalCaves@CUSTOM:FungalCaves"
-    ],
-    "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
-      "~Jeweller@CUSTOM:Jeweller"
     ]
   },
   "tab_element_order": {
@@ -38946,7 +38980,7 @@
       "advancements.freeze_shatter_adv.descr": "Shatter a frozen mob with an attack",
       "item.better_tools.crystallite_armor_sky_chestplate.description_0": "§7Upgrade: §fAir",
       "item.better_tools.crystallite_armor_sky_chestplate.description_1": "§7Ability:",
-      "advancements.ruby_gem_adv.title": "I thought this was removed...?",
+      "advancements.ruby_gem_adv.title": "Could it be, could it be?",
       "block.better_tools.polished_ruby_wall": "Dark Red Metal Wall",
       "item.better_tools.lapis_dagger": "Lapis Lazuli Dagger",
       "block.better_tools.pink_metal_wall_hanging_sign": "Pink Metal Wall Hanging Sign",

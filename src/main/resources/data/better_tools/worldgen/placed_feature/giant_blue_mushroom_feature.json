@@ -25,6 +25,33 @@
       }
     },
     {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:solid",
+              "offset": [
+                0,
+                7,
+                0
+              ]
+            }
+          },
+          {
+            "type": "minecraft:replaceable",
+            "offset": [
+              0,
+              7,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
       "type": "minecraft:biome"
     }
   ]
