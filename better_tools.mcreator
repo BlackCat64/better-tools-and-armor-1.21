@@ -31625,6 +31625,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -34466,6 +34470,29 @@
         "return_type": "number",
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetBlockXPDropProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "SetAbsorptionAmount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "set_absorption_amount",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SetAbsorptionAmountProcedure.java"
         ]
       },
       "path": "~/Utility Procedures"
@@ -39511,7 +39538,7 @@
       "key.categories.better_tools": "Better Tools and Armor",
       "advancements.glass_armor_adv.descr": "Wear a full set of glass armor",
       "block.better_tools.light_blue_metal_wall_hanging_sign": "Light Blue Metal Wall Hanging Sign",
-      "advancements.luck_adv.title": "Lucky Leprechaun",
+      "advancements.luck_adv.title": "The Gambling Miner",
       "item.better_tools.redstone_dagger.description_0": "§cHeals you when striking a target",
       "entity.better_tools.projectile_ice_staff_projectile_from_dispenser": "Dispenser using Ice Staff",
       "block.better_tools.brown_metal_sign": "Brown Metal Sign",

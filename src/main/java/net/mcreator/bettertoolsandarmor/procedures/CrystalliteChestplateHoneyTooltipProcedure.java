@@ -8,6 +8,10 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -21,20 +25,23 @@ public class CrystalliteChestplateHoneyTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getItemStack(), event.getToolTip());
+		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(ItemStack itemstack, List<Component> tooltip) {
-		execute(null, itemstack, tooltip);
+	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
-		if (tooltip == null)
+	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()) {
-			tooltip.add(Component.literal("\u00A77Absorption Limit:"));
-			tooltip.add(Component.literal("\u00A792x Original Max HP"));
-			tooltip.add(Component.literal("\u00A77Regeneration Rate:"));
+			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttribute(Attributes.MAX_HEALTH).hasModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey"))) {
+				tooltip.add(Component.literal(("\u00A79+" + (new java.text.DecimalFormat("##.##").format((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 3)) + " Max Absorption")));
+			} else {
+				tooltip.add(Component.literal(("\u00A79+" + (new java.text.DecimalFormat("##.##").format(Math.floor((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 1.5))) + " Max Absorption")));
+			}
+			tooltip.add(Component.literal("\u00A77Absorption Gain:"));
 			tooltip.add(Component.literal("\u00A792HP every 10s"));
 		}
 	}
