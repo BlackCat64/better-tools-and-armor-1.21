@@ -129,7 +129,7 @@
       "Blocks.BLACKSTONE"
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 25,
+    "frequencyPerChunks": 30,
     "frequencyOnChunk": 9,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 128

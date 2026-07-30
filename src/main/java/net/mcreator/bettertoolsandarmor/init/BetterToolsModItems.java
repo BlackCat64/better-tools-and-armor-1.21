@@ -637,7 +637,7 @@ public class BetterToolsModItems {
 		PURPLE_MUSHROOM = block(BetterToolsModBlocks.PURPLE_MUSHROOM);
 		PURPLE_MUSHROOM_BLOCK = block(BetterToolsModBlocks.PURPLE_MUSHROOM_BLOCK);
 		MAGMA_CHESTPLATE = REGISTRY.register("magma_chestplate", MagmaBodyItem.Chestplate::new);
-		BLACKSTONE_MAGMA = block(BetterToolsModBlocks.BLACKSTONE_MAGMA);
+		BLACKSTONE_MAGMA = block(BetterToolsModBlocks.BLACKSTONE_MAGMA, new Item.Properties().fireResistant());
 		DIAMOND_MAGMA_CHESTPLATE = REGISTRY.register("diamond_magma_chestplate", DiamondMagmaBodyItem.Chestplate::new);
 		CHARGED_ICE_ON = block(BetterToolsModBlocks.CHARGED_ICE_ON);
 		CREATIVE_TAB_LOGO = REGISTRY.register("creative_tab_logo", CreativeTabLogoItem::new);

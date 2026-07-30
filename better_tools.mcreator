@@ -3476,8 +3476,20 @@
         ],
         "dependencies": [
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
             "name": "y",
             "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8725,6 +8737,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "breakSpeed",
+            "type": "number"
           },
           {
             "name": "x",
@@ -32300,7 +32316,24 @@
       "locked_code": false,
       "registry_name": "effect_armor_warning",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EffectArmorWarningProcedure.java"
         ]
@@ -34435,38 +34468,6 @@
         ]
       },
       "path": "~/Crystallite/Honey"
-    },
-    {
-      "name": "GiantPurpleMushroomFeatureAdditionalGenerationCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "giant_purple_mushroom_feature_additional_generation_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GiantPurpleMushroomFeatureAdditionalGenerationConditionProcedure.java"
-        ]
-      },
-      "path": "~/Purple Mushrooms"
     }
   ],
   "variable_elements": [
@@ -35529,13 +35530,14 @@
       "CUSTOM:BlueSlimeball"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
+      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
       "~RandomOre@CUSTOM:RandomOre",
       "~SapphireOre@CUSTOM:SapphireOre",
       "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
       "~RubyOre@CUSTOM:RubyOre",
       "~TopazOre@CUSTOM:TopazOre",
-      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~LightPolishedAmethystWall@CUSTOM:LightPolishedAmethystWall",
       "~PolishedAmethystWall@CUSTOM:PolishedAmethystWall",
       "~LightPolishedNetherDiamondWall@CUSTOM:LightPolishedNetherDiamondWall",
@@ -35642,7 +35644,6 @@
       "~TopazBlock@CUSTOM:TopazBlock",
       "~SapphireBlock@CUSTOM:SapphireBlock",
       "~ChargedIceOn@CUSTOM:ChargedIceOn",
-      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~EndTitaniumBlock@CUSTOM:EndTitaniumBlock",
       "~EndTitaniumOre@CUSTOM:EndTitaniumOre",
       "~RubyBlock@CUSTOM:RubyBlock",
@@ -37221,14 +37222,14 @@
       "TAG:better_tools:crystallite_bows"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
+      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
       "~RandomOre@CUSTOM:RandomOre",
       "~SapphireOre@CUSTOM:SapphireOre",
       "~TopazOre@CUSTOM:TopazOre",
-      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~TopazBlock@CUSTOM:TopazBlock",
       "~SapphireBlock@CUSTOM:SapphireBlock",
-      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [

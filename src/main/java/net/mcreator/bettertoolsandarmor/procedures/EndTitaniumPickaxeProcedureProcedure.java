@@ -1,6 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -9,8 +9,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -20,22 +18,23 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class EndTitaniumPickaxeProcedureProcedure {
 	@SubscribeEvent
-	public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
+	public static void onBlockBreaking(PlayerEvent.BreakSpeed event) {
+		if (event.getPosition().isEmpty())
+			return;
+		execute(event, event.getEntity().level(), event.getPosition().get().getX(), event.getPosition().get().getY(), event.getPosition().get().getZ(), event.getEntity(), event.getNewSpeed());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double breakSpeed) {
+		execute(null, world, x, y, z, entity, breakSpeed);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, double breakSpeed) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_PICKAXE.get()) {
-			if (world.getBlockState(BlockPos.containing(x, y, z)).getDestroySpeed(world, BlockPos.containing(x, y, z)) >= 50) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 20, 2, true, false));
-			}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_PICKAXE.get()
+				&& world.getBlockState(BlockPos.containing(x, y, z)).getDestroySpeed(world, BlockPos.containing(x, y, z)) >= 50) {
+			if (event instanceof PlayerEvent.BreakSpeed _speed3)
+				_speed3.setNewSpeed((float) (breakSpeed * 3));
 		}
 	}
 }

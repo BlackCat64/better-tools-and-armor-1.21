@@ -17,7 +17,7 @@ public class TopazOreFeatureFeature extends OreFeature {
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();
-		if (!TopazOreGenerationConditionProcedure.execute(y))
+		if (!TopazOreGenerationConditionProcedure.execute(world, x, y, z))
 			return false;
 		return super.place(context);
 	}

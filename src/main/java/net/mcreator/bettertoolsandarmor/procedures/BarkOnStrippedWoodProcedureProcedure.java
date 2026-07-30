@@ -47,7 +47,7 @@ public class BarkOnStrippedWoodProcedureProcedure {
 		BlockState original_log = Blocks.AIR.defaultBlockState();
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && (BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).contains(":stripped_")) {
 			original_log = BuiltInRegistries.BLOCK.get(ResourceLocation.parse((((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).replace("stripped_", ""))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
-			if (original_log.getBlock() == Blocks.AIR) {
+			if (!original_log.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
 				return false;
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.BARK.get()) {
