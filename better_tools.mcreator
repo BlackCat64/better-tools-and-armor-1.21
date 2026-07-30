@@ -6573,45 +6573,6 @@
       "path": "~/Crystallite/Lapis"
     },
     {
-      "name": "CrystallitePickaxeLapisXP",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_pickaxe_lapis_xp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystallitePickaxeLapisXPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Lapis"
-    },
-    {
       "name": "CrystallitePickaxeLapisRecipe",
       "type": "recipe",
       "compiles": true,
@@ -34468,6 +34429,46 @@
         ]
       },
       "path": "~/Crystallite/Honey"
+    },
+    {
+      "name": "GetBlockXPDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "get_block_xp_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GetBlockXPDropProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
     }
   ],
   "variable_elements": [
@@ -37440,6 +37441,9 @@
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~FungalCaves@CUSTOM:FungalCaves"
+    ],
+    "ITEMS:mod:increased_xp_pickaxes": [
+      "CUSTOM:CrystallitePickaxeLapis"
     ]
   },
   "tab_element_order": {
