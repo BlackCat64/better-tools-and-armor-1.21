@@ -51,7 +51,7 @@ public class ReflectCharmProcedureProcedure {
 			return;
 		double projectile_speed = 0;
 		Vec3 vector = Vec3.ZERO;
-		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get())) && sourceentity instanceof LivingEntity
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get())) && sourceentity instanceof LivingEntity && !(sourceentity == entity)
 				&& !HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get()))) {
 			vector = ((new Vec3((sourceentity.getX()), (sourceentity.getY() + sourceentity.getBbHeight() / 2d), (sourceentity.getZ()))).subtract((new Vec3((entity.getX()), (entity.getY() + entity.getBbHeight() / 2d), (entity.getZ()))))).normalize();
 			projectile_speed = immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0;
@@ -70,16 +70,26 @@ public class ReflectCharmProcedureProcedure {
 							}
 						}
 					}
+					if (immediatesourceentity.getRemainingFireTicks() > 0) {
+						if (world instanceof ServerLevel projectileLevel) {
+							Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)),
+									entity, (float) (((Arrow) immediatesourceentity).getBaseDamage() + 2), false, true, false, AbstractArrow.Pickup.CREATIVE_ONLY);
+							_entityToSpawn.setPos(x, (y + 2), z);
+							_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.1);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
+					} else {
+						if (world instanceof ServerLevel projectileLevel) {
+							Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)),
+									entity, (float) (((Arrow) immediatesourceentity).getBaseDamage() + 2), false, false, false, AbstractArrow.Pickup.CREATIVE_ONLY);
+							_entityToSpawn.setPos(x, (y + 2), z);
+							_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.1);
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
+					}
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.ARROW), sourceentity), (float) ((Arrow) immediatesourceentity).getBaseDamage());
 					if (!immediatesourceentity.level().isClientSide())
 						immediatesourceentity.discard();
-					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), entity, 4,
-								false, false, false, AbstractArrow.Pickup.CREATIVE_ONLY);
-						_entityToSpawn.setPos(x, (y + 2), z);
-						_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.1);
-						projectileLevel.addFreshEntity(_entityToSpawn);
-					}
-					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.ARROW), null, sourceentity), 1);
 				} else if (immediatesourceentity instanceof LargeFireball) {
 					if (event instanceof ICancellableEvent _cancellable) {
 						_cancellable.setCanceled(true);
@@ -102,7 +112,7 @@ public class ReflectCharmProcedureProcedure {
 						_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.05);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
-					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), null, sourceentity), 4);
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), sourceentity), 4);
 				} else if (immediatesourceentity instanceof SmallFireball) {
 					if (event instanceof ICancellableEvent _cancellable) {
 						_cancellable.setCanceled(true);
@@ -125,7 +135,7 @@ public class ReflectCharmProcedureProcedure {
 						_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.05);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
-					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), null, sourceentity), 2);
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), sourceentity), 2);
 				}
 			}
 		}
