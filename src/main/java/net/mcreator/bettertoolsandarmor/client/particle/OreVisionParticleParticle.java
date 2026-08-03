@@ -35,7 +35,7 @@ public class OreVisionParticleParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.lifetime = (int) Math.max(1, 60 + (this.random.nextInt(40) - 20));
+		this.lifetime = (int) Math.max(1, 100 + (this.random.nextInt(60) - 30));
 		this.gravity = 0f;
 		this.hasPhysics = false;
 		this.xd = vx * 1;
