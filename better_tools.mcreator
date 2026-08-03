@@ -21027,7 +21027,7 @@
       "name": "CuringCharmProcedure",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "curing_charm_procedure",
       "metadata": {
         "files": [
@@ -39634,7 +39634,7 @@
       "item.better_tools.guardian_necklace": "§3Guardian Necklace",
       "item.better_tools.curing_charm.description_0": "§7When worn:",
       "item.better_tools.curing_charm": "§6Curing Charm",
-      "item.better_tools.curing_charm.description_1": "§9Shortens the duration of negative effects",
+      "item.better_tools.curing_charm.description_1": "§9Shortens the duration of negative effects to 5s",
       "item.better_tools.bouncy_bracelet.description_1": "§9+2 Attack Knockback",
       "item.better_tools.bouncy_bracelet.description_0": "§7When worn:",
       "item.better_tools.bouncy_bracelet": "§bBouncy Bracelet",

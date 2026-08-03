@@ -32,7 +32,7 @@
     "specialInformation": {
       "fixedValue": [
         "§7When worn:",
-        "§9Shortens the duration of negative effects"
+        "§9Shortens the duration of negative effects to 5s"
       ]
     },
     "glowCondition": {
