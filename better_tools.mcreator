@@ -8949,6 +8949,10 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -16912,7 +16916,7 @@
           "src/main/resources/data/better_tools/recipe/ender_goggles_recipe.json"
         ]
       },
-      "path": "~/Crystallite/Misc. Charms"
+      "path": "~/Ender Titanium"
     },
     {
       "name": "BouncyBraceletRecipe",
@@ -30939,7 +30943,7 @@
           "src/main/resources/assets/better_tools/models/item/ender_goggles.json"
         ]
       },
-      "path": "~/Crystallite/Misc. Charms"
+      "path": "~/Ender Titanium"
     },
     {
       "name": "EnderGogglesCurios",
@@ -30950,7 +30954,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Crystallite/Misc. Charms"
+      "path": "~/Ender Titanium"
     },
     {
       "name": "PoisonCharm",
@@ -34507,6 +34511,33 @@
         "files": []
       },
       "path": "~/Effect Armor/Hearty Shirt"
+    },
+    {
+      "name": "EnderGogglesProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_goggles_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnderGogglesProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Ender Titanium"
     }
   ],
   "variable_elements": [
