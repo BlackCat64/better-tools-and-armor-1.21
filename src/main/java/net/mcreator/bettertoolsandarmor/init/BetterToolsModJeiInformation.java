@@ -368,5 +368,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				new ItemStack(BetterToolsModItems.RECALL_POTION.get()), new ItemStack(BetterToolsModItems.LOST_SOULS_POTION.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.utility_potions_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.WARDEN_STAFF.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.warden_staff_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.WINGED_BOOTS_BOOTS.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.winged_boots_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.hearty_shirt_info"));
 	}
 }

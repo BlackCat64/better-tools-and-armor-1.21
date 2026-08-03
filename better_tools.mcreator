@@ -34496,6 +34496,17 @@
         ]
       },
       "path": "~/Utility Procedures"
+    },
+    {
+      "name": "HeartyShirtInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hearty_shirt_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Effect Armor/Hearty Shirt"
     }
   ],
   "variable_elements": [
@@ -37295,6 +37306,9 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~DiamondHeartyBody@CUSTOM:DiamondHeartyBody.body",
+      "~IronHeartyBody@CUSTOM:IronHeartyBody.body",
+      "~HeartyBody@CUSTOM:HeartyBody.body",
       "~WoodenArmor@CUSTOM:WoodenArmor.body",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.body",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.body",
@@ -37321,11 +37335,8 @@
       "~MagmaBody@CUSTOM:MagmaBody.body",
       "~GlassArmor@CUSTOM:GlassArmor.body",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.body",
-      "~DiamondHeartyBody@CUSTOM:DiamondHeartyBody.body",
       "~DiamondCactusBody@CUSTOM:DiamondCactusBody.body",
-      "~IronHeartyBody@CUSTOM:IronHeartyBody.body",
       "~IronCactusBody@CUSTOM:IronCactusBody.body",
-      "~HeartyBody@CUSTOM:HeartyBody.body",
       "~CactusBody@CUSTOM:CactusBody.body",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
@@ -39769,7 +39780,8 @@
       "item.better_tools.crystallite_bow_prismarine.description_2": "§3Streamlined - Arrows are not slowed by water",
       "item.better_tools.crystallite_bow_prismarine.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_honey.description_2": "§6Swarm - Fires arrows rapidly, but deals less damage",
-      "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:"
+      "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:",
+      "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP."
     }
   },
   "metadata": {

@@ -1,0 +1,18 @@
+{
+  "_fv": 89,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      "CUSTOM:HeartyBody.body",
+      "CUSTOM:IronHeartyBody.body",
+      "CUSTOM:DiamondHeartyBody.body"
+    ],
+    "information": [
+      "§lHearty Shirt§r",
+      "",
+      "Adds 1HP of Absorption every 5s, when worn.",
+      "Uses energy from an Energy Vial.",
+      "No energy is used when full on Absorption HP."
+    ]
+  }
+}

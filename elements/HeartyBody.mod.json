@@ -99,6 +99,19 @@
       "Items.SPECKLED_MELON"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "MAX_ABSORPTION",
+        "amount": 4.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    ]
   }
 }

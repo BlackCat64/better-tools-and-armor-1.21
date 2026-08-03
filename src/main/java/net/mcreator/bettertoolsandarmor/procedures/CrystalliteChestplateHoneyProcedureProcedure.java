@@ -34,32 +34,30 @@ public class CrystalliteChestplateHoneyProcedureProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()) {
-			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_hurt > 200) {
-				if (!(entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttribute(Attributes.MAX_HEALTH).hasModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey")))) {
-					if (entity instanceof LivingEntity _entity) {
-						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey"), Math.floor((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 1.5),
-								AttributeModifier.Operation.ADD_VALUE);
-						if (!_entity.getAttribute(Attributes.MAX_ABSORPTION).hasModifier(modifier.id())) {
-							_entity.getAttribute(Attributes.MAX_ABSORPTION).addPermanentModifier(modifier);
-						}
-					}
-					SetAbsorptionAmountProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0)
-							+ Math.max((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2, 0));
-					if (entity instanceof LivingEntity _entity) {
-						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey"), (-0.5), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
-						if (!_entity.getAttribute(Attributes.MAX_HEALTH).hasModifier(modifier.id())) {
-							_entity.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(modifier);
-						}
+			if (!(entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttribute(Attributes.MAX_HEALTH).hasModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey")))) {
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey"), Math.floor((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 1.5),
+							AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(Attributes.MAX_ABSORPTION).hasModifier(modifier.id())) {
+						_entity.getAttribute(Attributes.MAX_ABSORPTION).addPermanentModifier(modifier);
 					}
 				}
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
-					if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_honey_absorption_timer <= 0) {
-						SetAbsorptionAmountProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 2);
-						{
-							BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
-							_vars.crystallite_honey_absorption_timer = 200;
-							_vars.markSyncDirty();
-						}
+				SetAbsorptionAmountProcedure.execute(entity,
+						(entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + Math.max((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2, 0));
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_chestplate_honey"), (-0.5), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+					if (!_entity.getAttribute(Attributes.MAX_HEALTH).hasModifier(modifier.id())) {
+						_entity.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(modifier);
+					}
+				}
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
+				if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_honey_absorption_timer <= 0) {
+					SetAbsorptionAmountProcedure.execute(entity, (entity instanceof Player _plr ? _plr.getAbsorptionAmount() : 0) + 2);
+					{
+						BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+						_vars.crystallite_honey_absorption_timer = 200;
+						_vars.markSyncDirty();
 					}
 				}
 			}

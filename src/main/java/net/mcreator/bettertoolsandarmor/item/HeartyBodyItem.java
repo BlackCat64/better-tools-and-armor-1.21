@@ -6,16 +6,22 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.Util;
+
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.List;
 import java.util.EnumMap;
@@ -46,7 +52,11 @@ public abstract class HeartyBodyItem extends ArmorItem {
 
 	public static class Chestplate extends HeartyBodyItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(5)));
+			super(ArmorItem.Type.CHESTPLATE,
+					new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(5))
+							.attributes(ItemAttributeModifiers.builder().add(Attributes.ARMOR, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.chestplate"), 3, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
+									.add(Attributes.MAX_ABSORPTION, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "hearty_0.chestplate"), 4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
+									.build()));
 		}
 	}
 }
