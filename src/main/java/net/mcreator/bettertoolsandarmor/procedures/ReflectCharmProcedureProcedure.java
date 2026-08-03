@@ -12,7 +12,11 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.*;
+import net.minecraft.world.entity.projectile.SmallFireball;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.LargeFireball;
+import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -46,13 +50,12 @@ public class ReflectCharmProcedureProcedure {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
 		double projectile_speed = 0;
-		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get())) && sourceentity instanceof LivingEntity) {
-			if (!HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get()))) {
-				projectile_speed = 0;
-			} else {
-				if ((immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0) > 0) {
-					projectile_speed = Math.pow(immediatesourceentity.getDeltaMovement().x(), 2) + Math.pow(immediatesourceentity.getDeltaMovement().y(), 2) + Math.pow(immediatesourceentity.getDeltaMovement().z(), 2);
-				}
+		Vec3 vector = Vec3.ZERO;
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get())) && sourceentity instanceof LivingEntity
+				&& !HasCuriosItemEquippedProcedure.execute(world, sourceentity, new ItemStack(BetterToolsModItems.REFLECT_CHARM.get()))) {
+			vector = ((new Vec3((sourceentity.getX()), (sourceentity.getY() + sourceentity.getBbHeight() / 2d), (sourceentity.getZ()))).subtract((new Vec3((entity.getX()), (entity.getY() + entity.getBbHeight() / 2d), (entity.getZ()))))).normalize();
+			projectile_speed = immediatesourceentity instanceof Projectile _projEnt ? _projEnt.getDeltaMovement().length() : 0;
+			if (projectile_speed > 0) {
 				if (immediatesourceentity instanceof Arrow) {
 					if (event instanceof ICancellableEvent _cancellable) {
 						_cancellable.setCanceled(true);
@@ -70,10 +73,10 @@ public class ReflectCharmProcedureProcedure {
 					if (!immediatesourceentity.level().isClientSide())
 						immediatesourceentity.discard();
 					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), entity, 6,
+						Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), entity, 4,
 								false, false, false, AbstractArrow.Pickup.CREATIVE_ONLY);
 						_entityToSpawn.setPos(x, (y + 2), z);
-						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) (projectile_speed / 2), 0);
+						_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.1);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.ARROW), null, sourceentity), 1);
@@ -94,10 +97,9 @@ public class ReflectCharmProcedureProcedure {
 					if (!immediatesourceentity.level().isClientSide())
 						immediatesourceentity.discard();
 					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initProjectileProperties(new LargeFireball(EntityType.FIREBALL, projectileLevel), entity, new Vec3(((immediatesourceentity.getDeltaMovement().x() * (-0.1)) / projectile_speed),
-								((immediatesourceentity.getDeltaMovement().y() * (-0.1)) / projectile_speed), ((immediatesourceentity.getDeltaMovement().z() * (-0.1)) / projectile_speed)));
-						_entityToSpawn.setPos(x, (y + 1), z);
-						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) projectile_speed, (float) 0.05);
+						Projectile _entityToSpawn = initProjectileProperties(new LargeFireball(EntityType.FIREBALL, projectileLevel), entity, new Vec3((vector.x()), (vector.y()), (vector.z())));
+						_entityToSpawn.setPos(x, (y + 2), z);
+						_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.05);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), null, sourceentity), 4);
@@ -118,79 +120,12 @@ public class ReflectCharmProcedureProcedure {
 					if (!immediatesourceentity.level().isClientSide())
 						immediatesourceentity.discard();
 					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initProjectileProperties(new SmallFireball(EntityType.SMALL_FIREBALL, projectileLevel), entity, new Vec3(((immediatesourceentity.getDeltaMovement().x() * (-0.1)) / projectile_speed),
-								((immediatesourceentity.getDeltaMovement().y() * (-0.1)) / projectile_speed), ((immediatesourceentity.getDeltaMovement().z() * (-0.1)) / projectile_speed)));
-						_entityToSpawn.setPos(x, (y + 1), z);
-						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) projectile_speed, (float) 0.05);
+						Projectile _entityToSpawn = initProjectileProperties(new SmallFireball(EntityType.SMALL_FIREBALL, projectileLevel), entity, new Vec3((vector.x()), (vector.y()), (vector.z())));
+						_entityToSpawn.setPos(x, (y + 2), z);
+						_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.05);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
-					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), null, sourceentity), 1);
-				} else if (immediatesourceentity instanceof Snowball) {
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:reflect_projectile_adv"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
-					}
-					if (!immediatesourceentity.level().isClientSide())
-						immediatesourceentity.discard();
-					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initProjectileProperties(new Snowball(EntityType.SNOWBALL, projectileLevel), entity, Vec3.ZERO);
-						_entityToSpawn.setPos(x, (y + 1), z);
-						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) projectile_speed, 0);
-						projectileLevel.addFreshEntity(_entityToSpawn);
-					}
-				} else if (immediatesourceentity instanceof ThrownEgg) {
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:reflect_projectile_adv"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
-					}
-					if (!immediatesourceentity.level().isClientSide())
-						immediatesourceentity.discard();
-					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initProjectileProperties(new ThrownEgg(EntityType.EGG, projectileLevel), entity, Vec3.ZERO);
-						_entityToSpawn.setPos(x, (y + 1), z);
-						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) projectile_speed, 0);
-						projectileLevel.addFreshEntity(_entityToSpawn);
-					}
-				} else if (immediatesourceentity instanceof LlamaSpit) {
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:reflect_projectile_adv"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
-					}
-					if (!immediatesourceentity.level().isClientSide())
-						immediatesourceentity.discard();
-					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = initProjectileProperties(new LlamaSpit(EntityType.LLAMA_SPIT, projectileLevel), entity, Vec3.ZERO);
-						_entityToSpawn.setPos(x, (y + 1), z);
-						_entityToSpawn.shoot((immediatesourceentity.getDeltaMovement().x() * (-1)), (immediatesourceentity.getDeltaMovement().y() * (-1)), (immediatesourceentity.getDeltaMovement().z() * (-1)), (float) projectile_speed, 0);
-						projectileLevel.addFreshEntity(_entityToSpawn);
-					}
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FIREBALL), null, sourceentity), 2);
 				}
 			}
 		}
