@@ -34,15 +34,13 @@ public class CrystalliteGoldPickaxeTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_tools")))) {
-			if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
-				tooltip.add(Component.literal(("\u00A72 "
-						+ (new java.text.DecimalFormat("##.#").format(
-								entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity5.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))
-						+ " Block Reach")));
-			} else {
-				tooltip.add(Component.literal("\u00A79+3 Block Reach"));
-			}
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_tools"))) && itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+			ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("Block Interaction Range", tooltip),
+					"\u00A72 "
+							+ (new java.text.DecimalFormat("##.#").format(
+									entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity5.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))
+							+ " Block Interaction Range",
+					tooltip);
 		}
 	}
 }

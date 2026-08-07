@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -14,24 +15,25 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class CrystalliteArmorGoldReachProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event, event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double armor_pieces = 0;
-		armor_pieces = 0;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_armor")))) {
 			armor_pieces = armor_pieces + 1;
 		}
@@ -44,15 +46,15 @@ public class CrystalliteArmorGoldReachProcedure {
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_armor")))) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if (armor_pieces == 4) {
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.GILDED_BRACELET.get()))) {
 			armor_pieces = armor_pieces + 1;
 		}
 		if (entity instanceof LivingEntity _entity) {
 			_entity.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_gold_armor"));
 		}
-		if (armor_pieces > 0) {
+		if (armor_pieces >= 3) {
 			if (entity instanceof LivingEntity _entity) {
-				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:name"), armor_pieces, AttributeModifier.Operation.ADD_VALUE);
+				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_gold_armor"), 1, AttributeModifier.Operation.ADD_VALUE);
 				if (!_entity.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).hasModifier(modifier.id())) {
 					_entity.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).addPermanentModifier(modifier);
 				}

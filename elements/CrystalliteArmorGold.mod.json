@@ -117,6 +117,19 @@
       "Items.GOLD_INGOT"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "BLOCK_REACH",
+        "amount": 1.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
   }
 }

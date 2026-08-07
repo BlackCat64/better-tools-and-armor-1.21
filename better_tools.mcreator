@@ -18789,6 +18789,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -36898,7 +36902,9 @@
       "CUSTOM:CrystallitePickaxeGold",
       "CUSTOM:CrystalliteAxeGold",
       "CUSTOM:CrystalliteShovelGold",
-      "CUSTOM:CrystalliteHoeGold"
+      "CUSTOM:CrystalliteHoeGold",
+      "CUSTOM:CrystalliteSwordGold",
+      "CUSTOM:CrystalliteDaggerGold"
     ],
     "DAMAGE_TYPES:mod:damage_overrides": [
       "CUSTOM:MagicWeaponDamage",
@@ -37303,6 +37309,7 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.helmet",
       "~HoneycombHelmet@CUSTOM:HoneycombHelmet.helmet",
       "~AmethystHelmet@CUSTOM:AmethystHelmet.helmet",
       "~WoodenArmor@CUSTOM:WoodenArmor.helmet",
@@ -37322,7 +37329,6 @@
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.helmet",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.helmet",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.helmet",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.helmet",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.helmet",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.helmet",
       "~TopazArmor@CUSTOM:TopazArmor.helmet",
@@ -37337,6 +37343,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.body",
       "~DiamondHeartyBody@CUSTOM:DiamondHeartyBody.body",
       "~IronHeartyBody@CUSTOM:IronHeartyBody.body",
       "~HeartyBody@CUSTOM:HeartyBody.body",
@@ -37357,7 +37364,6 @@
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.body",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.body",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.body",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.body",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.body",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.body",
       "~TopazArmor@CUSTOM:TopazArmor.body",
@@ -37372,6 +37378,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.legs",
       "~WoodenArmor@CUSTOM:WoodenArmor.legs",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.legs",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.legs",
@@ -37389,7 +37396,6 @@
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.legs",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.legs",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.legs",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.legs",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.legs",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.legs",
       "~TopazArmor@CUSTOM:TopazArmor.legs",
@@ -37405,6 +37411,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.boots",
       "~DripstoneBoots@CUSTOM:DripstoneBoots.boots",
       "~WoodenArmor@CUSTOM:WoodenArmor.boots",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.boots",
@@ -37424,7 +37431,6 @@
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.boots",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.boots",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.boots",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.boots",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.boots",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.boots",
       "~TopazArmor@CUSTOM:TopazArmor.boots",
@@ -39616,7 +39622,7 @@
       "item.better_tools.tough_necklace.description_0": "§7When worn:",
       "item.better_tools.tough_necklace.description_1": "§9+1.5 Knockback Resistance",
       "item.better_tools.tough_necklace": "§7Tough Necklace",
-      "item.better_tools.gilded_bracelet.description_1": "§9+1 Block Reach",
+      "item.better_tools.gilded_bracelet.description_1": "§9+1 Block Interaction Range",
       "item.better_tools.gilded_bracelet.description_0": "§7When worn:",
       "item.better_tools.gilded_bracelet.description_2": "§9Makes Piglins neutral",
       "item.better_tools.gilded_bracelet": "§eGilded Bracelet",
@@ -39690,7 +39696,7 @@
       "jei.better_tools.blue_mushroom_info": "Blue Mushrooms generate exclusively on Mushroom Islands, along with giant variants.\nThey can be bone-mealed to become giant, if there is enough space.",
       "jei.better_tools.combo_mining_info": "Mining Combo will be lost after 2s of not mining the same block.",
       "jei.better_tools.crying_obsidian_helmet_info": "Acts like a Totem of Undying, but worn on your head.\nThe helmet must have enough durability remaining for the effect to work.\nUpgrade it with diamonds to prevent the helmet from breaking when the effect is used.",
-      "jei.better_tools.crystallite_armor_gold_info": "§lFull-set bonus:§r\n§9+1 Block Reach§r\n(for a total of §9+5§r)",
+      "jei.better_tools.crystallite_armor_gold_info": "§l3-piece bonus:§r\nAdditional §9+1 Block Interaction Range§r",
       "jei.better_tools.crystallite_armor_honey_info": "§lFull-set bonus:§r\nCalms all nearby bees",
       "jei.better_tools.crystallite_armor_iron_info": "§lFull-set bonus:§r\nInflicts melee attackers with §9Slowness II§r for 3s",
       "jei.better_tools.crystallite_armor_lapis_info": "§lFull-set bonus:§r\nAll XP is kept on death\n(also works when 3 pieces are worn and a Magic Ring is equipped)",

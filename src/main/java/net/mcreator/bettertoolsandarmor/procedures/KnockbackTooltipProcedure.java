@@ -10,6 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -39,7 +40,9 @@ public class KnockbackTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		double value = 0;
-		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK)) != 0 || itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:high_knockback_weapons")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()
+				&& (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK)) != 0
+						|| itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:high_knockback_weapons"))))) {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:iron_upgraded_crystallite_items")))) {
 				value = 2 + itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK));
 			} else if (itemstack.getItem() == BetterToolsModItems.BLUE_SLIME_STICK.get()) {
@@ -50,10 +53,7 @@ public class KnockbackTooltipProcedure {
 			if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.BOUNCY_BRACELET.get()))) {
 				value = value + 2;
 			}
-			if (!itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:tools")))) {
-				tooltip.add(Component.literal("\u00A77When in Main Hand:"));
-			}
-			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(value) + " Attack Knockback")));
+			ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("Attack Knockback", tooltip), "\u00A72 " + new java.text.DecimalFormat("##").format(value) + " Attack Knockback", tooltip);
 		}
 	}
 }

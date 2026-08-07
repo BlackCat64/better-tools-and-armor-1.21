@@ -43,11 +43,10 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.combo_mining_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.CRYING_OBSIDIAN_HELMET.get()), new ItemStack(BetterToolsModItems.DIAMOND_CRYING_OBSIDIAN_HELMET.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.better_tools.crying_obsidian_helmet_info"));
-		registration
-				.addIngredientInfo(
-						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_CHESTPLATE.get()),
-								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_BOOTS.get())),
-						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_gold_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_LEGGINGS.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_GOLD_BOOTS.get()), new ItemStack(BetterToolsModItems.GILDED_BRACELET.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_gold_info"));
 		registration
 				.addIngredientInfo(
 						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_CHESTPLATE.get()),

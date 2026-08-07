@@ -6,12 +6,12 @@
       "CUSTOM:CrystalliteArmorGold.helmet",
       "CUSTOM:CrystalliteArmorGold.body",
       "CUSTOM:CrystalliteArmorGold.legs",
-      "CUSTOM:CrystalliteArmorGold.boots"
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:GildedBracelet"
     ],
     "information": [
-      "§lFull-set bonus:§r",
-      "§9+1 Block Reach§r",
-      "(for a total of §9+5§r)"
+      "§l3-piece bonus:§r",
+      "Additional §9+1 Block Interaction Range§r"
     ]
   }
 }
