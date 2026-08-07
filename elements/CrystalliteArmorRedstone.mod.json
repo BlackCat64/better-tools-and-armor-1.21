@@ -117,6 +117,19 @@
       "Items.REDSTONE"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "MAX_HEALTH",
+        "amount": 2.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
   }
 }

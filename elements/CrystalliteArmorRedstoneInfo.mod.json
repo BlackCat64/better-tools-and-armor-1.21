@@ -6,12 +6,12 @@
       "CUSTOM:CrystalliteArmorRedstone.helmet",
       "CUSTOM:CrystalliteArmorRedstone.body",
       "CUSTOM:CrystalliteArmorRedstone.legs",
-      "CUSTOM:CrystalliteArmorRedstone.boots"
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:HeartCharm"
     ],
     "information": [
-      "§lFull-set bonus:§r",
-      "§9+2 Max Health§r",
-      "(for a total of §9+10§r)"
+      "§l3-piece bonus:§r",
+      "Additional §9+2 Max Health§r"
     ]
   }
 }

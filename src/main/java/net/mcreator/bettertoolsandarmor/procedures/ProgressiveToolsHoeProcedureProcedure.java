@@ -50,10 +50,10 @@ public class ProgressiveToolsHoeProcedureProcedure {
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:hoe_allowed_blocks"))) && world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:progressive_tools")))
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes")))) {
-				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
+				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:progressive_tools")))
 					&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes"))))) {
-				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
+				hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 				off_hand = true;
 			}
 			if (!(hoe.getItem() == ItemStack.EMPTY.getItem())) {
@@ -78,17 +78,17 @@ public class ProgressiveToolsHoeProcedureProcedure {
 					new_pickaxe.applyComponents(hoe.getComponents());
 					if (off_hand) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack30 = new_pickaxe.copy();
-							_setstack30.setCount(1);
-							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack30);
+							ItemStack _setstack32 = new_pickaxe.copy();
+							_setstack32.setCount(1);
+							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack32);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
 						}
 					} else {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack31 = new_pickaxe.copy();
-							_setstack31.setCount(1);
-							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack31);
+							ItemStack _setstack33 = new_pickaxe.copy();
+							_setstack33.setCount(1);
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack33);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
 						}

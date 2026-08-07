@@ -8,6 +8,7 @@
     "texture": "crystallite_axe_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Axe",
     "rarity": "COMMON",
     "specialInformation": {

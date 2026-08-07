@@ -72,7 +72,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_netherite_info"));
 		registration.addIngredientInfo(
 				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_CHESTPLATE.get()),
-						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_BOOTS.get())),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_BOOTS.get()), new ItemStack(BetterToolsModItems.HEART_CHARM.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_redstone_info"));
 		registration
 				.addIngredientInfo(
