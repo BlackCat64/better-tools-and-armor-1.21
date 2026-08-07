@@ -48,7 +48,7 @@ public class CrystalliteHoeLapisProcedureProcedure {
 				chance = chance + (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity8.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				if (Math.random() < chance) {
 					if (world instanceof ServerLevel _level)
-						_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()), Mth.nextInt(RandomSource.create(), 1,
+						_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + 1.1), (z + Math.random()), Mth.nextInt(RandomSource.create(), 1,
 								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) + 1)));
 				}
 			}

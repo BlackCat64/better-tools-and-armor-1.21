@@ -21,7 +21,7 @@ public class CrystalliteShovelLapisProcedureProcedure {
 		chance = chance + (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity0.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 		if (Math.random() < chance) {
 			if (world instanceof ServerLevel _level)
-				_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + Math.random()), (z + Math.random()),
+				_level.addFreshEntity(new ExperienceOrb(_level, (x + Math.random()), (y + 0.5), (z + Math.random()),
 						Mth.nextInt(RandomSource.create(), 1, itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) + 1)));
 		}
 	}

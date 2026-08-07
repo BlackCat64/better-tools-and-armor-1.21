@@ -6,12 +6,13 @@
       "CUSTOM:CrystalliteArmorLapis.helmet",
       "CUSTOM:CrystalliteArmorLapis.body",
       "CUSTOM:CrystalliteArmorLapis.legs",
-      "CUSTOM:CrystalliteArmorLapis.boots"
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:MagicRing"
     ],
     "information": [
-      "§lFull-set bonus:§r",
+      "§l3-piece bonus:§r",
       "All XP is kept on death",
-      "(also works when 3 pieces are worn and a Magic Ring is equipped)"
+      "Additional §9+20% XP drops from mobs"
     ]
   }
 }

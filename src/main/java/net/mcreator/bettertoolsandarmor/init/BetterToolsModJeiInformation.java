@@ -60,7 +60,7 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration
 				.addIngredientInfo(
 						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_CHESTPLATE.get()),
-								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_BOOTS.get())),
+								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_LAPIS_BOOTS.get()), new ItemStack(BetterToolsModItems.MAGIC_RING.get())),
 						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_lapis_info"));
 		registration.addIngredientInfo(
 				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_NETHER_DIAMOND_CHESTPLATE.get()),

@@ -58,7 +58,7 @@ public class CrystalliteArmorXPProcedure {
 		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.MAGIC_RING.get()))) {
 			armor_pieces = armor_pieces + 1;
 		}
-		if (armor_pieces >= 4) {
+		if (armor_pieces >= 3) {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.respawn_xp = original_xp;
@@ -67,7 +67,7 @@ public class CrystalliteArmorXPProcedure {
 		} else {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
-				_vars.respawn_xp = Math.round(armor_pieces * original_xp * 0.2);
+				_vars.respawn_xp = Math.floor(armor_pieces * original_xp * 0.25);
 				_vars.markSyncDirty();
 			}
 		}
