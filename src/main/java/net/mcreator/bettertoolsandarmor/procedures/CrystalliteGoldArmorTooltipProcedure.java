@@ -10,7 +10,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -35,17 +34,13 @@ public class CrystalliteGoldArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_armor")))) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
-				ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("Block Interaction Range", tooltip),
-						"\u00A72 " + (new java.text.DecimalFormat("##.#").format(
-								entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity14.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))
-								+ " Block Interaction Range",
-						tooltip);
-			}
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:increased_reach_armor"))) && IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
+			ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("Block Interaction Range", tooltip),
+					"\u00A72 "
+							+ (new java.text.DecimalFormat("##.#").format(
+									entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity2.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))
+							+ " Block Interaction Range",
+					tooltip);
 		}
 	}
 }

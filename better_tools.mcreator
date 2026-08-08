@@ -18746,6 +18746,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -37324,6 +37328,7 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.helmet",
       "~HoneycombHelmet@CUSTOM:HoneycombHelmet.helmet",
       "~AmethystHelmet@CUSTOM:AmethystHelmet.helmet",
       "~WoodenArmor@CUSTOM:WoodenArmor.helmet",
@@ -37338,7 +37343,6 @@
       "~CrystalliteArmorNetherDiamond@CUSTOM:CrystalliteArmorNetherDiamond.helmet",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.helmet",
       "~CrystalliteArmorSapphire@CUSTOM:CrystalliteArmorSapphire.helmet",
-      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.helmet",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.helmet",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.helmet",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.helmet",
@@ -37358,6 +37362,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.body",
       "~DiamondCactusBody@CUSTOM:DiamondCactusBody.body",
       "~IronCactusBody@CUSTOM:IronCactusBody.body",
       "~CactusBody@CUSTOM:CactusBody.body",
@@ -37373,7 +37378,6 @@
       "~CrystalliteArmorNetherDiamond@CUSTOM:CrystalliteArmorNetherDiamond.body",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.body",
       "~CrystalliteArmorSapphire@CUSTOM:CrystalliteArmorSapphire.body",
-      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.body",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.body",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.body",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.body",
@@ -37393,6 +37397,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.legs",
       "~WoodenArmor@CUSTOM:WoodenArmor.legs",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.legs",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.legs",
@@ -37405,7 +37410,6 @@
       "~CrystalliteArmorNetherDiamond@CUSTOM:CrystalliteArmorNetherDiamond.legs",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.legs",
       "~CrystalliteArmorSapphire@CUSTOM:CrystalliteArmorSapphire.legs",
-      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.legs",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.legs",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.legs",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.legs",
@@ -37426,6 +37430,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.boots",
       "~DripstoneBoots@CUSTOM:DripstoneBoots.boots",
       "~WoodenArmor@CUSTOM:WoodenArmor.boots",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.boots",
@@ -37440,7 +37445,6 @@
       "~CrystalliteArmorNetherDiamond@CUSTOM:CrystalliteArmorNetherDiamond.boots",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.boots",
       "~CrystalliteArmorSapphire@CUSTOM:CrystalliteArmorSapphire.boots",
-      "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.boots",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.boots",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.boots",
       "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.boots",

@@ -37,12 +37,9 @@ public class CrystalliteNetheriteArmorTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_thorns_armor")))) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
 				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##").format(
-						entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE) ? _livingEntity14.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE).getValue() : 0))
+						entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.THORNS_DAMAGE) ? _livingEntity2.getAttribute(BetterToolsModAttributes.THORNS_DAMAGE).getValue() : 0))
 						+ " Thorns Damage")));
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_thorns_armor")))
 						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_thorns_armor")))

@@ -11,9 +11,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -34,16 +34,13 @@ public class CrystalliteRubyArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get()
-				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get() || itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_BOOTS.get()) {
-			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
-				tooltip.add(Component.literal(("\u00A72 "
-						+ (new java.text.DecimalFormat("##.#")
-								.format((entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity8.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
-						+ "% Movement Speed")));
-			} else {
-				tooltip.add(Component.literal("\u00A79+10% Speed"));
-			}
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:speed_boosting_armor"))) && IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
+			ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("% Speed", tooltip),
+					"\u00A72 "
+							+ (new java.text.DecimalFormat("##.#")
+									.format((entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
+							+ "% Speed",
+					tooltip);
 		}
 	}
 }

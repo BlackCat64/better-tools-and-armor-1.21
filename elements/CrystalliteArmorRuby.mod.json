@@ -117,6 +117,19 @@
       "CUSTOM:Ruby"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "MOVEMENT_SPEED",
+        "amount": 0.01,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
   }
 }
