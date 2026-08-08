@@ -8,13 +8,14 @@
     "texture": "crystallite_pickaxe_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Pickaxe",
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §cRedstone",
         "§7Ability:",
-        "§cCalibrated [0/2] - Mining speed increases with number of blocks mined"
+        "§cCalibrated - Mining speed increases with number of blocks mined"
       ]
     },
     "creativeTabs": [
@@ -38,6 +39,7 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": "ProgressiveToolsSetThresholds"
   }
 }

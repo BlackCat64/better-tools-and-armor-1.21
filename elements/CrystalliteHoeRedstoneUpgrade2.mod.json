@@ -8,6 +8,7 @@
     "texture": "crystallite_hoe_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Hoe",
     "rarity": "COMMON",
     "specialInformation": {
@@ -36,6 +37,7 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": "MigrateOldProgressiveTools"
   }
 }

@@ -4,12 +4,15 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.procedures.ProgressiveToolsSetThresholdsProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -58,6 +61,11 @@ public class CrystalliteShovelRedstoneItem extends ShovelItem {
 		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone.description_0"));
 		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone.description_2"));
-		list.add(Component.translatable("item.better_tools.crystallite_shovel_redstone.description_3"));
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		ProgressiveToolsSetThresholdsProcedure.execute(itemstack);
 	}
 }

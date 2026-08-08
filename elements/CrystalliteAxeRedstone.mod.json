@@ -8,6 +8,7 @@
     "texture": "crystallite_axe_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Axe",
     "rarity": "COMMON",
     "specialInformation": {
@@ -15,7 +16,7 @@
         "§7Upgrade: §cRedstone",
         "§7Abilities:",
         "§cLeech - Heals you when striking a target",
-        "§cCalibrated [0/2] - Mining speed increases with number of blocks mined"
+        "§cCalibrated - Mining speed increases with number of blocks mined"
       ]
     },
     "creativeTabs": [
@@ -39,6 +40,7 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": "ProgressiveToolsSetThresholds"
   }
 }

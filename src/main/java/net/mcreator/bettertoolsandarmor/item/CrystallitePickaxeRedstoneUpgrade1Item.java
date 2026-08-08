@@ -4,12 +4,15 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.bettertoolsandarmor.procedures.MigrateOldProgressiveToolsProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -23,7 +26,7 @@ public class CrystallitePickaxeRedstoneUpgrade1Item extends PickaxeItem {
 
 		@Override
 		public float getSpeed() {
-			return 18f;
+			return 12f;
 		}
 
 		@Override
@@ -59,5 +62,11 @@ public class CrystallitePickaxeRedstoneUpgrade1Item extends PickaxeItem {
 		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_redstone_upgrade_1.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_redstone_upgrade_1.description_2"));
 		list.add(Component.translatable("item.better_tools.crystallite_pickaxe_redstone_upgrade_1.description_3"));
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		MigrateOldProgressiveToolsProcedure.execute(entity, itemstack, slot);
 	}
 }

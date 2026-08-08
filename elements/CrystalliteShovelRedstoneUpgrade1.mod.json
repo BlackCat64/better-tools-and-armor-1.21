@@ -8,6 +8,7 @@
     "texture": "crystallite_shovel_redstone",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Shovel",
     "rarity": "COMMON",
     "specialInformation": {
@@ -37,6 +38,7 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": "MigrateOldProgressiveTools"
   }
 }

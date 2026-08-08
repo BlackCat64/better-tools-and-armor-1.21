@@ -34485,6 +34485,98 @@
         ]
       },
       "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "MigrateOldProgressiveTools",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "migrate_old_progressive_tools",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "slot",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/MigrateOldProgressiveToolsProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "ProgressiveToolsSetThresholds",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_set_thresholds",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProgressiveToolsSetThresholdsProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "ProgressiveToolsMiningSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_mining_speed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProgressiveToolsMiningSpeedProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "ProgressiveToolsMiningSpeedTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_tools_mining_speed_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProgressiveToolsMiningSpeedTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Redstone"
     }
   ],
   "variable_elements": [
@@ -35123,6 +35215,7 @@
       "CUSTOM:OverrideWeaponDamage"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CrystallitePickaxeRedstone@CUSTOM:CrystallitePickaxeRedstone",
       "~CrystallitePickaxeRedstoneUpgrade2@CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "~CrystallitePickaxeRedstoneUpgrade1@CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
       "~CrystallitePickaxeHoney@CUSTOM:CrystallitePickaxeHoney",
@@ -35137,7 +35230,6 @@
       "~CrystallitePickaxeRuby@CUSTOM:CrystallitePickaxeRuby",
       "~CrystallitePickaxeNetherite@CUSTOM:CrystallitePickaxeNetherite",
       "~CrystallitePickaxeDiamond@CUSTOM:CrystallitePickaxeDiamond",
-      "~CrystallitePickaxeRedstone@CUSTOM:CrystallitePickaxeRedstone",
       "~CrystallitePickaxeLapis@CUSTOM:CrystallitePickaxeLapis",
       "~CrystallitePickaxeGold@CUSTOM:CrystallitePickaxeGold",
       "~CrystallitePickaxeIron@CUSTOM:CrystallitePickaxeIron",
@@ -35242,6 +35334,7 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CrystalliteShovelRedstone@CUSTOM:CrystalliteShovelRedstone",
       "~CrystalliteShovelRedstoneUpgrade2@CUSTOM:CrystalliteShovelRedstoneUpgrade2",
       "~CrystalliteShovelRedstoneUpgrade1@CUSTOM:CrystalliteShovelRedstoneUpgrade1",
       "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
@@ -35256,7 +35349,6 @@
       "~CrystalliteShovelRuby@CUSTOM:CrystalliteShovelRuby",
       "~CrystalliteShovelNetherite@CUSTOM:CrystalliteShovelNetherite",
       "~CrystalliteShovelDiamond@CUSTOM:CrystalliteShovelDiamond",
-      "~CrystalliteShovelRedstone@CUSTOM:CrystalliteShovelRedstone",
       "~CrystalliteShovelLapis@CUSTOM:CrystalliteShovelLapis",
       "~CrystalliteShovelGold@CUSTOM:CrystalliteShovelGold",
       "~CrystalliteShovelIron@CUSTOM:CrystalliteShovelIron",
@@ -35547,14 +35639,6 @@
       "CUSTOM:BlueSlimeball"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
-      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
-      "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
-      "~RandomOre@CUSTOM:RandomOre",
-      "~SapphireOre@CUSTOM:SapphireOre",
-      "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
-      "~RubyOre@CUSTOM:RubyOre",
-      "~TopazOre@CUSTOM:TopazOre",
       "~LightPolishedAmethystWall@CUSTOM:LightPolishedAmethystWall",
       "~PolishedAmethystWall@CUSTOM:PolishedAmethystWall",
       "~LightPolishedNetherDiamondWall@CUSTOM:LightPolishedNetherDiamondWall",
@@ -35656,14 +35740,22 @@
       "~DarkPolishedCoalSlab@CUSTOM:DarkPolishedCoalSlab",
       "~DarkPolishedCoalBlock@CUSTOM:DarkPolishedCoalBlock",
       "~FlintBlockwood@CUSTOM:FlintBlockwood",
+      "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
+      "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
       "~CutCrystalliteBlock@CUSTOM:CutCrystalliteBlock",
       "~CrystalliteBlock@CUSTOM:CrystalliteBlock",
+      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~TopazBlock@CUSTOM:TopazBlock",
+      "~TopazOre@CUSTOM:TopazOre",
       "~SapphireBlock@CUSTOM:SapphireBlock",
+      "~SapphireOre@CUSTOM:SapphireOre",
       "~ChargedIceOn@CUSTOM:ChargedIceOn",
+      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~EndTitaniumBlock@CUSTOM:EndTitaniumBlock",
       "~EndTitaniumOre@CUSTOM:EndTitaniumOre",
+      "~RandomOre@CUSTOM:RandomOre",
       "~RubyBlock@CUSTOM:RubyBlock",
+      "~RubyOre@CUSTOM:RubyOre",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock",
       "TAG:mod:all_metal_signs"
     ],
@@ -35699,6 +35791,7 @@
       "CUSTOM:CuringCharm"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CrystalliteHoeRedstone@CUSTOM:CrystalliteHoeRedstone",
       "~CrystalliteHoeRedstoneUpgrade2@CUSTOM:CrystalliteHoeRedstoneUpgrade2",
       "~CrystalliteHoeRedstoneUpgrade1@CUSTOM:CrystalliteHoeRedstoneUpgrade1",
       "~CrystalliteHoeHoney@CUSTOM:CrystalliteHoeHoney",
@@ -35713,7 +35806,6 @@
       "~CrystalliteHoeRuby@CUSTOM:CrystalliteHoeRuby",
       "~CrystalliteHoeNetherite@CUSTOM:CrystalliteHoeNetherite",
       "~CrystalliteHoeDiamond@CUSTOM:CrystalliteHoeDiamond",
-      "~CrystalliteHoeRedstone@CUSTOM:CrystalliteHoeRedstone",
       "~CrystalliteHoeLapis@CUSTOM:CrystalliteHoeLapis",
       "~CrystalliteHoeGold@CUSTOM:CrystalliteHoeGold",
       "~CrystalliteHoeIron@CUSTOM:CrystalliteHoeIron",
@@ -36626,6 +36718,7 @@
       "CUSTOM:GlassArmor.boots"
     ],
     "ITEMS:minecraft:axes": [
+      "~CrystalliteAxeRedstone@CUSTOM:CrystalliteAxeRedstone",
       "~CrystalliteAxeRedstoneUpgrade2@CUSTOM:CrystalliteAxeRedstoneUpgrade2",
       "~CrystalliteAxeRedstoneUpgrade1@CUSTOM:CrystalliteAxeRedstoneUpgrade1",
       "~CrystalliteAxeHoney@CUSTOM:CrystalliteAxeHoney",
@@ -36640,7 +36733,6 @@
       "~CrystalliteAxeRuby@CUSTOM:CrystalliteAxeRuby",
       "~CrystalliteAxeNetherite@CUSTOM:CrystalliteAxeNetherite",
       "~CrystalliteAxeDiamond@CUSTOM:CrystalliteAxeDiamond",
-      "~CrystalliteAxeRedstone@CUSTOM:CrystalliteAxeRedstone",
       "~CrystalliteAxeLapis@CUSTOM:CrystalliteAxeLapis",
       "~CrystalliteAxeGold@CUSTOM:CrystalliteAxeGold",
       "~CrystalliteAxeIron@CUSTOM:CrystalliteAxeIron",
@@ -37240,20 +37332,21 @@
       "Items.BOW",
       "TAG:better_tools:crystallite_bows"
     ],
+    "ITEMS:mod:increased_xp_pickaxes": [
+      "CUSTOM:CrystallitePickaxeLapis"
+    ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
-      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~DeepslateRandomOre@CUSTOM:DeepslateRandomOre",
-      "~RandomOre@CUSTOM:RandomOre",
-      "~SapphireOre@CUSTOM:SapphireOre",
-      "~TopazOre@CUSTOM:TopazOre",
+      "~NetherDiamondOre@CUSTOM:NetherDiamondOre",
       "~TopazBlock@CUSTOM:TopazBlock",
+      "~TopazOre@CUSTOM:TopazOre",
       "~SapphireBlock@CUSTOM:SapphireBlock",
+      "~SapphireOre@CUSTOM:SapphireOre",
+      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
+      "~RandomOre@CUSTOM:RandomOre",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
-      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.helmet",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.helmet",
       "~HoneycombHelmet@CUSTOM:HoneycombHelmet.helmet",
       "~AmethystHelmet@CUSTOM:AmethystHelmet.helmet",
       "~WoodenArmor@CUSTOM:WoodenArmor.helmet",
@@ -37271,7 +37364,9 @@
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.helmet",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.helmet",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.helmet",
+      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.helmet",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.helmet",
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.helmet",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.helmet",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.helmet",
       "~TopazArmor@CUSTOM:TopazArmor.helmet",
@@ -37286,11 +37381,6 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
-      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.body",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.body",
-      "~DiamondHeartyBody@CUSTOM:DiamondHeartyBody.body",
-      "~IronHeartyBody@CUSTOM:IronHeartyBody.body",
-      "~HeartyBody@CUSTOM:HeartyBody.body",
       "~WoodenArmor@CUSTOM:WoodenArmor.body",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.body",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.body",
@@ -37306,7 +37396,9 @@
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.body",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.body",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.body",
+      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.body",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.body",
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.body",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.body",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.body",
       "~TopazArmor@CUSTOM:TopazArmor.body",
@@ -37315,14 +37407,15 @@
       "~MagmaBody@CUSTOM:MagmaBody.body",
       "~GlassArmor@CUSTOM:GlassArmor.body",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.body",
+      "~DiamondHeartyBody@CUSTOM:DiamondHeartyBody.body",
       "~DiamondCactusBody@CUSTOM:DiamondCactusBody.body",
+      "~IronHeartyBody@CUSTOM:IronHeartyBody.body",
       "~IronCactusBody@CUSTOM:IronCactusBody.body",
+      "~HeartyBody@CUSTOM:HeartyBody.body",
       "~CactusBody@CUSTOM:CactusBody.body",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
-      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.legs",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.legs",
       "~WoodenArmor@CUSTOM:WoodenArmor.legs",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.legs",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.legs",
@@ -37338,7 +37431,9 @@
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.legs",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.legs",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.legs",
+      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.legs",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.legs",
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.legs",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.legs",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.legs",
       "~TopazArmor@CUSTOM:TopazArmor.legs",
@@ -37354,8 +37449,6 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
-      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.boots",
-      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.boots",
       "~DripstoneBoots@CUSTOM:DripstoneBoots.boots",
       "~WoodenArmor@CUSTOM:WoodenArmor.boots",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.boots",
@@ -37373,7 +37466,9 @@
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.boots",
       "~CrystalliteArmorNetherite@CUSTOM:CrystalliteArmorNetherite.boots",
       "~CrystalliteArmorDiamond@CUSTOM:CrystalliteArmorDiamond.boots",
+      "~CrystalliteArmorRedstone@CUSTOM:CrystalliteArmorRedstone.boots",
       "~CrystalliteArmorLapis@CUSTOM:CrystalliteArmorLapis.boots",
+      "~CrystalliteArmorGold@CUSTOM:CrystalliteArmorGold.boots",
       "~CrystalliteArmorIron@CUSTOM:CrystalliteArmorIron.boots",
       "~CrystalliteArmor@CUSTOM:CrystalliteArmor.boots",
       "~TopazArmor@CUSTOM:TopazArmor.boots",
@@ -37395,12 +37490,12 @@
       "~SugarBlock@CUSTOM:SugarBlock"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
-      "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
-      "~RubyOre@CUSTOM:RubyOre",
       "~ClimbableWall@CUSTOM:ClimbableWall",
+      "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
       "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
       "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
-      "~RubyBlock@CUSTOM:RubyBlock"
+      "~RubyBlock@CUSTOM:RubyBlock",
+      "~RubyOre@CUSTOM:RubyOre"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
       "~Ensorcellation@CUSTOM:Ensorcellation",
@@ -37451,17 +37546,14 @@
       "~SmeltingTouch@CUSTOM:SmeltingTouch",
       "~ThunderShot@CUSTOM:ThunderShot"
     ],
-    "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
-      "~Jeweller@CUSTOM:Jeweller"
-    ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~FungalCaves@CUSTOM:FungalCaves"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~FungalCaves@CUSTOM:FungalCaves"
     ],
-    "ITEMS:mod:increased_xp_pickaxes": [
-      "CUSTOM:CrystallitePickaxeLapis"
+    "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
+      "~Jeweller@CUSTOM:Jeweller"
     ]
   },
   "tab_element_order": {
@@ -38438,7 +38530,7 @@
       "item.better_tools.crystallite_armor_sky_chestplate": "Crystallite Chestplate",
       "item.better_tools.crystallite_axe_redstone.description_1": "§7Abilities:",
       "item.better_tools.crystallite_axe_redstone.description_0": "§7Upgrade: §cRedstone",
-      "item.better_tools.crystallite_axe_redstone.description_3": "§cCalibrated [0/2] - Mining speed increases with number of blocks mined",
+      "item.better_tools.crystallite_axe_redstone.description_3": "§cCalibrated - Mining speed increases with number of blocks mined",
       "item.better_tools.crystallite_axe_redstone.description_2": "§cLeech - Heals you when striking a target",
       "item.better_tools.crystallite_hoe_sky": "Crystallite Hoe",
       "item.better_tools.iron_gold_carrot_helmet": "Golden Carrot Hat",
@@ -39144,7 +39236,7 @@
       "item.better_tools.nature_crystal.description_0": "§7Element: §aEmerald",
       "enchantment.better_tools.freeze_shot.desc": "Shots have a chance to freeze the target",
       "subtitles.down_under": "",
-      "item.better_tools.crystallite_pickaxe_redstone.description_2": "§cCalibrated [0/2] - Mining speed increases with number of blocks mined",
+      "item.better_tools.crystallite_pickaxe_redstone.description_2": "§cCalibrated - Mining speed increases with number of blocks mined",
       "death.attack.electric_chain_damage": "%1$s was shocked to death by %2$s",
       "item.better_tools.crystallite_pickaxe_redstone.description_1": "§7Ability:",
       "block.better_tools.light_polished_gold_slab": "Cream Metal Slab",
@@ -39364,7 +39456,7 @@
       "block.better_tools.orange_metal_wall_hanging_sign": "Orange Metal Wall Hanging Sign",
       "item.better_tools.crystallite_hoe_redstone.description_3": "§cChance increases when the tool is used more",
       "block.better_tools.nether_diamond_ore": "Nether Diamond Ore",
-      "item.better_tools.crystallite_hoe_redstone.description_2": "§cCalibrated [0/2] - Small chance for plants to drop Bone Meal",
+      "item.better_tools.crystallite_hoe_redstone.description_2": "§cCalibrated - Chance for plants to drop Bone Meal increases when the tool is used more",
       "effect.better_tools.pitfall": "Pitfall",
       "item.better_tools.crystallite_hoe_redstone.description_1": "§7Ability:",
       "advancements.crystallite_cave_adv.descr": "Mine a Crystallite Block with a Netherite Pickaxe, or better",
@@ -39516,7 +39608,7 @@
       "item.better_tools.crystallite_armor_diamond_helmet.description_1": "§7Ability:",
       "item.better_tools.nether_diamond_axe": "Nether Diamond Axe",
       "item.better_tools.crystallite_shovel_redstone.description_1": "§7Ability:",
-      "item.better_tools.crystallite_shovel_redstone.description_2": "§cCalibrated [0/2] - Small chance for plants to drop Bone Meal",
+      "item.better_tools.crystallite_shovel_redstone.description_2": "§cCalibrated - Chance for plants to drop Bone Meal increases when more blocks are mined",
       "item.better_tools.crystallite_shovel_redstone.description_0": "§7Upgrade: §cRedstone",
       "item.better_tools.creative_tab_logo": "BT+A Logo",
       "item.better_tools.crystallite_dagger_iron.description_1": "§7Ability:",
