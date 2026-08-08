@@ -18,7 +18,7 @@ public class CrystalliteNetheriteShovelRemoveWitherProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.WITHER)) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.WITHER) && !(entity instanceof Player _plrCldCheck2 && _plrCldCheck2.getCooldowns().isOnCooldown(itemstack.getItem()))) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.WITHER);
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {

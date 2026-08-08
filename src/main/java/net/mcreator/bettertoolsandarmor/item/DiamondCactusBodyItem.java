@@ -9,13 +9,20 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.*;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.Util;
+
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.List;
 import java.util.EnumMap;
@@ -46,7 +53,11 @@ public abstract class DiamondCactusBodyItem extends ArmorItem {
 
 	public static class Chestplate extends DiamondCactusBodyItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(28)));
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(28)).attributes(ItemAttributeModifiers.builder()
+					.add(Attributes.ARMOR, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.chestplate"), 8, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
+					.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.chestplate"), 1, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
+					.add(BetterToolsModAttributes.THORNS_DAMAGE, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "diamond_cactus_0.chestplate"), 5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
+					.build()));
 		}
 
 		@Override

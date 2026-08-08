@@ -100,6 +100,19 @@
       "Blocks.CACTUS"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "CUSTOM:ThornsDamage",
+        "amount": 2.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    ]
   }
 }
