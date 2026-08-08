@@ -9633,15 +9633,7 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
+            "name": "breakSpeed",
             "type": "number"
           },
           {
@@ -37554,6 +37546,10 @@
     ],
     "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
       "~Jeweller@CUSTOM:Jeweller"
+    ],
+    "BLOCKS:mod:magma": [
+      "CUSTOM:BlackstoneMagma",
+      "Blocks.MAGMA"
     ]
   },
   "tab_element_order": {

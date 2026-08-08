@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:blackstone_magma",
+    "minecraft:magma_block"
+  ]
+}
