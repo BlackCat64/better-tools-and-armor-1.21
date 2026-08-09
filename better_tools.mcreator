@@ -37532,6 +37532,13 @@
     ],
     "ITEMS:mod:full_hp_resistance_armor": [
       "CUSTOM:CrystalliteArmorAmethyst.body"
+    ],
+    "BLOCKS:mod:farmland": [
+      "Blocks.FARMLAND",
+      "EXTERNAL:aquaculture:farmland"
+    ],
+    "ITEMS:mod:hydration_hoes": [
+      "CUSTOM:CrystalliteHoePrismarine"
     ]
   },
   "tab_element_order": {
