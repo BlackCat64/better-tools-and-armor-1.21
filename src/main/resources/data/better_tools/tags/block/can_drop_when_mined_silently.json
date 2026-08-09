@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     {
-      "id": "#minecraft:mineable/hoe",
+      "id": "#minecraft:dampens_vibrations",
       "required": false
     },
     {
-      "id": "#minecraft:wool",
+      "id": "#minecraft:mineable/hoe",
       "required": false
     }
   ]

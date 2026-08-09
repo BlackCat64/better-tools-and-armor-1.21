@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -75,7 +76,7 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				tooltip.add(Component.literal("\u00A79-10% Detection Range"));
 			}
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_BOOTS.get()) {
-				if (IsPlayerWearingItemProcedure.execute(entity, itemstack) && IsPlayerInTheDarkProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity)) {
+				if (IsPlayerWearingItemProcedure.execute(entity, itemstack) && IsPlayerInTheDarkProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity)) {
 					tooltip.add(Component.literal(("\u00A72 "
 							+ (new java.text.DecimalFormat("##")
 									.format((entity instanceof LivingEntity _livingEntity31 && _livingEntity31.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity31.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
@@ -83,6 +84,15 @@ public class CrystalliteSculkArmorTooltipProcedure {
 				} else {
 					tooltip.add(Component.literal("\u00A77When in the dark:"));
 					tooltip.add(Component.literal("\u00A79+30% Speed"));
+				}
+			}
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
+				if (Screen.hasShiftDown()) {
+					tooltip.add(Component.literal("\u00A77Sonic boom details:"));
+					tooltip.add(Component.literal("\u00A72 24 Blocks Range"));
+					tooltip.add(Component.literal("\u00A7cDurability Cost: 5"));
+				} else {
+					tooltip.add(Component.literal("\u00A78Press Shift for more details"));
 				}
 			}
 		}

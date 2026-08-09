@@ -34863,7 +34863,8 @@
       "Blocks.SCULK",
       "Blocks.SCULK_CATALYST",
       "Blocks.SCULK_VEIN",
-      "Blocks.SCULK_SHRIEKER"
+      "Blocks.SCULK_SHRIEKER",
+      "Blocks.CALIBRATED_SCULK_SENSOR"
     ],
     "ITEMS:mod:plant_clearance_tools": [
       "CUSTOM:CrystalliteShovelSapphire",
@@ -35250,7 +35251,6 @@
       "Blocks.PURPUR_BLOCK",
       "Blocks.PURPUR_PILLAR",
       "Blocks.PURPUR_SLAB",
-      "Blocks.PURPUR_DOUBLE_SLAB",
       "Blocks.CHORUS_PLANT",
       "Blocks.CHORUS_FLOWER"
     ],
@@ -35747,7 +35747,7 @@
     ],
     "BLOCKS:mod:can_drop_when_mined_silently": [
       "TAG:minecraft:mineable/hoe",
-      "TAG:minecraft:wool"
+      "TAG:minecraft:dampens_vibrations"
     ],
     "ITEMS:mod:crystallite_charms": [
       "CUSTOM:ToughNecklace",
@@ -37563,6 +37563,15 @@
     ],
     "ITEMS:mod:fertilizer_hoes": [
       "CUSTOM:CrystalliteHoeEmerald"
+    ],
+    "ITEMS:mod:speed_boosting_armor_in_dark": [
+      "CUSTOM:CrystalliteArmorSculk.boots"
+    ],
+    "ITEMS:mod:sneak_speed_boosting_armor": [
+      "CUSTOM:CrystalliteArmorSculk.legs"
+    ],
+    "ITEMS:mod:sonic_boom_armor": [
+      "CUSTOM:CrystalliteArmorSculk.body"
     ]
   },
   "tab_element_order": {

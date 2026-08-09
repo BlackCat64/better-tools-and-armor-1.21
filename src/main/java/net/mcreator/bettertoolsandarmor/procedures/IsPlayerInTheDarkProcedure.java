@@ -1,5 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
@@ -11,11 +12,9 @@ public class IsPlayerInTheDarkProcedure {
 			return false;
 		double time = 0;
 		time = world.dayTime() % 24000;
-		if (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4) {
-			return true;
-		} else if (time >= 13000 || !((entity.level().dimension()) == Level.OVERWORLD)) {
-			return world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) || world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 4;
+		if (time >= 13000 || !((entity.level().dimension()) == Level.OVERWORLD)) {
+			return world.getBrightness(LightLayer.BLOCK, BlockPos.containing(x, y, z)) <= 4;
 		}
-		return false;
+		return world.getBrightness(LightLayer.SKY, BlockPos.containing(x, y, z)) <= 4 && world.getBrightness(LightLayer.BLOCK, BlockPos.containing(x, y, z)) <= 4;
 	}
 }

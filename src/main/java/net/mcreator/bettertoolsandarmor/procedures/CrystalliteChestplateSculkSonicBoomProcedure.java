@@ -14,12 +14,12 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -45,12 +45,12 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 		double change_y = 0;
 		double change_z = 0;
 		double chance = 0;
-		if (!damagesource.is(DamageTypes.SONIC_BOOM) && (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
+		if (!damagesource.is(DamageTypes.SONIC_BOOM) && (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sonic_boom_armor")))) {
 			chance = 0.2;
 			chance = chance + (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity3.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 			if (Math.random() < chance) {
 				distance = GetDistanceBetweenPointsProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), sourceentity.getX(), sourceentity.getY(), sourceentity.getZ());
-				if (distance >= 4 && distance <= 40) {
+				if (distance >= 4 && distance <= 24) {
 					SonicBoomParticlesProcedure.execute(world, entity.getX(), entity.getY() + 0.5, entity.getZ(), sourceentity.getX(), sourceentity.getY() + sourceentity.getBbHeight() / 2, sourceentity.getZ());
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -60,6 +60,10 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 						}
 					}
 					sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.SONIC_BOOM), null, entity), 10);
+					if (world instanceof ServerLevel _level) {
+						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).hurtAndBreak(3, _level, null, _stkprov -> {
+						});
+					}
 				}
 			}
 		}

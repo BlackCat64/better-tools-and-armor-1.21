@@ -13,10 +13,9 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -34,7 +33,13 @@ public class CrystalliteLeggingsSculkProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_LEGGINGS.get()) {
+		if (entity instanceof LivingEntity _entity) {
+			_entity.getAttribute(Attributes.SNEAKING_SPEED).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sculk"));
+		}
+		if (entity instanceof LivingEntity _entity) {
+			_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sculk"));
+		}
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sneak_speed_boosting_armor")))) {
 			if (entity instanceof LivingEntity _entity) {
 				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sculk"), 0.4, AttributeModifier.Operation.ADD_VALUE);
 				if (!_entity.getAttribute(Attributes.SNEAKING_SPEED).hasModifier(modifier.id())) {
@@ -53,13 +58,6 @@ public class CrystalliteLeggingsSculkProcedureProcedure {
 				if (entity instanceof LivingEntity _entity) {
 					_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sculk"));
 				}
-			}
-		} else {
-			if (entity instanceof LivingEntity _entity) {
-				_entity.getAttribute(Attributes.SNEAKING_SPEED).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sculk"));
-			}
-			if (entity instanceof LivingEntity _entity) {
-				_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_sculk"));
 			}
 		}
 	}
