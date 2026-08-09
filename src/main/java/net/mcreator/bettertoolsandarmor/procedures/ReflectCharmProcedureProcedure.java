@@ -73,7 +73,7 @@ public class ReflectCharmProcedureProcedure {
 					if (immediatesourceentity.getRemainingFireTicks() > 0) {
 						if (world instanceof ServerLevel projectileLevel) {
 							Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)),
-									entity, (float) (((Arrow) immediatesourceentity).getBaseDamage() + 2), false, true, false, AbstractArrow.Pickup.CREATIVE_ONLY);
+									entity, (float) (((Arrow) immediatesourceentity).getBaseDamage() + 1), false, true, false, AbstractArrow.Pickup.CREATIVE_ONLY);
 							_entityToSpawn.setPos(x, (y + 2), z);
 							_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.1);
 							projectileLevel.addFreshEntity(_entityToSpawn);
@@ -81,7 +81,7 @@ public class ReflectCharmProcedureProcedure {
 					} else {
 						if (world instanceof ServerLevel projectileLevel) {
 							Projectile _entityToSpawn = initArrowProjectile(new Arrow(projectileLevel, 0, 0, 0, new Arrow(EntityType.ARROW, projectileLevel).getPickupItemStackOrigin(), createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)),
-									entity, (float) (((Arrow) immediatesourceentity).getBaseDamage() + 2), false, false, false, AbstractArrow.Pickup.CREATIVE_ONLY);
+									entity, (float) (((Arrow) immediatesourceentity).getBaseDamage() + 1), false, false, false, AbstractArrow.Pickup.CREATIVE_ONLY);
 							_entityToSpawn.setPos(x, (y + 2), z);
 							_entityToSpawn.shoot((vector.x()), (vector.y()), (vector.z()), (float) projectile_speed, (float) 0.1);
 							projectileLevel.addFreshEntity(_entityToSpawn);

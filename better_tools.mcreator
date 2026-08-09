@@ -17510,25 +17510,6 @@
       "path": "~/Critical Hit Multiplier"
     },
     {
-      "name": "CrystalliteLeggingsSkyProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_leggings_sky_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteLeggingsSkyProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
-    },
-    {
       "name": "ReflectCharmRecipe",
       "type": "recipe",
       "compiles": true,
@@ -23707,25 +23688,6 @@
         ]
       },
       "path": "~/Wood Armor"
-    },
-    {
-      "name": "CrystalliteBootsSkyProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_boots_sky_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteBootsSkyProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sky"
     },
     {
       "name": "LowGravityAdvProcedure",
@@ -34207,7 +34169,7 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SafeFallDistanceTooltipProcedure.java"
         ]
       },
-      "path": "~/Crystallite/Sky"
+      "path": "~/Utility Procedures"
     },
     {
       "name": "CrystalliteBowPullState",
@@ -36476,17 +36438,6 @@
       "Blocks.DIRT#2",
       "Blocks.ROOTED_DIRT"
     ],
-    "ITEMS:mod:drinks": [
-      "Items.HONEY_BOTTLE",
-      "CUSTOM:AppleJuice",
-      "CUSTOM:BerrySmoothie",
-      "Items.BEETROOT_SOUP",
-      "Items.MUSHROOM_STEW",
-      "Items.SUSPICIOUS_STEW",
-      "Items.RABBIT_STEW",
-      "Items.POTIONITEM",
-      "TAG:better_tools:utility_potions"
-    ],
     "ITEMS:mod:magic_damage_tools": [
       "CUSTOM:CrystalliteSwordLapis",
       "CUSTOM:CrystalliteAxeLapis",
@@ -37328,6 +37279,7 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.helmet",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.helmet",
       "~HoneycombHelmet@CUSTOM:HoneycombHelmet.helmet",
       "~AmethystHelmet@CUSTOM:AmethystHelmet.helmet",
@@ -37335,7 +37287,6 @@
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.helmet",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.helmet",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.helmet",
-      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.helmet",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.helmet",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.helmet",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.helmet",
@@ -37362,6 +37313,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.body",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.body",
       "~DiamondCactusBody@CUSTOM:DiamondCactusBody.body",
       "~IronCactusBody@CUSTOM:IronCactusBody.body",
@@ -37370,7 +37322,6 @@
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.body",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.body",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.body",
-      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.body",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.body",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.body",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.body",
@@ -37397,12 +37348,12 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.legs",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.legs",
       "~WoodenArmor@CUSTOM:WoodenArmor.legs",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.legs",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.legs",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.legs",
-      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.legs",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.legs",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.legs",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.legs",
@@ -37430,18 +37381,18 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~WingedBoots@CUSTOM:WingedBoots.boots",
+      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.boots",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.boots",
       "~DripstoneBoots@CUSTOM:DripstoneBoots.boots",
       "~WoodenArmor@CUSTOM:WoodenArmor.boots",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.boots",
       "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.boots",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.boots",
-      "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.boots",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.boots",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.boots",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.boots",
       "~CrystalliteArmorEmerald@CUSTOM:CrystalliteArmorEmerald.boots",
-      "~WingedBoots@CUSTOM:WingedBoots.boots",
       "~CrystalliteArmorNetherDiamond@CUSTOM:CrystalliteArmorNetherDiamond.boots",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.boots",
       "~CrystalliteArmorSapphire@CUSTOM:CrystalliteArmorSapphire.boots",
@@ -37567,11 +37518,25 @@
     "ITEMS:mod:speed_boosting_armor_in_dark": [
       "CUSTOM:CrystalliteArmorSculk.boots"
     ],
-    "ITEMS:mod:sneak_speed_boosting_armor": [
-      "CUSTOM:CrystalliteArmorSculk.legs"
-    ],
     "ITEMS:mod:sonic_boom_armor": [
       "CUSTOM:CrystalliteArmorSculk.body"
+    ],
+    "ITEMS:c:drinks/juice": [
+      "CUSTOM:BerrySmoothie",
+      "CUSTOM:AppleJuice"
+    ],
+    "ITEMS:c:drinks/magic": [
+      "TAG:better_tools:utility_potions",
+      "CUSTOM:MysticPotion"
+    ],
+    "ITEMS:mod:carbonated_drinks_armor": [
+      "CUSTOM:CrystalliteArmorSky.helmet"
+    ],
+    "ITEMS:mod:sneak_speed_boosting_leggings": [
+      "CUSTOM:CrystalliteArmorSculk.legs"
+    ],
+    "ITEMS:mod:gust_knockback_armor": [
+      "CUSTOM:CrystalliteArmorSky.body"
     ]
   },
   "tab_element_order": {

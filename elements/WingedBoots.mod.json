@@ -100,6 +100,19 @@
       "CUSTOM:CrystaliteGem"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "SAFE_FALL_DISTANCE",
+        "amount": 2.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
   }
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:utility_potions",
+      "required": false
+    },
+    "better_tools:mystic_potion"
+  ]
+}

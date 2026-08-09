@@ -118,6 +118,31 @@
       "Items.PHANTOM_MEMBRANE"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "ENTITY_GRAVITY",
+        "amount": -0.5,
+        "operation": "ADD_MULTIPLIED_BASE",
+        "armorPieces": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "equipmentSlot": "default",
+        "attribute": "SAFE_FALL_DISTANCE",
+        "amount": 5.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
   }
 }

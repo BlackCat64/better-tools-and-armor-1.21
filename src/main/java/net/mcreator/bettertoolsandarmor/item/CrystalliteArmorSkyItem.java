@@ -8,7 +8,11 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.*;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +21,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.Util;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
 import java.util.List;
 import java.util.EnumMap;
@@ -79,7 +84,13 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 
 	public static class Leggings extends CrystalliteArmorSkyItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(40)).fireResistant());
+			super(ArmorItem.Type.LEGGINGS,
+					new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(40)).fireResistant()
+							.attributes(ItemAttributeModifiers.builder().add(Attributes.ARMOR, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.leggings"), 6, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
+									.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.leggings"), 2.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
+									.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.leggings"), 0.125, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS).add(Attributes.GRAVITY,
+											new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "crystallite_armor_sky_0.leggings"), -0.5, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.LEGS)
+									.build()));
 		}
 
 		@Override
@@ -94,7 +105,12 @@ public abstract class CrystalliteArmorSkyItem extends ArmorItem {
 
 	public static class Boots extends CrystalliteArmorSkyItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(40)).fireResistant());
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(40)).fireResistant()
+					.attributes(ItemAttributeModifiers.builder().add(Attributes.ARMOR, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.boots"), 4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
+							.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.boots"), 2.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
+							.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.boots"), 0.125, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
+							.add(Attributes.SAFE_FALL_DISTANCE, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "crystallite_armor_sky_0.boots"), 5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
+							.build()));
 		}
 
 		@Override

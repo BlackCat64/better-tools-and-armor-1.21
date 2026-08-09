@@ -9,6 +9,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
+import net.minecraft.ChatFormatting;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
@@ -31,8 +32,10 @@ public class CrystalliteLeggingsSkyTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
+		double replaceLine = 0;
 		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SKY_LEGGINGS.get()) {
-			tooltip.add(Component.literal("\u00A79-50% Gravity"));
+			replaceLine = GetTooltipLineContainingProcedure.execute("% Gravity", tooltip);
+			ReplaceTooltipLineWithComponentProcedure.execute(Component.literal((tooltip.get((int) replaceLine).getString())).withStyle(ChatFormatting.BLUE), replaceLine, tooltip);
 		}
 	}
 }
