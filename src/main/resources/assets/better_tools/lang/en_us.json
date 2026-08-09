@@ -256,7 +256,7 @@
   "item.better_tools.crystallite_armor_emerald_boots.description_2": "§aSolar - Increased movement speed in sunlight",
   "item.better_tools.crystallite_pickaxe_emerald.description_0": "§7Upgrade: §aEmerald",
   "item.better_tools.crystallite_pickaxe_emerald.description_1": "§7Ability:",
-  "item.better_tools.crystallite_pickaxe_emerald.description_2": "§aAdaptive - Mines all blocks efficiently, but has limited enchantability",
+  "item.better_tools.crystallite_pickaxe_emerald.description_2": "§aAdaptive - Mines all block types efficiently",
   "item.better_tools.iron_hearty_chestplate": "Hearty Shirt",
   "item.better_tools.nether_diamond_hoe.description_0": "§4Plants may drop Charcoal",
   "item.better_tools.recall_potion.description_0": "§9Teleport to your spawn point",

@@ -14,12 +14,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -38,12 +37,12 @@ public class CrystalliteAxeEmeraldProcedureProcedure {
 		if (entity == null)
 			return;
 		double y_distance = 0;
-		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_EMERALD.get()
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)
-				&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !entity.isShiftKeyDown()) {
+		if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:top_log_mining_axes")))
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:multi_log_mining_axes"))))
+				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) && blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !entity.isShiftKeyDown()) {
 			y_distance = 0;
-			for (int index15 = 0; index15 < 16; index15++) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_SCULK.get()) {
+			for (int index180 = 0; index180 < 16; index180++) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:multi_log_mining_axes")))) {
 					if (world instanceof Level _level)
 						_level.updateNeighborsAt(BlockPos.containing(x, y + y_distance, z), _level.getBlockState(BlockPos.containing(x, y + y_distance, z)).getBlock());
 					{
@@ -67,7 +66,7 @@ public class CrystalliteAxeEmeraldProcedureProcedure {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
 				}
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_EMERALD.get()) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:top_log_mining_axes")))) {
 					if (world instanceof Level _level)
 						_level.updateNeighborsAt(BlockPos.containing(x, (y + y_distance) - 1, z), _level.getBlockState(BlockPos.containing(x, (y + y_distance) - 1, z)).getBlock());
 					{

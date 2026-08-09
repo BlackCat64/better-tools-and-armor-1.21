@@ -31,19 +31,19 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 				|| (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity2.getAttribute(Attributes.LUCK).getValue() : 0) > 0)
 				&& blockstate.is(BlockTags.create(ResourceLocation.parse("c:ores")))
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)
-				&& entity instanceof Player && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_upgraded_crystallite_items")))) {
 				dupe_chance = 0.2;
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_pickaxes")))) {
 				dupe_chance = 0.1;
 			}
-			dupe_chance = dupe_chance + 0.05 * (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity13.getAttribute(Attributes.LUCK).getValue() : 0);
+			dupe_chance = dupe_chance + 0.05 * (entity instanceof LivingEntity _livingEntity12 && _livingEntity12.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity12.getAttribute(Attributes.LUCK).getValue() : 0);
 			if (Math.random() < dupe_chance) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_pickaxes")))) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.WAX_ON, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
 				}
-				if ((entity instanceof LivingEntity _livingEntity17 && _livingEntity17.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity17.getAttribute(Attributes.LUCK).getValue() : 0) > 0) {
+				if ((entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity16.getAttribute(Attributes.LUCK).getValue() : 0) > 0) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.5, 0.5, 0.5, 0.1);
 					if (entity instanceof ServerPlayer _player) {

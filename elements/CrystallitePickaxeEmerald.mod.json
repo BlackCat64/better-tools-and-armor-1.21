@@ -8,13 +8,14 @@
     "texture": "crystallite_pickaxe_emerald",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Pickaxe",
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §aEmerald",
         "§7Ability:",
-        "§aAdaptive - Mines all blocks efficiently, but has limited enchantability"
+        "§aAdaptive - Mines all block types efficiently"
       ]
     },
     "creativeTabs": [

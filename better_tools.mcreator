@@ -35196,6 +35196,7 @@
       "CUSTOM:OverrideWeaponDamage"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~CrystallitePickaxeRedstone@CUSTOM:CrystallitePickaxeRedstone",
       "~CrystallitePickaxeRedstoneUpgrade2@CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "~CrystallitePickaxeRedstoneUpgrade1@CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
@@ -35204,7 +35205,6 @@
       "~CrystallitePickaxeAmethyst@CUSTOM:CrystallitePickaxeAmethyst",
       "~CrystallitePickaxeSky@CUSTOM:CrystallitePickaxeSky",
       "~CrystallitePickaxeSculk@CUSTOM:CrystallitePickaxeSculk",
-      "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~CrystallitePickaxeNetherDiamond@CUSTOM:CrystallitePickaxeNetherDiamond",
       "~CrystallitePickaxeTopaz@CUSTOM:CrystallitePickaxeTopaz",
       "~CrystallitePickaxeSapphire@CUSTOM:CrystallitePickaxeSapphire",
@@ -37035,6 +37035,7 @@
       "CUSTOM:DiamondGlassArmor.boots"
     ],
     "ITEMS:minecraft:swords": [
+      "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~EmeraldDagger@CUSTOM:EmeraldDagger",
       "~EmeraldSword@CUSTOM:EmeraldSword",
       "~LapisDagger@CUSTOM:LapisDagger",
@@ -37052,7 +37053,6 @@
       "~CrystalliteDaggerSculk@CUSTOM:CrystalliteDaggerSculk",
       "~CrystalliteSwordSculk@CUSTOM:CrystalliteSwordSculk",
       "~CrystalliteDaggerEmerald@CUSTOM:CrystalliteDaggerEmerald",
-      "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~CrystalliteSwordEmerald@CUSTOM:CrystalliteSwordEmerald",
       "~CrystalliteDaggerNetherDiamond@CUSTOM:CrystalliteDaggerNetherDiamond",
       "~CrystalliteSwordNetherDiamond@CUSTOM:CrystalliteSwordNetherDiamond",
@@ -37545,6 +37545,24 @@
       "CUSTOM:CrystalliteArmorNetherite.body",
       "CUSTOM:CrystalliteArmorNetherite.legs",
       "CUSTOM:CrystalliteArmorNetherite.boots"
+    ],
+    "ITEMS:mod:increased_food_value_armor": [
+      "CUSTOM:CrystalliteArmorEmerald.helmet"
+    ],
+    "ITEMS:mod:speed_boosting_armor_in_sun": [
+      "CUSTOM:CrystalliteArmorEmerald.boots"
+    ],
+    "ITEMS:mod:top_log_mining_axes": [
+      "CUSTOM:CrystalliteAxeEmerald"
+    ],
+    "ITEMS:mod:top_sand_mining_shovels": [
+      "CUSTOM:CrystalliteShovelEmerald"
+    ],
+    "ITEMS:mod:multi_log_mining_axes": [
+      "CUSTOM:CrystalliteAxeSculk"
+    ],
+    "ITEMS:mod:fertilizer_hoes": [
+      "CUSTOM:CrystalliteHoeEmerald"
     ]
   },
   "tab_element_order": {
@@ -38183,7 +38201,7 @@
       "item.better_tools.crystallite_armor_emerald_boots.description_2": "§aSolar - Increased movement speed in sunlight",
       "item.better_tools.crystallite_pickaxe_emerald.description_0": "§7Upgrade: §aEmerald",
       "item.better_tools.crystallite_pickaxe_emerald.description_1": "§7Ability:",
-      "item.better_tools.crystallite_pickaxe_emerald.description_2": "§aAdaptive - Mines all blocks efficiently, but has limited enchantability",
+      "item.better_tools.crystallite_pickaxe_emerald.description_2": "§aAdaptive - Mines all block types efficiently",
       "item.better_tools.iron_hearty_chestplate": "Hearty Shirt",
       "item.better_tools.nether_diamond_hoe.description_0": "§4Plants may drop Charcoal",
       "item.better_tools.recall_potion.description_0": "§9Teleport to your spawn point",

@@ -21,7 +21,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -41,7 +40,7 @@ public class PlantsDropBoneMealProcedureProcedure {
 			return;
 		double chance = 0;
 		if (IsPlantProcedure.execute(world, x, y, z) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_EMERALD.get()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:fertilizer_hoes")))) {
 				chance = 0.1;
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:combo_harvesting_tools")))
 					&& entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).block_mining_combo >= 9 && blockstate.getBlock() == entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_mined_block.getBlock()) {

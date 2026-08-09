@@ -31,6 +31,9 @@ public class CrystalliteSwordNetherDiamondProcedureProcedure {
 		if (entity == null)
 			return;
 		double dmg_boost = 0;
+		if (entity instanceof LivingEntity _entity) {
+			_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_nether_diamond"));
+		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_tools")))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))
 				&& (entity.level().dimension()) == Level.NETHER) {
@@ -40,10 +43,6 @@ public class CrystalliteSwordNetherDiamondProcedureProcedure {
 				if (!_entity.getAttribute(Attributes.ATTACK_DAMAGE).hasModifier(modifier.id())) {
 					_entity.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(modifier);
 				}
-			}
-		} else {
-			if (entity instanceof LivingEntity _entity) {
-				_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_nether_diamond"));
 			}
 		}
 	}

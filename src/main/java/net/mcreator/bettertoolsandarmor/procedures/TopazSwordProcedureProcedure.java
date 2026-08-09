@@ -79,7 +79,8 @@ public class TopazSwordProcedureProcedure {
 							.toList()) {
 						if (entityiterator.getPersistentData().getBoolean("can_electric_chain") && entityiterator instanceof LivingEntity && !(entityiterator == sourceentity || entityiterator == closest)) {
 							success = true;
-							ElectricChainParticlesProcedure.execute(world, entityiterator.getX(), entityiterator.getY(), entityiterator.getZ(), closest.getX(), closest.getY() + closest.getBbHeight() / 2, closest.getZ());
+							ElectricChainParticlesProcedure.execute(world, entityiterator.getX(), entityiterator.getY() + entityiterator.getBbHeight() / 2, entityiterator.getZ(), closest.getX(), closest.getY() + closest.getBbHeight() / 2,
+									closest.getZ());
 							entityiterator.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:electric_chain_damage"))), null, immediatesourceentity), (float) (amount / 2));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 16, 0.25, 1, 0.25, 0.01);
