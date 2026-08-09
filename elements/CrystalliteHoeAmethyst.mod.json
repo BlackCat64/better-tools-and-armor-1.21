@@ -8,6 +8,7 @@
     "texture": "crystallite_hoe_amethyst",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Hoe",
     "rarity": "COMMON",
     "specialInformation": {
@@ -38,7 +39,6 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": "CrystallitePickaxeAmethystOreLocation"
+    "damageOnCrafting": false
   }
 }

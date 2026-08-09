@@ -8,6 +8,7 @@
     "texture": "crystallite_sword_amethyst",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Sword",
     "rarity": "COMMON",
     "specialInformation": {
@@ -38,7 +39,6 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": "CrystalliteSwordAmethystEcholocation"
+    "damageOnCrafting": false
   }
 }

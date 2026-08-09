@@ -12,6 +12,10 @@
     "better_tools:sapphire_block",
     "minecraft:gold_block",
     "better_tools:ruby_block",
+    {
+      "id": "#c:ores",
+      "required": false
+    },
     "better_tools:end_titanium_block",
     "better_tools:crystallite_block",
     "minecraft:coal_block",
@@ -19,10 +23,6 @@
     "better_tools:topaz_block",
     "minecraft:netherite_block",
     "minecraft:raw_copper_block",
-    {
-      "id": "#forge:ores",
-      "required": false
-    },
     "minecraft:amethyst_cluster",
     "minecraft:emerald_block",
     "minecraft:raw_iron_block",

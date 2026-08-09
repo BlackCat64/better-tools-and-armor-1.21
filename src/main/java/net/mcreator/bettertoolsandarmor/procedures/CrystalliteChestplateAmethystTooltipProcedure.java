@@ -8,9 +8,9 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -31,9 +31,9 @@ public class CrystalliteChestplateAmethystTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get()) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:full_hp_resistance_armor")))) {
 			tooltip.add(Component.literal("\u00A77When at full HP:"));
-			tooltip.add(Component.literal("\u00A79-20% Damage Received"));
+			tooltip.add(Component.literal("\u00A79-40% Damage Received"));
 		}
 	}
 }

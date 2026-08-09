@@ -17972,10 +17972,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -18009,10 +18005,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -35099,10 +35091,6 @@
       "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
       "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
     ],
-    "ITEMS:mod:echolocation_weapons": [
-      "CUSTOM:CrystalliteSwordAmethyst",
-      "CUSTOM:CrystalliteDaggerAmethyst"
-    ],
     "ITEMS:curios:hands": [
       "CUSTOM:GildedBracelet",
       "CUSTOM:MagicRing",
@@ -35159,13 +35147,13 @@
       "CUSTOM:OverrideWeaponDamage"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CrystallitePickaxeAmethyst@CUSTOM:CrystallitePickaxeAmethyst",
       "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~CrystallitePickaxeRedstone@CUSTOM:CrystallitePickaxeRedstone",
       "~CrystallitePickaxeRedstoneUpgrade2@CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "~CrystallitePickaxeRedstoneUpgrade1@CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
       "~CrystallitePickaxeHoney@CUSTOM:CrystallitePickaxeHoney",
       "~CrystallitePickaxePrismarine@CUSTOM:CrystallitePickaxePrismarine",
-      "~CrystallitePickaxeAmethyst@CUSTOM:CrystallitePickaxeAmethyst",
       "~CrystallitePickaxeSky@CUSTOM:CrystallitePickaxeSky",
       "~CrystallitePickaxeSculk@CUSTOM:CrystallitePickaxeSculk",
       "~CrystallitePickaxeNetherDiamond@CUSTOM:CrystallitePickaxeNetherDiamond",
@@ -35277,12 +35265,12 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CrystalliteShovelAmethyst@CUSTOM:CrystalliteShovelAmethyst",
       "~CrystalliteShovelRedstone@CUSTOM:CrystalliteShovelRedstone",
       "~CrystalliteShovelRedstoneUpgrade2@CUSTOM:CrystalliteShovelRedstoneUpgrade2",
       "~CrystalliteShovelRedstoneUpgrade1@CUSTOM:CrystalliteShovelRedstoneUpgrade1",
       "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
       "~CrystalliteShovelPrismarine@CUSTOM:CrystalliteShovelPrismarine",
-      "~CrystalliteShovelAmethyst@CUSTOM:CrystalliteShovelAmethyst",
       "~CrystalliteShovelSky@CUSTOM:CrystalliteShovelSky",
       "~CrystalliteShovelSculk@CUSTOM:CrystalliteShovelSculk",
       "~CrystalliteShovelEmerald@CUSTOM:CrystalliteShovelEmerald",
@@ -35734,12 +35722,12 @@
       "CUSTOM:CuringCharm"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CrystalliteHoeAmethyst@CUSTOM:CrystalliteHoeAmethyst",
       "~CrystalliteHoeRedstone@CUSTOM:CrystalliteHoeRedstone",
       "~CrystalliteHoeRedstoneUpgrade2@CUSTOM:CrystalliteHoeRedstoneUpgrade2",
       "~CrystalliteHoeRedstoneUpgrade1@CUSTOM:CrystalliteHoeRedstoneUpgrade1",
       "~CrystalliteHoeHoney@CUSTOM:CrystalliteHoeHoney",
       "~CrystalliteHoePrismarine@CUSTOM:CrystalliteHoePrismarine",
-      "~CrystalliteHoeAmethyst@CUSTOM:CrystalliteHoeAmethyst",
       "~CrystalliteHoeSky@CUSTOM:CrystalliteHoeSky",
       "~CrystalliteHoeSculk@CUSTOM:CrystalliteHoeSculk",
       "~CrystalliteHoeEmerald@CUSTOM:CrystalliteHoeEmerald",
@@ -35827,8 +35815,8 @@
       "Blocks.NETHER_WART"
     ],
     "BLOCKS:mod:lava": [
-      "Blocks.FLOWING_LAVA",
-      "Blocks.LAVA"
+      "Blocks.LAVA",
+      "Blocks.LAVA_CAULDRON"
     ],
     "ITEMS:minecraft:trapdoors": [
       "CUSTOM:DarkPolishedCoalTrapdoor",
@@ -36424,12 +36412,6 @@
       "CUSTOM:DeepslateRubyOre",
       "CUSTOM:DeepslateRandomOre"
     ],
-    "ITEMS:mod:echolocation_tools": [
-      "CUSTOM:CrystallitePickaxeAmethyst",
-      "CUSTOM:CrystalliteAxeAmethyst",
-      "CUSTOM:CrystalliteShovelAmethyst",
-      "CUSTOM:CrystalliteHoeAmethyst"
-    ],
     "BLOCKS:mod:can_be_turned_into_grass": [
       "Blocks.GRASS_PATH",
       "Blocks.MYCELIUM",
@@ -36650,12 +36632,12 @@
       "CUSTOM:GlassArmor.boots"
     ],
     "ITEMS:minecraft:axes": [
+      "~CrystalliteAxeAmethyst@CUSTOM:CrystalliteAxeAmethyst",
       "~CrystalliteAxeRedstone@CUSTOM:CrystalliteAxeRedstone",
       "~CrystalliteAxeRedstoneUpgrade2@CUSTOM:CrystalliteAxeRedstoneUpgrade2",
       "~CrystalliteAxeRedstoneUpgrade1@CUSTOM:CrystalliteAxeRedstoneUpgrade1",
       "~CrystalliteAxeHoney@CUSTOM:CrystalliteAxeHoney",
       "~CrystalliteAxePrismarine@CUSTOM:CrystalliteAxePrismarine",
-      "~CrystalliteAxeAmethyst@CUSTOM:CrystalliteAxeAmethyst",
       "~CrystalliteAxeSky@CUSTOM:CrystalliteAxeSky",
       "~CrystalliteAxeSculk@CUSTOM:CrystalliteAxeSculk",
       "~CrystalliteAxeEmerald@CUSTOM:CrystalliteAxeEmerald",
@@ -36986,6 +36968,8 @@
       "CUSTOM:DiamondGlassArmor.boots"
     ],
     "ITEMS:minecraft:swords": [
+      "~CrystalliteDaggerAmethyst@CUSTOM:CrystalliteDaggerAmethyst",
+      "~CrystalliteSwordAmethyst@CUSTOM:CrystalliteSwordAmethyst",
       "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~EmeraldDagger@CUSTOM:EmeraldDagger",
       "~EmeraldSword@CUSTOM:EmeraldSword",
@@ -36997,8 +36981,6 @@
       "~CrystalliteSwordHoney@CUSTOM:CrystalliteSwordHoney",
       "~CrystalliteDaggerPrismarine@CUSTOM:CrystalliteDaggerPrismarine",
       "~CrystalliteSwordPrismarine@CUSTOM:CrystalliteSwordPrismarine",
-      "~CrystalliteDaggerAmethyst@CUSTOM:CrystalliteDaggerAmethyst",
-      "~CrystalliteSwordAmethyst@CUSTOM:CrystalliteSwordAmethyst",
       "~CrystalliteDaggerSky@CUSTOM:CrystalliteDaggerSky",
       "~CrystalliteSwordSky@CUSTOM:CrystalliteSwordSky",
       "~CrystalliteDaggerSculk@CUSTOM:CrystalliteDaggerSculk",
@@ -37128,7 +37110,6 @@
       "CUSTOM:GuardianStaff"
     ],
     "BLOCKS:mod:loot_blocks": [
-      "TAG:forge:ores",
       "CUSTOM:CrystalliteClusterAir",
       "Blocks.CHEST",
       "Blocks.MOB_SPAWNER",
@@ -37152,7 +37133,8 @@
       "Blocks.NETHERITE_BLOCK",
       "Blocks.AMETHYST_BLOCK",
       "Blocks.BUDDING_AMETHYST",
-      "Blocks.AMETHYST_CLUSTER"
+      "Blocks.AMETHYST_CLUSTER",
+      "TAG:c:ores"
     ],
     "ITEMS:forge:storage_blocks": [
       "CUSTOM:NetherDiamondBlock",
@@ -37537,6 +37519,19 @@
     ],
     "ITEMS:mod:gust_knockback_armor": [
       "CUSTOM:CrystalliteArmorSky.body"
+    ],
+    "ITEMS:mod:mob_echolocation_tools": [
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystalliteDaggerAmethyst"
+    ],
+    "ITEMS:mod:ore_echolocation_tools": [
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteHoeAmethyst"
+    ],
+    "ITEMS:mod:full_hp_resistance_armor": [
+      "CUSTOM:CrystalliteArmorAmethyst.body"
     ]
   },
   "tab_element_order": {

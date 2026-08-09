@@ -1,5 +1,10 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -18,8 +23,22 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
+import javax.annotation.Nullable;
+
+@EventBusSubscriber
 public class CrystallitePickaxeAmethystOreLocationProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	@SubscribeEvent
+	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+		if (event.getHand() != event.getEntity().getUsedItemHand())
+			return;
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
+	}
+
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		boolean found = false;
@@ -29,20 +48,27 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 		double radius = 0;
 		double count = 0;
 		double repeats = 0;
-		if (entity.isShiftKeyDown()) {
+		ItemStack tool = ItemStack.EMPTY;
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:ore_echolocation_tools")))) {
+			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:ore_echolocation_tools")))
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
+			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		}
+		if (entity.isShiftKeyDown() && tool.is(ItemTags.create(ResourceLocation.parse("better_tools:ore_echolocation_tools")))) {
 			found = false;
 			radius = 0;
-			for (int index32 = 0; index32 < 19; index32++) {
+			for (int index1502 = 0; index1502 < 19; index1502++) {
 				radius = radius + 1;
 				if (radius == 1) {
 					repeats = 1;
 				}
 				sx = radius * (-1);
-				for (int index33 = 0; index33 < 2; index33++) {
+				for (int index1503 = 0; index1503 < 2; index1503++) {
 					sy = radius * (-1);
-					for (int index34 = 0; index34 < (int) (radius * 2); index34++) {
+					for (int index1504 = 0; index1504 < (int) (radius * 2); index1504++) {
 						sz = radius * (-1);
-						for (int index35 = 0; index35 < (int) (radius * 2); index35++) {
+						for (int index1505 = 0; index1505 < (int) (radius * 2); index1505++) {
 							if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("better_tools:loot_blocks")))) {
 								found = true;
 								break;
@@ -63,14 +89,14 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 					break;
 				}
 				sz = radius * (-1);
-				for (int index36 = 0; index36 < 2; index36++) {
+				for (int index1506 = 0; index1506 < 2; index1506++) {
 					sx = 1 - radius;
 					if (radius > 1) {
 						repeats = (radius - 1) * 2;
 					}
-					for (int index37 = 0; index37 < (int) repeats; index37++) {
+					for (int index1507 = 0; index1507 < (int) repeats; index1507++) {
 						sy = radius * (-1);
-						for (int index38 = 0; index38 < (int) (radius * 2); index38++) {
+						for (int index1508 = 0; index1508 < (int) (radius * 2); index1508++) {
 							if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("better_tools:loot_blocks")))) {
 								found = true;
 								break;
@@ -91,17 +117,17 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 					break;
 				}
 				sy = radius * (-1);
-				for (int index39 = 0; index39 < 2; index39++) {
+				for (int index1509 = 0; index1509 < 2; index1509++) {
 					sx = 1 - radius;
 					if (radius > 1) {
 						repeats = (radius - 1) * 2;
 					}
-					for (int index40 = 0; index40 < (int) repeats; index40++) {
+					for (int index1510 = 0; index1510 < (int) repeats; index1510++) {
 						sz = 1 - radius;
 						if (radius > 1) {
 							repeats = (radius - 1) * 2;
 						}
-						for (int index41 = 0; index41 < (int) repeats; index41++) {
+						for (int index1511 = 0; index1511 < (int) repeats; index1511++) {
 							if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("better_tools:loot_blocks")))) {
 								found = true;
 								break;
@@ -135,11 +161,11 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 				}
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (world instanceof ServerLevel _level) {
-						itemstack.hurtAndBreak(20, _level, null, _stkprov -> {
+						tool.hurtAndBreak(20, _level, null, _stkprov -> {
 						});
 					}
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 600);
+						_player.getCooldowns().addCooldown(tool.getItem(), 600);
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -148,7 +174,7 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.fall")), SoundSource.BLOCKS, 5, 1, false);
 					}
 				}
-				OreLocationParticlesProcedure.execute(world, x, y, z, x + sx, y + sy, z + sz);
+				OreLocationParticlesProcedure.execute(world, x, y, z, x + sx + 0.5, y + sy + 0.5, z + sz + 0.5);
 			} else {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -159,10 +185,10 @@ public class CrystallitePickaxeAmethystOreLocationProcedure {
 				}
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 200);
+						_player.getCooldowns().addCooldown(tool.getItem(), 200);
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:echolocation_tools")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == tool.getItem()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			} else {

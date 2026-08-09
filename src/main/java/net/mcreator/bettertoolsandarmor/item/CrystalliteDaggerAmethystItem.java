@@ -4,17 +4,12 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteSwordAmethystEcholocationProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -54,13 +49,6 @@ public class CrystalliteDaggerAmethystItem extends SwordItem {
 
 	public CrystalliteDaggerAmethystItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, -1.5f)).fireResistant());
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CrystalliteSwordAmethystEcholocationProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
-		return ar;
 	}
 
 	@Override
