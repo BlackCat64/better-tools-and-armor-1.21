@@ -37662,6 +37662,12 @@
       "CUSTOM:CrystalliteSwordPrismarine",
       "CUSTOM:CrystalliteAxePrismarine",
       "CUSTOM:CrystalliteDaggerPrismarine"
+    ],
+    "ITEMS:mod:slowness_thorns_armor": [
+      "CUSTOM:CrystalliteArmorHoney.legs"
+    ],
+    "ITEMS:mod:combo_jump_armor": [
+      "CUSTOM:CrystalliteArmorHoney.boots"
     ]
   },
   "tab_element_order": {

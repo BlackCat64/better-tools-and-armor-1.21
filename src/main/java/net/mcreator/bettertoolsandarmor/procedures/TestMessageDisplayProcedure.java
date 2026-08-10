@@ -6,6 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
@@ -29,7 +31,9 @@ public class TestMessageDisplayProcedure {
 			return;
 		if (false) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).block_mining_combo))), true);
+				_player.displayClientMessage(Component.literal(((new java.text.DecimalFormat("##.##")
+						.format(entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.JUMP_STRENGTH) ? _livingEntity0.getAttribute(Attributes.JUMP_STRENGTH).getValue() : 0)) + "  |  "
+						+ new java.text.DecimalFormat("##.##").format(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped))), true);
 		}
 	}
 }

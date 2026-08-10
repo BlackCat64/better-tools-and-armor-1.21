@@ -27,22 +27,24 @@ public class CrystalliteLeggingsPrismarineLowGravityProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof LivingEntity _entity) {
+			_entity.getAttribute(Attributes.GRAVITY).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_prismarine"));
+		}
 		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:low_gravity_in_water_armor") && entity.isInWaterRainOrBubble()) {
 			if (entity.isInWaterOrBubble()) {
-				entity.setNoGravity(true);
-			} else {
-				entity.setNoGravity(false);
 				if (entity instanceof LivingEntity _entity) {
-					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_prismarine"), (-0.5), AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_prismarine"), (-1), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
 					if (!_entity.getAttribute(Attributes.GRAVITY).hasModifier(modifier.id())) {
 						_entity.getAttribute(Attributes.GRAVITY).addPermanentModifier(modifier);
 					}
 				}
-			}
-		} else {
-			entity.setNoGravity(false);
-			if (entity instanceof LivingEntity _entity) {
-				_entity.getAttribute(Attributes.GRAVITY).removeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_prismarine"));
+			} else {
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_leggings_prismarine"), (-0.5), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+					if (!_entity.getAttribute(Attributes.GRAVITY).hasModifier(modifier.id())) {
+						_entity.getAttribute(Attributes.GRAVITY).addPermanentModifier(modifier);
+					}
+				}
 			}
 		}
 	}

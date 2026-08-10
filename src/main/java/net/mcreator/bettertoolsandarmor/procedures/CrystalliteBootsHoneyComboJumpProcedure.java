@@ -5,19 +5,17 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -35,40 +33,78 @@ public class CrystalliteBootsHoneyComboJumpProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_BOOTS.get()) {
-			if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.JUMP))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 20, 1, false, false));
-			} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getAmplifier() : 0) == 1
-					&& entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped <= 20) {
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(MobEffects.JUMP);
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 30, 2, false, false));
-			} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getAmplifier() : 0) >= 2
-					&& entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped <= 30) {
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(MobEffects.JUMP);
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 30, 3, false, false));
+		if (entity instanceof Player) {
+			{
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.time_since_last_jumped = 0;
+				_vars.markSyncDirty();
 			}
-			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getAmplifier() : 0) >= 3 && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped <= 30) {
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:combo_jump_adv"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+			if (IsWearingArmorTagProcedure.execute(entity, "better_tools:combo_jump_armor")) {
+				if (!(entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(ResourceLocation.parse("better_tools:combo_jump_1"))
+						|| entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(ResourceLocation.parse("better_tools:combo_jump_2"))
+						|| entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(ResourceLocation.parse("better_tools:combo_jump_3")))) {
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:combo_jump_1"), 0.2, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(modifier.id())) {
+							_entity.getAttribute(Attributes.JUMP_STRENGTH).addPermanentModifier(modifier);
+						}
+					}
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:combo_jump_1"), 2, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).hasModifier(modifier.id())) {
+							_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).addPermanentModifier(modifier);
+						}
+					}
+				} else if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(ResourceLocation.parse("better_tools:combo_jump_1"))
+						&& entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped <= 20) {
+					if (entity instanceof LivingEntity _entity) {
+						_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:combo_jump_1"));
+					}
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:combo_jump_2"), 0.3, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(modifier.id())) {
+							_entity.getAttribute(Attributes.JUMP_STRENGTH).addPermanentModifier(modifier);
+						}
+					}
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:combo_jump_2"), 3, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).hasModifier(modifier.id())) {
+							_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).addPermanentModifier(modifier);
+						}
+					}
+				} else if (entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(ResourceLocation.parse("better_tools:combo_jump_2"))
+						&& entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped <= 30) {
+					if (entity instanceof LivingEntity _entity) {
+						_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:combo_jump_1"));
+					}
+					if (entity instanceof LivingEntity _entity) {
+						_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:combo_jump_2"));
+					}
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:combo_jump_3"), 0.4, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(modifier.id())) {
+							_entity.getAttribute(Attributes.JUMP_STRENGTH).addPermanentModifier(modifier);
+						}
+					}
+					if (entity instanceof LivingEntity _entity) {
+						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:combo_jump_3"), 4, AttributeModifier.Operation.ADD_VALUE);
+						if (!_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).hasModifier(modifier.id())) {
+							_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).addPermanentModifier(modifier);
+						}
+					}
+				} else if (entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttribute(Attributes.JUMP_STRENGTH).hasModifier(ResourceLocation.parse("better_tools:combo_jump_3"))) {
+					if (entity instanceof ServerPlayer _player) {
+						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:combo_jump_adv"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}
 			}
-		}
-		{
-			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
-			_vars.time_since_last_jumped = 0;
-			_vars.markSyncDirty();
 		}
 	}
 }

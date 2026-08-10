@@ -8,9 +8,9 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -31,7 +31,7 @@ public class CrystalliteLeggingsHoneyTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_HONEY_LEGGINGS.get()) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:slowness_thorns_armor")))) {
 			tooltip.add(Component.literal("\u00A77Inflicts attackers with:"));
 			tooltip.add(Component.literal("\u00A79Slowness II (0:03)"));
 		}

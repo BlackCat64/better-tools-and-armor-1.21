@@ -44,7 +44,9 @@ public class SafeHoneyHarvestProcedureProcedure {
 		if (direction == null || entity == null)
 			return;
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:beehives"))) && (getPropertyByName(blockstate, "honey_level") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 5
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:safe_honey_harvesters")))) {
+				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:safe_honey_harvesters")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:safe_honey_harvesters")))
+								&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS))) {
 			{
 				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -52,7 +54,7 @@ public class SafeHoneyHarvestProcedureProcedure {
 				if (_bs.getBlock().getStateDefinition().getProperty("honey_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
-			for (int index71 = 0; index71 < 3; index71++) {
+			for (int index76 = 0; index76 < 3; index76++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5 + direction.getStepX()), y, (z + 0.5 + direction.getStepZ()), new ItemStack(Items.HONEYCOMB));
 					entityToSpawn.setPickUpDelay(10);
@@ -66,12 +68,21 @@ public class SafeHoneyHarvestProcedureProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.beehive.shear")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
-			if (world instanceof ServerLevel _level) {
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
-				});
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:safe_honey_harvesters")))) {
+				if (world instanceof ServerLevel _level) {
+					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+					});
+				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.MAIN_HAND, true);
+			} else {
+				if (world instanceof ServerLevel _level) {
+					(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+					});
+				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.swing(InteractionHand.OFF_HAND, true);
 			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.swing(InteractionHand.MAIN_HAND, true);
 		}
 	}
 

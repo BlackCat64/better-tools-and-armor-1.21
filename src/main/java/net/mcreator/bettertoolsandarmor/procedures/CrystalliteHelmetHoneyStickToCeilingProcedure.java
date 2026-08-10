@@ -8,6 +8,8 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -41,8 +43,13 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).stick_to_ceiling
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sticky_helmets"))) && !entity.onGround()
 				&& world.getBlockState(BlockPos.containing(x, y + 2, z)).isFaceSturdy(world, BlockPos.containing(x, y + 2, z), Direction.DOWN)) {
-			if (!entity.isNoGravity()) {
-				entity.setNoGravity(true);
+			if (!(entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttribute(Attributes.GRAVITY).hasModifier(ResourceLocation.parse("better_tools:stick_to_ceiling")))) {
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:stick_to_ceiling"), (-1), AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+					if (!_entity.getAttribute(Attributes.GRAVITY).hasModifier(modifier.id())) {
+						_entity.getAttribute(Attributes.GRAVITY).addPermanentModifier(modifier);
+					}
+				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y + 2, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.honey_block.place")), SoundSource.PLAYERS, (float) 0.75, 1);
@@ -56,7 +63,9 @@ public class CrystalliteHelmetHoneyStickToCeilingProcedure {
 					_level.sendParticles(ParticleTypes.FALLING_HONEY, x, (y + 1.9), z, 1, 0.5, 0.5, 0.5, 0.025);
 			}
 		} else {
-			entity.setNoGravity(false);
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.GRAVITY).removeModifier(ResourceLocation.parse("better_tools:stick_to_ceiling"));
+			}
 		}
 	}
 }

@@ -52,5 +52,25 @@ public class ComboTimeoutResetProcedure {
 				_vars.markSyncDirty();
 			}
 		}
+		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_jumped > 30 || !IsWearingArmorTagProcedure.execute(entity, "better_tools:combo_jump_armor")) {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:combo_jump_1"));
+			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).removeModifier(ResourceLocation.parse("better_tools:combo_jump_1"));
+			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:combo_jump_2"));
+			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).removeModifier(ResourceLocation.parse("better_tools:combo_jump_2"));
+			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.JUMP_STRENGTH).removeModifier(ResourceLocation.parse("better_tools:combo_jump_3"));
+			}
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.SAFE_FALL_DISTANCE).removeModifier(ResourceLocation.parse("better_tools:combo_jump_3"));
+			}
+		}
 	}
 }
