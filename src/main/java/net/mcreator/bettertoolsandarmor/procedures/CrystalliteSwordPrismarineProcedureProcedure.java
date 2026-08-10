@@ -10,9 +10,8 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -31,23 +30,23 @@ public class CrystalliteSwordPrismarineProcedureProcedure {
 		if (entity == null)
 			return;
 		double dmg_boost = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_SWORD_PRISMARINE.get()
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_DAGGER_PRISMARINE.get()) {
-			dmg_boost = 3;
+		if (entity instanceof LivingEntity _entity) {
+			_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_prismarine"));
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_AXE_PRISMARINE.get()) {
-			dmg_boost = 2.5;
-		}
-		if (dmg_boost > 0 && entity.isInWaterRainOrBubble()) {
-			if (entity instanceof LivingEntity _entity) {
-				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_sword_prismarine"), dmg_boost, AttributeModifier.Operation.ADD_VALUE);
-				if (!_entity.getAttribute(Attributes.ATTACK_DAMAGE).hasModifier(modifier.id())) {
-					_entity.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(modifier);
-				}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:water_damage_boost_weapons")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:swords")))) {
+				dmg_boost = 3;
 			}
-		} else {
-			if (entity instanceof LivingEntity _entity) {
-				_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_prismarine"));
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
+				dmg_boost = 2.5;
+			}
+			if (dmg_boost > 0 && entity.isInWaterRainOrBubble()) {
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_sword_prismarine"), dmg_boost, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(Attributes.ATTACK_DAMAGE).hasModifier(modifier.id())) {
+						_entity.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(modifier);
+					}
+				}
 			}
 		}
 	}

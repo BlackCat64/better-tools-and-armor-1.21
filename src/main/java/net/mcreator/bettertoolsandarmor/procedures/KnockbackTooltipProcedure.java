@@ -53,7 +53,7 @@ public class KnockbackTooltipProcedure {
 			if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.BOUNCY_BRACELET.get()))) {
 				value = value + 2;
 			}
-			ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("Attack Knockback", tooltip), "\u00A72 " + new java.text.DecimalFormat("##").format(value) + " Attack Knockback", tooltip);
+			ReplaceTooltipLineProcedure.execute(GetTooltipLineContainingProcedure.execute("Attack Knockback", tooltip), "\u00A72 " + new java.text.DecimalFormat("##.##").format(value) + " Attack Knockback", tooltip);
 		}
 	}
 }

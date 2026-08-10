@@ -34141,8 +34141,7 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SafeFallDistanceTooltipProcedure.java"
         ]
-      },
-      "path": "~/Utility Procedures"
+      }
     },
     {
       "name": "CrystalliteBowPullState",
@@ -34578,6 +34577,33 @@
         ]
       },
       "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "SharpnessTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharpness_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SharpnessTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -35869,7 +35895,6 @@
       "TAG:minecraft:underwater_bonemeals",
       "Blocks.KELP",
       "Blocks.KELP_PLANT",
-      "Blocks.TALLGRASS#0",
       "Blocks.TALLGRASS#1",
       "Blocks.TALLGRASS#2",
       "Blocks.DOUBLE_PLANT#2",
@@ -37629,6 +37654,11 @@
     ],
     "ITEMS:mod:absorption_in_water_armor": [
       "CUSTOM:CrystalliteArmorPrismarine.body"
+    ],
+    "ITEMS:mod:water_damage_boost_weapons": [
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteDaggerPrismarine"
     ]
   },
   "tab_element_order": {
