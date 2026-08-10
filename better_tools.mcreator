@@ -18563,41 +18563,6 @@
       "path": "~/Crystallite/Prismarine"
     },
     {
-      "name": "GuardianNecklaceProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guardian_necklace_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GuardianNecklaceProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
-    },
-    {
       "name": "GuardianStaffBeam",
       "type": "particle",
       "compiles": true,
@@ -34602,6 +34567,41 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TestMessageDisplayProcedure.java"
         ]
       }
+    },
+    {
+      "name": "GuardianNecklaceProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_necklace_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GuardianNecklaceProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
     }
   ],
   "variable_elements": [
@@ -34793,6 +34793,12 @@
     },
     {
       "name": "crystallite_prismarine_absorption_timer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "guardian_necklace_timer",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -35536,8 +35542,11 @@
       "EntityVindicator",
       "EntityWitch",
       "EntityWitherSkeleton",
-      "EntityZoglin",
-      "EntityZombie"
+      "EntityZombie",
+      "#minecraft:raiders",
+      "#minecraft:illagers",
+      "#minecraft:no_anger_from_wind_charge",
+      "EntityBreeze"
     ],
     "ITEMS:minecraft:slabs": [
       "CUSTOM:DarkPolishedCoalSlab",

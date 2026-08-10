@@ -81,6 +81,7 @@ public class GlobalTimersProcedure {
 		{
 			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 			_vars.crystallite_prismarine_absorption_timer = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_prismarine_absorption_timer - 1, 0);
+			_vars.guardian_necklace_timer = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).guardian_necklace_timer - 1, 0);
 			_vars.markSyncDirty();
 		}
 	}
