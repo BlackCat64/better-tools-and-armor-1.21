@@ -11,11 +11,10 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -38,24 +37,24 @@ public class CrystalliteBootsPrismarineTooltipProcedure {
 			return;
 		boolean rain = false;
 		boolean water = false;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_BOOTS.get()) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:swim_speed_boosting_armor")))) {
 			if (entity.isInWater()) {
 				water = true;
 				rain = true;
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+				if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
 					tooltip.add(Component.literal(("\u00A72 "
 							+ (new java.text.DecimalFormat("##.#")
-									.format((entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED) ? _livingEntity6.getAttribute(NeoForgeMod.SWIM_SPEED).getValue() : 0) * 100))
+									.format((entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED) ? _livingEntity3.getAttribute(NeoForgeMod.SWIM_SPEED).getValue() : 0) * 100))
 							+ "% Swim Speed")));
 				} else {
 					tooltip.add(Component.literal("\u00A79+50% Swim Speed"));
 				}
 			} else if (entity.isInWaterRainOrBubble()) {
 				rain = true;
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
+				if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
 					tooltip.add(Component.literal(("\u00A72 "
 							+ (new java.text.DecimalFormat("##.#")
-									.format((entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity13.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
+									.format((entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity7.getAttribute(Attributes.MOVEMENT_SPEED).getValue() : 0) * 1000))
 							+ "% Movement Speed")));
 				} else {
 					tooltip.add(Component.literal("\u00A79+30% Speed"));

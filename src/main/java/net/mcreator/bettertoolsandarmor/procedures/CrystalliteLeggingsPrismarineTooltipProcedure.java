@@ -9,9 +9,9 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -34,7 +34,7 @@ public class CrystalliteLeggingsPrismarineTooltipProcedure {
 			return;
 		boolean rain = false;
 		boolean water = false;
-		if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_PRISMARINE_LEGGINGS.get()) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:low_gravity_in_water_armor")))) {
 			if (entity.isInWater()) {
 				water = true;
 				rain = true;

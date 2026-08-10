@@ -42,7 +42,7 @@ public class CrystalliteChestplateHoneyTooltipProcedure {
 				tooltip.add(Component.literal(("\u00A79+" + (new java.text.DecimalFormat("##.##").format(Math.floor((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 1.5))) + " Max Absorption")));
 			}
 			tooltip.add(Component.literal("\u00A77Absorption Gain:"));
-			tooltip.add(Component.literal("\u00A792HP every 10s"));
+			tooltip.add(Component.literal("\u00A79+2HP every 10s"));
 		}
 	}
 }

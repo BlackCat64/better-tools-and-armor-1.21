@@ -78,5 +78,10 @@ public class GlobalTimersProcedure {
 		BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer = Math.max(BetterToolsModVariables.MapVariables.get(world).crystallite_shimmer_timer - 1, 0);
 		BetterToolsModVariables.MapVariables.get(world).stealth_armor_timer = Math.max(BetterToolsModVariables.MapVariables.get(world).stealth_armor_timer - 1, 0);
 		BetterToolsModVariables.MapVariables.get(world).markSyncDirty();
+		{
+			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+			_vars.crystallite_prismarine_absorption_timer = Math.max(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).crystallite_prismarine_absorption_timer - 1, 0);
+			_vars.markSyncDirty();
+		}
 	}
 }

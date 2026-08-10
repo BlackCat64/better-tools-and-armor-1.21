@@ -845,7 +845,7 @@
   "item.better_tools.crystallite_armor_netherite_leggings.description_1": "§7Ability:",
   "subtitles.wind_burst": "Wind burst",
   "advancements.shoot_through_walls_adv.title": "Literal Wall Hacks",
-  "item.better_tools.crystallite_armor_prismarine_chestplate.description_2": "§3Ocean Dweller - Mining Fatigue immunity",
+  "item.better_tools.crystallite_armor_prismarine_chestplate.description_2": "§3Siphon - Gain Absorption HP when wet",
   "item.better_tools.blackstone_leggings": "Gilded Blackstone Leggings",
   "item.better_tools.crystallite_armor_prismarine_chestplate.description_1": "§7Ability:",
   "block.better_tools.green_metal_hanging_sign": "Green Metal Hanging Sign",
@@ -1917,5 +1917,6 @@
   "item.better_tools.crystallite_bow_prismarine.description_1": "§7Ability:",
   "item.better_tools.crystallite_bow_honey.description_2": "§6Swarm - Fires arrows rapidly, but deals less damage",
   "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:",
-  "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP."
+  "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP.",
+  "item.better_tools.crystallite_armor_prismarine_helmet.description_3": "§3Mining Fatigue immune"
 }
