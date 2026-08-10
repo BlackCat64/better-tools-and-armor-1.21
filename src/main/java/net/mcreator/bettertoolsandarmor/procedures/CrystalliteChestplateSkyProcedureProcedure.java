@@ -9,11 +9,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -48,11 +45,7 @@ public class CrystalliteChestplateSkyProcedureProcedure {
 		double x_velocity = 0;
 		double y_velocity = 0;
 		double z_velocity = 0;
-		if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:gust_knockback_armor")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:gust_knockback_armor")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:gust_knockback_armor")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:gust_knockback_armor"))))
-				&& immediatesourceentity instanceof LivingEntity) {
+		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:gust_knockback_armor") && immediatesourceentity instanceof LivingEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.GUST, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 1, 0, 0, 0, 0);
 			if (world instanceof Level _level) {

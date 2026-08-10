@@ -8,12 +8,11 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class CrystalliteHelmetPrismarineConduitPowerProcedure {
+public class RemoveMiningFatigueProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(EntityTickEvent.Pre event) {
 		execute(event, event.getEntity());
@@ -26,9 +25,9 @@ public class CrystalliteHelmetPrismarineConduitPowerProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:conduit_power_armor") && entity.isInWaterRainOrBubble()) {
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 2, 0, true, false));
+		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:mining_fatigue_immune_armor") && entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.DIG_SLOWDOWN)) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(MobEffects.DIG_SLOWDOWN);
 		}
 	}
 }

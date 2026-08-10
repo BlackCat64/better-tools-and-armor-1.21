@@ -18525,25 +18525,6 @@
       "path": "~/Crystallite/Prismarine"
     },
     {
-      "name": "CrystalliteChestplatePrismarineMiningFatigueRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_chestplate_prismarine_mining_fatigue_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteChestplatePrismarineMiningFatigueRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Prismarine"
-    },
-    {
       "name": "CrystalliteLeggingsPrismarineLowGravity",
       "type": "procedure",
       "compiles": true,
@@ -34512,6 +34493,49 @@
         ]
       },
       "path": "~/Crystallite/Redstone"
+    },
+    {
+      "name": "IsWearingArmorTag",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_wearing_armor_tag",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "tag",
+            "type": "string"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsWearingArmorTagProcedure.java"
+        ]
+      },
+      "path": "~/Utility Procedures"
+    },
+    {
+      "name": "RemoveMiningFatigue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_mining_fatigue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RemoveMiningFatigueProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Prismarine"
     }
   ],
   "variable_elements": [
@@ -37261,13 +37285,13 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.helmet",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.helmet",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.helmet",
       "~HoneycombHelmet@CUSTOM:HoneycombHelmet.helmet",
       "~AmethystHelmet@CUSTOM:AmethystHelmet.helmet",
       "~WoodenArmor@CUSTOM:WoodenArmor.helmet",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.helmet",
-      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.helmet",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.helmet",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.helmet",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.helmet",
@@ -37295,6 +37319,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.body",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.body",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.body",
       "~DiamondCactusBody@CUSTOM:DiamondCactusBody.body",
@@ -37302,7 +37327,6 @@
       "~CactusBody@CUSTOM:CactusBody.body",
       "~WoodenArmor@CUSTOM:WoodenArmor.body",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.body",
-      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.body",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.body",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.body",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.body",
@@ -37330,11 +37354,11 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.legs",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.legs",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.legs",
       "~WoodenArmor@CUSTOM:WoodenArmor.legs",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.legs",
-      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.legs",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.legs",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.legs",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.legs",
@@ -37363,13 +37387,13 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.boots",
       "~WingedBoots@CUSTOM:WingedBoots.boots",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.boots",
       "~CrystalliteArmorRuby@CUSTOM:CrystalliteArmorRuby.boots",
       "~DripstoneBoots@CUSTOM:DripstoneBoots.boots",
       "~WoodenArmor@CUSTOM:WoodenArmor.boots",
       "~CrystalliteArmorHoney@CUSTOM:CrystalliteArmorHoney.boots",
-      "~CrystalliteArmorPrismarine@CUSTOM:CrystalliteArmorPrismarine.boots",
       "~CrystalliteArmorAmethyst@CUSTOM:CrystalliteArmorAmethyst.boots",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.boots",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.boots",
@@ -37500,9 +37524,6 @@
     "ITEMS:mod:speed_boosting_armor_in_dark": [
       "CUSTOM:CrystalliteArmorSculk.boots"
     ],
-    "ITEMS:mod:sonic_boom_armor": [
-      "CUSTOM:CrystalliteArmorSculk.body"
-    ],
     "ITEMS:c:drinks/juice": [
       "CUSTOM:BerrySmoothie",
       "CUSTOM:AppleJuice"
@@ -37539,6 +37560,24 @@
     ],
     "ITEMS:mod:hydration_hoes": [
       "CUSTOM:CrystalliteHoePrismarine"
+    ],
+    "ITEMS:mod:conduit_power_armor": [
+      "CUSTOM:CrystalliteArmorPrismarine.helmet"
+    ],
+    "ITEMS:mod:mining_fatigue_immune_armor": [
+      "CUSTOM:CrystalliteArmorPrismarine.helmet"
+    ],
+    "ITEMS:mod:low_gravity_in_water_armor": [
+      "CUSTOM:CrystalliteArmorPrismarine.legs"
+    ],
+    "ITEMS:mod:swim_speed_boosting_armor": [
+      "CUSTOM:CrystalliteArmorPrismarine.boots"
+    ],
+    "ITEMS:mod:wall_climbing_armor": [
+      "CUSTOM:CrystalliteArmorAmethyst.legs"
+    ],
+    "ITEMS:mod:sonic_boom_chestplates": [
+      "CUSTOM:CrystalliteArmorSculk.body"
     ]
   },
   "tab_element_order": {
@@ -38766,7 +38805,7 @@
       "item.better_tools.crystallite_armor_netherite_leggings.description_1": "§7Ability:",
       "subtitles.wind_burst": "Wind burst",
       "advancements.shoot_through_walls_adv.title": "Literal Wall Hacks",
-      "item.better_tools.crystallite_armor_prismarine_chestplate.description_2": "§3Ocean Dweller - Mining Fatigue immunity",
+      "item.better_tools.crystallite_armor_prismarine_chestplate.description_2": "§3Siphon - Gain Absorption HP when wet",
       "item.better_tools.blackstone_leggings": "Gilded Blackstone Leggings",
       "item.better_tools.crystallite_armor_prismarine_chestplate.description_1": "§7Ability:",
       "block.better_tools.green_metal_hanging_sign": "Green Metal Hanging Sign",
@@ -39838,7 +39877,8 @@
       "item.better_tools.crystallite_bow_prismarine.description_1": "§7Ability:",
       "item.better_tools.crystallite_bow_honey.description_2": "§6Swarm - Fires arrows rapidly, but deals less damage",
       "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:",
-      "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP."
+      "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP.",
+      "item.better_tools.crystallite_armor_prismarine_helmet.description_3": "§3Mining Fatigue immune"
     }
   },
   "metadata": {

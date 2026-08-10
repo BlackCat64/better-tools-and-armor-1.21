@@ -6,13 +6,10 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
@@ -34,11 +31,7 @@ public class CrystalliteBootsEmeraldProcedureProcedure {
 		if (entity instanceof LivingEntity _entity) {
 			_entity.getAttribute(Attributes.MOVEMENT_SPEED).removeModifier(ResourceLocation.parse("better_tools:crystallite_emerald_boots"));
 		}
-		if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:speed_boosting_armor_in_sun")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:speed_boosting_armor_in_sun")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:speed_boosting_armor_in_sun")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:speed_boosting_armor_in_sun"))))
-				&& IsPlayerInSunlightProcedure.execute(world, x, y, z, entity)) {
+		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:speed_boosting_armor_in_sun") && IsPlayerInSunlightProcedure.execute(world, x, y, z, entity)) {
 			if (entity instanceof LivingEntity _entity) {
 				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_emerald_boots"), 0.03, AttributeModifier.Operation.ADD_VALUE);
 				if (!_entity.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(modifier.id())) {

@@ -45,7 +45,8 @@ public class CrystalliteChestplateSculkSonicBoomProcedure {
 		double change_y = 0;
 		double change_z = 0;
 		double chance = 0;
-		if (!damagesource.is(DamageTypes.SONIC_BOOM) && (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sonic_boom_armor")))) {
+		if (!damagesource.is(DamageTypes.SONIC_BOOM)
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sonic_boom_chestplates")))) {
 			chance = 0.2;
 			chance = chance + (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity3.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 			if (Math.random() < chance) {

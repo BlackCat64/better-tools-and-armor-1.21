@@ -10,8 +10,6 @@
     "textureLeggings": "crystallite_leggings_prismarine",
     "enableBoots": true,
     "textureBoots": "crystallite_boots_prismarine",
-    "onHelmetTick": "CrystalliteHelmetPrismarineConduitPower",
-    "onBodyTick": "CrystalliteChestplatePrismarineMiningFatigueRemove",
     "creativeTabs": [
       "CUSTOM:CrystalliteTab"
     ],
@@ -24,14 +22,15 @@
       "fixedValue": [
         "§7Upgrade: §3Prismarine",
         "§7Ability:",
-        "§3Amphibian - Gain Conduit Power when wet"
+        "§3Amphibian - Gain Conduit Power when wet",
+        "§3Mining Fatigue immune"
       ]
     },
     "bodySpecialInformation": {
       "fixedValue": [
         "§7Upgrade: §3Prismarine",
         "§7Ability:",
-        "§3Ocean Dweller - Mining Fatigue immunity"
+        "§3Siphon - Gain Absorption HP when wet"
       ]
     },
     "leggingsSpecialInformation": {

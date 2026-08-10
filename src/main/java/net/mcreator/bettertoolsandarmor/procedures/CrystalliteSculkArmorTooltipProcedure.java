@@ -88,7 +88,7 @@ public class CrystalliteSculkArmorTooltipProcedure {
 			}
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SCULK_CHESTPLATE.get()) {
 				if (Screen.hasShiftDown()) {
-					tooltip.add(Component.literal("\u00A77Sonic boom details:"));
+					tooltip.add(Component.literal("\u00A77When Sonic Boom launched:"));
 					tooltip.add(Component.literal("\u00A72 24 Blocks Range"));
 					tooltip.add(Component.literal("\u00A7cDurability Cost: 5"));
 				} else {
