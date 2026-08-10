@@ -12,15 +12,35 @@
       "id": "#minecraft:leaves",
       "required": false
     },
+    {
+      "id": "#c:grass",
+      "required": false
+    },
+    {
+      "id": "#minecraft:bee_attractive",
+      "required": false
+    },
     "minecraft:twisting_vines",
     "minecraft:sweet_berry_bush",
     "better_tools:blue_mushroom",
     "minecraft:cave_vines",
     "minecraft:hanging_roots",
     "minecraft:spore_blossom",
+    {
+      "id": "#c:crops",
+      "required": false
+    },
     "minecraft:short_grass",
     "minecraft:weeping_vines_plant",
     "minecraft:sea_pickle",
+    {
+      "id": "#minecraft:bee_growables",
+      "required": false
+    },
+    {
+      "id": "#c:flowers",
+      "required": false
+    },
     "minecraft:twisting_vines_plant",
     "minecraft:red_mushroom",
     "minecraft:vine",

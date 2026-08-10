@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -26,28 +27,28 @@ import javax.annotation.Nullable;
 public class CrystalliteHoeSapphirePlantClearanceProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getState(), event.getPlayer());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+		execute(null, world, x, y, z, blockstate, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		double i_x = 0;
 		double i_y = 0;
 		double i_z = 0;
-		if (IsPlantProcedure.execute(world, x, y, z) && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:plant_clearance_tools")))
-				&& !entity.isShiftKeyDown()) {
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:plants")))
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:plant_clearance_tools"))) && !entity.isShiftKeyDown()) {
 			i_x = -2;
-			for (int index68 = 0; index68 < 5; index68++) {
+			for (int index152 = 0; index152 < 5; index152++) {
 				i_y = -2;
-				for (int index69 = 0; index69 < 5; index69++) {
+				for (int index153 = 0; index153 < 5; index153++) {
 					i_z = -2;
-					for (int index70 = 0; index70 < 5; index70++) {
-						if (IsPlantProcedure.execute(world, x + i_x, y + i_y, z + i_z)) {
+					for (int index154 = 0; index154 < 5; index154++) {
+						if ((world.getBlockState(BlockPos.containing(x + i_x, y + i_y, z + i_z))).is(BlockTags.create(ResourceLocation.parse("better_tools:plants")))) {
 							if (entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) {
 								world.destroyBlock(BlockPos.containing(x + i_x, y + i_y, z + i_z), false);
 							} else {

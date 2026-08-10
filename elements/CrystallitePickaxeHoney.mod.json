@@ -8,13 +8,14 @@
     "texture": "crystallite_pickaxe_honey",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Pickaxe",
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "§7Upgrade: §6Honey",
         "§7Ability:",
-        "§6Swarm - Mining the same block many times in a row causes it to break instantly"
+        "§6Swarm - Mining the same block 10 times in a row causes it to break instantly"
       ]
     },
     "creativeTabs": [

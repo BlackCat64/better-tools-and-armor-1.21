@@ -20706,6 +20706,10 @@
             "type": "entity"
           },
           {
+            "name": "breakSpeed",
+            "type": "number"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -28774,38 +28778,6 @@
       "path": "~/Crystallite/Sapphire"
     },
     {
-      "name": "IsPlant",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "is_plant",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/IsPlantProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Utility Procedures"
-    },
-    {
       "name": "CrystalliteHoeSapphirePlantClearance",
       "type": "procedure",
       "compiles": true,
@@ -28816,6 +28788,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteHoeSapphirePlantClearanceProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -28979,6 +28955,10 @@
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PlantsDropCharcoalProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "entity",
             "type": "entity"
@@ -34604,6 +34584,24 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "TestMessageDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_message_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TestMessageDisplayProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -35245,12 +35243,12 @@
       "CUSTOM:OverrideWeaponDamage"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CrystallitePickaxeHoney@CUSTOM:CrystallitePickaxeHoney",
       "~CrystallitePickaxeAmethyst@CUSTOM:CrystallitePickaxeAmethyst",
       "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~CrystallitePickaxeRedstone@CUSTOM:CrystallitePickaxeRedstone",
       "~CrystallitePickaxeRedstoneUpgrade2@CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "~CrystallitePickaxeRedstoneUpgrade1@CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
-      "~CrystallitePickaxeHoney@CUSTOM:CrystallitePickaxeHoney",
       "~CrystallitePickaxePrismarine@CUSTOM:CrystallitePickaxePrismarine",
       "~CrystallitePickaxeSky@CUSTOM:CrystallitePickaxeSky",
       "~CrystallitePickaxeSculk@CUSTOM:CrystallitePickaxeSculk",
@@ -35363,11 +35361,11 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
       "~CrystalliteShovelAmethyst@CUSTOM:CrystalliteShovelAmethyst",
       "~CrystalliteShovelRedstone@CUSTOM:CrystalliteShovelRedstone",
       "~CrystalliteShovelRedstoneUpgrade2@CUSTOM:CrystalliteShovelRedstoneUpgrade2",
       "~CrystalliteShovelRedstoneUpgrade1@CUSTOM:CrystalliteShovelRedstoneUpgrade1",
-      "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
       "~CrystalliteShovelPrismarine@CUSTOM:CrystalliteShovelPrismarine",
       "~CrystalliteShovelSky@CUSTOM:CrystalliteShovelSky",
       "~CrystalliteShovelSculk@CUSTOM:CrystalliteShovelSculk",
@@ -35820,11 +35818,11 @@
       "CUSTOM:CuringCharm"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CrystalliteHoeHoney@CUSTOM:CrystalliteHoeHoney",
       "~CrystalliteHoeAmethyst@CUSTOM:CrystalliteHoeAmethyst",
       "~CrystalliteHoeRedstone@CUSTOM:CrystalliteHoeRedstone",
       "~CrystalliteHoeRedstoneUpgrade2@CUSTOM:CrystalliteHoeRedstoneUpgrade2",
       "~CrystalliteHoeRedstoneUpgrade1@CUSTOM:CrystalliteHoeRedstoneUpgrade1",
-      "~CrystalliteHoeHoney@CUSTOM:CrystalliteHoeHoney",
       "~CrystalliteHoePrismarine@CUSTOM:CrystalliteHoePrismarine",
       "~CrystalliteHoeSky@CUSTOM:CrystalliteHoeSky",
       "~CrystalliteHoeSculk@CUSTOM:CrystalliteHoeSculk",
@@ -35909,7 +35907,12 @@
       "CUSTOM:PurpleMushroom",
       "Blocks.BROWN_MUSHROOM",
       "Blocks.RED_MUSHROOM",
-      "Blocks.NETHER_WART"
+      "Blocks.NETHER_WART",
+      "TAG:c:flowers",
+      "TAG:c:grass",
+      "TAG:minecraft:bee_growables",
+      "TAG:minecraft:bee_attractive",
+      "TAG:c:crops"
     ],
     "BLOCKS:mod:lava": [
       "Blocks.LAVA",
@@ -36729,11 +36732,11 @@
       "CUSTOM:GlassArmor.boots"
     ],
     "ITEMS:minecraft:axes": [
+      "~CrystalliteAxeHoney@CUSTOM:CrystalliteAxeHoney",
       "~CrystalliteAxeAmethyst@CUSTOM:CrystalliteAxeAmethyst",
       "~CrystalliteAxeRedstone@CUSTOM:CrystalliteAxeRedstone",
       "~CrystalliteAxeRedstoneUpgrade2@CUSTOM:CrystalliteAxeRedstoneUpgrade2",
       "~CrystalliteAxeRedstoneUpgrade1@CUSTOM:CrystalliteAxeRedstoneUpgrade1",
-      "~CrystalliteAxeHoney@CUSTOM:CrystalliteAxeHoney",
       "~CrystalliteAxePrismarine@CUSTOM:CrystalliteAxePrismarine",
       "~CrystalliteAxeSky@CUSTOM:CrystalliteAxeSky",
       "~CrystalliteAxeSculk@CUSTOM:CrystalliteAxeSculk",
@@ -39124,7 +39127,7 @@
       "item.better_tools.crystallite_axe_honey.description_1": "§7Abilities:",
       "item.better_tools.crystallite_armor_honey_boots": "Crystallite Boots",
       "item.better_tools.crystallite_axe_honey.description_2": "§6Swarm - Consecutive hits deal more damage",
-      "item.better_tools.crystallite_axe_honey.description_3": "§6Mining the same block many times in a row causes it to break instantly",
+      "item.better_tools.crystallite_axe_honey.description_3": "§6Mining the same block 10 times in a row causes it to break instantly",
       "block.copper_tools_and_armor.nether_diamond_block": "Nether Diamond Block",
       "item.better_tools.crystallite_armor_netherite_chestplate": "Crystallite Chestplate",
       "advancements.crystallite_upgrades_section.descr": "Advancements for true completionists!",
@@ -39173,8 +39176,8 @@
       "item.better_tools.crystallite_armor_redstone_boots.description_1": "§7Ability:",
       "item.minecraft.tipped_arrow.effect.swift_swim_potion_2": "Arrow of Rapidity",
       "item.better_tools.crystallite_armor_redstone_boots.description_2": "§cHearty - Increases max health",
-      "item.better_tools.crystallite_hoe_honey.description_3": "§6Pollinator - Breaking the same plant many times in a row may drop Bone Meal",
-      "item.better_tools.crystallite_hoe_honey.description_2": "§6Swarm - Mining the same block many times in a row causes it to break instantly",
+      "item.better_tools.crystallite_hoe_honey.description_3": "§6Pollinator - Breaking the same plant 10 times in a row may drop Bone Meal",
+      "item.better_tools.crystallite_hoe_honey.description_2": "§6Swarm - Mining the same block 10 times in a row causes it to break instantly",
       "item.better_tools.crystallite_hoe_honey.description_1": "§7Abilities:",
       "advancements.crystallite_gem_adv.title": "Local Jeweller",
       "item.better_tools.end_titanium_leggings.description_1": "§5Levitation Resistant",
@@ -39423,7 +39426,7 @@
       "item.copper_tools_and_armor.battle_axe": "Battle Axe",
       "item.better_tools.glass_helmet": "Glass Helmet",
       "item.better_tools.diamond_hard_crystal.description_0": "§7Element: §bDiamond",
-      "item.better_tools.crystallite_pickaxe_honey.description_2": "§6Swarm - Mining the same block many times in a row causes it to break instantly",
+      "item.better_tools.crystallite_pickaxe_honey.description_2": "§6Swarm - Mining the same block 10 times in a row causes it to break instantly",
       "item.better_tools.guardian_crystal.description_0": "§7Element: §3Prismarine",
       "item.better_tools.crystallite_pickaxe_honey.description_0": "§7Upgrade: §6Honey",
       "item.better_tools.crystallite_pickaxe_honey.description_1": "§7Ability:",
@@ -39756,7 +39759,7 @@
       "item.better_tools.crystallite_shovel_honey.description_1": "§7Ability:",
       "item.better_tools.crystallite_shovel_honey.description_0": "§7Upgrade: §6Honey",
       "item.better_tools.ruby_shovel": "Ruby Shovel",
-      "item.better_tools.crystallite_shovel_honey.description_2": "§6Pollinator - Breaking the same plant many times in a row may drop Bone Meal",
+      "item.better_tools.crystallite_shovel_honey.description_2": "§6Pollinator - Breaking the same plant 10 times in a row may drop Bone Meal",
       "advancements.max_knockback_resistance_adv.title": "Immovable Object",
       "block.better_tools.pink_metal_wall_sign": "Pink Metal Wall Sign",
       "item.better_tools.tough_necklace.description_0": "§7When worn:",

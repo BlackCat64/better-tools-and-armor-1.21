@@ -16,6 +16,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.component.DataComponents;
@@ -39,7 +40,7 @@ public class PlantsDropBoneMealProcedureProcedure {
 		if (entity == null)
 			return;
 		double chance = 0;
-		if (IsPlantProcedure.execute(world, x, y, z) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:plants"))) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:fertilizer_hoes")))) {
 				chance = 0.1;
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:combo_harvesting_tools")))
@@ -59,7 +60,7 @@ public class PlantsDropBoneMealProcedureProcedure {
 				}
 			}
 			if (chance > 0) {
-				chance = chance + (entity instanceof LivingEntity _livingEntity21 && _livingEntity21.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity21.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				chance = chance + (entity instanceof LivingEntity _livingEntity23 && _livingEntity23.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity23.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				if (Math.random() < chance) {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(Items.BONE_MEAL));

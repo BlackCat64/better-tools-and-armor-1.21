@@ -5,9 +5,11 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
@@ -28,7 +30,8 @@ public class ComboTimeoutResetProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_attacked > 40) {
+		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_attacked > 40
+				|| !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:combo_weapons"))))) {
 			if (entity instanceof LivingEntity _entity) {
 				_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_honey_1"));
 			}
@@ -40,7 +43,9 @@ public class ComboTimeoutResetProcedure {
 			}
 		}
 		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_mined > 100
-				|| entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_mined > 40 && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).block_mining_combo >= 9) {
+				|| entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_last_mined > 40 && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).block_mining_combo >= 9
+				|| !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:combo_mining_tools")))
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:combo_harvesting_tools"))))) {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.block_mining_combo = 0;

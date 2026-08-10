@@ -8,6 +8,7 @@
     "texture": "crystallite_axe_honey",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Axe",
     "rarity": "COMMON",
     "specialInformation": {
@@ -15,7 +16,7 @@
         "§7Upgrade: §6Honey",
         "§7Abilities:",
         "§6Swarm - Consecutive hits deal more damage",
-        "§6Mining the same block many times in a row causes it to break instantly"
+        "§6Mining the same block 10 times in a row causes it to break instantly"
       ]
     },
     "creativeTabs": [

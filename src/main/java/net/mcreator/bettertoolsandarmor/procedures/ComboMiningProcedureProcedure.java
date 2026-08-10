@@ -43,7 +43,8 @@ public class ComboMiningProcedureProcedure {
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes")))
 								&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/hoe")))
 						|| ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:shovels")))
-								|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes")))) && IsPlantProcedure.execute(world, x, y, z))) {
+								|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:hoes"))))
+								&& blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:plants"))))) {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.block_mining_combo = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).block_mining_combo + 1;
@@ -55,13 +56,13 @@ public class ComboMiningProcedureProcedure {
 			{
 				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 				_vars.block_mining_combo = 0;
-				_vars.last_mined_block = blockstate;
 				_vars.markSyncDirty();
 			}
 		}
 		{
 			BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
 			_vars.time_since_last_mined = 0;
+			_vars.last_mined_block = blockstate;
 			_vars.markSyncDirty();
 		}
 	}
