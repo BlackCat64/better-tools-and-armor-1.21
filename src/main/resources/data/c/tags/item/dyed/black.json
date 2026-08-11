@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:dark_polished_coal_stairs",
+    "better_tools:dark_polished_coal_slab",
+    "better_tools:dark_polished_coal_wall",
+    "better_tools:dark_polished_coal_block",
+    "better_tools:dark_polished_coal_trapdoor"
+  ]
+}

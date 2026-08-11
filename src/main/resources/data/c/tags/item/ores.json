@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:mixed_ores",
+      "required": false
+    },
+    "better_tools:topaz_ore",
+    "better_tools:nether_diamond_ore",
+    "better_tools:end_titanium_ore"
+  ]
+}

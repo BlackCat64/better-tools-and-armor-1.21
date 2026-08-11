@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:gilded_blackstone_leggings",
+      "required": false
+    },
+    {
+      "id": "#better_tools:gold_upgraded_crystallite_items",
+      "required": false
+    }
+  ]
+}

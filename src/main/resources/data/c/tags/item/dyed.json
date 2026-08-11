@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:metallic_building_blocks",
+      "required": false
+    }
+  ]
+}

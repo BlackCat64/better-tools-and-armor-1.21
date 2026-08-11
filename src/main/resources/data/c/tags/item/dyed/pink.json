@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:light_polished_nether_diamond_stairs",
+    "better_tools:light_polished_nether_diamond_slab",
+    "better_tools:light_polished_nether_diamond_trapdoor",
+    "better_tools:light_polished_nether_diamond_wall",
+    "better_tools:light_polished_nether_diamond_block"
+  ]
+}

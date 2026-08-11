@@ -9303,32 +9303,6 @@
       "path": "~/Mixed Ore"
     },
     {
-      "name": "DeepslateRandomSmelt",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepslate_random_smelt",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipe/deepslate_random_smelt.json"
-        ]
-      },
-      "path": "~/Mixed Ore"
-    },
-    {
-      "name": "DeepslateRandomFurnace",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepslate_random_furnace",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipe/deepslate_random_furnace.json"
-        ]
-      },
-      "path": "~/Mixed Ore"
-    },
-    {
       "name": "DeepslateRandomOreLoot",
       "type": "loottable",
       "compiles": true,
@@ -34566,7 +34540,8 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TestMessageDisplayProcedure.java"
         ]
-      }
+      },
+      "path": "~/Utility Procedures"
     },
     {
       "name": "GuardianNecklaceProcedure",
@@ -34870,9 +34845,6 @@
       "CUSTOM:CrystallitePickaxeNetherDiamond",
       "CUSTOM:NetherDiamondPickaxe"
     ],
-    "ITEMS:forge:ores_in_ground/end_stone": [
-      "CUSTOM:EndTitaniumOre"
-    ],
     "ITEMS:curios:charm": [
       "CUSTOM:HeartCharm",
       "CUSTOM:PoisonCharm",
@@ -34925,9 +34897,6 @@
     "ITEMS:mod:plant_clearance_tools": [
       "CUSTOM:CrystalliteShovelSapphire",
       "CUSTOM:CrystalliteHoeSapphire"
-    ],
-    "ITEMS:forge:tools/hoes": [
-      "TAG:minecraft:hoes"
     ],
     "BLOCKS:mod:warped_planks": [
       "Blocks.WARPED_PLANKS",
@@ -34986,13 +34955,6 @@
       "CUSTOM:CrystalliteShovelHoney",
       "CUSTOM:CrystalliteHoeHoney"
     ],
-    "BLOCKS:forge:ore_bearing_ground/end_stone": [
-      "Blocks.END_STONE"
-    ],
-    "ITEMS:forge:tools/shovels": [
-      "TAG:minecraft:shovels",
-      "CUSTOM:CrystallitePickaxeEmerald"
-    ],
     "ITEMS:mod:crystal_leggings": [
       "CUSTOM:CrystalLegs.legs",
       "CUSTOM:DiamondCrystalLegs.legs"
@@ -35010,7 +34972,10 @@
       "CUSTOM:EndTitaniumDagger",
       "CUSTOM:SapphireDagger",
       "CUSTOM:TopazDagger",
-      "TAG:better_tools:crystallite_daggers"
+      "TAG:better_tools:crystallite_daggers",
+      "CUSTOM:RedstoneDagger",
+      "CUSTOM:LapisDagger",
+      "CUSTOM:EmeraldDagger"
     ],
     "BLOCKS:mod:metallic_building_blocks": [
       "CUSTOM:DarkPolishedCoalBlock",
@@ -35222,7 +35187,7 @@
     ],
     "BLOCKS:mod:climbable_with_wall_climbing_leggings": [
       "TAG:minecraft:leaves",
-      "TAG:forge:chests"
+      "TAG:c:chests"
     ],
     "ITEMS:mod:crystallite_helmets": [
       "CUSTOM:CrystalliteArmor.helmet",
@@ -35294,9 +35259,6 @@
       "CUSTOM:DiamondHardCrystal",
       "CUSTOM:DiamondHardPlate",
       "CUSTOM:CrystalliteBowDiamond"
-    ],
-    "ITEMS:forge:ingots": [
-      "CUSTOM:EndTitaniumIngot"
     ],
     "BLOCKS:mod:purpur_blocks": [
       "Blocks.PURPUR_STAIRS",
@@ -35403,53 +35365,6 @@
       "CUSTOM:CrystalliteShovelNetherite",
       "CUSTOM:CrystalliteHoeNetherite"
     ],
-    "ITEMS:forge:armors/helmets": [
-      "CUSTOM:NetherDiamondArmor.helmet",
-      "CUSTOM:GoldCarrotArmor.helmet",
-      "CUSTOM:IronGoldCarrotHat.helmet",
-      "CUSTOM:DiamondGoldCarrotHat.helmet",
-      "CUSTOM:CryingObsidianHelmet.helmet",
-      "CUSTOM:DiamondCryingObsidianHelmet.helmet",
-      "CUSTOM:EndTitaniumArmor.helmet",
-      "CUSTOM:GlassArmor.helmet",
-      "CUSTOM:SapphireArmor.helmet",
-      "CUSTOM:TopazArmor.helmet",
-      "CUSTOM:CrystalliteArmor.helmet",
-      "CUSTOM:CrystalliteArmorIron.helmet",
-      "CUSTOM:CrystalliteArmorGold.helmet",
-      "CUSTOM:CrystalliteArmorLapis.helmet",
-      "CUSTOM:CrystalliteArmorRedstone.helmet",
-      "CUSTOM:CrystalliteArmorDiamond.helmet",
-      "CUSTOM:CrystalliteArmorNetherite.helmet",
-      "CUSTOM:CrystalliteArmorRuby.helmet",
-      "CUSTOM:CrystalliteArmorSapphire.helmet",
-      "CUSTOM:CrystalliteArmorTopaz.helmet",
-      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
-      "CUSTOM:CrystalliteArmorEmerald.helmet",
-      "CUSTOM:CrystalliteArmorSculk.helmet",
-      "CUSTOM:IronGlassArmor.helmet",
-      "CUSTOM:DiamondGlassArmor.helmet",
-      "CUSTOM:CrystalliteArmorSky.helmet",
-      "CUSTOM:CrystalliteArmorAmethyst.helmet",
-      "CUSTOM:CrystalliteArmorPrismarine.helmet",
-      "Items.LEATHER_HELMET",
-      "Items.CHAINMAIL_HELMET",
-      "Items.TURTLE_HELMET",
-      "Items.IRON_HELMET",
-      "Items.GOLDEN_HELMET",
-      "Items.DIAMOND_HELMET",
-      "Items.NETHERITE_HELMET",
-      "CUSTOM:CrystalliteArmorHoney.helmet",
-      "CUSTOM:WoodenArmor.helmet",
-      "CUSTOM:AmethystHelmet.helmet",
-      "CUSTOM:HoneycombHelmet.helmet"
-    ],
-    "ITEMS:forge:ores_in_ground/stone": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre"
-    ],
     "ITEMS:mod:base_tier_effect_armor": [
       "CUSTOM:SugarBoots.boots",
       "CUSTOM:RabbitBoots.boots",
@@ -35457,21 +35372,12 @@
       "CUSTOM:GoldCarrotArmor.helmet",
       "CUSTOM:HeartyBody.body"
     ],
-    "ITEMS:forge:needs_netherite_tool": [
-      "CUSTOM:EndTitaniumBlock",
-      "CUSTOM:CrystalliteBlock",
-      "CUSTOM:CutCrystalliteBlock",
-      "CUSTOM:EndTitaniumOre"
-    ],
     "BLOCKS:mod:hoe_allowed_blocks": [
       "Blocks.DIRT#0",
       "Blocks.DIRT#1",
       "Blocks.ROOTED_DIRT",
       "Blocks.GRASS",
       "Blocks.GRASS_PATH"
-    ],
-    "ITEMS:forge:tools/knives": [
-      "TAG:better_tools:daggers"
     ],
     "ITEMS:mod:netherite_tier_tools": [
       "Items.NETHERITE_SWORD",
@@ -35570,16 +35476,6 @@
       "CUSTOM:PolishedAmethystSlab",
       "CUSTOM:LightPolishedAmethystSlab"
     ],
-    "ITEMS:forge:ores": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:EndTitaniumOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre",
-      "CUSTOM:NetherDiamondOre",
-      "CUSTOM:DeepslateRubyOre",
-      "CUSTOM:DeepslateRandomOre"
-    ],
     "ITEMS:mod:ruby_leggings": [
       "CUSTOM:RubyArmor.legs",
       "CUSTOM:DiamondRubyLegs.legs"
@@ -35670,9 +35566,6 @@
     "ITEMS:mod:topaz_pickaxes": [
       "CUSTOM:TopazPickaxe",
       "CUSTOM:CrystallitePickaxeTopaz"
-    ],
-    "ITEMS:forge:slimeballs": [
-      "CUSTOM:BlueSlimeball"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~LightPolishedAmethystWall@CUSTOM:LightPolishedAmethystWall",
@@ -35793,7 +35686,8 @@
       "~RubyBlock@CUSTOM:RubyBlock",
       "~RubyOre@CUSTOM:RubyOre",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock",
-      "TAG:mod:all_metal_signs"
+      "TAG:mod:all_metal_signs",
+      "CUSTOM:JewelleryTable"
     ],
     "ITEMS:mod:energy_vials": [
       "CUSTOM:EnergyVial",
@@ -36094,9 +35988,6 @@
       "CUSTOM:CryingObsidianHelmet.helmet",
       "CUSTOM:DiamondCryingObsidianHelmet.helmet"
     ],
-    "ITEMS:forge:ore_bearing_ground/blackstone": [
-      "Blocks.BLACKSTONE"
-    ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:NetherDiamondBlock",
       "CUSTOM:RubyBlock",
@@ -36178,22 +36069,10 @@
       "CUSTOM:EarthCirclet",
       "CUSTOM:CrystalliteBowAmethyst"
     ],
-    "ITEMS:forge:tools/swords": [
-      "TAG:minecraft:swords"
-    ],
     "ITEMS:mod:phantom_boots": [
       "CUSTOM:PhantomBoots.boots",
       "CUSTOM:IronPhantomBoots.boots",
       "CUSTOM:DiamondPhantomBoots.boots"
-    ],
-    "BLOCKS:forge:ores_in_ground/stone": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre"
-    ],
-    "ITEMS:forge:tools/pickaxes": [
-      "TAG:minecraft:pickaxes"
     ],
     "BLOCKS:minecraft:climbable": [
       "CUSTOM:ClimbableWall"
@@ -36255,9 +36134,6 @@
     "ITEMS:mod:vein_mining_pickaxes": [
       "CUSTOM:CrystallitePickaxeSculk"
     ],
-    "ITEMS:forge:tools": [
-      "TAG:minecraft:tools"
-    ],
     "ITEMS:mod:precision_weapons": [
       "CUSTOM:CrystalliteSwordDiamond",
       "CUSTOM:CrystalliteAxeDiamond",
@@ -36285,16 +36161,6 @@
       "CUSTOM:PolishedAmethystWall",
       "CUSTOM:LightPolishedAmethystWall"
     ],
-    "BLOCKS:forge:needs_netherite_tool": [
-      "CUSTOM:EndTitaniumBlock",
-      "CUSTOM:CrystalliteBlock",
-      "CUSTOM:CutCrystalliteBlock",
-      "CUSTOM:EndTitaniumOre"
-    ],
-    "BLOCKS:forge:ores_in_ground/deepslate": [
-      "CUSTOM:DeepslateRubyOre",
-      "CUSTOM:DeepslateRandomOre"
-    ],
     "ITEMS:mod:ruby_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordRuby",
       "CUSTOM:CrystallitePickaxeRuby",
@@ -36309,9 +36175,6 @@
       "CUSTOM:SpeedyCrystal",
       "CUSTOM:SpeedyNecklace",
       "CUSTOM:CrystalliteBowRuby"
-    ],
-    "ITEMS:forge:ore_bearing_ground/end_stone": [
-      "Blocks.END_STONE"
     ],
     "ITEMS:mod:crystallite_boots": [
       "CUSTOM:CrystalliteArmor.boots",
@@ -36355,10 +36218,6 @@
       "CUSTOM:KarmaCurseDamage",
       "CUSTOM:KarmaDamage",
       "CUSTOM:PoisonMushroomDamage"
-    ],
-    "ITEMS:forge:tools/axes": [
-      "TAG:minecraft:axes",
-      "CUSTOM:CrystallitePickaxeEmerald"
     ],
     "ITEMS:mod:crystallite_swords": [
       "CUSTOM:CrystalliteSword",
@@ -36409,10 +36268,6 @@
       "CUSTOM:FlamingCirclet",
       "CUSTOM:CrystalliteBowNetherDiamond"
     ],
-    "ITEMS:forge:rods": [
-      "CUSTOM:ObsidianStick",
-      "CUSTOM:BlueSlimeStick"
-    ],
     "ITEMS:mod:crystallite_axes": [
       "CUSTOM:CrystalliteAxe",
       "CUSTOM:CrystalliteAxeIron",
@@ -36434,46 +36289,6 @@
       "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
       "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
-    "ITEMS:forge:armors/chestplates": [
-      "CUSTOM:NetherDiamondArmor.body",
-      "CUSTOM:CactusBody.body",
-      "CUSTOM:HeartyBody.body",
-      "CUSTOM:IronCactusBody.body",
-      "CUSTOM:IronHeartyBody.body",
-      "CUSTOM:DiamondCactusBody.body",
-      "CUSTOM:DiamondHeartyBody.body",
-      "CUSTOM:EndTitaniumArmor.body",
-      "CUSTOM:GlassArmor.body",
-      "CUSTOM:MagmaBody.body",
-      "CUSTOM:DiamondMagmaBody.body",
-      "CUSTOM:SapphireArmor.body",
-      "CUSTOM:TopazArmor.body",
-      "CUSTOM:CrystalliteArmor.body",
-      "CUSTOM:CrystalliteArmorIron.body",
-      "CUSTOM:CrystalliteArmorGold.body",
-      "CUSTOM:CrystalliteArmorLapis.body",
-      "CUSTOM:CrystalliteArmorRedstone.body",
-      "CUSTOM:CrystalliteArmorDiamond.body",
-      "CUSTOM:CrystalliteArmorNetherite.body",
-      "CUSTOM:CrystalliteArmorRuby.body",
-      "CUSTOM:CrystalliteArmorSapphire.body",
-      "CUSTOM:CrystalliteArmorTopaz.body",
-      "CUSTOM:CrystalliteArmorNetherDiamond.body",
-      "CUSTOM:CrystalliteArmorEmerald.body",
-      "CUSTOM:CrystalliteArmorSculk.body",
-      "CUSTOM:IronGlassArmor.body",
-      "CUSTOM:DiamondGlassArmor.body",
-      "CUSTOM:CrystalliteArmorSky.body",
-      "CUSTOM:CrystalliteArmorAmethyst.body",
-      "CUSTOM:CrystalliteArmorPrismarine.body",
-      "Items.LEATHER_CHESTPLATE",
-      "Items.CHAINMAIL_CHESTPLATE",
-      "Items.IRON_CHESTPLATE",
-      "Items.GOLDEN_CHESTPLATE",
-      "Items.DIAMOND_CHESTPLATE",
-      "Items.NETHERITE_CHESTPLATE",
-      "CUSTOM:CrystalliteArmorHoney.body"
-    ],
     "ITEMS:mod:flaming_tools": [
       "CUSTOM:NetherDiamondSword",
       "CUSTOM:NetherDiamondAxe",
@@ -36485,13 +36300,6 @@
     "ITEMS:mod:sticky_helmets": [
       "CUSTOM:CrystalliteArmorHoney.helmet",
       "CUSTOM:HoneycombHelmet.helmet"
-    ],
-    "BLOCKS:forge:ore_rates/singular": [
-      "CUSTOM:RandomOre",
-      "CUSTOM:EndTitaniumOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:NetherDiamondOre",
-      "CUSTOM:DeepslateRandomOre"
     ],
     "ITEMS:mod:elemental_crystals": [
       "CUSTOM:ToughCrystal",
@@ -36510,16 +36318,6 @@
       "CUSTOM:FireCore",
       "CUSTOM:IceCore",
       "CUSTOM:ElectricCore"
-    ],
-    "BLOCKS:forge:ores": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:RandomOre",
-      "CUSTOM:EndTitaniumOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:TopazOre",
-      "CUSTOM:NetherDiamondOre",
-      "CUSTOM:DeepslateRubyOre",
-      "CUSTOM:DeepslateRandomOre"
     ],
     "BLOCKS:mod:can_be_turned_into_grass": [
       "Blocks.GRASS_PATH",
@@ -36557,7 +36355,11 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
-      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2",
+      "CUSTOM:CrystalliteShovelRedstoneUpgrade1",
+      "CUSTOM:CrystalliteShovelRedstoneUpgrade2",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
     ],
     "ITEMS:curios:head": [
       "CUSTOM:WardenHeadband",
@@ -36680,7 +36482,11 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
-      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2",
+      "CUSTOM:CrystalliteShovelRedstoneUpgrade1",
+      "CUSTOM:CrystalliteShovelRedstoneUpgrade2",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
     ],
     "ITEMS:mod:ender_titanium_weapons": [
       "CUSTOM:EndTitaniumSword",
@@ -36694,14 +36500,6 @@
       "CUSTOM:CrystalliteSwordTopaz",
       "CUSTOM:CrystalliteAxeTopaz",
       "CUSTOM:CrystalliteDaggerTopaz"
-    ],
-    "BLOCKS:forge:ore_rates/dense": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:TopazOre",
-      "CUSTOM:DeepslateRubyOre"
-    ],
-    "BLOCKS:forge:ores_in_ground/blackstone": [
-      "CUSTOM:NetherDiamondOre"
     ],
     "ITEMS:mod:netherite_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordNetherite",
@@ -36769,9 +36567,6 @@
       "CUSTOM:TopazAxe",
       "CUSTOM:CrystallitePickaxeEmerald"
     ],
-    "BLOCKS:forge:ores_in_ground/end_stone": [
-      "CUSTOM:EndTitaniumOre"
-    ],
     "ITEMS:mod:standard_effect_armor": [
       "CUSTOM:SugarBoots.boots",
       "CUSTOM:RabbitBoots.boots",
@@ -36794,20 +36589,12 @@
       "CUSTOM:MagmaBody.body",
       "CUSTOM:DiamondMagmaBody.body"
     ],
-    "ITEMS:forge:ore_rates/dense": [
-      "CUSTOM:RubyOre",
-      "CUSTOM:TopazOre",
-      "CUSTOM:DeepslateRubyOre"
-    ],
     "ITEMS:mod:utility_potions": [
       "CUSTOM:ExperiencePotion",
       "CUSTOM:AscensionPotion",
       "CUSTOM:DescensionPotion",
       "CUSTOM:RecallPotion",
       "CUSTOM:LostSoulsPotion"
-    ],
-    "ITEMS:forge:ores_in_ground/blackstone": [
-      "CUSTOM:NetherDiamondOre"
     ],
     "ITEMS:mod:progressive_tools": [
       "CUSTOM:CrystallitePickaxeRedstone",
@@ -36822,44 +36609,6 @@
       "CUSTOM:CrystalliteHoeRedstoneUpgrade2",
       "CUSTOM:CrystalliteShovelRedstone",
       "CUSTOM:CrystalliteHoeRedstone"
-    ],
-    "ITEMS:forge:armors/leggings": [
-      "CUSTOM:NetherDiamondArmor.legs",
-      "CUSTOM:RubyArmor.legs",
-      "CUSTOM:CrystalLegs.legs",
-      "CUSTOM:BlackstoneLegs.legs",
-      "CUSTOM:DiamondRubyLegs.legs",
-      "CUSTOM:DiamondCrystalLegs.legs",
-      "CUSTOM:DiamondBlackstoneLegs.legs",
-      "CUSTOM:EndTitaniumArmor.legs",
-      "CUSTOM:GlassArmor.legs",
-      "CUSTOM:SapphireArmor.legs",
-      "CUSTOM:TopazArmor.legs",
-      "CUSTOM:CrystalliteArmor.legs",
-      "CUSTOM:CrystalliteArmorIron.legs",
-      "CUSTOM:CrystalliteArmorGold.legs",
-      "CUSTOM:CrystalliteArmorLapis.legs",
-      "CUSTOM:CrystalliteArmorRedstone.legs",
-      "CUSTOM:CrystalliteArmorDiamond.legs",
-      "CUSTOM:CrystalliteArmorNetherite.legs",
-      "CUSTOM:CrystalliteArmorRuby.legs",
-      "CUSTOM:CrystalliteArmorSapphire.legs",
-      "CUSTOM:CrystalliteArmorTopaz.legs",
-      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
-      "CUSTOM:CrystalliteArmorEmerald.legs",
-      "CUSTOM:CrystalliteArmorSculk.legs",
-      "CUSTOM:IronGlassArmor.legs",
-      "CUSTOM:DiamondGlassArmor.legs",
-      "CUSTOM:CrystalliteArmorSky.legs",
-      "CUSTOM:CrystalliteArmorAmethyst.legs",
-      "CUSTOM:CrystalliteArmorPrismarine.legs",
-      "Items.LEATHER_LEGGINGS",
-      "Items.CHAINMAIL_LEGGINGS",
-      "Items.IRON_LEGGINGS",
-      "Items.GOLDEN_LEGGINGS",
-      "Items.DIAMOND_LEGGINGS",
-      "Items.NETHERITE_LEGGINGS",
-      "CUSTOM:CrystalliteArmorHoney.legs"
     ],
     "ITEMS:mod:increased_crit_multiplier_weapons": [
       "CUSTOM:CrystalliteSwordSky",
@@ -36881,57 +36630,6 @@
       "CUSTOM:GuardianNecklace",
       "CUSTOM:CrystalliteBowPrismarine"
     ],
-    "ITEMS:forge:armors/boots": [
-      "CUSTOM:NetherDiamondArmor.boots",
-      "CUSTOM:SugarBoots.boots",
-      "CUSTOM:RabbitBoots.boots",
-      "CUSTOM:PhantomBoots.boots",
-      "CUSTOM:IronSugarBoots.boots",
-      "CUSTOM:IronRabbitBoots.boots",
-      "CUSTOM:IronPhantomBoots.boots",
-      "CUSTOM:DiamondSugarBoots.boots",
-      "CUSTOM:DiamondRabbitBoots.boots",
-      "CUSTOM:DiamondPhantomBoots.boots",
-      "CUSTOM:EndTitaniumArmor.boots",
-      "CUSTOM:GlassArmor.boots",
-      "CUSTOM:SapphireArmor.boots",
-      "CUSTOM:TopazArmor.boots",
-      "CUSTOM:CrystalliteArmor.boots",
-      "CUSTOM:CrystalliteArmorIron.boots",
-      "CUSTOM:CrystalliteArmorGold.boots",
-      "CUSTOM:CrystalliteArmorLapis.boots",
-      "CUSTOM:CrystalliteArmorRedstone.boots",
-      "CUSTOM:CrystalliteArmorDiamond.boots",
-      "CUSTOM:CrystalliteArmorNetherite.boots",
-      "CUSTOM:CrystalliteArmorRuby.boots",
-      "CUSTOM:CrystalliteArmorSapphire.boots",
-      "CUSTOM:CrystalliteArmorTopaz.boots",
-      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
-      "CUSTOM:WingedBoots.boots",
-      "CUSTOM:CrystalliteArmorEmerald.boots",
-      "CUSTOM:CrystalliteArmorSculk.boots",
-      "CUSTOM:IronGlassArmor.boots",
-      "CUSTOM:DiamondGlassArmor.boots",
-      "CUSTOM:CrystalliteArmorSky.boots",
-      "CUSTOM:CrystalliteArmorAmethyst.boots",
-      "CUSTOM:CrystalliteArmorPrismarine.boots",
-      "Items.LEATHER_BOOTS",
-      "Items.CHAINMAIL_BOOTS",
-      "Items.IRON_BOOTS",
-      "Items.GOLDEN_BOOTS",
-      "Items.DIAMOND_BOOTS",
-      "Items.NETHERITE_BOOTS",
-      "CUSTOM:CrystalliteArmorHoney.boots",
-      "CUSTOM:WoodenArmor.boots",
-      "CUSTOM:DripstoneBoots.boots"
-    ],
-    "BLOCKS:forge:ore_bearing_ground/blackstone": [
-      "Blocks.BLACKSTONE"
-    ],
-    "ITEMS:forge:ores_in_ground/deepslate": [
-      "CUSTOM:DeepslateRubyOre",
-      "CUSTOM:DeepslateRandomOre"
-    ],
     "ITEMS:mod:sculk_upgraded_crystallite_items": [
       "CUSTOM:EchoCrystal",
       "CUSTOM:CrystalliteSwordSculk",
@@ -36951,10 +36649,6 @@
       "TAG:mod:base_glass_armor",
       "TAG:mod:iron_glass_armor",
       "TAG:mod:diamond_glass_armor"
-    ],
-    "ITEMS:forge:mushrooms": [
-      "CUSTOM:BlueMushroom",
-      "CUSTOM:PurpleMushroom"
     ],
     "ITEMS:mod:increased_reach_tools": [
       "CUSTOM:CrystallitePickaxeGold",
@@ -37245,17 +36939,6 @@
       "Blocks.AMETHYST_CLUSTER",
       "TAG:c:ores"
     ],
-    "ITEMS:forge:storage_blocks": [
-      "CUSTOM:NetherDiamondBlock",
-      "CUSTOM:FlintBlock",
-      "CUSTOM:SugarBlock",
-      "CUSTOM:RubyBlock",
-      "CUSTOM:EndTitaniumBlock",
-      "CUSTOM:SapphireBlock",
-      "CUSTOM:TopazBlock",
-      "CUSTOM:CrystalliteBlock",
-      "CUSTOM:CutCrystalliteBlock"
-    ],
     "BLOCKS:minecraft:walls": [
       "CUSTOM:DarkPolishedCoalWall",
       "CUSTOM:LightPolishedCoalWall",
@@ -37277,24 +36960,6 @@
       "CUSTOM:LightPolishedNetherDiamondWall",
       "CUSTOM:PolishedAmethystWall",
       "CUSTOM:LightPolishedAmethystWall"
-    ],
-    "BLOCKS:forge:storage_blocks": [
-      "CUSTOM:NetherDiamondBlock",
-      "CUSTOM:FlintBlock",
-      "CUSTOM:SugarBlock",
-      "CUSTOM:RubyBlock",
-      "CUSTOM:EndTitaniumBlock",
-      "CUSTOM:SapphireBlock",
-      "CUSTOM:TopazBlock",
-      "CUSTOM:CrystalliteBlock",
-      "CUSTOM:CutCrystalliteBlock"
-    ],
-    "ITEMS:forge:ore_rates/singular": [
-      "CUSTOM:RandomOre",
-      "CUSTOM:EndTitaniumOre",
-      "CUSTOM:SapphireOre",
-      "CUSTOM:NetherDiamondOre",
-      "CUSTOM:DeepslateRandomOre"
     ],
     "ITEMS:curios:necklace": [
       "CUSTOM:ToughNecklace",
@@ -37349,10 +37014,6 @@
       "CUSTOM:CrystalliteHoePrismarine"
     ],
     "ITEMS:minecraft:enchantable/bow": [
-      "TAG:better_tools:crystallite_bows"
-    ],
-    "ITEMS:c:tools/bow": [
-      "Items.BOW",
       "TAG:better_tools:crystallite_bows"
     ],
     "ITEMS:mod:increased_xp_pickaxes": [
@@ -37513,7 +37174,6 @@
       "~SugarBlock@CUSTOM:SugarBlock"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
-      "~ClimbableWall@CUSTOM:ClimbableWall",
       "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
       "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
       "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
@@ -37677,6 +37337,537 @@
     ],
     "ITEMS:mod:combo_jump_armor": [
       "CUSTOM:CrystalliteArmorHoney.boots"
+    ],
+    "BLOCKS:c:ore_rates/dense": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:TopazOre",
+      "TAG:better_tools:mixed_ores"
+    ],
+    "BLOCKS:c:ore_rates/singular": [
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:NetherDiamondOre",
+      "CUSTOM:SapphireOre"
+    ],
+    "BLOCKS:c:ore_bearing_ground/end_stone": [
+      "Blocks.END_STONE"
+    ],
+    "BLOCKS:c:ore_bearing_ground/blackstone": [
+      "Blocks.BLACKSTONE"
+    ],
+    "BLOCKS:c:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
+    ],
+    "BLOCKS:c:ores_in_ground/deepslate": [
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "BLOCKS:c:ores/ruby": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:DeepslateRubyOre"
+    ],
+    "BLOCKS:c:ores/sapphire": [
+      "CUSTOM:SapphireOre"
+    ],
+    "BLOCKS:c:ores": [
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:NetherDiamondOre",
+      "TAG:better_tools:mixed_ores"
+    ],
+    "BLOCKS:c:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
+    ],
+    "BLOCKS:c:ores_in_ground/blackstone": [
+      "CUSTOM:NetherDiamondOre"
+    ],
+    "ITEMS:c:ore_rates/dense": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:DeepslateRubyOre",
+      "TAG:better_tools:mixed_ores"
+    ],
+    "ITEMS:c:ore_bearing_ground/blackstone": [
+      "Blocks.BLACKSTONE"
+    ],
+    "ITEMS:c:ore_bearing_ground/end_stone": [
+      "Blocks.END_STONE"
+    ],
+    "ITEMS:c:ore_rates/singular": [
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:NetherDiamondOre",
+      "CUSTOM:SapphireOre"
+    ],
+    "ITEMS:c:ores": [
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:TopazOre",
+      "CUSTOM:NetherDiamondOre",
+      "TAG:better_tools:mixed_ores"
+    ],
+    "ITEMS:c:ores_in_ground/blackstone": [
+      "CUSTOM:NetherDiamondOre"
+    ],
+    "ITEMS:c:ores_in_ground/deepslate": [
+      "CUSTOM:DeepslateRubyOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:c:ores_in_ground/end_stone": [
+      "CUSTOM:EndTitaniumOre"
+    ],
+    "ITEMS:c:ores/ruby": [
+      "CUSTOM:RubyOre"
+    ],
+    "ITEMS:c:ores_in_ground/stone": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:RandomOre",
+      "CUSTOM:SapphireOre",
+      "CUSTOM:TopazOre"
+    ],
+    "ITEMS:c:ores/sapphire": [
+      "CUSTOM:SapphireOre"
+    ],
+    "ENCHANTMENTS:c:increase_entity_drops": [
+      "CUSTOM:ExperienceEnch"
+    ],
+    "BIOMES:c:is_cave": [
+      "CUSTOM:FungalCaves"
+    ],
+    "BIOMES:c:is_mushroom": [
+      "CUSTOM:FungalCaves"
+    ],
+    "BIOMES:c:is_rare": [
+      "CUSTOM:FungalCaves"
+    ],
+    "BIOMES:c:no_default_monsters": [
+      "CUSTOM:FungalCaves"
+    ],
+    "ITEMS:c:gems/ruby": [
+      "CUSTOM:Ruby"
+    ],
+    "ITEMS:c:gems/sapphire": [
+      "CUSTOM:Sapphire"
+    ],
+    "ITEMS:c:gems": [
+      "CUSTOM:NetherDiamond",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Topaz",
+      "CUSTOM:CrystaliteGem",
+      "CUSTOM:RandomGem"
+    ],
+    "ITEMS:c:ingots": [
+      "CUSTOM:EndTitaniumIngot"
+    ],
+    "ITEMS:c:mushrooms": [
+      "CUSTOM:BlueMushroom",
+      "CUSTOM:PurpleMushroom"
+    ],
+    "ITEMS:c:rods": [
+      "CUSTOM:ObsidianStick",
+      "CUSTOM:BlueSlimeStick"
+    ],
+    "ITEMS:c:slime_balls": [
+      "CUSTOM:BlueSlimeball"
+    ],
+    "ITEMS:c:storage_blocks": [
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:SugarBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "BLOCKS:c:storage_blocks": [
+      "CUSTOM:NetherDiamondBlock",
+      "CUSTOM:SugarBlock",
+      "CUSTOM:RubyBlock",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:SapphireBlock",
+      "CUSTOM:TopazBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "ITEMS:c:bows": [
+      "TAG:better_tools:crystallite_bows"
+    ],
+    "ITEMS:c:tools/knife": [
+      "TAG:better_tools:daggers"
+    ],
+    "ITEMS:c:tools/ranged_weapon": [
+      "TAG:minecraft:better_tools/staffs",
+      "TAG:c:bows"
+    ],
+    "ITEMS:c:tools/melee_weapon": [
+      "TAG:minecraft:swords",
+      "TAG:minecraft:axes",
+      "TAG:better_tools:daggers"
+    ],
+    "ITEMS:c:tools/mining_tool": [
+      "TAG:minecraft:pickaxes",
+      "TAG:minecraft:axes",
+      "TAG:minecraft:shovels",
+      "TAG:minecraft:hoes"
+    ],
+    "ITEMS:c:tools/multitool": [
+      "CUSTOM:CrystallitePickaxeEmerald"
+    ],
+    "ENTITIES:minecraft:arrows": [
+      "CUSTOM:CrystallitePrismarineArrow"
+    ],
+    "BLOCKS:minecraft:bee_attractive": [
+      "CUSTOM:FourLeafClover"
+    ],
+    "BLOCKS:minecraft:crystal_sound_blocks": [
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "BLOCKS:minecraft:dragon_transparent": [
+      "CUSTOM:CrystalliteClusterAir",
+      "CUSTOM:ClimbableWall"
+    ],
+    "BLOCKS:minecraft:enables_bubble_column_drag_down": [
+      "CUSTOM:BlackstoneMagma"
+    ],
+    "BLOCKS:minecraft:incorrect_for_diamond_tool": [
+      "TAG:better_tools:needs_netherite_tool"
+    ],
+    "BLOCKS:mod:needs_netherite_tool": [
+      "CUSTOM:EndTitaniumOre",
+      "CUSTOM:EndTitaniumBlock",
+      "CUSTOM:CrystalliteBlock",
+      "CUSTOM:CutCrystalliteBlock"
+    ],
+    "BLOCKS:minecraft:infiniburn_overworld": [
+      "CUSTOM:BlackstoneMagma"
+    ],
+    "ITEMS:minecraft:bee_food": [
+      "CUSTOM:FourLeafClover"
+    ],
+    "ITEMS:minecraft:cluster_max_harvestables": [
+      "TAG:minecraft:pickaxes"
+    ],
+    "BLOCKS:minecraft:flowers": [
+      "CUSTOM:FourLeafClover"
+    ],
+    "ITEMS:minecraft:flowers": [
+      "CUSTOM:FourLeafClover"
+    ],
+    "ITEMS:minecraft:frog_food": [
+      "CUSTOM:BlueSlimeball"
+    ],
+    "ITEMS:mod:mixed_ores": [
+      "CUSTOM:RandomOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "BLOCKS:mod:mixed_ores": [
+      "CUSTOM:RandomOre",
+      "CUSTOM:DeepslateRandomOre"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "TAG:better_tools:gold_upgraded_crystallite_items",
+      "TAG:better_tools:gilded_blackstone_leggings"
+    ],
+    "ITEMS:minecraft:piglin_safe_armor": [
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorGold.boots"
+    ],
+    "ITEMS:minecraft:pig_food": [
+      "CUSTOM:GoldenPotato"
+    ],
+    "ITEMS:c:drink_containing/bottle": [
+      "CUSTOM:MysticPotion",
+      "TAG:better_tools:utility_potions"
+    ],
+    "ITEMS:c:drinks/watery": [
+      "CUSTOM:MysticPotion",
+      "TAG:better_tools:utility_potions"
+    ],
+    "ITEMS:c:dusts": [
+      "CUSTOM:EnrichedBlazePowder",
+      "CUSTOM:SuperEnrichedBlazePowder",
+      "CUSTOM:UltraEnrichedBlazePowder",
+      "Items.BLAZE_POWDER"
+    ],
+    "ITEMS:c:dyed/black": [
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalSlab",
+      "CUSTOM:DarkPolishedCoalStairs",
+      "CUSTOM:DarkPolishedCoalTrapdoor",
+      "CUSTOM:DarkPolishedCoalWall"
+    ],
+    "ITEMS:c:dyed_gray": [
+      "CUSTOM:LightPolishedCoalBlock",
+      "CUSTOM:LightPolishedCoalSlab",
+      "CUSTOM:LightPolishedCoalStairs",
+      "CUSTOM:LightPolishedCoalTrapdoor",
+      "CUSTOM:LightPolishedCoalWall"
+    ],
+    "ITEMS:c:dyed/white": [
+      "CUSTOM:LightPolishedIronBlock",
+      "CUSTOM:LightPolishedIronSlab",
+      "CUSTOM:LightPolishedIronStairs",
+      "CUSTOM:LightPolishedIronTrapdoor",
+      "CUSTOM:LightPolishedIronWall"
+    ],
+    "ITEMS:c:dyed/light_gray": [
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronSlab",
+      "CUSTOM:DarkPolishedIronStairs",
+      "CUSTOM:DarkPolishedIronTrapdoor",
+      "CUSTOM:DarkPolishedIronWall"
+    ],
+    "ITEMS:c:dyed/brown": [
+      "CUSTOM:DarkPolishedCopperBlock",
+      "CUSTOM:DarkPolishedCopperSlab",
+      "CUSTOM:DarkPolishedCopperStairs",
+      "CUSTOM:DarkPolishedCopperTrapdoor",
+      "CUSTOM:DarkPolishedCopperWall"
+    ],
+    "ITEMS:c:dyed/blue": [
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisSlab",
+      "CUSTOM:DarkPolishedLapisStairs",
+      "CUSTOM:DarkPolishedLapisTrapdoor",
+      "CUSTOM:DarkPolishedLapisWall"
+    ],
+    "ITEMS:c:dyed/light_blue": [
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:PolishedDiamondSlab",
+      "CUSTOM:PolishedDiamondStairs",
+      "CUSTOM:PolishedDiamondTrapdoor",
+      "CUSTOM:PolishedDiamondWall"
+    ],
+    "ITEMS:c:dyed/cyan": [
+      "CUSTOM:LightPolishedLapisBlock",
+      "CUSTOM:LightPolishedLapisSlab",
+      "CUSTOM:LightPolishedLapisStairs",
+      "CUSTOM:LightPolishedLapisTrapdoor",
+      "CUSTOM:LightPolishedLapisWall"
+    ],
+    "ITEMS:c:dyed/lime": [
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:LightPolishedEmeraldSlab",
+      "CUSTOM:LightPolishedEmeraldStairs",
+      "CUSTOM:LightPolishedEmeraldTrapdoor",
+      "CUSTOM:LightPolishedEmeraldWall"
+    ],
+    "ITEMS:c:dyed/green": [
+      "CUSTOM:DarkPolishedEmeraldBlock",
+      "CUSTOM:DarkPolishedEmeraldSlab",
+      "CUSTOM:DarkPolishedEmeraldStairs",
+      "CUSTOM:DarkPolishedEmeraldTrapdoor",
+      "CUSTOM:DarkPolishedEmeraldWall"
+    ],
+    "ITEMS:c:dyed/magenta": [
+      "CUSTOM:LightPolishedAmethystBlock",
+      "CUSTOM:LightPolishedAmethystSlab",
+      "CUSTOM:LightPolishedAmethystStairs",
+      "CUSTOM:LightPolishedAmethystTrapdoor",
+      "CUSTOM:LightPolishedAmethystWall"
+    ],
+    "ITEMS:c:dyed/orange": [
+      "CUSTOM:PolishedTopazBlock",
+      "CUSTOM:PolishedTopazSlab",
+      "CUSTOM:PolishedTopazStairs",
+      "CUSTOM:PolishedTopazTrapdoor",
+      "CUSTOM:PolishedTopazWall"
+    ],
+    "ITEMS:c:dyed/pink": [
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondSlab",
+      "CUSTOM:LightPolishedNetherDiamondStairs",
+      "CUSTOM:LightPolishedNetherDiamondTrapdoor",
+      "CUSTOM:LightPolishedNetherDiamondWall"
+    ],
+    "ITEMS:c:dyed/purple": [
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystSlab",
+      "CUSTOM:PolishedAmethystStairs",
+      "CUSTOM:PolishedAmethystTrapdoor",
+      "CUSTOM:PolishedAmethystWall"
+    ],
+    "ITEMS:c:dyed/yellow": [
+      "CUSTOM:PolishedGoldBlock",
+      "CUSTOM:PolishedGoldSlab",
+      "CUSTOM:PolishedGoldStairs",
+      "CUSTOM:PolishedGoldTrapdoor",
+      "CUSTOM:PolishedGoldWall"
+    ],
+    "ITEMS:c:dyed/red": [
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneSlab",
+      "CUSTOM:PolishedRedstoneStairs",
+      "CUSTOM:PolishedRedstoneTrapdoor",
+      "CUSTOM:PolishedRedstoneWall"
+    ],
+    "ITEMS:c:dyed": [
+      "TAG:better_tools:metallic_building_blocks"
+    ],
+    "ITEMS:c:flowers": [
+      "TAG:minecraft:flowers"
+    ],
+    "ITEMS:c:flowers/small": [
+      "CUSTOM:FourLeafClover"
+    ],
+    "ITEMS:c:foods/pie": [
+      "CUSTOM:BerryPie"
+    ],
+    "ITEMS:c:foods/golden": [
+      "CUSTOM:GoldenPotato"
+    ],
+    "ITEMS:c:foods": [
+      "CUSTOM:DiamondApple",
+      "CUSTOM:SugarClump",
+      "CUSTOM:AppleJuice",
+      "CUSTOM:BerrySmoothie"
+    ],
+    "ITEMS:c:potions/bottle": [
+      "CUSTOM:MysticPotion",
+      "TAG:better_tools:utility_potions"
+    ],
+    "ITEMS:c:storage_blocks/ruby": [
+      "CUSTOM:RubyBlock"
+    ],
+    "ITEMS:c:storage_blocks/sapphire": [
+      "CUSTOM:SapphireBlock"
+    ],
+    "ITEMS:c:tools/daggers": [
+      "TAG:better_tools:daggers"
+    ],
+    "ITEMS:c:villager_job_sites": [
+      "CUSTOM:JewelleryTable"
+    ],
+    "BLOCKS:c:dyed/black": [
+      "CUSTOM:DarkPolishedCoalBlock",
+      "CUSTOM:DarkPolishedCoalSlab",
+      "CUSTOM:DarkPolishedCoalStairs",
+      "CUSTOM:DarkPolishedCoalTrapdoor",
+      "CUSTOM:DarkPolishedCoalWall"
+    ],
+    "BLOCKS:c:dyed/brown": [
+      "CUSTOM:DarkPolishedCopperBlock",
+      "CUSTOM:DarkPolishedCopperSlab",
+      "CUSTOM:DarkPolishedCopperStairs",
+      "CUSTOM:DarkPolishedCopperTrapdoor",
+      "CUSTOM:DarkPolishedCopperWall"
+    ],
+    "BLOCKS:c:dyed/blue": [
+      "CUSTOM:DarkPolishedLapisBlock",
+      "CUSTOM:DarkPolishedLapisSlab",
+      "CUSTOM:DarkPolishedLapisStairs",
+      "CUSTOM:DarkPolishedLapisTrapdoor",
+      "CUSTOM:DarkPolishedLapisWall"
+    ],
+    "BLOCKS:c:dyed/cyan": [
+      "CUSTOM:LightPolishedLapisBlock",
+      "CUSTOM:LightPolishedLapisSlab",
+      "CUSTOM:LightPolishedLapisStairs",
+      "CUSTOM:LightPolishedLapisTrapdoor",
+      "CUSTOM:LightPolishedLapisWall"
+    ],
+    "BLOCKS:c:dyed/green": [
+      "CUSTOM:DarkPolishedEmeraldBlock",
+      "CUSTOM:DarkPolishedEmeraldSlab",
+      "CUSTOM:DarkPolishedEmeraldStairs",
+      "CUSTOM:DarkPolishedEmeraldTrapdoor",
+      "CUSTOM:DarkPolishedEmeraldWall"
+    ],
+    "BLOCKS:c:dyed/gray": [
+      "CUSTOM:LightPolishedCoalBlock",
+      "CUSTOM:LightPolishedCoalSlab",
+      "CUSTOM:LightPolishedCoalStairs",
+      "CUSTOM:LightPolishedCoalTrapdoor",
+      "CUSTOM:LightPolishedCoalWall"
+    ],
+    "BLOCKS:c:dyed/light_blue": [
+      "CUSTOM:PolishedDiamondBlock",
+      "CUSTOM:PolishedDiamondSlab",
+      "CUSTOM:PolishedDiamondStairs",
+      "CUSTOM:PolishedDiamondTrapdoor",
+      "CUSTOM:PolishedDiamondWall"
+    ],
+    "BLOCKS:c:dyed/light_gray": [
+      "CUSTOM:DarkPolishedIronBlock",
+      "CUSTOM:DarkPolishedIronSlab",
+      "CUSTOM:DarkPolishedIronStairs",
+      "CUSTOM:DarkPolishedIronTrapdoor",
+      "CUSTOM:DarkPolishedIronWall"
+    ],
+    "BLOCKS:c:dyed/lime": [
+      "CUSTOM:LightPolishedEmeraldBlock",
+      "CUSTOM:LightPolishedEmeraldSlab",
+      "CUSTOM:LightPolishedEmeraldStairs",
+      "CUSTOM:LightPolishedEmeraldTrapdoor",
+      "CUSTOM:LightPolishedEmeraldWall"
+    ],
+    "BLOCKS:c:dyed/magenta": [
+      "CUSTOM:LightPolishedAmethystBlock",
+      "CUSTOM:LightPolishedAmethystSlab",
+      "CUSTOM:LightPolishedAmethystStairs",
+      "CUSTOM:LightPolishedAmethystTrapdoor",
+      "CUSTOM:LightPolishedAmethystWall"
+    ],
+    "BLOCKS:c:dyed/pink": [
+      "CUSTOM:LightPolishedNetherDiamondBlock",
+      "CUSTOM:LightPolishedNetherDiamondSlab",
+      "CUSTOM:LightPolishedNetherDiamondStairs",
+      "CUSTOM:LightPolishedNetherDiamondTrapdoor",
+      "CUSTOM:LightPolishedNetherDiamondWall"
+    ],
+    "BLOCKS:c:dyed/orange": [
+      "CUSTOM:PolishedTopazBlock",
+      "CUSTOM:PolishedTopazSlab",
+      "CUSTOM:PolishedTopazStairs",
+      "CUSTOM:PolishedTopazTrapdoor",
+      "CUSTOM:PolishedTopazWall"
+    ],
+    "BLOCKS:c:dyed/red": [
+      "CUSTOM:PolishedRedstoneBlock",
+      "CUSTOM:PolishedRedstoneSlab",
+      "CUSTOM:PolishedRedstoneStairs",
+      "CUSTOM:PolishedRedstoneTrapdoor",
+      "CUSTOM:PolishedRedstoneWall"
+    ],
+    "BLOCKS:c:dyed/purple": [
+      "CUSTOM:PolishedAmethystBlock",
+      "CUSTOM:PolishedAmethystSlab",
+      "CUSTOM:PolishedAmethystStairs",
+      "CUSTOM:PolishedAmethystTrapdoor",
+      "CUSTOM:PolishedAmethystWall"
+    ],
+    "BLOCKS:c:dyed/yellow": [
+      "CUSTOM:PolishedGoldBlock",
+      "CUSTOM:PolishedGoldSlab",
+      "CUSTOM:PolishedGoldStairs",
+      "CUSTOM:PolishedGoldTrapdoor",
+      "CUSTOM:PolishedGoldWall"
+    ],
+    "BLOCKS:c:dyed/white": [
+      "CUSTOM:LightPolishedIronBlock",
+      "CUSTOM:LightPolishedIronSlab",
+      "CUSTOM:LightPolishedIronStairs",
+      "CUSTOM:LightPolishedIronTrapdoor",
+      "CUSTOM:LightPolishedIronWall"
+    ],
+    "BLOCKS:c:dyed": [
+      "TAG:better_tools:metallic_building_blocks"
+    ],
+    "BLOCKS:c:flowers": [
+      "TAG:minecraft:flowers"
+    ],
+    "BLOCKS:c:flowers/small": [
+      "CUSTOM:FourLeafClover"
+    ],
+    "BLOCKS:c:mushrooms": [
+      "CUSTOM:BlueMushroom",
+      "CUSTOM:PurpleMushroom"
+    ],
+    "BLOCKS:c:villager_job_sites": [
+      "CUSTOM:JewelleryTable"
     ]
   },
   "tab_element_order": {

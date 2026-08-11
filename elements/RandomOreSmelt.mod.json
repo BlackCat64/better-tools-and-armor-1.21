@@ -11,7 +11,7 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": "CUSTOM:RandomOre",
+    "blastingInputStack": "TAG:better_tools:mixed_ores",
     "blastingReturnStack": "CUSTOM:RandomGem",
     "name": "random_ore_smelt",
     "namespace": "mod"

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:bows",
+      "required": false
+    },
+    {
+      "id": "#minecraft:better_tools/staffs",
+      "required": false
+    }
+  ]
+}

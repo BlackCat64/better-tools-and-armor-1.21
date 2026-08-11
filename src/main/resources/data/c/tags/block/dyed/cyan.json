@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:light_polished_lapis_trapdoor",
+    "better_tools:light_polished_lapis_wall",
+    "better_tools:light_polished_lapis_slab",
+    "better_tools:light_polished_lapis_stairs",
+    "better_tools:light_polished_lapis_block"
+  ]
+}

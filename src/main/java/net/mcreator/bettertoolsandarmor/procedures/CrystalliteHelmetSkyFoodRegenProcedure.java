@@ -35,7 +35,7 @@ public class CrystalliteHelmetSkyFoodRegenProcedure {
 		if (entity == null)
 			return;
 		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:carbonated_drinks_armor")) {
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:drinks")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:drinks"))) || itemstack.is(ItemTags.create(ResourceLocation.parse("c:drink_containing")))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
 				{

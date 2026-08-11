@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:light_polished_emerald_block",
+    "better_tools:light_polished_emerald_slab",
+    "better_tools:light_polished_emerald_trapdoor",
+    "better_tools:light_polished_emerald_wall",
+    "better_tools:light_polished_emerald_stairs"
+  ]
+}

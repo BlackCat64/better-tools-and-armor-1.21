@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:dark_polished_copper_stairs",
+    "better_tools:dark_polished_copper_wall",
+    "better_tools:dark_polished_copper_trapdoor",
+    "better_tools:dark_polished_copper_slab",
+    "better_tools:dark_polished_copper_block"
+  ]
+}

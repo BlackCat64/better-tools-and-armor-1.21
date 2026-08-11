@@ -8,20 +8,32 @@
     "ghast",
     "blaze",
     "drowned",
+    {
+      "id": "#minecraft:raiders",
+      "required": false
+    },
+    "breeze",
     "vindicator",
     "evoker",
     "pillager",
-    "zoglin",
     "piglin_brute",
     "wither_skeleton",
     "guardian",
     "witch",
     "spider",
     "elder_guardian",
+    {
+      "id": "#minecraft:no_anger_from_wind_charge",
+      "required": false
+    },
     "slime",
     "endermite",
     "vex",
     "husk",
+    {
+      "id": "#minecraft:illagers",
+      "required": false
+    },
     "creeper",
     "silverfish",
     "illusioner",

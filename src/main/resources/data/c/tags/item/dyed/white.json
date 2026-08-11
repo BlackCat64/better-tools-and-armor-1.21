@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:light_polished_iron_block",
+    "better_tools:light_polished_iron_stairs",
+    "better_tools:light_polished_iron_wall",
+    "better_tools:light_polished_iron_trapdoor",
+    "better_tools:light_polished_iron_slab"
+  ]
+}

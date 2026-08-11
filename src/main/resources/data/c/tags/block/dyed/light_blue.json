@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:polished_diamond_wall",
+    "better_tools:polished_diamond_trapdoor",
+    "better_tools:polished_diamond_slab",
+    "better_tools:polished_diamond_block",
+    "better_tools:polished_diamond_stairs"
+  ]
+}

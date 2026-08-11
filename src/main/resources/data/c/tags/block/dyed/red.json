@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:polished_redstone_wall",
+    "better_tools:polished_redstone_slab",
+    "better_tools:polished_redstone_block",
+    "better_tools:polished_redstone_stairs",
+    "better_tools:polished_redstone_trapdoor"
+  ]
+}

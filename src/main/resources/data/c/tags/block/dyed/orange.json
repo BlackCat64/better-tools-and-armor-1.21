@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:polished_topaz_slab",
+    "better_tools:polished_topaz_trapdoor",
+    "better_tools:polished_topaz_block",
+    "better_tools:polished_topaz_stairs",
+    "better_tools:polished_topaz_wall"
+  ]
+}

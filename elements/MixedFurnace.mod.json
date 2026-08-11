@@ -11,7 +11,7 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": "CUSTOM:RandomOre",
+    "smeltingInputStack": "TAG:better_tools:mixed_ores",
     "smeltingReturnStack": "CUSTOM:RandomGem",
     "name": "mixed_furnace",
     "namespace": "mod"

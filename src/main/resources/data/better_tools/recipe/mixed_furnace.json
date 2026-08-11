@@ -5,7 +5,7 @@
   "experience": 3,
   "cookingtime": 200,
   "ingredient": {
-    "item": "better_tools:random_ore"
+    "tag": "better_tools:mixed_ores"
   },
   "result": {
     "id": "better_tools:mixed_essence"
