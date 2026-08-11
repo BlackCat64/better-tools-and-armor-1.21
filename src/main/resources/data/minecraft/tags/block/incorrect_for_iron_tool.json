@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:needs_netherite_tool",
+      "required": false
+    }
+  ]
+}
