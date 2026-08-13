@@ -6,12 +6,10 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteSwordSapphireProcedure2Procedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -51,13 +49,6 @@ public class CrystalliteAxeSapphireItem extends AxeItem {
 
 	public CrystalliteAxeSapphireItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 9.5f, -3f)).fireResistant());
-	}
-
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		CrystalliteSwordSapphireProcedure2Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
-		return retval;
 	}
 
 	@Override

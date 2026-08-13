@@ -15952,45 +15952,6 @@
       "path": "~/Crystallite/Structures"
     },
     {
-      "name": "CrystalliteSwordSapphireProcedure2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_sword_sapphire_procedure_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordSapphireProcedure2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Crystallite/Sapphire"
-    },
-    {
       "name": "LuckPotion2",
       "type": "potion",
       "compiles": true,
@@ -16509,15 +16470,7 @@
         ],
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
@@ -34533,10 +34486,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
             "name": "entity",
             "type": "entity"
           }
@@ -36543,6 +36492,7 @@
       "CUSTOM:GlassArmor.boots"
     ],
     "ITEMS:minecraft:axes": [
+      "~CrystalliteAxeSapphire@CUSTOM:CrystalliteAxeSapphire",
       "~CrystalliteAxeHoney@CUSTOM:CrystalliteAxeHoney",
       "~CrystalliteAxeAmethyst@CUSTOM:CrystalliteAxeAmethyst",
       "~CrystalliteAxeRedstone@CUSTOM:CrystalliteAxeRedstone",
@@ -36554,7 +36504,6 @@
       "~CrystalliteAxeEmerald@CUSTOM:CrystalliteAxeEmerald",
       "~CrystalliteAxeNetherDiamond@CUSTOM:CrystalliteAxeNetherDiamond",
       "~CrystalliteAxeTopaz@CUSTOM:CrystalliteAxeTopaz",
-      "~CrystalliteAxeSapphire@CUSTOM:CrystalliteAxeSapphire",
       "~CrystalliteAxeRuby@CUSTOM:CrystalliteAxeRuby",
       "~CrystalliteAxeNetherite@CUSTOM:CrystalliteAxeNetherite",
       "~CrystalliteAxeDiamond@CUSTOM:CrystalliteAxeDiamond",
@@ -36775,6 +36724,8 @@
       "CUSTOM:DiamondGlassArmor.boots"
     ],
     "ITEMS:minecraft:swords": [
+      "~CrystalliteSwordSapphire@CUSTOM:CrystalliteSwordSapphire",
+      "~CrystalliteDaggerSapphire@CUSTOM:CrystalliteDaggerSapphire",
       "~CrystalliteDaggerAmethyst@CUSTOM:CrystalliteDaggerAmethyst",
       "~CrystalliteSwordAmethyst@CUSTOM:CrystalliteSwordAmethyst",
       "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
@@ -36798,8 +36749,6 @@
       "~CrystalliteSwordNetherDiamond@CUSTOM:CrystalliteSwordNetherDiamond",
       "~CrystalliteDaggerTopaz@CUSTOM:CrystalliteDaggerTopaz",
       "~CrystalliteSwordTopaz@CUSTOM:CrystalliteSwordTopaz",
-      "~CrystalliteDaggerSapphire@CUSTOM:CrystalliteDaggerSapphire",
-      "~CrystalliteSwordSapphire@CUSTOM:CrystalliteSwordSapphire",
       "~CrystalliteDaggerRuby@CUSTOM:CrystalliteDaggerRuby",
       "~CrystalliteSwordRuby@CUSTOM:CrystalliteSwordRuby",
       "~CrystalliteDaggerNetherite@CUSTOM:CrystalliteDaggerNetherite",

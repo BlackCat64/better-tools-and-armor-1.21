@@ -36,13 +36,13 @@ public class FreezingWeaponsProcedureProcedure {
 			return;
 		double time = 0;
 		double chance = 0;
-		if (sourceentity instanceof LivingEntity && Math.random() < (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE)
-				? _livingEntity1.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).getValue()
+		if (Math.random() < (sourceentity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE)
+				? _livingEntity0.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).getValue()
 				: 0)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN,
-						(int) (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME)
-								? _livingEntity2.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).getValue()
+						(int) (sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME)
+								? _livingEntity1.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).getValue()
 								: 0),
 						0, false, true));
 			if (sourceentity instanceof ServerPlayer _player) {

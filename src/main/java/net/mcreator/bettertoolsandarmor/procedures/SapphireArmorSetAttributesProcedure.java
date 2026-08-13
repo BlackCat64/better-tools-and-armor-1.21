@@ -96,8 +96,8 @@ public class SapphireArmorSetAttributesProcedure {
 					}
 					if (entity instanceof LivingEntity _entity) {
 						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), time, AttributeModifier.Operation.ADD_VALUE);
-						if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).hasModifier(modifier.id())) {
-							_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).addPermanentModifier(modifier);
+						if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).hasModifier(modifier.id())) {
+							_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).addPermanentModifier(modifier);
 						}
 					}
 				}

@@ -14,7 +14,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
 import javax.annotation.Nullable;
@@ -44,9 +43,6 @@ public class FreezingWeaponsSetAttributesProcedure {
 					chance = 0.1;
 					time = 100;
 				}
-			}
-			if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get()))) {
-				chance = chance + 0.1;
 			}
 			if (IsInColdBiomeProcedure.execute(world, x, y, z)) {
 				chance = chance * 2;
