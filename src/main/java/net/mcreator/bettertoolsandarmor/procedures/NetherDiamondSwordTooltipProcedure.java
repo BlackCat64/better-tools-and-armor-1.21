@@ -42,7 +42,7 @@ public class NetherDiamondSwordTooltipProcedure {
 		double dmg_boost = 0;
 		double damage = 0;
 		double replaceLine = 0;
-		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_tools"))) && !(itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT)) != 0)) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_weapons"))) && !(itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT)) != 0)) {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				fire_chance = 5;
 			} else {
@@ -55,15 +55,17 @@ public class NetherDiamondSwordTooltipProcedure {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
 				if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_swords")))) {
 					damage = 9;
-					dmg_boost = 3;
 				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_axes")))) {
 					damage = 10.5;
-					dmg_boost = 2.5;
 				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_daggers")))) {
 					damage = 7;
-					dmg_boost = 3;
 				}
-				if ((entity.level().dimension()) == Level.NETHER) {
+				if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")))) {
+					dmg_boost = 3;
+				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
+					dmg_boost = 2.5;
+				}
+				if (dmg_boost > 0 && (entity.level().dimension()) == Level.NETHER) {
 					damage = damage + dmg_boost;
 					if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0) {
 						damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));
@@ -71,7 +73,7 @@ public class NetherDiamondSwordTooltipProcedure {
 					replaceLine = GetTooltipLineContainingProcedure.execute("Attack Damage", tooltip);
 					ReplaceTooltipLineWithComponentProcedure.execute(Component.literal(" ").append(Component.literal((new java.text.DecimalFormat("##.##").format(damage))).withStyle(ChatFormatting.BOLD).withColor((int) 0xde2030))
 							.append(Component.literal(" Attack Damage")).withColor((int) 0x00aa00), replaceLine, tooltip);
-				} else {
+				} else if (dmg_boost > 0) {
 					tooltip.add(Component.literal("\u00A77When in The Nether:"));
 					tooltip.add(Component.literal(("\u00A79+" + new java.text.DecimalFormat("##.##").format(dmg_boost) + " Attack Damage")));
 				}

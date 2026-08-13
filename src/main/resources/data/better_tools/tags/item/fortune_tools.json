@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_shovel_topaz",
+    "better_tools:crystallite_axe_topaz",
+    "better_tools:crystallite_hoe_topaz",
+    "better_tools:topaz_shovel",
+    "better_tools:topaz_axe",
+    "better_tools:topaz_hoe"
+  ]
+}

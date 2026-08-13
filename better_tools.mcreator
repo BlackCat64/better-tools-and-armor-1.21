@@ -32579,6 +32579,10 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -32606,6 +32610,10 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -34530,6 +34538,52 @@
         ]
       },
       "path": "~/Crystallite/Prismarine"
+    },
+    {
+      "name": "SapphireToolsSilkTouchFromTag",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_tools_silk_touch_from_tag",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SapphireToolsSilkTouchFromTagProcedure.java"
+        ]
+      },
+      "path": "~/Sapphire"
+    },
+    {
+      "name": "TopazToolsFortuneFromTag",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "topaz_tools_fortune_from_tag",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TopazToolsFortuneFromTagProcedure.java"
+        ]
+      },
+      "path": "~/Topaz"
     }
   ],
   "variable_elements": [
@@ -36242,14 +36296,6 @@
       "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
       "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
     ],
-    "ITEMS:mod:flaming_tools": [
-      "CUSTOM:NetherDiamondSword",
-      "CUSTOM:NetherDiamondAxe",
-      "CUSTOM:NetherDiamondDagger",
-      "CUSTOM:CrystalliteSwordNetherDiamond",
-      "CUSTOM:CrystalliteAxeNetherDiamond",
-      "CUSTOM:CrystalliteDaggerNetherDiamond"
-    ],
     "ITEMS:mod:sticky_helmets": [
       "CUSTOM:CrystalliteArmorHoney.helmet",
       "CUSTOM:HoneycombHelmet.helmet"
@@ -36446,14 +36492,6 @@
       "CUSTOM:EndTitaniumAxe",
       "CUSTOM:EndTitaniumDagger"
     ],
-    "ITEMS:mod:lightning_tools": [
-      "CUSTOM:TopazSword",
-      "CUSTOM:TopazAxe",
-      "CUSTOM:TopazDagger",
-      "CUSTOM:CrystalliteSwordTopaz",
-      "CUSTOM:CrystalliteAxeTopaz",
-      "CUSTOM:CrystalliteDaggerTopaz"
-    ],
     "ITEMS:mod:netherite_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordNetherite",
       "CUSTOM:CrystallitePickaxeNetherite",
@@ -36620,14 +36658,6 @@
       "CUSTOM:NetherDiamondHoe",
       "CUSTOM:CrystalliteShovelNetherDiamond",
       "CUSTOM:CrystalliteHoeNetherDiamond"
-    ],
-    "ITEMS:mod:freezing_tools": [
-      "CUSTOM:SapphireSword",
-      "CUSTOM:SapphireAxe",
-      "CUSTOM:SapphireDagger",
-      "CUSTOM:CrystalliteSwordSapphire",
-      "CUSTOM:CrystalliteAxeSapphire",
-      "CUSTOM:CrystalliteDaggerSapphire"
     ],
     "ITEMS:minecraft:stairs": [
       "CUSTOM:DarkPolishedCoalStairs",
@@ -37833,6 +37863,51 @@
     ],
     "BLOCKS:minecraft:incorrect_for_wooden_tool": [
       "TAG:better_tools:needs_netherite_tool"
+    ],
+    "ITEMS:mod:silk_touch_tools": [
+      "CUSTOM:SapphirePickaxe",
+      "CUSTOM:SapphireAxe",
+      "CUSTOM:SapphireShovel",
+      "CUSTOM:SapphireHoe"
+    ],
+    "ITEMS:mod:freezing_weapons": [
+      "CUSTOM:SapphireSword",
+      "CUSTOM:SapphireAxe",
+      "CUSTOM:SapphireDagger",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteDaggerSapphire"
+    ],
+    "ITEMS:mod:flaming_weapons": [
+      "CUSTOM:NetherDiamondSword",
+      "CUSTOM:NetherDiamondAxe",
+      "CUSTOM:NetherDiamondDagger",
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystalliteDaggerNetherDiamond"
+    ],
+    "ITEMS:mod:lightning_weapons": [
+      "CUSTOM:TopazSword",
+      "CUSTOM:TopazAxe",
+      "CUSTOM:TopazDagger",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteDaggerTopaz"
+    ],
+    "ITEMS:mod:magic_damage_weapons": [
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:LapisSword",
+      "CUSTOM:LapisDagger"
+    ],
+    "ITEMS:mod:fortune_tools": [
+      "CUSTOM:TopazAxe",
+      "CUSTOM:TopazShovel",
+      "CUSTOM:TopazHoe",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteShovelTopaz",
+      "CUSTOM:CrystalliteHoeTopaz"
     ]
   },
   "tab_element_order": {

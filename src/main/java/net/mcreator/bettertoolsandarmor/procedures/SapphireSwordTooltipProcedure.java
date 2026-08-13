@@ -7,12 +7,14 @@ import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 
@@ -25,19 +27,19 @@ public class SapphireSwordTooltipProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
+		execute(event, Minecraft.getInstance().level, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
-		execute(null, entity, itemstack, tooltip);
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, world, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
 		double chance = 0;
 		double time = 0;
-		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:freezing_tools")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:freezing_weapons")))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem()) {
 				chance = (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE)
 						? _livingEntity5.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).getValue()
@@ -53,7 +55,7 @@ public class SapphireSwordTooltipProcedure {
 					chance = 10;
 					time = 5;
 				}
-				if (IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ())) {
+				if (IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ())) {
 					chance = chance * 2;
 					time = time * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
 				}

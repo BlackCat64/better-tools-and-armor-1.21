@@ -48,7 +48,7 @@ public class IcyBraceletProcedureProcedure {
 				time = time * 2;
 				chance = chance * 2;
 			}
-			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:freezing_tools"))))) {
+			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:freezing_weapons"))))) {
 				chance = chance + (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity4.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				if (entity instanceof LivingEntity _entity) {
 					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:icy_bracelet"), time, AttributeModifier.Operation.ADD_VALUE);

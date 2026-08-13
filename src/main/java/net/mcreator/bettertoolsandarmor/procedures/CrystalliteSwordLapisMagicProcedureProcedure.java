@@ -44,7 +44,7 @@ public class CrystalliteSwordLapisMagicProcedureProcedure {
 		if (damagesource == null || entity == null || immediatesourceentity == null)
 			return;
 		double damage = 0;
-		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:magic_damage_tools")))
+		if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:magic_damage_weapons")))
 				&& !damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:damage_overrides")))) {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);

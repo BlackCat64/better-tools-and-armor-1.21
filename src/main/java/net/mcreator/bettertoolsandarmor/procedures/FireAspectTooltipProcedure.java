@@ -40,7 +40,7 @@ public class FireAspectTooltipProcedure {
 		double time = 0;
 		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT)) != 0) {
 			time = itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT)) * 4;
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_tools")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_weapons")))) {
 				if ((entity.level().dimension()) == Level.NETHER) {
 					time = Math.max(10, time);
 				} else {
