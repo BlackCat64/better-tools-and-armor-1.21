@@ -47,12 +47,8 @@ public class NetherDiamondArmorFireProcedureProcedure {
 		double armor_pieces = 0;
 		double i = 0;
 		double time = 0;
-		if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))) && entity.isOnFire()
-				&& !(entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.FIRE_RESISTANCE))) {
-			for (int index106 = 0; index106 < 4; index106++) {
+		if (IsWearingArmorTagProcedure.execute(entity, "better_tools:flaming_armor") && entity.isOnFire() && !(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(MobEffects.FIRE_RESISTANCE))) {
+			for (int index145 = 0; index145 < 4; index145++) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 					public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 						for (EquipmentSlot _slot : EquipmentSlot.values()) {
@@ -117,7 +113,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 						_vars.markSyncDirty();
 					}
 					i = 0;
-					for (int index107 = 0; index107 < 4; index107++) {
+					for (int index146 = 0; index146 < 4; index146++) {
 						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 							public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 								for (EquipmentSlot _slot : EquipmentSlot.values()) {

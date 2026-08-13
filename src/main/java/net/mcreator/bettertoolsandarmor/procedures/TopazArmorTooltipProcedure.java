@@ -35,13 +35,11 @@ public class TopazArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
-		double percent = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:lightning_armor")))) {
-			percent = (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE)
-					? _livingEntity2.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).getValue()
-					: 0) * 100;
 			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(percent) + "% Lightning Chance")));
+				tooltip.add(Component.literal(("\u00A72 " + (new java.text.DecimalFormat("##.#").format((entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE)
+						? _livingEntity2.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).getValue()
+						: 0) * 100)) + "% Lightning Chance")));
 			} else {
 				tooltip.add(Component.literal(("\u00A79+" + (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor"))) ? "8" : "4") + "% Lightning Chance")));
 			}

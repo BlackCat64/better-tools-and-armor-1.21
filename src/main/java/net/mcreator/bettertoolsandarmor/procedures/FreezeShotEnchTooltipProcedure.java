@@ -50,10 +50,15 @@ public class FreezeShotEnchTooltipProcedure {
 				freeze_time = freeze_time == 0 ? 70 : freeze_time * 1.5;
 			}
 			if (IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ())) {
-				FreezeShotChance = FreezeShotChance * 2;
+				if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) != 0
+						&& itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
+					FreezeShotChance = FreezeShotChance * 1.5;
+				} else {
+					FreezeShotChance = FreezeShotChance * 2;
+				}
 			}
 			if (FreezeShotChance > 0) {
-				FreezeShotChance = FreezeShotChance + (entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity13.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				FreezeShotChance = FreezeShotChance + (entity instanceof LivingEntity _livingEntity17 && _livingEntity17.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity17.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(Math.min(100, FreezeShotChance * 100)) + "% Freeze Chance")));
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(freeze_time / 20) + "s Freeze Time")));
 			}

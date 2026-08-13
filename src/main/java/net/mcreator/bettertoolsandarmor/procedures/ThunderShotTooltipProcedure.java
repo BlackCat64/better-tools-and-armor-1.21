@@ -49,8 +49,16 @@ public class ThunderShotTooltipProcedure {
 			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
 				chance = chance + 0.2;
 			}
+			if (IsInThunderstormProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity)) {
+				if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0
+						&& itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
+					chance = chance * 1.5;
+				} else {
+					chance = chance * 2;
+				}
+			}
 			if (chance > 0) {
-				chance = chance + (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity8.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				chance = chance + (entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity15.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(Math.min(100, chance * 100)) + "% Lightning Chance")));
 			}
 		}

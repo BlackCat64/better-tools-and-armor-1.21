@@ -57,10 +57,15 @@ public class ThunderShotProcedureProcedure {
 					LightningChance = LightningChance + 0.2;
 				}
 				if (IsInThunderstormProcedure.execute(world, x, y, z, entity)) {
-					LightningChance = LightningChance * 2;
+					if (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:thunder_shot")))) != 0
+							&& bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_TOPAZ.get()) {
+						LightningChance = LightningChance * 1.5;
+					} else {
+						LightningChance = LightningChance * 2;
+					}
 				}
 				if (LightningChance > 0) {
-					LightningChance = LightningChance + (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity6.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+					LightningChance = LightningChance + (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity8.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 					if (Math.random() < LightningChance) {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);

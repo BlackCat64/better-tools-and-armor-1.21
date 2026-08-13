@@ -59,13 +59,18 @@ public class FreezeShotProcedureProcedure {
 					freeze_time = freeze_time == 0 ? 70 : freeze_time * 1.5;
 				}
 				if (world.getBiome(BlockPos.containing(x, y, z)).value().getBaseTemperature() * 100f <= 0.15) {
-					FreezeShotChance = FreezeShotChance * 2;
+					if (bow.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) != 0
+							&& bow.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
+						FreezeShotChance = FreezeShotChance * 1.5;
+					} else {
+						FreezeShotChance = FreezeShotChance * 2;
+					}
 				}
 				if (FreezeShotChance > 0) {
-					FreezeShotChance = FreezeShotChance + (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity8.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+					FreezeShotChance = FreezeShotChance + (entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity10.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 					if (Math.random() < FreezeShotChance) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, false));
+							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, true));
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.return")), SoundSource.NEUTRAL, 1, 1);

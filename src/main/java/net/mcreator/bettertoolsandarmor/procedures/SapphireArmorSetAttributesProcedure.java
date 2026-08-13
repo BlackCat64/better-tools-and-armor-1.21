@@ -12,6 +12,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -36,43 +37,46 @@ public class SapphireArmorSetAttributesProcedure {
 		double armor_pieces = 0;
 		double time = 0;
 		double chance = 0;
+		double i = 0;
+		double BASE_CHANCE = 0;
+		double CRYSTALLITE_CHANCE = 0;
 		boolean crystallite = false;
-		if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE)) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_BOOTS.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.04;
-			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_BOOTS.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.08;
-				crystallite = true;
-			}
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_LEGGINGS.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.04;
-			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.08;
-				crystallite = true;
-			}
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_CHESTPLATE.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.04;
-			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.08;
-				crystallite = true;
-			}
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.SAPPHIRE_HELMET.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.04;
-			} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get()) {
-				armor_pieces = armor_pieces + 1;
-				chance = chance + 0.08;
-				crystallite = true;
+		BASE_CHANCE = 0.04;
+		CRYSTALLITE_CHANCE = 0.08;
+		if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE) && !world.isClientSide()) {
+			for (int index350 = 0; index350 < 4; index350++) {
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+					public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+						for (EquipmentSlot _slot : EquipmentSlot.values()) {
+							if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+								return _slot;
+							}
+						}
+						throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+					}
+				}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:freezing_armor")))) {
+					armor_pieces = armor_pieces + 1;
+					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
+						public static EquipmentSlot armorSlotByIndex(int _slotindex) {
+							for (EquipmentSlot _slot : EquipmentSlot.values()) {
+								if (_slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR && _slot.getIndex() == _slotindex) {
+									return _slot;
+								}
+							}
+							throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
+						}
+					}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor")))) {
+						chance = chance + CRYSTALLITE_CHANCE;
+						crystallite = true;
+					} else {
+						chance = chance + BASE_CHANCE;
+					}
+				}
+				i = i + 1;
 			}
 			time = crystallite ? 200 : 100;
 			if (armor_pieces == 4) {
-				chance = chance + (crystallite ? 0.08 : 0.04);
+				chance = chance + (crystallite ? CRYSTALLITE_CHANCE : BASE_CHANCE);
 			}
 			if (IsInColdBiomeProcedure.execute(world, x, y, z)) {
 				chance = chance * (crystallite ? 1.5 : 2);
@@ -85,20 +89,20 @@ public class SapphireArmorSetAttributesProcedure {
 				_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).removeModifier(ResourceLocation.parse("better_tools:sapphire_armor"));
 			}
 			if (chance > 0) {
-				chance = chance + (entity instanceof LivingEntity _livingEntity19 && _livingEntity19.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity19.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
+				chance = chance + (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity8.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
 				if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get()))) {
 					chance = chance + 0.1;
-					if (entity instanceof LivingEntity _entity) {
-						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), chance, AttributeModifier.Operation.ADD_VALUE);
-						if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).hasModifier(modifier.id())) {
-							_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).addPermanentModifier(modifier);
-						}
+				}
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), chance, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).hasModifier(modifier.id())) {
+						_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_CHANCE).addPermanentModifier(modifier);
 					}
-					if (entity instanceof LivingEntity _entity) {
-						AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), time, AttributeModifier.Operation.ADD_VALUE);
-						if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).hasModifier(modifier.id())) {
-							_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).addPermanentModifier(modifier);
-						}
+				}
+				if (entity instanceof LivingEntity _entity) {
+					AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:sapphire_armor"), time, AttributeModifier.Operation.ADD_VALUE);
+					if (!_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).hasModifier(modifier.id())) {
+						_entity.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).addPermanentModifier(modifier);
 					}
 				}
 			}

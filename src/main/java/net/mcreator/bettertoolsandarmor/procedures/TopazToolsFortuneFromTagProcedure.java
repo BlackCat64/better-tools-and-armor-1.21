@@ -46,7 +46,7 @@ public class TopazToolsFortuneFromTagProcedure {
 		if (item.is(ItemTags.create(ResourceLocation.parse("better_tools:fortune_tools"))) && !(item.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) != 0)) {
 			item.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE), (int) level);
 			if (entity instanceof Player _player)
-				_player.giveExperiencePoints(-(10));
+				_player.giveExperiencePoints(-((int) (level * 10)));
 		}
 	}
 }

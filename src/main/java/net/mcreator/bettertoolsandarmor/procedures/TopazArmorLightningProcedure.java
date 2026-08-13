@@ -33,10 +33,9 @@ public class TopazArmorLightningProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE)
-				&& Math.random() < (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE)
-						? _livingEntity1.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).getValue()
-						: 0)) {
+		if (Math.random() < (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE)
+				? _livingEntity0.getAttribute(BetterToolsModAttributes.LIGHTNING_THORNS_CHANCE).getValue()
+				: 0)) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
