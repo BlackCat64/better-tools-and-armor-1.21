@@ -43,7 +43,7 @@ public class NetherDiamondSwordTooltipProcedure {
 		double damage = 0;
 		double replaceLine = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_weapons"))) && !(itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT)) != 0)) {
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				fire_chance = 5;
 			} else {
 				fire_chance = 3;
@@ -52,7 +52,7 @@ public class NetherDiamondSwordTooltipProcedure {
 				fire_chance = fire_chance * 2;
 			}
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(fire_chance) + "s Burn Time")));
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_swords")))) {
 					damage = 9;
 				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_axes")))) {
@@ -65,7 +65,7 @@ public class NetherDiamondSwordTooltipProcedure {
 				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
 					dmg_boost = 2.5;
 				}
-				if (dmg_boost > 0 && (entity.level().dimension()) == Level.NETHER) {
+				if (damage > 0 && (entity.level().dimension()) == Level.NETHER) {
 					damage = damage + dmg_boost;
 					if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0) {
 						damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));

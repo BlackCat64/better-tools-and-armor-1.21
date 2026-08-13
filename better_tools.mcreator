@@ -37908,6 +37908,22 @@
       "CUSTOM:CrystalliteAxeTopaz",
       "CUSTOM:CrystalliteShovelTopaz",
       "CUSTOM:CrystalliteHoeTopaz"
+    ],
+    "ITEMS:mod:crystallite_tools": [
+      "TAG:better_tools:upgraded_crystallite_tools",
+      "CUSTOM:CrystalliteSword",
+      "CUSTOM:CrystallitePickaxe",
+      "CUSTOM:CrystalliteAxe",
+      "CUSTOM:CrystalliteShovel",
+      "CUSTOM:CrystalliteHoe",
+      "CUSTOM:CrystalliteDagger"
+    ],
+    "ITEMS:mod:crystallite_armor": [
+      "TAG:better_tools:upgraded_crystallite_armor",
+      "CUSTOM:CrystalliteArmor.helmet",
+      "CUSTOM:CrystalliteArmor.body",
+      "CUSTOM:CrystalliteArmor.legs",
+      "CUSTOM:CrystalliteArmor.boots"
     ]
   },
   "tab_element_order": {

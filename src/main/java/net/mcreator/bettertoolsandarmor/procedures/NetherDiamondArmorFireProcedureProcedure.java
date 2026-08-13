@@ -52,7 +52,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))
 				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))) && entity.isOnFire()
 				&& !(entity instanceof LivingEntity _livEnt9 && _livEnt9.hasEffect(MobEffects.FIRE_RESISTANCE))) {
-			for (int index2 = 0; index2 < 4; index2++) {
+			for (int index106 = 0; index106 < 4; index106++) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 					public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 						for (EquipmentSlot _slot : EquipmentSlot.values()) {
@@ -73,7 +73,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 							}
 							throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
 						}
-					}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+					}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor")))) {
 						crystallite = true;
 					}
 				}
@@ -117,7 +117,7 @@ public class NetherDiamondArmorFireProcedureProcedure {
 						_vars.markSyncDirty();
 					}
 					i = 0;
-					for (int index3 = 0; index3 < 4; index3++) {
+					for (int index107 = 0; index107 < 4; index107++) {
 						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 							public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 								for (EquipmentSlot _slot : EquipmentSlot.values()) {

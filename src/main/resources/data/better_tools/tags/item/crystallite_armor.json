@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "better_tools:crystallite_boots",
+    {
+      "id": "#better_tools:upgraded_crystallite_armor",
+      "required": false
+    },
+    "better_tools:crystallite_helmet",
+    "better_tools:crystallite_leggings",
+    "better_tools:crystallite_chestplate"
+  ]
+}

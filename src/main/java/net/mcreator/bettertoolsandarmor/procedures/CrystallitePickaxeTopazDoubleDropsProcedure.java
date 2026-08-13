@@ -32,7 +32,7 @@ public class CrystallitePickaxeTopazDoubleDropsProcedure {
 				&& blockstate.is(BlockTags.create(ResourceLocation.parse("c:ores")))
 				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)
 				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_upgraded_crystallite_items")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				dupe_chance = 0.2;
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_pickaxes")))) {
 				dupe_chance = 0.1;

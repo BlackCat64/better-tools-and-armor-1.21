@@ -12,7 +12,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
@@ -46,11 +45,11 @@ public class FreezeShotEnchTooltipProcedure {
 				|| itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
 			FreezeShotChance = itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) * 0.1;
 			freeze_time = itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:freeze_shot")))) * 66;
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items")))) {
+			if (itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_SAPPHIRE.get()) {
 				FreezeShotChance = FreezeShotChance + 0.2;
 				freeze_time = freeze_time == 0 ? 70 : freeze_time * 1.5;
 			}
-			if (IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ())) {
+			if (IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ())) {
 				FreezeShotChance = FreezeShotChance * 2;
 			}
 			if (FreezeShotChance > 0) {

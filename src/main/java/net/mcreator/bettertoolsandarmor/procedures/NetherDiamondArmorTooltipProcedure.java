@@ -40,10 +40,10 @@ public class NetherDiamondArmorTooltipProcedure {
 		double time = 0;
 		boolean crystallite = false;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_armor")))) {
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor")))) {
 				crystallite = true;
 			}
-			for (int index74 = 0; index74 < 4; index74++) {
+			for (int index119 = 0; index119 < 4; index119++) {
 				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(new Object() {
 					public static EquipmentSlot armorSlotByIndex(int _slotindex) {
 						for (EquipmentSlot _slot : EquipmentSlot.values()) {
@@ -65,7 +65,7 @@ public class NetherDiamondArmorTooltipProcedure {
 						}
 						throw new IllegalArgumentException("Invalid slot index: " + _slotindex);
 					}
-				}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+				}.armorSlotByIndex((int) i)) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor")))) {
 					crystallite = true;
 				}
 				i = i + 1;
@@ -84,10 +84,7 @@ public class NetherDiamondArmorTooltipProcedure {
 			if ((entity.level().dimension()) == Level.NETHER) {
 				time = time * 2;
 			}
-			if (crystallite && !((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == itemstack.getItem()
-					|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == itemstack.getItem())) {
+			if (crystallite && !IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
 				tooltip.add(Component.literal("\u00A79+3s Fire Resistance"));
 			} else {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("#").format(time) + "s Fire Resistance")));

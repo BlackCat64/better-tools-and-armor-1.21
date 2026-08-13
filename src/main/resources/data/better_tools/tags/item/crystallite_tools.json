@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:upgraded_crystallite_tools",
+      "required": false
+    },
+    "better_tools:crystallite_shovel",
+    "better_tools:crystallite_dagger",
+    "better_tools:crystallite_sword",
+    "better_tools:crystallite_pickaxe",
+    "better_tools:crystallite_axe",
+    "better_tools:crystallite_hoe"
+  ]
+}

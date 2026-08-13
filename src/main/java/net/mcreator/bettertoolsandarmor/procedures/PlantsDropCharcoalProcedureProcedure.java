@@ -38,7 +38,7 @@ public class PlantsDropCharcoalProcedureProcedure {
 		double chance = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:plant_charring_tools")))
 				&& blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:plants"))) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				chance = 0.1;
 			} else {
 				chance = 0.05;

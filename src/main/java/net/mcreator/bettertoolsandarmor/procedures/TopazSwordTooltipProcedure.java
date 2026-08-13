@@ -32,7 +32,7 @@ public class TopazSwordTooltipProcedure {
 		if (tooltip == null)
 			return;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:lightning_weapons")))) {
-			tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_upgraded_crystallite_items"))) ? "50" : "25") + "% Chain Chance")));
+			tooltip.add(Component.literal(("\u00A72 " + (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools"))) ? "50" : "25") + "% Chain Chance")));
 			tooltip.add(Component.literal("\u00A72 3 Block Radius"));
 			tooltip.add(Component.literal("\u00A77Chain Attack Damage:"));
 			tooltip.add(Component.literal("\u00A7950% of Weapon Damage"));

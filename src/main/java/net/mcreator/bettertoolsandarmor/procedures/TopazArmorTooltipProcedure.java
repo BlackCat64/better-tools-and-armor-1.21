@@ -43,7 +43,7 @@ public class TopazArmorTooltipProcedure {
 			if (IsPlayerWearingItemProcedure.execute(entity, itemstack)) {
 				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format(percent) + "% Lightning Chance")));
 			} else {
-				tooltip.add(Component.literal(("\u00A79+" + (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:topaz_upgraded_crystallite_items"))) ? "8" : "4") + "% Lightning Chance")));
+				tooltip.add(Component.literal(("\u00A79+" + (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor"))) ? "8" : "4") + "% Lightning Chance")));
 			}
 		}
 	}

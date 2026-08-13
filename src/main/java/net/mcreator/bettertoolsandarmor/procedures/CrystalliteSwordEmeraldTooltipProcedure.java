@@ -33,7 +33,7 @@ public class CrystalliteSwordEmeraldTooltipProcedure {
 			return;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:pitfall_weapons")))) {
 			tooltip.add(Component.literal("\u00A77On a critical hit:"));
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:emerald_upgraded_crystallite_items")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				tooltip.add(Component.literal("\u00A72 5s Trap Time"));
 			} else {
 				tooltip.add(Component.literal("\u00A72 3s Trap Time"));

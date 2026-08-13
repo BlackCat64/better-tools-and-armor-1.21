@@ -40,7 +40,7 @@ public class SharpnessTooltipProcedure {
 		double tooltipLine = 0;
 		double damage = 0;
 		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0 && !(itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_weapons")))
-				|| itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_weapons"))) && itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))
+				|| itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_weapons"))) && itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))
 				|| itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:dark_damage_boost_weapons"))) || itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:water_damage_boost_weapons"))))) {
 			tooltipLine = GetTooltipLineContainingProcedure.execute("Attack Damage", tooltip);
 			if (tooltipLine >= 0) {

@@ -43,7 +43,7 @@ public class HomingArrowShotProcedure {
 		double charge_time = 0;
 		double radius = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:tools/bow"))) && !(itemstack.getItem() == BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get())
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:amethyst_upgraded_crystallite_items")))) {
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_HELMET.get()) {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ruby_upgraded_crystallite_items")))) {
 				charge_time = 71990;
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:honey_upgraded_crystallite_items")))) {

@@ -35,7 +35,7 @@ public class NetherDiamondToolsPlantsTooltipProcedure {
 			return;
 		double chance = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:plant_charring_tools")))) {
-			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 				chance = 0.1;
 			} else {
 				chance = 0.05;

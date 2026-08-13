@@ -48,7 +48,7 @@ public class SapphireSwordTooltipProcedure {
 						? _livingEntity6.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).getValue()
 						: 0) / 20;
 			} else {
-				if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items")))) {
+				if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 					chance = 20;
 					time = 10;
 				} else {
@@ -57,7 +57,7 @@ public class SapphireSwordTooltipProcedure {
 				}
 				if (IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ())) {
 					chance = chance * 2;
-					time = time * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
+					time = time * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools"))) ? 1.5 : 2);
 				}
 			}
 			tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##").format(chance) + "% Freeze Chance")));

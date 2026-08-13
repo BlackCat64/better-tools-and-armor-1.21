@@ -48,7 +48,7 @@ public class SapphireArmorTooltipProcedure {
 						? _livingEntity3.getAttribute(BetterToolsModAttributes.FREEZE_THORNS_TIME).getValue()
 						: 0) / 20;
 			} else {
-				if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items")))) {
+				if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor")))) {
 					percent = 8;
 					seconds = 10;
 				} else {
@@ -56,8 +56,8 @@ public class SapphireArmorTooltipProcedure {
 					seconds = 5;
 				}
 				if (IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ())) {
-					percent = percent * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
-					seconds = seconds * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
+					percent = percent * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor"))) ? 1.5 : 2);
+					seconds = seconds * (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_armor"))) ? 1.5 : 2);
 				}
 			}
 			tooltip.add(Component.literal(((!IsPlayerWearingItemProcedure.execute(entity, itemstack) ? "\u00A79+" : "\u00A72 ") + "" + new java.text.DecimalFormat("##.#").format(percent) + "% Freeze Chance")));

@@ -35,8 +35,7 @@ public class CrystalliteSwordNetherDiamondProcedureProcedure {
 			_entity.getAttribute(Attributes.ATTACK_DAMAGE).removeModifier(ResourceLocation.parse("better_tools:crystallite_sword_nether_diamond"));
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:flaming_weapons")))
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:nether_diamond_upgraded_crystallite_items")))
-				&& (entity.level().dimension()) == Level.NETHER) {
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools"))) && (entity.level().dimension()) == Level.NETHER) {
 			dmg_boost = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes"))) ? 2.5 : 3;
 			if (entity instanceof LivingEntity _entity) {
 				AttributeModifier modifier = new AttributeModifier(ResourceLocation.parse("better_tools:crystallite_sword_nether_diamond"), dmg_boost, AttributeModifier.Operation.ADD_VALUE);

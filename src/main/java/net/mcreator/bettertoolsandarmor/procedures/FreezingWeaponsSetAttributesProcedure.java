@@ -36,7 +36,7 @@ public class FreezingWeaponsSetAttributesProcedure {
 		double time = 0;
 		if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE)) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:freezing_weapons")))) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items")))) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools")))) {
 					chance = 0.2;
 					time = 200;
 				} else {
@@ -46,7 +46,7 @@ public class FreezingWeaponsSetAttributesProcedure {
 			}
 			if (IsInColdBiomeProcedure.execute(world, x, y, z)) {
 				chance = chance * 2;
-				time = time * ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:sapphire_upgraded_crystallite_items"))) ? 1.5 : 2);
+				time = time * ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:upgraded_crystallite_tools"))) ? 1.5 : 2);
 			}
 			if (entity instanceof LivingEntity _entity) {
 				_entity.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).removeModifier(ResourceLocation.parse("better_tools:freezing_weapons"));

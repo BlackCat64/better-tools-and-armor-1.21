@@ -41,20 +41,20 @@ public class CrystalliteSwordPrismarineTooltipProcedure {
 		double boost = 0;
 		double dmg_boost = 0;
 		double replaceLine = 0;
-		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:prismarine_upgraded_crystallite_items")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:water_damage_boost_weapons")))) {
 			if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_axes")))) {
 				damage = 10.5;
-				boost = 2.5;
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_swords")))) {
 				damage = 9;
-				boost = 3;
 			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:crystallite_daggers")))) {
 				damage = 7;
-				boost = 3;
 			}
-		}
-		if (damage > 0) {
-			if (entity.isInWaterRainOrBubble()) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")))) {
+				boost = 3;
+			} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
+				boost = 2.5;
+			}
+			if (damage > 0 && entity.isInWaterRainOrBubble()) {
 				damage = damage + boost;
 				if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0) {
 					damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));
@@ -62,7 +62,7 @@ public class CrystalliteSwordPrismarineTooltipProcedure {
 				replaceLine = GetTooltipLineContainingProcedure.execute("Attack Damage", tooltip);
 				ReplaceTooltipLineWithComponentProcedure.execute(Component.literal(" ").append(Component.literal((new java.text.DecimalFormat("##.##").format(damage))).withStyle(ChatFormatting.BOLD).withColor((int) 0x91c2ac))
 						.append(Component.literal(" Attack Damage")).withColor((int) 0x00aa00), replaceLine, tooltip);
-			} else {
+			} else if (dmg_boost > 0) {
 				tooltip.add(Component.literal("\u00A77When it is wet:"));
 				tooltip.add(Component.literal(("\u00A79+" + new java.text.DecimalFormat("##.##").format(boost) + " Attack Damage")));
 			}
