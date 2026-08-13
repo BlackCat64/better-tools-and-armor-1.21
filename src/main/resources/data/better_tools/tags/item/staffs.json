@@ -1,10 +1,11 @@
 {
   "replace": false,
   "values": [
-    "better_tools:electric_staff",
     "better_tools:warden_staff",
-    "better_tools:fire_staff",
-    "better_tools:guardian_staff",
-    "better_tools:ice_staff"
+    {
+      "id": "#better_tools:projectile_staffs",
+      "required": false
+    },
+    "better_tools:guardian_staff"
   ]
 }

@@ -34618,6 +34618,33 @@
         "files": []
       },
       "path": "~/Sapphire"
+    },
+    {
+      "name": "ProjectileStaffsCooldownOnShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_staffs_cooldown_on_shoot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ProjectileStaffsCooldownOnShootProcedure.java"
+        ]
+      },
+      "path": "~/Staffs"
     }
   ],
   "variable_elements": [
@@ -36923,11 +36950,9 @@
       "CUSTOM:CrystalliteArmorHoney.boots"
     ],
     "ITEMS:mod:staffs": [
-      "CUSTOM:ElectricStaff",
-      "CUSTOM:IceStaff",
-      "CUSTOM:FireStaff",
       "CUSTOM:WardenStaff",
-      "CUSTOM:GuardianStaff"
+      "CUSTOM:GuardianStaff",
+      "TAG:better_tools:projectile_staffs"
     ],
     "BLOCKS:mod:loot_blocks": [
       "CUSTOM:CrystalliteClusterAir",
@@ -37961,6 +37986,11 @@
     ],
     "ITEMS:minecraft:freeze_immune_wearables": [
       "TAG:better_tools:freezing_armor"
+    ],
+    "ITEMS:mod:projectile_staffs": [
+      "CUSTOM:ElectricStaff",
+      "CUSTOM:IceStaff",
+      "CUSTOM:FireStaff"
     ]
   },
   "tab_element_order": {

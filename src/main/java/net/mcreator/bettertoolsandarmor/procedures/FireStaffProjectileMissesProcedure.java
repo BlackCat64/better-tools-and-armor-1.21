@@ -19,14 +19,16 @@ public class FireStaffProjectileMissesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		if (entity instanceof LivingEntity && immediatesourceentity.getPersistentData().getDouble("explosion_power") > 0) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, (float) immediatesourceentity.getPersistentData().getDouble("explosion_power"), Level.ExplosionInteraction.TNT);
+		double power = 0;
+		power = immediatesourceentity.getPersistentData().getDouble("explosion_power");
+		if (entity instanceof LivingEntity && power > 0) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				_level.explode(entity, x, y, z, (float) power, Level.ExplosionInteraction.TNT);
+			}
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(BetterToolsModItems.FIRE_STAFF.get(),
-							(int) (immediatesourceentity.getPersistentData().getDouble("explosion_power") * (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-									.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast")))))));
+					_player.getCooldowns().addCooldown(BetterToolsModItems.FIRE_STAFF.get(), (int) (power * (10 - (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+							.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast")))))));
 			}
 		} else {
 			if (world instanceof Level _level) {
