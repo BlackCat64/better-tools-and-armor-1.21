@@ -37,7 +37,7 @@ public class FrozenEffectStopJumpingProcedure {
 			if (time > 20) {
 				DeleteEntityIceBlockDisplayProcedure.execute(world, entity, false);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) (time - 20), 0, true, false));
+					_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) (time - 20), 0, false, true));
 			}
 		}
 	}

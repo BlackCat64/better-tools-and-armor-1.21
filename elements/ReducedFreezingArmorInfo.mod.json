@@ -1,0 +1,26 @@
+{
+  "_fv": 89,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      "CUSTOM:SapphireArmor.helmet",
+      "CUSTOM:SapphireArmor.body",
+      "CUSTOM:SapphireArmor.legs",
+      "CUSTOM:SapphireArmor.boots",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:IcyBracelet",
+      "Items.LEATHER_HELMET",
+      "Items.LEATHER_CHESTPLATE",
+      "Items.LEATHER_LEGGINGS",
+      "Items.LEATHER_BOOTS"
+    ],
+    "information": [
+      "§lWhen worn:§r",
+      "Immune to freezing in Powder Snow.",
+      "Duration of all §9Frozen§r effects is shortened to 5s."
+    ]
+  }
+}

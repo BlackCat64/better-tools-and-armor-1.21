@@ -369,5 +369,11 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.WINGED_BOOTS_BOOTS.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.winged_boots_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.IRON_HEARTY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.DIAMOND_HEARTY_CHESTPLATE.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.hearty_shirt_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.SAPPHIRE_LEGGINGS.get()),
+						new ItemStack(BetterToolsModItems.SAPPHIRE_BOOTS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_BOOTS.get()), new ItemStack(BetterToolsModItems.ICY_BRACELET.get()),
+						new ItemStack(Items.LEATHER_HELMET), new ItemStack(Items.LEATHER_CHESTPLATE), new ItemStack(Items.LEATHER_LEGGINGS), new ItemStack(Items.LEATHER_BOOTS)),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.reduced_freezing_armor_info"));
 	}
 }
