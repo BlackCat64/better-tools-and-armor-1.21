@@ -29,32 +29,20 @@ public class WardenStaffSonicBoomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		double look_x = 0;
-		double look_y = 0;
-		double look_z = 0;
-		double vec_x = 0;
-		double vec_y = 0;
-		double vec_z = 0;
 		double range = 0;
 		boolean has_passed_through_wall = false;
-		vec_x = entity.getLookAngle().x;
-		vec_y = entity.getLookAngle().y;
-		vec_z = entity.getLookAngle().z;
-		look_x = x + vec_x;
-		look_y = y + entity.getBbHeight() / 2 + vec_y;
-		look_z = z + vec_z;
+		Vec3 look_vec = Vec3.ZERO;
+		look_vec = entity.getEyePosition();
 		range = 10 + 3 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation"))));
-		for (int index49 = 0; index49 < (int) range; index49++) {
-			look_x = look_x + vec_x;
-			look_y = look_y + vec_y;
-			look_z = look_z + vec_z;
-			if (world.getBlockState(BlockPos.containing(look_x, look_y, look_z)).canOcclude()) {
+		for (int index215 = 0; index215 < (int) range; index215++) {
+			look_vec = look_vec.add((entity.getLookAngle()));
+			if (world.getBlockState(BlockPos.containing(look_vec.x(), look_vec.y(), look_vec.z())).canOcclude()) {
 				has_passed_through_wall = true;
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SONIC_BOOM, look_x, look_y, look_z, 1, 0, 0, 0, 0);
+				_level.sendParticles(ParticleTypes.SONIC_BOOM, (look_vec.x()), (look_vec.y()), (look_vec.z()), 1, 0, 0, 0, 0);
 			{
-				final Vec3 _center = new Vec3(look_x, look_y, look_z);
+				final Vec3 _center = new Vec3((look_vec.x()), (look_vec.y()), (look_vec.z()));
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == entity)) {
 						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.SONIC_BOOM), null, entity),
