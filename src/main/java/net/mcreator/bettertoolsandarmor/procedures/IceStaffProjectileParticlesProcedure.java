@@ -19,7 +19,7 @@ public class IceStaffProjectileParticlesProcedure {
 		ItemStack staff = ItemStack.EMPTY;
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.SNOWFLAKE, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 1, 0, 0, 0, 0);
-		if (!(entity == null)) {
+		if (entity instanceof LivingEntity) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.ICE_STAFF.get()) {
 				staff = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 			} else {

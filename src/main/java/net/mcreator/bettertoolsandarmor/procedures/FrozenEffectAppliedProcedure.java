@@ -50,9 +50,8 @@ public class FrozenEffectAppliedProcedure {
 			if (world instanceof ServerLevel level) {
 				BlockDisplay display = EntityType.BLOCK_DISPLAY.create(level);
 				if (display != null) {
-					display.moveTo(x, y, z);
 					CompoundTag nbt = new CompoundTag();
-					// Define block to display as Ice
+					// Set block display to Ice
 					CompoundTag blockState = new CompoundTag();
 					blockState.putString("Name", "minecraft:ice");
 					nbt.put("block_state", blockState);
@@ -65,6 +64,7 @@ public class FrozenEffectAppliedProcedure {
 					nbt.put("transformation", transformation);
 					// Load NBT data into Block Display
 					display.load(nbt);
+					display.setPos(x, y, z);
 					display.getPersistentData().putBoolean("freeze_effect", true);
 					level.addFreshEntity(display);
 					entity.getPersistentData().putString("frozen_block_display", (display.getStringUUID()));

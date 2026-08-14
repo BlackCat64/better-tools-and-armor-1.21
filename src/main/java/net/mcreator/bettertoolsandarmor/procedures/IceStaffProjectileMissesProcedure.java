@@ -6,15 +6,19 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -50,9 +54,31 @@ public class IceStaffProjectileMissesProcedure {
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(radius / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					if (!(entityiterator == immediatesourceentity)) {
+					if (entityiterator instanceof LivingEntity) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, true));
+						if (entity instanceof ServerPlayer _player) {
+							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:ice_staff_adv"));
+							if (_adv != null) {
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
+							}
+						}
+						if (entityiterator instanceof Zombie && entityiterator instanceof LivingEntity _livEnt22 && _livEnt22.isBaby()) {
+							if (entity instanceof ServerPlayer _player) {
+								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:frozen_adv"));
+								if (_adv != null) {
+									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+									if (!_ap.isDone()) {
+										for (String criteria : _ap.getRemainingCriteria())
+											_player.getAdvancements().award(_adv, criteria);
+									}
+								}
+							}
+						}
 					}
 				}
 			}

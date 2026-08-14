@@ -38,7 +38,7 @@ public class SapphireArmorReduceFrozenTimeProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, 100, 0, false, true));
 		}
-		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get()))) {
+		if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ICY_BRACELET.get())) && !(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(BetterToolsModMobEffects.FROZEN))) {
 			entity.setTicksFrozen(0);
 		}
 	}

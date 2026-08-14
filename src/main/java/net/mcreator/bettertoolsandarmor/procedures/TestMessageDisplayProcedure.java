@@ -5,40 +5,43 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
-
 import javax.annotation.Nullable;
+
+import java.util.UUID;
 
 @EventBusSubscriber
 public class TestMessageDisplayProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event, event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (false) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u00A76"
-						+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE)
-								? _livingEntity0.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_CHANCE).getValue()
-								: 0))
-						+ "  |  "
-						+ (new java.text.DecimalFormat("##.##").format(entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME)
-								? _livingEntity1.getAttribute(BetterToolsModAttributes.ATTACK_FREEZE_TIME).getValue()
-								: 0)))),
+				_player.displayClientMessage(Component.literal(
+						(entity.getPersistentData().getString("frozen_block_display") + "  |  " + ((world instanceof ServerLevel _level2 ? getEntityFromUUID(_level2, (entity.getPersistentData().getString("frozen_block_display"))) : null) != null))),
 						true);
+		}
+	}
+
+	private static Entity getEntityFromUUID(ServerLevel level, String uuid) {
+		try {
+			return level.getEntity(UUID.fromString(uuid));
+		} catch (IllegalArgumentException e) {
+			return null;
 		}
 	}
 }

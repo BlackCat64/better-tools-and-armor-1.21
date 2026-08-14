@@ -9,6 +9,7 @@ import net.minecraft.world.entity.Display;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -30,6 +31,9 @@ public class DeleteEntityMudBlockDisplayProcedure {
 				} else {
 					_level.playLocalSound((display.getX()), (display.getY()), (display.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.rooted_dirt.break")), SoundSource.NEUTRAL, 1, 1, false);
 				}
+			}
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Deleted Ice block display for " + entity.getDisplayName().getString())), false);
 			}
 		}
 	}

@@ -43,9 +43,9 @@ public class IceStaffTooltipProcedure {
 			radius = 1 + itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation"))));
 			cooldown = 10 - 1.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:swift_cast"))));
 			tooltip.add(Component.literal("\u00A77Staff Effects:"));
-			tooltip.add(Component.literal((IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ()) ? "\u00A72 15s Freeze Time" : "\u00A72 10s Freeze Time")));
+			tooltip.add(Component.literal((IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ()) ? "\u00A72 15s Freeze Time" : "\u00A72 10s Freeze Time")));
 			if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("better_tools:ensorcellation")))) != 0) {
-				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format((IsInColdBiomeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ()) ? radius + 2 : radius) / 2) + " Block Radius")));
+				tooltip.add(Component.literal(("\u00A72 " + new java.text.DecimalFormat("##.#").format((IsInColdBiomeProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ()) ? radius + 2 : radius) / 2) + " Block Radius")));
 			}
 			tooltip.add(Component.literal(("\u00A7c " + (new java.text.DecimalFormat("##.#").format(cooldown)).replace(".0", "") + "s Cooldown on hit")));
 		}

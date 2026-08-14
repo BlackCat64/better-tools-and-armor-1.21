@@ -30,7 +30,9 @@ public class IceStaffProcedure2Procedure {
 		double radius = 0;
 		if (world.getBiome(BlockPos.containing(immediatesourceentity.getX(), immediatesourceentity.getY(), immediatesourceentity.getZ())).value().getBaseTemperature() * 100f <= 0.15) {
 			freeze_time = 300;
-			radius = immediatesourceentity.getPersistentData().getDouble("radius") + 2;
+			if (immediatesourceentity.getPersistentData().getDouble("radius") > 0) {
+				radius = immediatesourceentity.getPersistentData().getDouble("radius") + 2;
+			}
 		} else {
 			freeze_time = 200;
 			radius = immediatesourceentity.getPersistentData().getDouble("radius");
@@ -49,7 +51,7 @@ public class IceStaffProcedure2Procedure {
 			{
 				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(radius / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					if (!(immediatesourceentity == entityiterator)) {
+					if (entityiterator instanceof LivingEntity) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, true));
 					}
@@ -58,7 +60,7 @@ public class IceStaffProcedure2Procedure {
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.FROZEN, (int) freeze_time, 0, false, true));
-		if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt21 && _livEnt21.isBaby()) {
+		if (entity instanceof Zombie && entity instanceof LivingEntity _livEnt22 && _livEnt22.isBaby()) {
 			if (sourceentity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:frozen_adv"));
 				if (_adv != null) {
