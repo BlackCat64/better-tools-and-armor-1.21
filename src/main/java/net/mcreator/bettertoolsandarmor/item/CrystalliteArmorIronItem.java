@@ -34,7 +34,7 @@ public abstract class CrystalliteArmorIronItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 8);
-			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")),
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")),
 					() -> Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(Items.IRON_INGOT)),
 					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:crystallite_iron_"))), 2.5f, 0.3f);
 			registerHelper.register(ResourceLocation.parse("better_tools:crystallite_armor_iron"), armorMaterial);

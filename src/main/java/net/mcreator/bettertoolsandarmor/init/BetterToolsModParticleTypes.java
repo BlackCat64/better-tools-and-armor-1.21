@@ -26,6 +26,5 @@ public class BetterToolsModParticleTypes {
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_5 = REGISTRY.register("freeze_boom_5", () -> new SimpleParticleType(true));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FREEZE_BOOM_6 = REGISTRY.register("freeze_boom_6", () -> new SimpleParticleType(true));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CRYSTALLITE_SPIN_THORNS = REGISTRY.register("crystallite_spin_thorns", () -> new SimpleParticleType(true));
-	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> WIND_BURST = REGISTRY.register("wind_burst", () -> new SimpleParticleType(true));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> ORE_VISION_PARTICLE = REGISTRY.register("ore_vision_particle", () -> new SimpleParticleType(true));
 }

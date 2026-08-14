@@ -24,7 +24,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -50,7 +50,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -71,7 +71,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.MAGIC_RING.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -82,7 +82,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -103,7 +103,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -124,7 +124,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.WITHERED_GAUNTLET.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -135,7 +135,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -161,7 +161,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.ICY_BRACELET.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -172,7 +172,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.ELECTRIC_NECKLACE.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -183,7 +183,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.FLAMING_CIRCLET.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -194,7 +194,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.NATURE_RING.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -205,7 +205,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.WARDEN_HEADBAND.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -216,7 +216,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.REFLECT_CHARM.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -227,7 +227,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.EARTH_CIRCLET.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -238,7 +238,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.GUARDIAN_NECKLACE.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -249,7 +249,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.CURING_CHARM.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -260,7 +260,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -281,7 +281,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 
 			@Override
@@ -307,7 +307,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.ENDER_GOGGLES.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -318,7 +318,7 @@ public class BetterToolsModCuriosCompat {
 
 			@Override
 			public SoundInfo getEquipSound(SlotContext slotContext) {
-				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_place")).value(), 1, 1);
+				return new SoundInfo(DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")).value(), 1, 1);
 			}
 		}, BetterToolsModItems.POISON_CHARM.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {

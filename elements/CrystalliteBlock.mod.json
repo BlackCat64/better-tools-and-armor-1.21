@@ -87,13 +87,13 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "soundOnStep": "GLASS",
+    "soundOnStep": "AMETHYST_BLOCK",
     "isCustomSoundType": true,
-    "breakSound": "CUSTOM:crystallite_break",
-    "fallSound": "CUSTOM:crystallite_break",
+    "breakSound": "block.amethyst_block.break",
+    "fallSound": "block.amethyst_block.fall",
     "hitSound": "CUSTOM:crystallite_shimmer",
-    "placeSound": "CUSTOM:crystallite_place",
-    "stepSound": "CUSTOM:crystallite_step",
+    "placeSound": "block.amethyst_block.place",
+    "stepSound": "block.amethyst_block.step",
     "luminance": {
       "fixedValue": 8.0
     },

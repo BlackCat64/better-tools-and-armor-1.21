@@ -34,7 +34,7 @@ public abstract class CrystalliteArmorSculkItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 5);
 				map.put(ArmorItem.Type.BODY, 8);
-			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_step")),
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")),
 					() -> Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(Items.ECHO_SHARD)),
 					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:crystallite_sculk_"))), 3.5f, 0.125f);
 			registerHelper.register(ResourceLocation.parse("better_tools:crystallite_armor_sculk"), armorMaterial);

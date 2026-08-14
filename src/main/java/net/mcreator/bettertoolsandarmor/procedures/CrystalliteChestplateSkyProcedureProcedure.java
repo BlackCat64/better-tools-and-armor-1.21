@@ -50,9 +50,9 @@ public class CrystalliteChestplateSkyProcedureProcedure {
 				_level.sendParticles(ParticleTypes.GUST, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 1, 0, 0, 0, 0);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:wind_burst")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wind_charge.wind_burst")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:wind_burst")), SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.wind_charge.wind_burst")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			ApplyKnockbackProcedure.execute(immediatesourceentity, 0.6, (immediatesourceentity.position()).subtract((entity.position())));

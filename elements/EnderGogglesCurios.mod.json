@@ -9,7 +9,7 @@
     "enderMask": true,
     "friendlyPigs": false,
     "snowWalk": false,
-    "equipSound": "CUSTOM:crystallite_place",
+    "equipSound": "block.amethyst_block.step",
     "hasModel": false,
     "baubleModel": "Default",
     "baubleModelTexture": "",

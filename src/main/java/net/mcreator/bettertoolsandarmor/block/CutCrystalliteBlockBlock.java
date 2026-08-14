@@ -24,9 +24,9 @@ import net.mcreator.bettertoolsandarmor.procedures.CheckForNetheriteTierToolProc
 public class CutCrystalliteBlockBlock extends Block {
 	public CutCrystalliteBlockBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.ICE)
-				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_break")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_step")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_place")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_shimmer")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_break"))))
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_block.break")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_block.step")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_block.place")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_shimmer")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_block.fall"))))
 				.strength(40f, 1200f).lightLevel(blockstate -> 4).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
 				.instrument(NoteBlockInstrument.BASEDRUM));
 	}

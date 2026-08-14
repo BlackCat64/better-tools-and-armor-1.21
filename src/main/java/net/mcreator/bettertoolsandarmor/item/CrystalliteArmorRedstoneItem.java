@@ -39,7 +39,7 @@ public abstract class CrystalliteArmorRedstoneItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 8);
-			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("better_tools:crystallite_step")),
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("block.amethyst_block.step")),
 					() -> Ingredient.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_GEM.get()), new ItemStack(Items.REDSTONE)),
 					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:crystallite_redstone_"))), 2.5f, 0.125f);
 			registerHelper.register(ResourceLocation.parse("better_tools:crystallite_armor_redstone"), armorMaterial);

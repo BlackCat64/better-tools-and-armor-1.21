@@ -110,7 +110,7 @@
     "enchantability": 20,
     "toughness": 2.5,
     "knockbackResistance": 0.3,
-    "equipSound": "CUSTOM:crystallite_place",
+    "equipSound": "block.amethyst_block.step",
     "repairItems": [
       "CUSTOM:CrystaliteGem",
       "CUSTOM:CrystalliteShards",

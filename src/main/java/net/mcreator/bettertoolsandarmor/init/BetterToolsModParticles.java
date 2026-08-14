@@ -26,7 +26,6 @@ public class BetterToolsModParticles {
 		event.registerSpriteSet(BetterToolsModParticleTypes.FREEZE_BOOM_5.get(), FreezeBoom5Particle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.FREEZE_BOOM_6.get(), FreezeBoom6Particle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.CRYSTALLITE_SPIN_THORNS.get(), CrystalliteSpinThornsParticle::provider);
-		event.registerSpriteSet(BetterToolsModParticleTypes.WIND_BURST.get(), WindBurstParticle::provider);
 		event.registerSpriteSet(BetterToolsModParticleTypes.ORE_VISION_PARTICLE.get(), OreVisionParticleParticle::provider);
 	}
 }
