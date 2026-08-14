@@ -40,7 +40,6 @@ public class PitfallEffectAppliedProcedure {
 				if (world instanceof ServerLevel level) {
 					BlockDisplay display = EntityType.BLOCK_DISPLAY.create(level);
 					if (display != null) {
-						display.moveTo(x, y, z);
 						CompoundTag nbt = new CompoundTag();
 						CompoundTag blockState = new CompoundTag();
 						blockState.putString("Name", "minecraft:mud");
@@ -54,6 +53,7 @@ public class PitfallEffectAppliedProcedure {
 						nbt.put("transformation", transformation);
 						// Load NBT data into Block Display
 						display.load(nbt);
+						display.setPos(x, y, z);
 						display.getPersistentData().putBoolean("trapped_in_ground", true);
 						level.addFreshEntity(display);
 						entity.getPersistentData().putString("pitfall_block_display", (display.getStringUUID()));

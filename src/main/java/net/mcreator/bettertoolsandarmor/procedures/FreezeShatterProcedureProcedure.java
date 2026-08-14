@@ -52,6 +52,7 @@ public class FreezeShatterProcedureProcedure {
 				_cancellable.setCanceled(true);
 			}
 			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:freeze_shatter_damage"))), immediatesourceentity, sourceentity), (float) (amount + 3));
+			DeleteEntityIceBlockDisplayProcedure.execute(world, entity, true);
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(BetterToolsModMobEffects.FROZEN);
 			if (immediatesourceentity.getData(BetterToolsModVariables.PLAYER_VARIABLES).critical_hit) {
