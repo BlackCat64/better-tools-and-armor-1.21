@@ -10,7 +10,6 @@
     "textureLeggings": "end_titanium_leggings",
     "enableBoots": true,
     "textureBoots": "end_titanium_boots",
-    "onLeggingsTick": "EndTitaniumLeggingsProcedure",
     "creativeTabs": [
       "CUSTOM:ToolsAndArmorTab"
     ],

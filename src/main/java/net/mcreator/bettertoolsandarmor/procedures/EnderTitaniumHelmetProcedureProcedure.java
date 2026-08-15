@@ -10,8 +10,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
@@ -34,15 +32,12 @@ public class EnderTitaniumHelmetProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (sourceentity instanceof EnderMan) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get()) {
-				if (event instanceof ICancellableEvent _cancellable) {
-					_cancellable.setCanceled(true);
-				}
-			} else if (HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ENDER_GOGGLES.get()))) {
-				if (sourceentity instanceof Mob _entity)
-					_entity.setTarget(null);
+		if (sourceentity instanceof EnderMan && (IsWearingArmorTagProcedure.execute(entity, "better_tools:enderman_immune_armor") || HasCuriosItemEquippedProcedure.execute(world, entity, new ItemStack(BetterToolsModItems.ENDER_GOGGLES.get())))) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
 			}
+			if (sourceentity instanceof Mob _entity)
+				_entity.setTarget(null);
 		}
 	}
 }

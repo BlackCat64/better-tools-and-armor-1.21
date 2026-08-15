@@ -9,9 +9,9 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -31,7 +31,7 @@ public class EndTitaniumPickaxeProcedureProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, double breakSpeed) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_PICKAXE.get()
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hard_blocks_efficient_tools")))
 				&& world.getBlockState(BlockPos.containing(x, y, z)).getDestroySpeed(world, BlockPos.containing(x, y, z)) >= 50) {
 			if (event instanceof PlayerEvent.BreakSpeed _speed3)
 				_speed3.setNewSpeed((float) (breakSpeed * 3));

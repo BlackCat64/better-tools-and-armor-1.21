@@ -19,13 +19,13 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -53,98 +53,93 @@ public class EnderTitaniumArmorSaveFromVoid2Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, DamageSource damagesource, Entity entity) {
 		if (damagesource == null || entity == null)
 			return;
-		if (damagesource.is(DamageTypes.FELL_OUT_OF_WORLD)) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_LEGGINGS.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
-				if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).save_from_void_cooldown == 0) {
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					entity.fallDistance = 0;
-					if (!world.getBlockState(BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y - 1,
-							entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z)).canOcclude()) {
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL,
-											new Vec3(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y - 1),
-													entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z),
-											Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"fill ~-1 ~ ~-1 ~1 ~ ~1 end_stone destroy");
-					}
-					{
-						Entity _ent = entity;
-						double _tx = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x;
-						double _ty = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y;
-						double _tz = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z;
-						_ent.teleportTo(_tx, _ty, _tz);
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
-					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_HELMET.get(), 12000);
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_CHESTPLATE.get(), 12000);
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_LEGGINGS.get(), 12000);
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_BOOTS.get(), 12000);
-					{
-						BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
-						_vars.save_from_void_cooldown = 12000;
-						_vars.markSyncDirty();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.CRIT, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y + 0.25),
-								entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, 8, 3, 0.1, 1, 0.1);
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
-									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1);
-						} else {
-							_level.playLocalSound(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
-									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
-						}
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
-									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
-									entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-					if (entity instanceof LivingEntity _entity)
-						_entity.setHealth(2);
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1, false, false));
-					if (world instanceof ServerLevel _level) {
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).hurtAndBreak(130, _level, null, _stkprov -> {
-						});
-					}
-					if (world instanceof ServerLevel _level) {
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).hurtAndBreak(150, _level, null, _stkprov -> {
-						});
-					}
-					if (world instanceof ServerLevel _level) {
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).hurtAndBreak(160, _level, null, _stkprov -> {
-						});
-					}
-					if (world instanceof ServerLevel _level) {
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).hurtAndBreak(110, _level, null, _stkprov -> {
-						});
-					}
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:saved_from_void_adv"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
-						}
+		if (damagesource.is(DamageTypes.FELL_OUT_OF_WORLD) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_armor")))
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_armor")))
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_armor")))
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_armor")))
+				&& entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).save_from_void_cooldown == 0) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
+			}
+			entity.fallDistance = 0;
+			if (!world.getBlockState(BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y - 1,
+					entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z)).canOcclude()) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL,
+									new Vec3(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y - 1),
+											entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z),
+									Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"fill ~-1 ~ ~-1 ~1 ~ ~1 end_stone destroy");
+			}
+			{
+				Entity _ent = entity;
+				double _tx = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x;
+				double _ty = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y;
+				double _tz = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z;
+				_ent.teleportTo(_tx, _ty, _tz);
+				if (_ent instanceof ServerPlayer _serverPlayer)
+					_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
+			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_HELMET.get(), 12000);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_CHESTPLATE.get(), 12000);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_LEGGINGS.get(), 12000);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(BetterToolsModItems.END_TITANIUM_BOOTS.get(), 12000);
+			{
+				BetterToolsModVariables.PlayerVariables _vars = entity.getData(BetterToolsModVariables.PLAYER_VARIABLES);
+				_vars.save_from_void_cooldown = 12000;
+				_vars.markSyncDirty();
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+							entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1);
+				} else {
+					_level.playLocalSound(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+							entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
+				}
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+							entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1);
+				} else {
+					_level.playLocalSound(entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_x, entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_y,
+							entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_on_ground_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 200, 1, false, false));
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1, false, false));
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).hurtAndBreak(130, _level, null, _stkprov -> {
+				});
+			}
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).hurtAndBreak(150, _level, null, _stkprov -> {
+				});
+			}
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).hurtAndBreak(160, _level, null, _stkprov -> {
+				});
+			}
+			if (world instanceof ServerLevel _level) {
+				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).hurtAndBreak(110, _level, null, _stkprov -> {
+				});
+			}
+			if (entity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:saved_from_void_adv"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
 					}
 				}
 			}

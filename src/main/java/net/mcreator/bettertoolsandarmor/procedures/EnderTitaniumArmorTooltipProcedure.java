@@ -8,6 +8,8 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.Screen;
 
@@ -32,8 +34,7 @@ public class EnderTitaniumArmorTooltipProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_HELMET.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get() || itemstack.getItem() == BetterToolsModItems.END_TITANIUM_LEGGINGS.get()
-				|| itemstack.getItem() == BetterToolsModItems.END_TITANIUM_BOOTS.get()) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_armor")))) {
 			if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_CHESTPLATE.get()) {
 				tooltip.add(Component.literal("\u00A72 20% Teleport Chance"));
 			}

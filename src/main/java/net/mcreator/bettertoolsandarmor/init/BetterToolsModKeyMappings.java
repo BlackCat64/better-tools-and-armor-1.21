@@ -16,7 +16,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.bettertoolsandarmor.network.StickToCeilingKeyMessage;
-import net.mcreator.bettertoolsandarmor.network.FloatKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.EnergyVialToggleKeyMessage;
 import net.mcreator.bettertoolsandarmor.network.DoubleJumpKeyMessage;
 
@@ -31,19 +30,6 @@ public class BetterToolsModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				PacketDistributor.sendToServer(new DoubleJumpKeyMessage(0, 0));
 				DoubleJumpKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping FLOAT_KEY = new KeyMapping("key.better_tools.float_key", GLFW.GLFW_KEY_LEFT_SHIFT, "key.category.better_tools.better_tools") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new FloatKeyMessage(0, 0));
-				FloatKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -84,7 +70,6 @@ public class BetterToolsModKeyMappings {
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DOUBLE_JUMP_KEY);
-		event.register(FLOAT_KEY);
 		event.register(STICK_TO_CEILING_KEY);
 		event.register(ENERGY_VIAL_TOGGLE_KEY);
 	}
@@ -95,7 +80,6 @@ public class BetterToolsModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				DOUBLE_JUMP_KEY.consumeClick();
-				FLOAT_KEY.consumeClick();
 				STICK_TO_CEILING_KEY.consumeClick();
 				ENERGY_VIAL_TOGGLE_KEY.consumeClick();
 			}

@@ -8724,59 +8724,8 @@
             "type": "entity"
           },
           {
-            "name": "x",
+            "name": "breakSpeed",
             "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Ender Titanium"
-    },
-    {
-      "name": "EndTitaniumHoeProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_titanium_hoe_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EndTitaniumHoeProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -9755,19 +9704,6 @@
         ]
       },
       "path": "~/Crystallite/Topaz"
-    },
-    {
-      "name": "FloatKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "float_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/network/FloatKeyMessage.java"
-        ]
-      },
-      "path": "~/Ender Titanium"
     },
     {
       "name": "EnderTitaniumBootsFloat",
@@ -34635,6 +34571,42 @@
         ]
       },
       "path": "~/Staffs"
+    },
+    {
+      "name": "EndTitaniumShovelHarvestProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_titanium_shovel_harvest_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EndTitaniumShovelHarvestProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Ender Titanium"
+    },
+    {
+      "name": "EnderTitaniumBlockReverseRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_titanium_block_reverse_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipe/ender_titanium_block_reverse_recipe.json"
+        ]
+      },
+      "path": "~/Ender Titanium"
     }
   ],
   "variable_elements": [
@@ -37012,6 +36984,7 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.helmet",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.helmet",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.helmet",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.helmet",
@@ -37037,7 +37010,6 @@
       "~TopazArmor@CUSTOM:TopazArmor.helmet",
       "~SapphireArmor@CUSTOM:SapphireArmor.helmet",
       "~GlassArmor@CUSTOM:GlassArmor.helmet",
-      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.helmet",
       "~DiamondCryingObsidianHelmet@CUSTOM:DiamondCryingObsidianHelmet.helmet",
       "~CryingObsidianHelmet@CUSTOM:CryingObsidianHelmet.helmet",
       "~DiamondGoldCarrotHat@CUSTOM:DiamondGoldCarrotHat.helmet",
@@ -37046,6 +37018,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.body",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.body",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.body",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.body",
@@ -37074,13 +37047,13 @@
       "~DiamondMagmaBody@CUSTOM:DiamondMagmaBody.body",
       "~MagmaBody@CUSTOM:MagmaBody.body",
       "~GlassArmor@CUSTOM:GlassArmor.body",
-      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.body",
       "~DiamondHeartyBody@CUSTOM:DiamondHeartyBody.body",
       "~IronHeartyBody@CUSTOM:IronHeartyBody.body",
       "~HeartyBody@CUSTOM:HeartyBody.body",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.legs",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.legs",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.legs",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.legs",
@@ -37104,7 +37077,6 @@
       "~TopazArmor@CUSTOM:TopazArmor.legs",
       "~SapphireArmor@CUSTOM:SapphireArmor.legs",
       "~GlassArmor@CUSTOM:GlassArmor.legs",
-      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.legs",
       "~DiamondBlackstoneLegs@CUSTOM:DiamondBlackstoneLegs.legs",
       "~DiamondCrystalLegs@CUSTOM:DiamondCrystalLegs.legs",
       "~DiamondRubyLegs@CUSTOM:DiamondRubyLegs.legs",
@@ -37114,6 +37086,7 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.boots",
       "~WingedBoots@CUSTOM:WingedBoots.boots",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.boots",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.boots",
@@ -37139,7 +37112,6 @@
       "~TopazArmor@CUSTOM:TopazArmor.boots",
       "~SapphireArmor@CUSTOM:SapphireArmor.boots",
       "~GlassArmor@CUSTOM:GlassArmor.boots",
-      "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.boots",
       "~DiamondPhantomBoots@CUSTOM:DiamondPhantomBoots.boots",
       "~DiamondRabbitBoots@CUSTOM:DiamondRabbitBoots.boots",
       "~DiamondSugarBoots@CUSTOM:DiamondSugarBoots.boots",
@@ -37930,6 +37902,33 @@
       "CUSTOM:ElectricStaff",
       "CUSTOM:IceStaff",
       "CUSTOM:FireStaff"
+    ],
+    "ITEMS:mod:end_stone_efficient_tools": [
+      "CUSTOM:EndTitaniumShovel"
+    ],
+    "ITEMS:mod:purpur_efficient_tools": [
+      "CUSTOM:EndTitaniumHoe"
+    ],
+    "ITEMS:mod:hard_blocks_efficient_tools": [
+      "CUSTOM:EndTitaniumPickaxe"
+    ],
+    "ITEMS:mod:teleport_thorns_armor": [
+      "CUSTOM:EndTitaniumArmor.body"
+    ],
+    "ITEMS:mod:enderman_immune_armor": [
+      "CUSTOM:EndTitaniumArmor.helmet"
+    ],
+    "ITEMS:mod:levitation_immune_armor": [
+      "CUSTOM:EndTitaniumArmor.legs"
+    ],
+    "ITEMS:mod:slow_falling_boots": [
+      "CUSTOM:EndTitaniumArmor.boots"
+    ],
+    "ITEMS:mod:ender_titanium_armor": [
+      "CUSTOM:EndTitaniumArmor.helmet",
+      "CUSTOM:EndTitaniumArmor.body",
+      "CUSTOM:EndTitaniumArmor.legs",
+      "CUSTOM:EndTitaniumArmor.boots"
     ]
   },
   "tab_element_order": {
@@ -39238,7 +39237,6 @@
       "item.minecraft.potion.effect.double_jump_potion_long": "Potion of Double Jump",
       "block.better_tools.purple_mushroom_block": "Purple Mushroom Block",
       "item.better_tools.crystallite_shovel_netherite": "Crystallite Shovel",
-      "key.better_tools.float_key": "Float when wearing Ender Titanium Boots",
       "item.better_tools.crystallite_armor_emerald_boots": "Crystallite Boots",
       "item.better_tools.ascension_potion": "Potion of Ascension",
       "item.better_tools.hive_crystal.description_0": "§7Element: §6Honey",

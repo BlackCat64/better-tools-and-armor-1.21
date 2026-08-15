@@ -19,6 +19,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 import net.minecraft.ChatFormatting;
 
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
+
 import javax.annotation.Nullable;
 
 import java.util.List;
@@ -43,14 +45,14 @@ public class EnderTitaniumSwordTooltipProcedure {
 		double replaceLine = 0;
 		double dmg_boost = 0;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:ender_titanium_weapons")))) {
-			if ((entity.level().dimension()) == Level.END) {
-				if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")))) {
-					damage = 10;
-				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
-					damage = 11;
-				} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:daggers")))) {
-					damage = 8;
-				}
+			if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_SWORD.get()) {
+				damage = 10;
+			} else if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_AXE.get()) {
+				damage = 11;
+			} else if (itemstack.getItem() == BetterToolsModItems.END_TITANIUM_DAGGER.get()) {
+				damage = 8;
+			}
+			if ((entity.level().dimension()) == Level.END && damage > 0) {
 				damage = damage + 3;
 				if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 0) {
 					damage = damage + 0.5 + 0.5 * itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS));

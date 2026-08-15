@@ -18,27 +18,25 @@ import net.minecraft.resources.ResourceLocation;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class EndTitaniumShovelProcedureProcedure {
+public class EndTitaniumShovelHarvestProcedureProcedure {
 	@SubscribeEvent
-	public static void onBlockBreaking(PlayerEvent.BreakSpeed event) {
-		if (event.getPosition().isEmpty())
-			return;
-		execute(event, event.getState(), event.getEntity(), event.getNewSpeed());
+	public static void onHarvestCheck(PlayerEvent.HarvestCheck event) {
+		execute(event, event.getTargetBlock(), event.getEntity());
 	}
 
-	public static void execute(BlockState blockstate, Entity entity, double breakSpeed) {
-		execute(null, blockstate, entity, breakSpeed);
+	public static void execute(BlockState blockstate, Entity entity) {
+		execute(null, blockstate, entity);
 	}
 
-	private static void execute(@Nullable Event event, BlockState blockstate, Entity entity, double breakSpeed) {
+	private static void execute(@Nullable Event event, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:end_stone_efficient_tools"))) && blockstate.getBlock() == Blocks.END_STONE
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:purpur_efficient_tools")))
 								&& blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:purpur_blocks"))))) {
-			if (event instanceof PlayerEvent.BreakSpeed _speed9)
-				_speed9.setNewSpeed((float) (breakSpeed * 1000));
+			if (event instanceof PlayerEvent.HarvestCheck _harvest9)
+				_harvest9.setCanHarvest(true);
 		}
 	}
 }
