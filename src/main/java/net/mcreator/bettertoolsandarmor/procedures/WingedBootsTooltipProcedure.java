@@ -33,8 +33,8 @@ public class WingedBootsTooltipProcedure {
 			return;
 		if (itemstack.getItem() == BetterToolsModItems.WINGED_BOOTS_BOOTS.get()) {
 			tooltip.add(Component.literal("\u00A77Effect Applied:"));
-			tooltip.add(Component.literal("\u00A79Double Jump"));
-			tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c50 \u00A76/ Jump"));
+			tooltip.add(Component.literal("\u00A79+1 Extra Jumps"));
+			tooltip.add(Component.literal("\u00A77Energy Cost: \u00A7c50 \u00A76/ Mid-air Jump"));
 		}
 	}
 }

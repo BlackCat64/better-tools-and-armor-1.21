@@ -5332,25 +5332,6 @@
       "path": "~/Double Jump"
     },
     {
-      "name": "DoubleJumpProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "double_jump_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DoubleJumpProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Double Jump"
-    },
-    {
       "name": "DoubleJumpKeyPress",
       "type": "procedure",
       "compiles": true,
@@ -34418,10 +34399,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -34607,6 +34584,59 @@
         ]
       },
       "path": "~/Ender Titanium"
+    },
+    {
+      "name": "ExtraJumps",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extra_jumps",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Double Jump"
+    },
+    {
+      "name": "ResetExtraJumps",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_extra_jumps",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ResetExtraJumpsProcedure.java"
+        ]
+      },
+      "path": "~/Double Jump"
+    },
+    {
+      "name": "WingedBootsExtraJumps",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "winged_boots_extra_jumps",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/WingedBootsExtraJumpsProcedure.java"
+        ]
+      },
+      "path": "~/Effect Armor/Winged Boots"
     }
   ],
   "variable_elements": [
@@ -38640,7 +38670,7 @@
       "item.better_tools.crystallite_sword_amethyst.description_1": "§7Ability:",
       "advancements.aimbot_adv.descr": "Shoot a mob from at least 30 blocks away with a homing arrow",
       "enchantment.better_tools.thunder_shot": "Thunder Shot",
-      "item.better_tools.end_titanium_boots.description_1": "§5Press §b[Left Shift] §5in mid-air for 5s Slow Falling",
+      "item.better_tools.end_titanium_boots.description_1": "§5Sneak in mid-air for 5s Slow Falling",
       "item.better_tools.end_titanium_boots.description_2": "§7Full-set bonus:",
       "item.better_tools.end_titanium_boots.description_0": "§7Ability:",
       "item.better_tools.crystallite_pickaxe_amethyst.description_2": "§dEcholocation - Right-click while crouching to point towards nearby ores/loot",
@@ -39446,7 +39476,7 @@
       "item.better_tools.crystallite_hoe_honey.description_2": "§6Swarm - Mining the same block 10 times in a row causes it to break instantly",
       "item.better_tools.crystallite_hoe_honey.description_1": "§7Abilities:",
       "advancements.crystallite_gem_adv.title": "Local Jeweller",
-      "item.better_tools.end_titanium_leggings.description_1": "§5Levitation Resistant",
+      "item.better_tools.end_titanium_leggings.description_1": "§5Levitation immue",
       "item.better_tools.end_titanium_leggings.description_0": "§7Ability:",
       "item.better_tools.end_titanium_leggings.description_3": "§5Saves from void death",
       "item.better_tools.end_titanium_leggings.description_2": "§7Full-set bonus:",
@@ -40229,7 +40259,8 @@
       "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:",
       "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP.",
       "item.better_tools.crystallite_armor_prismarine_helmet.description_3": "§3Mining Fatigue immune",
-      "jei.better_tools.reduced_freezing_armor_info": "§lWhen worn:§r\nImmune to freezing in Powder Snow.\nDuration of all §9Frozen§r effects is shortened to 5s."
+      "jei.better_tools.reduced_freezing_armor_info": "§lWhen worn:§r\nImmune to freezing in Powder Snow.\nDuration of all §9Frozen§r effects is shortened to 5s.",
+      "attribute.better_tools.extra_jumps": "Extra Jumps"
     }
   },
   "metadata": {

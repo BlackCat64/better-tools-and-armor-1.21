@@ -12,7 +12,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": "CUSTOM:WingedBoots.boots",
-    "smithingInputAdditionStack": "Items.PHANTOM_MEMBRANE",
+    "smithingInputAdditionStack": "Items.WIND_CHARGE",
     "smithingInputTemplateStack": "CUSTOM:CrystalliteUpgradeSmithingTemplate",
     "smithingReturnStack": "CUSTOM:CrystalliteArmorSky.boots",
     "name": "winged_boots_reverse_recipe",

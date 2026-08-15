@@ -16,7 +16,11 @@
     "isCuredbyHoney": false,
     "modifiers": [
       {
-        "equipmentSlot": "any",
+        "attribute": "CUSTOM:ExtraJumps",
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      },
+      {
         "attribute": "SAFE_FALL_DISTANCE",
         "amount": 1.0,
         "operation": "ADD_VALUE"

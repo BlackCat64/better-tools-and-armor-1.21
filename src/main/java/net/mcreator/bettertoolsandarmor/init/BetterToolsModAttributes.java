@@ -26,6 +26,7 @@ public class BetterToolsModAttributes {
 	public static final DeferredHolder<Attribute, Attribute> ATTACK_FREEZE_CHANCE = REGISTRY.register("attack_freeze_chance", () -> new RangedAttribute("attribute.better_tools.attack_freeze_chance", 0d, 0d, 1d).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> ATTACK_FREEZE_TIME = REGISTRY.register("attack_freeze_time", () -> new RangedAttribute("attribute.better_tools.attack_freeze_time", 0d, 0d, 20000d).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> LIGHTNING_THORNS_CHANCE = REGISTRY.register("lightning_thorns_chance", () -> new RangedAttribute("attribute.better_tools.lightning_thorns_chance", 0d, 0d, 1d).setSyncable(true));
+	public static final DeferredHolder<Attribute, Attribute> EXTRA_JUMPS = REGISTRY.register("extra_jumps", () -> new RangedAttribute("attribute.better_tools.extra_jumps", 0d, 0d, 10d).setSyncable(true));
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
@@ -36,5 +37,6 @@ public class BetterToolsModAttributes {
 		event.getTypes().forEach(entity -> event.add(entity, ATTACK_FREEZE_CHANCE));
 		event.getTypes().forEach(entity -> event.add(entity, ATTACK_FREEZE_TIME));
 		event.getTypes().forEach(entity -> event.add(entity, LIGHTNING_THORNS_CHANCE));
+		event.add(EntityType.PLAYER, EXTRA_JUMPS);
 	}
 }

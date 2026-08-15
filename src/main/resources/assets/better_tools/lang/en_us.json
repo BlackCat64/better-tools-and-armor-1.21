@@ -329,7 +329,7 @@
   "item.better_tools.crystallite_sword_amethyst.description_1": "§7Ability:",
   "advancements.aimbot_adv.descr": "Shoot a mob from at least 30 blocks away with a homing arrow",
   "enchantment.better_tools.thunder_shot": "Thunder Shot",
-  "item.better_tools.end_titanium_boots.description_1": "§5Press §b[Left Shift] §5in mid-air for 5s Slow Falling",
+  "item.better_tools.end_titanium_boots.description_1": "§5Sneak in mid-air for 5s Slow Falling",
   "item.better_tools.end_titanium_boots.description_2": "§7Full-set bonus:",
   "item.better_tools.end_titanium_boots.description_0": "§7Ability:",
   "item.better_tools.crystallite_pickaxe_amethyst.description_2": "§dEcholocation - Right-click while crouching to point towards nearby ores/loot",
@@ -1135,7 +1135,7 @@
   "item.better_tools.crystallite_hoe_honey.description_2": "§6Swarm - Mining the same block 10 times in a row causes it to break instantly",
   "item.better_tools.crystallite_hoe_honey.description_1": "§7Abilities:",
   "advancements.crystallite_gem_adv.title": "Local Jeweller",
-  "item.better_tools.end_titanium_leggings.description_1": "§5Levitation Resistant",
+  "item.better_tools.end_titanium_leggings.description_1": "§5Levitation immue",
   "item.better_tools.end_titanium_leggings.description_0": "§7Ability:",
   "item.better_tools.end_titanium_leggings.description_3": "§5Saves from void death",
   "item.better_tools.end_titanium_leggings.description_2": "§7Full-set bonus:",
@@ -1918,5 +1918,6 @@
   "item.better_tools.crystallite_bow_honey.description_1": "§7Ability:",
   "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP.",
   "item.better_tools.crystallite_armor_prismarine_helmet.description_3": "§3Mining Fatigue immune",
-  "jei.better_tools.reduced_freezing_armor_info": "§lWhen worn:§r\nImmune to freezing in Powder Snow.\nDuration of all §9Frozen§r effects is shortened to 5s."
+  "jei.better_tools.reduced_freezing_armor_info": "§lWhen worn:§r\nImmune to freezing in Powder Snow.\nDuration of all §9Frozen§r effects is shortened to 5s.",
+  "attribute.better_tools.extra_jumps": "Extra Jumps"
 }

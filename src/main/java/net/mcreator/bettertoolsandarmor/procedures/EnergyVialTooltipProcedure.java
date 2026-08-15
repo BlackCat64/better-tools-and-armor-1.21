@@ -14,10 +14,13 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.ChatFormatting;
 
 import net.mcreator.bettertoolsandarmor.network.BetterToolsModVariables;
+import net.mcreator.bettertoolsandarmor.init.BetterToolsModKeyMappings;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
@@ -40,6 +43,7 @@ public class EnergyVialTooltipProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		double energy = 0;
+		MutableComponent keybind = Component.empty();
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("better_tools:energy_vials")))) {
 			energy = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("energy");
 			tooltip.add(Component.literal(""));
@@ -62,7 +66,9 @@ public class EnergyVialTooltipProcedure {
 					tooltip.add(Component.literal("\u00A773-piece bonus: \u00A7a1/2 Energy Cost"));
 				}
 			}
-			tooltip.add(Component.literal("\u00A78Press \u00A77[V]\u00A78 while equipped to access menu"));
+			keybind = (MutableComponent) BetterToolsModKeyMappings.ENERGY_VIAL_TOGGLE_KEY.getKey().getDisplayName();
+			ReplaceTooltipLineWithComponentProcedure.execute(Component.literal("Press ").withStyle(ChatFormatting.DARK_GRAY).append(Component.literal("[").append(keybind).append(Component.literal("]")).withStyle(ChatFormatting.GRAY))
+					.append(Component.literal(" while equipped to access menu").withStyle(ChatFormatting.DARK_GRAY)), -1, tooltip);
 		}
 	}
 }
