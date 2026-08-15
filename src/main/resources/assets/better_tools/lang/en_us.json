@@ -310,7 +310,7 @@
   "item.better_tools.crystallite_armor_honey_helmet.description_0": "§7Upgrade: §6Honey",
   "itemGroup.tabeffect_armor_tab": "BT+A - Effect Armor",
   "item.better_tools.crystallite_sword_sculk.description_0": "§7Upgrade: §3Sculk",
-  "item.better_tools.crystallite_armor_honey_helmet.description_2": "§6Sticky - Can stick to ceilings by holding §b[SPACE]",
+  "item.better_tools.crystallite_armor_honey_helmet.description_2": "§6Sticky - Can stick to ceilings by holding §7[SPACE]",
   "block.better_tools.polished_nether_diamond_slab": "Dark Pink Metal Slab",
   "item.better_tools.crystallite_hoe_netherite.description_3": "§8Mines all Crimson and Warped blocks instantly",
   "item.better_tools.crystallite_hoe_netherite.description_2": "§8Nether Infused - Right-click to remove any Wither effects",
@@ -815,7 +815,7 @@
   "item.better_tools.crystallite_bow_nether_diamond.description_0": "§7Upgrade: §4Nether Diamond",
   "item.better_tools.crystallite_axe_netherite": "Crystallite Axe",
   "item.minecraft.potion.effect.swift_swim_potion_long": "Potion of Rapidity",
-  "item.better_tools.honeycomb_helmet.description_0": "§6Can stick to ceilings by holding §b[SPACE]",
+  "item.better_tools.honeycomb_helmet.description_0": "§6Can stick to ceilings by holding §7[SPACE]",
   "item.minecraft.potion.effect.swift_swim_potion": "Potion of Rapidity",
   "advancements.ascend_to_top_of_world.title": "Going up in the World",
   "advancements.fizzy_drinks_adv.descr": "Survive on only carbonated drinks for a whole day",
@@ -974,7 +974,7 @@
   "item.better_tools.crystallite_armor_iron_leggings.description_1": "§7Ability:",
   "item.better_tools.crystallite_armor_iron_leggings.description_0": "§7Upgrade: §fIron",
   "advancements.all_diamond_effect_armor_adv.title": "Effect Emperor",
-  "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §b[SPACE] §r(keybind is separate from Jump)",
+  "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §3[SPACE] §r(keybind is separate from Jump)",
   "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
   "item.better_tools.flint_pickaxe": "Flint Pickaxe",
   "item.better_tools.crystallite_hoe_lapis.description_0": "§7Upgrade: §9Lapis Lazuli",
@@ -1919,5 +1919,7 @@
   "jei.better_tools.hearty_shirt_info": "§lHearty Shirt§r\n\nAdds 1HP of Absorption every 5s, when worn.\nUses energy from an Energy Vial.\nNo energy is used when full on Absorption HP.",
   "item.better_tools.crystallite_armor_prismarine_helmet.description_3": "§3Mining Fatigue immune",
   "jei.better_tools.reduced_freezing_armor_info": "§lWhen worn:§r\nImmune to freezing in Powder Snow.\nDuration of all §9Frozen§r effects is shortened to 5s.",
-  "attribute.better_tools.extra_jumps": "Extra Jumps"
+  "attribute.better_tools.extra_jumps": "Extra Jumps",
+  "key.categories.better_tools.better_tools": "Better Tools and Armor",
+  "key.category.better_tools.better_tools": "Better Tools and Armor"
 }
