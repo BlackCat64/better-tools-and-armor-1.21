@@ -47,9 +47,8 @@ public class StrippedWoodProcedureProcedure {
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
 			tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		}
-		if (!(tool.getItem() == ItemStack.EMPTY.getItem() || tool.is(ItemTags.create(ResourceLocation.parse("minecraft:pickaxes"))) || tool.is(ItemTags.create(ResourceLocation.parse("minecraft:shovels"))))
-				&& blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !(BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).contains(":stripped_")
-				&& !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+		if (!(tool.getItem() == ItemStack.EMPTY.getItem() || tool.is(ItemTags.create(ResourceLocation.parse("c:tools/multitool")))) && blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))
+				&& !(BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString()).contains(":stripped_") && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5 + direction.getStepX()), (y + 0.5 + direction.getStepY()), (z + 0.5 + direction.getStepZ()), new ItemStack(BetterToolsModItems.BARK.get()));
 				entityToSpawn.setPickUpDelay(10);
