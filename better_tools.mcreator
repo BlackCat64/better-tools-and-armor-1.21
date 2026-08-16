@@ -38109,6 +38109,9 @@
     ],
     "ITEMS:mod:ore_silk_touch_pickaxes": [
       "CUSTOM:CrystallitePickaxeSapphire"
+    ],
+    "ITEMS:mod:hive_heart_armor": [
+      "CUSTOM:CrystalliteArmorHoney.body"
     ]
   },
   "tab_element_order": {
