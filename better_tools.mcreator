@@ -38103,6 +38103,12 @@
       "Blocks.TRIAL_SPAWNER",
       "Blocks.VAULT",
       "Blocks.REINFORCED_DEEPSLATE"
+    ],
+    "BLOCKS:minecraft:features_cannot_replace": [
+      "CUSTOM:CrystalliteBlock"
+    ],
+    "ITEMS:mod:ore_silk_touch_pickaxes": [
+      "CUSTOM:CrystallitePickaxeSapphire"
     ]
   },
   "tab_element_order": {
