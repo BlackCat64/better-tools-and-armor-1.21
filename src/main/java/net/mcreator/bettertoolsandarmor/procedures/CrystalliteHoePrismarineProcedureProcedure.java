@@ -58,10 +58,10 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 				sx = -1;
 				sz = -1;
 				tilled = 0;
-				for (int index50 = 0; index50 < 3; index50++) {
-					for (int index51 = 0; index51 < 3; index51++) {
+				for (int index70 = 0; index70 < 3; index70++) {
+					for (int index71 = 0; index71 < 3; index71++) {
 						current = (world.getBlockState(BlockPos.containing(x + sx, y, z + sz)));
-						if (!world.getBlockState(BlockPos.containing(x + sx, y + 1, z + sz)).canOcclude()) {
+						if (world.isEmptyBlock(BlockPos.containing(x + sx, y + 1, z + sz))) {
 							if (current.getBlock() == Blocks.FARMLAND && ModList.get().isLoaded("aquaculture") || current.is(BlockTags.create(ResourceLocation.parse("better_tools:hoe_allowed_blocks")))) {
 								if (ModList.get().isLoaded("aquaculture")) {
 									world.setBlock(BlockPos.containing(x + sx, y, z + sz), BuiltInRegistries.BLOCK.get(ResourceLocation.parse("aquaculture:farmland")).defaultBlockState(), 3);

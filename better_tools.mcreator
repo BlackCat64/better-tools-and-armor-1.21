@@ -15618,12 +15618,12 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "blockstate",
+            "type": "blockstate"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "x",
@@ -35403,6 +35403,7 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CrystalliteShovelLapis@CUSTOM:CrystalliteShovelLapis",
       "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
       "~CrystalliteShovelAmethyst@CUSTOM:CrystalliteShovelAmethyst",
       "~CrystalliteShovelRedstone@CUSTOM:CrystalliteShovelRedstone",
@@ -35418,7 +35419,6 @@
       "~CrystalliteShovelRuby@CUSTOM:CrystalliteShovelRuby",
       "~CrystalliteShovelNetherite@CUSTOM:CrystalliteShovelNetherite",
       "~CrystalliteShovelDiamond@CUSTOM:CrystalliteShovelDiamond",
-      "~CrystalliteShovelLapis@CUSTOM:CrystalliteShovelLapis",
       "~CrystalliteShovelGold@CUSTOM:CrystalliteShovelGold",
       "~CrystalliteShovelIron@CUSTOM:CrystalliteShovelIron",
       "~CrystalliteShovel@CUSTOM:CrystalliteShovel",
@@ -38003,6 +38003,12 @@
       "CUSTOM:EndTitaniumArmor.body",
       "CUSTOM:EndTitaniumArmor.legs",
       "CUSTOM:EndTitaniumArmor.boots"
+    ],
+    "ITEMS:mod:experience_hoes": [
+      "CUSTOM:CrystalliteHoeLapis"
+    ],
+    "ITEMS:mod:experience_shovels": [
+      "CUSTOM:CrystalliteShovelLapis"
     ]
   },
   "tab_element_order": {
