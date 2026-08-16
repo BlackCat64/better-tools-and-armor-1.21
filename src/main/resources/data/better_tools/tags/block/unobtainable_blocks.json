@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:trial_spawner",
+    "better_tools:climbable_wall",
+    "minecraft:cave_air",
+    "minecraft:water",
+    "minecraft:spawner",
+    "minecraft:powder_snow",
+    "better_tools:crystallite_cluster_air",
+    "minecraft:budding_amethyst",
+    "minecraft:vault",
+    "minecraft:void_air",
+    "minecraft:air",
+    "minecraft:reinforced_deepslate",
+    "minecraft:bubble_column",
+    "minecraft:frosted_ice",
+    "minecraft:frogspawn",
+    "minecraft:lava"
+  ]
+}

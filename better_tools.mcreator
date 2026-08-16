@@ -15376,10 +15376,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -35473,6 +35469,7 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CrystalliteShovelSculk@CUSTOM:CrystalliteShovelSculk",
       "~CrystalliteShovelNetherite@CUSTOM:CrystalliteShovelNetherite",
       "~CrystalliteShovelLapis@CUSTOM:CrystalliteShovelLapis",
       "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
@@ -35482,7 +35479,6 @@
       "~CrystalliteShovelRedstoneUpgrade1@CUSTOM:CrystalliteShovelRedstoneUpgrade1",
       "~CrystalliteShovelPrismarine@CUSTOM:CrystalliteShovelPrismarine",
       "~CrystalliteShovelSky@CUSTOM:CrystalliteShovelSky",
-      "~CrystalliteShovelSculk@CUSTOM:CrystalliteShovelSculk",
       "~CrystalliteShovelEmerald@CUSTOM:CrystalliteShovelEmerald",
       "~CrystalliteShovelNetherDiamond@CUSTOM:CrystalliteShovelNetherDiamond",
       "~CrystalliteShovelTopaz@CUSTOM:CrystalliteShovelTopaz",
@@ -38083,6 +38079,30 @@
     "ITEMS:mod:wither_curing_tools": [
       "CUSTOM:CrystalliteShovelNetherite",
       "CUSTOM:CrystalliteHoeNetherite"
+    ],
+    "ITEMS:mod:excavating_shovels": [
+      "CUSTOM:CrystalliteShovelSculk"
+    ],
+    "ITEMS:mod:silent_mining_hoes": [
+      "CUSTOM:CrystalliteHoeSculk"
+    ],
+    "BLOCKS:mod:unobtainable_blocks": [
+      "CUSTOM:CrystalliteClusterAir",
+      "CUSTOM:ClimbableWall",
+      "Blocks.AIR",
+      "Blocks.VOID_AIR",
+      "Blocks.CAVE_AIR",
+      "Blocks.WATER",
+      "Blocks.BUBBLE_COLUMN",
+      "Blocks.LAVA",
+      "Blocks.BUDDING_AMETHYST",
+      "Blocks.FROGSPAWN",
+      "Blocks.FROSTED_ICE",
+      "Blocks.POWDER_SNOW",
+      "Blocks.MOB_SPAWNER",
+      "Blocks.TRIAL_SPAWNER",
+      "Blocks.VAULT",
+      "Blocks.REINFORCED_DEEPSLATE"
     ]
   },
   "tab_element_order": {

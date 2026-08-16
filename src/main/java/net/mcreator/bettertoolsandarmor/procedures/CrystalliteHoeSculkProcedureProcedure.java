@@ -23,6 +23,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
@@ -31,8 +32,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import javax.annotation.Nullable;
 
@@ -55,7 +54,8 @@ public class CrystalliteHoeSculkProcedureProcedure {
 		double sz = 0;
 		String reg_name = "";
 		reg_name = BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString();
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == BetterToolsModItems.CRYSTALLITE_HOE_SCULK.get() && getBlockInventorySlotCount(world, BlockPos.containing(x, y, z)) == 0) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:silent_mining_hoes")))
+				&& getBlockInventorySlotCount(world, BlockPos.containing(x, y, z)) == 0) {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}
@@ -75,12 +75,12 @@ public class CrystalliteHoeSculkProcedureProcedure {
 					_player.giveExperiencePoints(1);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.PLAYERS, 1, 1);
+						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.PLAYERS, 1, (float) 0.8);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.PLAYERS, 1, 1, false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.PLAYERS, 1, (float) 0.8, false);
 					}
 				}
-			} else {
+			} else if (!blockstate.is(BlockTags.create(ResourceLocation.parse("better_tools:unobtainable_blocks")))) {
 				if (!world.isClientSide() && world.getServer() != null) {
 					BlockPos _bpLootTblWorld = BlockPos.containing(x, y, z);
 					for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()

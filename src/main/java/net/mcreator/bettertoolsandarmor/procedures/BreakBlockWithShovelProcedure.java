@@ -15,14 +15,15 @@ public class BreakBlockWithShovelProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		ItemStack itemToDrop = ItemStack.EMPTY;
 		if (itemstack.isCorrectToolForDrops((world.getBlockState(BlockPos.containing(x, y, z))))) {
 			if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0) {
-				world.destroyBlock(BlockPos.containing(x, y, z), false);
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
+				world.destroyBlock(BlockPos.containing(x, y, z), false);
 			} else {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);

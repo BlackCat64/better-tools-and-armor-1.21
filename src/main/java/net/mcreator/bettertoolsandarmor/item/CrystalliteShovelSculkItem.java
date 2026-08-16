@@ -3,18 +3,13 @@ package net.mcreator.bettertoolsandarmor.item;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteShovelSculkProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 import java.util.List;
@@ -54,13 +49,6 @@ public class CrystalliteShovelSculkItem extends ShovelItem {
 
 	public CrystalliteShovelSculkItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 7f, -3f)).fireResistant());
-	}
-
-	@Override
-	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		CrystalliteShovelSculkProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate, entity, itemstack);
-		return retval;
 	}
 
 	@Override
