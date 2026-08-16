@@ -47,9 +47,14 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 		double sx = 0;
 		double sz = 0;
 		double tilled = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hydration_hoes")))
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hydration_hoes")))
-						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
+		ItemStack hoe = ItemStack.EMPTY;
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hydration_hoes")))) {
+			hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hydration_hoes")))
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
+			hoe = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		}
+		if (hoe.is(ItemTags.create(ResourceLocation.parse("better_tools:hydration_hoes")))) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("better_tools:hoe_allowed_blocks")))
 					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("better_tools:farmland")))) {
 				if (event instanceof ICancellableEvent _cancellable) {
@@ -57,13 +62,12 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 				}
 				sx = -1;
 				sz = -1;
-				tilled = 0;
-				for (int index70 = 0; index70 < 3; index70++) {
-					for (int index71 = 0; index71 < 3; index71++) {
+				for (int index1488 = 0; index1488 < 3; index1488++) {
+					for (int index1489 = 0; index1489 < 3; index1489++) {
 						current = (world.getBlockState(BlockPos.containing(x + sx, y, z + sz)));
 						if (world.isEmptyBlock(BlockPos.containing(x + sx, y + 1, z + sz))) {
-							if (current.getBlock() == Blocks.FARMLAND && ModList.get().isLoaded("aquaculture") || current.is(BlockTags.create(ResourceLocation.parse("better_tools:hoe_allowed_blocks")))) {
-								if (ModList.get().isLoaded("aquaculture")) {
+							if (current.is(BlockTags.create(ResourceLocation.parse("better_tools:hoe_allowed_blocks"))) || current.is(BlockTags.create(ResourceLocation.parse("better_tools:farmland")))) {
+								if (ModList.get().isLoaded("aquaculture") && !BuiltInRegistries.BLOCK.get(ResourceLocation.parse("aquaculture:farmland")).defaultBlockState().is(BlockTags.create(ResourceLocation.parse("minecraft:air")))) {
 									world.setBlock(BlockPos.containing(x + sx, y, z + sz), BuiltInRegistries.BLOCK.get(ResourceLocation.parse("aquaculture:farmland")).defaultBlockState(), 3);
 								} else {
 									world.setBlock(BlockPos.containing(x + sx, y, z + sz), Blocks.FARMLAND.defaultBlockState(), 3);
@@ -78,11 +82,10 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 								if (world instanceof Level _level)
 									_level.updateNeighborsAt(BlockPos.containing(x + sx, y, z + sz), _level.getBlockState(BlockPos.containing(x + sx, y, z + sz)).getBlock());
 								tilled = tilled + 1;
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x + sx, y, z + sz), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.hoe.till")), SoundSource.NEUTRAL, (float) 0.5, 1);
-									} else {
-										_level.playLocalSound((x + sx), y, (z + sz), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.hoe.till")), SoundSource.NEUTRAL, (float) 0.5, 1, false);
+								if (!current.is(BlockTags.create(ResourceLocation.parse("better_tools:farmland"))) && !(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+									if (world instanceof ServerLevel _level) {
+										hoe.hurtAndBreak(1, _level, null, _stkprov -> {
+										});
 									}
 								}
 							}
@@ -93,22 +96,17 @@ public class CrystalliteHoePrismarineProcedureProcedure {
 					sx = -1;
 				}
 				if (tilled > 0) {
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:hydration_hoes")))) {
-						if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-							if (world instanceof ServerLevel _level) {
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak((int) tilled, _level, null, _stkprov -> {
-								});
-							}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.hoe.till")), SoundSource.NEUTRAL, (float) 0.5, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.hoe.till")), SoundSource.NEUTRAL, (float) 0.5, 1, false);
 						}
+					}
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == hoe.getItem()) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.swing(InteractionHand.MAIN_HAND, true);
 					} else {
-						if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-							if (world instanceof ServerLevel _level) {
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).hurtAndBreak((int) tilled, _level, null, _stkprov -> {
-								});
-							}
-						}
 						if (entity instanceof LivingEntity _entity)
 							_entity.swing(InteractionHand.OFF_HAND, true);
 					}
