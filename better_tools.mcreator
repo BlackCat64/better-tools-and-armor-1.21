@@ -34702,6 +34702,76 @@
         ]
       },
       "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteShovelNetheriteInMainHand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_netherite_in_main_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelNetheriteInMainHandProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CrystalliteShovelNetheriteInOffHand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_shovel_netherite_in_off_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteShovelNetheriteInOffHandProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Netherite"
     }
   ],
   "variable_elements": [
@@ -35403,6 +35473,7 @@
       "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CrystalliteShovelNetherite@CUSTOM:CrystalliteShovelNetherite",
       "~CrystalliteShovelLapis@CUSTOM:CrystalliteShovelLapis",
       "~CrystalliteShovelHoney@CUSTOM:CrystalliteShovelHoney",
       "~CrystalliteShovelAmethyst@CUSTOM:CrystalliteShovelAmethyst",
@@ -35417,7 +35488,6 @@
       "~CrystalliteShovelTopaz@CUSTOM:CrystalliteShovelTopaz",
       "~CrystalliteShovelSapphire@CUSTOM:CrystalliteShovelSapphire",
       "~CrystalliteShovelRuby@CUSTOM:CrystalliteShovelRuby",
-      "~CrystalliteShovelNetherite@CUSTOM:CrystalliteShovelNetherite",
       "~CrystalliteShovelDiamond@CUSTOM:CrystalliteShovelDiamond",
       "~CrystalliteShovelGold@CUSTOM:CrystalliteShovelGold",
       "~CrystalliteShovelIron@CUSTOM:CrystalliteShovelIron",
@@ -35775,6 +35845,7 @@
       "CUSTOM:CuringCharm"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CrystalliteHoeNetherite@CUSTOM:CrystalliteHoeNetherite",
       "~CrystalliteHoeHoney@CUSTOM:CrystalliteHoeHoney",
       "~CrystalliteHoeAmethyst@CUSTOM:CrystalliteHoeAmethyst",
       "~CrystalliteHoeRedstone@CUSTOM:CrystalliteHoeRedstone",
@@ -35788,7 +35859,6 @@
       "~CrystalliteHoeTopaz@CUSTOM:CrystalliteHoeTopaz",
       "~CrystalliteHoeSapphire@CUSTOM:CrystalliteHoeSapphire",
       "~CrystalliteHoeRuby@CUSTOM:CrystalliteHoeRuby",
-      "~CrystalliteHoeNetherite@CUSTOM:CrystalliteHoeNetherite",
       "~CrystalliteHoeDiamond@CUSTOM:CrystalliteHoeDiamond",
       "~CrystalliteHoeLapis@CUSTOM:CrystalliteHoeLapis",
       "~CrystalliteHoeGold@CUSTOM:CrystalliteHoeGold",
@@ -38009,6 +38079,10 @@
     ],
     "ITEMS:mod:experience_shovels": [
       "CUSTOM:CrystalliteShovelLapis"
+    ],
+    "ITEMS:mod:wither_curing_tools": [
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteHoeNetherite"
     ]
   },
   "tab_element_order": {

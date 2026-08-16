@@ -8,6 +8,7 @@
     "texture": "crystallite_shovel_netherite",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Crystallite Shovel",
     "rarity": "COMMON",
     "specialInformation": {
@@ -39,7 +40,6 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": "CrystalliteNetheriteShovelRemoveWither"
+    "damageOnCrafting": false
   }
 }
