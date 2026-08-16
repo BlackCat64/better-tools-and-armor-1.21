@@ -2,7 +2,13 @@
   "replace": false,
   "values": [
     "better_tools:crystallite_dagger_sky",
+    "better_tools:flint_shovel",
     "better_tools:crystallite_sword_sky",
-    "better_tools:crystallite_axe_sky"
+    "better_tools:flint_dagger",
+    "better_tools:flint_pickaxe",
+    "better_tools:crystallite_axe_sky",
+    "better_tools:flint_axe",
+    "better_tools:flint_hoe",
+    "better_tools:flint_sword"
   ]
 }

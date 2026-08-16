@@ -9,15 +9,12 @@ import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.*;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.bettertoolsandarmor.procedures.CrystalliteSwordGoldSplashDamageProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -74,12 +71,5 @@ public class CrystalliteDaggerGoldItem extends SwordItem {
 		list.add(Component.translatable("item.better_tools.crystallite_dagger_gold.description_0"));
 		list.add(Component.translatable("item.better_tools.crystallite_dagger_gold.description_1"));
 		list.add(Component.translatable("item.better_tools.crystallite_dagger_gold.description_2"));
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
-		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		CrystalliteSwordGoldSplashDamageProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
-		return retval;
 	}
 }

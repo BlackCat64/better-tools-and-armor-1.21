@@ -46,7 +46,6 @@
       }
     ],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntitySwing": "CrystalliteSwordGoldSplashDamage"
+    "damageOnCrafting": false
   }
 }

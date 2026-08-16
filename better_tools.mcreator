@@ -22899,24 +22899,12 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
+            "name": "attackedEntity",
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -34637,6 +34625,83 @@
         ]
       },
       "path": "~/Effect Armor/Winged Boots"
+    },
+    {
+      "name": "CrystalliteSwordGoldSpinAttackOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_gold_spin_attack_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordGoldSpinAttackOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteSwordGoldSpinAttackOnHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_gold_spin_attack_on_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordGoldSpinAttackOnHitProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
+    },
+    {
+      "name": "CrystalliteSwordGoldSpinAttackOnAir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallite_sword_gold_spin_attack_on_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteSwordGoldSpinAttackOnAirProcedure.java"
+        ]
+      },
+      "path": "~/Crystallite/Gold"
     }
   ],
   "variable_elements": [
@@ -35387,26 +35452,6 @@
       "Blocks.ROOTED_DIRT",
       "Blocks.GRASS",
       "Blocks.GRASS_PATH"
-    ],
-    "ITEMS:mod:netherite_tier_tools": [
-      "Items.NETHERITE_SWORD",
-      "Items.NETHERITE_SHOVEL",
-      "Items.NETHERITE_PICKAXE",
-      "Items.NETHERITE_AXE",
-      "Items.NETHERITE_HOE",
-      "CUSTOM:NetheriteDagger",
-      "CUSTOM:EndTitaniumSword",
-      "CUSTOM:EndTitaniumPickaxe",
-      "CUSTOM:EndTitaniumAxe",
-      "CUSTOM:EndTitaniumShovel",
-      "CUSTOM:EndTitaniumHoe",
-      "CUSTOM:EndTitaniumDagger",
-      "TAG:better_tools:crystallite_swords",
-      "TAG:better_tools:crystallite_pickaxes",
-      "TAG:better_tools:crystallite_axes",
-      "TAG:better_tools:crystallite_shovels",
-      "TAG:better_tools:crystallite_hoes",
-      "TAG:better_tools:crystallite_daggers"
     ],
     "ITEMS:mod:iron_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordIron",
@@ -36328,13 +36373,6 @@
       "Blocks.DIRT#2",
       "Blocks.ROOTED_DIRT"
     ],
-    "ITEMS:mod:magic_damage_tools": [
-      "CUSTOM:CrystalliteSwordLapis",
-      "CUSTOM:CrystalliteAxeLapis",
-      "CUSTOM:CrystalliteDaggerLapis",
-      "CUSTOM:LapisSword",
-      "CUSTOM:LapisDagger"
-    ],
     "ITEMS:mod:shockwave_boots": [
       "CUSTOM:CrystalliteArmorAmethyst.boots",
       "CUSTOM:DripstoneBoots.boots"
@@ -36606,7 +36644,13 @@
     "ITEMS:mod:increased_crit_multiplier_weapons": [
       "CUSTOM:CrystalliteSwordSky",
       "CUSTOM:CrystalliteAxeSky",
-      "CUSTOM:CrystalliteDaggerSky"
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:FlintDagger",
+      "CUSTOM:FlintSword",
+      "CUSTOM:FlintPickaxe",
+      "CUSTOM:FlintAxe",
+      "CUSTOM:FlintShovel",
+      "CUSTOM:FlintHoe"
     ],
     "ITEMS:mod:prismarine_upgraded_crystallite_items": [
       "CUSTOM:GuardianCrystal",
@@ -36756,6 +36800,8 @@
       "CUSTOM:DiamondGlassArmor.boots"
     ],
     "ITEMS:minecraft:swords": [
+      "~CrystalliteDaggerGold@CUSTOM:CrystalliteDaggerGold",
+      "~CrystalliteSwordGold@CUSTOM:CrystalliteSwordGold",
       "~CrystalliteSwordSapphire@CUSTOM:CrystalliteSwordSapphire",
       "~CrystalliteDaggerSapphire@CUSTOM:CrystalliteDaggerSapphire",
       "~CrystalliteDaggerAmethyst@CUSTOM:CrystalliteDaggerAmethyst",
@@ -36791,8 +36837,6 @@
       "~CrystalliteSwordRedstone@CUSTOM:CrystalliteSwordRedstone",
       "~CrystalliteDaggerLapis@CUSTOM:CrystalliteDaggerLapis",
       "~CrystalliteSwordLapis@CUSTOM:CrystalliteSwordLapis",
-      "~CrystalliteDaggerGold@CUSTOM:CrystalliteDaggerGold",
-      "~CrystalliteSwordGold@CUSTOM:CrystalliteSwordGold",
       "~CrystalliteDaggerIron@CUSTOM:CrystalliteDaggerIron",
       "~CrystalliteSwordIron@CUSTOM:CrystalliteSwordIron",
       "~CrystalliteDagger@CUSTOM:CrystalliteDagger",
