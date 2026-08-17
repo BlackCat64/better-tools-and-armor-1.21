@@ -98,7 +98,7 @@
       "fixedValue": 3.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "IRON",
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

@@ -35771,6 +35771,7 @@
       "CUSTOM:CrystallitePickaxeTopaz"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~CutCrystalliteBlock@CUSTOM:CutCrystalliteBlock",
       "~CrystalliteBlock@CUSTOM:CrystalliteBlock",
       "~LightPolishedAmethystWall@CUSTOM:LightPolishedAmethystWall",
@@ -35882,7 +35883,6 @@
       "~SapphireBlock@CUSTOM:SapphireBlock",
       "~SapphireOre@CUSTOM:SapphireOre",
       "~ChargedIceOn@CUSTOM:ChargedIceOn",
-      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~EndTitaniumBlock@CUSTOM:EndTitaniumBlock",
       "~EndTitaniumOre@CUSTOM:EndTitaniumOre",
       "~RandomOre@CUSTOM:RandomOre",
@@ -37194,7 +37194,6 @@
       "~TopazOre@CUSTOM:TopazOre",
       "~SapphireBlock@CUSTOM:SapphireBlock",
       "~SapphireOre@CUSTOM:SapphireOre",
-      "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~RandomOre@CUSTOM:RandomOre",
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
@@ -37343,8 +37342,6 @@
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~DeepslateRubyOre@CUSTOM:DeepslateRubyOre",
-      "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
-      "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
       "~RubyBlock@CUSTOM:RubyBlock",
       "~RubyOre@CUSTOM:RubyOre"
     ],
@@ -37380,9 +37377,9 @@
       "~ExperienceEnch@CUSTOM:ExperienceEnch"
     ],
     "BLOCKS:minecraft:mineable/axe": [
-      "~JewelleryTable@CUSTOM:JewelleryTable",
+      "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
       "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
-      "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock"
+      "~JewelleryTable@CUSTOM:JewelleryTable"
     ],
     "ENCHANTMENTS:minecraft:curse": [
       "~KarmaCurse@CUSTOM:KarmaCurse"
