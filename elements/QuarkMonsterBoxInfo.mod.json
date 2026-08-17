@@ -21,11 +21,24 @@
       "CUSTOM:CactusBody.body",
       "CUSTOM:SugarBoots.boots",
       "CUSTOM:HeartyBody.body",
-      "CUSTOM:GoldCarrotArmor.helmet"
+      "CUSTOM:GoldCarrotArmor.helmet",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Topaz",
+      "CUSTOM:AmethystHelmet.helmet",
+      "CUSTOM:DripstoneBoots.boots",
+      "CUSTOM:HoneycombHelmet.helmet",
+      "CUSTOM:RedstoneDagger",
+      "CUSTOM:LapisDagger",
+      "CUSTOM:EmeraldDagger",
+      "CUSTOM:SapphirePickaxe",
+      "CUSTOM:TopazPickaxe"
     ],
     "information": [
       "If Quark is installed:",
-      "Can drop from mobs spawned by a Monster Box."
+      "Can drop from mobs spawned by a Monster Box.",
+      "",
+      "If Supplementaries is installed:",
+      "Can drop from Cave Urns."
     ]
   }
 }

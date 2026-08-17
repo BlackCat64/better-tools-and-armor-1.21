@@ -33709,16 +33709,6 @@
       "path": "~/Consumables"
     },
     {
-      "name": "SupplementariesUrnsInfo",
-      "type": "jeiinformation",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supplementaries_urns_info",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "ThornsDamageInfo",
       "type": "jeiinformation",
       "compiles": true,
@@ -34768,6 +34758,79 @@
         ]
       },
       "path": "~/Crystallite/Netherite"
+    },
+    {
+      "name": "CuriosAPIMissingTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curios_api_missing_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CuriosAPIMissingTooltipProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ItemFrameRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_frame_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/item_frame.json"
+        ]
+      },
+      "path": "~/Vanilla Recipes"
+    },
+    {
+      "name": "GlowItemFrameRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_item_frame_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/recipe/glow_item_frame_recipe.json"
+        ]
+      },
+      "path": "~/Vanilla Recipes"
+    },
+    {
+      "name": "PaintingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/painting.json"
+        ]
+      },
+      "path": "~/Vanilla Recipes"
+    },
+    {
+      "name": "ModifySupplementariesUrnsLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_supplementaries_urns_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_supplementaries_urns_loot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -36242,14 +36305,6 @@
       "CUSTOM:SugarBoots.boots",
       "CUSTOM:IronSugarBoots.boots",
       "CUSTOM:DiamondSugarBoots.boots"
-    ],
-    "ITEMS:forge:gems": [
-      "CUSTOM:NetherDiamond",
-      "CUSTOM:Ruby",
-      "CUSTOM:RandomGem",
-      "CUSTOM:Sapphire",
-      "CUSTOM:Topaz",
-      "CUSTOM:CrystaliteGem"
     ],
     "ITEMS:mod:vein_mining_pickaxes": [
       "CUSTOM:CrystallitePickaxeSculk"
@@ -38679,7 +38734,7 @@
       "item.better_tools.crystallite_armor_topaz_helmet.description_1": "§7Ability:",
       "item.better_tools.stone_dagger": "Stone Dagger",
       "item.better_tools.crystallite_armor_emerald_helmet": "Crystallite Helmet",
-      "effect.better_tools.pitfall.description": "If grounded when the effect is appled, you become trapped in the ground, preventing all movement until you jump or the effect expires. If in mid-air when the effect is applied, forces you downwards with great speed.",
+      "effect.better_tools.pitfall.description": "If grounded when the effect is applied, you become trapped in the ground, preventing all movement until you jump or the effect expires. If in mid-air when the effect is applied, forces you downwards with great speed.",
       "item.better_tools.crystallite_armor_diamond_boots.description_0": "§7Upgrade: §bDiamond",
       "item.better_tools.crystallite_armor_diamond_boots.description_2": "§bDiamond Hard - Increased Durability and Protection",
       "item.better_tools.crystallite_armor_diamond_boots.description_1": "§7Ability:",
@@ -39468,7 +39523,7 @@
       "item.better_tools.crystallite_armor_iron_leggings.description_1": "§7Ability:",
       "item.better_tools.crystallite_armor_iron_leggings.description_0": "§7Upgrade: §fIron",
       "advancements.all_diamond_effect_armor_adv.title": "Effect Emperor",
-      "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing §3[SPACE] §r(keybind is separate from Jump)",
+      "effect.better_tools.double_jump.description": "Allows for one extra jump in mid-air per level, by pressing [SPACE] (keybind is separate from Jump)",
       "item.better_tools.crystallite_armor_sapphire_chestplate": "Crystallite Chestplate",
       "item.better_tools.flint_pickaxe": "Flint Pickaxe",
       "item.better_tools.crystallite_hoe_lapis.description_0": "§7Upgrade: §9Lapis Lazuli",
@@ -40350,7 +40405,7 @@
       "jei.better_tools.prismarine_crystallite_info": "§lCrystallite Upgrades: \n§3Prismarine§r\n\nTheme:\nWater",
       "jei.better_tools.progressive_tools_info": "These tools have improved abilities after they have been used for a while.\nFor all tools, breaking any correct block for that tool counts as a use.\nFor hoes, tilling farmland also counts as a use.",
       "jei.better_tools.purple_mushroom_info": "Purple Mushrooms generate in Fungal Caves, along with giant variants.\nThey can be bone-mealed to become giant, if there is enough space.\nStanding on one makes you take damage, however!",
-      "jei.better_tools.quark_monster_box_info": "If Quark is installed:\nCan drop from mobs spawned by a Monster Box.",
+      "jei.better_tools.quark_monster_box_info": "If Quark is installed:\nCan drop from mobs spawned by a Monster Box.\n\nIf Supplementaries is installed:\nCan drop from Cave Urns.",
       "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.",
       "jei.better_tools.redstone_crystallite_info": "§lCrystallite Upgrades: \n§cRedstone§r\n\nTheme:\nHP and Growth",
       "jei.better_tools.reduced_detection_range_info": "Reduced Detection Range effect only works in singleplayer worlds.",
@@ -40364,7 +40419,6 @@
       "jei.better_tools.sky_crystallite_info": "§lCrystallite Upgrades: \n§fAir§r\n\nTheme:\nAir and Wind",
       "jei.better_tools.stuck_in_mud_info": "§lPitfall Effect§r\nIf the target is grounded, they will get stuck in the mud. Otherwise, they will be forced downwards.\nWhen a mob is stuck in the ground, it cannot move.\nIt can still attack, however.\nIf a player jumps, they are instantly freed from the effect.",
       "jei.better_tools.sugar_clump_info": "When multiple Sugar Clumps are eaten in a row, the duration of the Speed effect increases accordingly.",
-      "jei.better_tools.supplementaries_urns_info": "If Supplementaries is installed:\nCan drop from Cave Urns.",
       "jei.better_tools.thorns_damage_info": "§lThorns Damage§r\n\nSome armor pieces deal Thorns damage 100% of the time.\nThis only applies to §lmelee attackers.",
       "jei.better_tools.topaz_armor_info": "§lFull-set bonus:§r\n§9+4% Lightning Chance§r\n(for a total of §920%§r)",
       "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
@@ -40848,8 +40902,8 @@
     "modid": "better_tools",
     "modName": "Better Tools and Armor",
     "version": "13.1",
-    "description": "Adds many new ores and resources which improve the progression and exploration in Minecraft. Also adds many misc. features",
-    "author": "BlackCatGamer64, MCreator",
+    "description": "Adds over 20 more Tools and Armor sets to the game. Encourages exploration, Overhauls progression, and Emphasises player choice!",
+    "author": "BlackCat64, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/better-tools-and-armor",
     "license": "Academic Free License v3.0",
     "serverSideOnly": false,

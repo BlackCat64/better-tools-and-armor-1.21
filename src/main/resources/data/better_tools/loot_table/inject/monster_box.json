@@ -14,8 +14,30 @@
 			}]
 		}, {
 			"type": "item",
+			"name": "better_tools:sapphire",
+			"weight": 16,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 1,
+					"max": 3
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:topaz",
+			"weight": 16,
+			"functions": [{
+				"function": "set_count",
+				"count": {
+					"min": 1,
+					"max": 3
+				}
+			}]
+		}, {
+			"type": "item",
 			"name": "better_tools:purple_mushroom",
-			"weight": 5,
+			"weight": 6,
 			"functions": [{
 				"function": "set_count",
 				"count": {
@@ -87,6 +109,39 @@
 		}, {
 			"type": "item",
 			"name": "better_tools:ruby_sword",
+			"weight": 10,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:redstone_dagger",
+			"weight": 10,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:lapis_dagger",
+			"weight": 10,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:emerald_dagger",
 			"weight": 5,
 			"functions": [{
 				"function": "set_damage",
@@ -94,15 +149,11 @@
 					"min": 0.4,
 					"max": 0.8
 				}
-			}, {
-            	"function": "enchant_randomly",
-            	"treasure": true
-        	}
-			]
+			}]
 		}, {
 			"type": "item",
 			"name": "better_tools:ruby_pickaxe",
-			"weight": 5,
+			"weight": 10,
 			"functions": [{
 				"function": "set_damage",
 				"damage": {
@@ -113,6 +164,61 @@
             	"function": "enchant_randomly",
             	"treasure": true
         	}]
+		}, {
+			"type": "item",
+			"name": "better_tools:sapphire_pickaxe",
+			"weight": 10,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:topaz_pickaxe",
+			"weight": 10,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:honeycomb_helmet",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.6,
+					"max": 0.95
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:dripstone_boots",
+			"weight": 5,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
+		}, {
+			"type": "item",
+			"name": "better_tools:amethyst_helmet",
+			"weight": 3,
+			"functions": [{
+				"function": "set_damage",
+				"damage": {
+					"min": 0.4,
+					"max": 0.8
+				}
+			}]
 		}, {
 			"type": "item",
 			"name": "better_tools:sugar_boots",
@@ -138,7 +244,7 @@
 		}, {
 			"type": "item",
 			"name": "better_tools:cactus_chestplate",
-			"weight": 4,
+			"weight": 5,
 			"functions": [{
 				"function": "set_damage",
 				"damage": {
@@ -149,7 +255,7 @@
 		}, {
 			"type": "item",
 			"name": "better_tools:hearty_chestplate",
-			"weight": 4,
+			"weight": 5,
 			"functions": [{
 				"function": "set_damage",
 				"damage": {
@@ -171,7 +277,7 @@
 		}, {
 			"type": "item",
 			"name": "better_tools:nether_diamond",
-			"weight": 350,
+			"weight": 500,
 			"functions": [{
 				"function": "set_count",
 				"count": {

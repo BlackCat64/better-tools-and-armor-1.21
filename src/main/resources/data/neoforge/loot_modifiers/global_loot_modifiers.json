@@ -9,7 +9,8 @@
     "better_tools:modify_quark_monster_box_loot",
     "better_tools:modify_mineshaft_loot",
     "better_tools:modify_dungeon_loot",
-    "better_tools:modify_ancient_city_loot"
+    "better_tools:modify_ancient_city_loot",
+    "better_tools:modify_supplementaries_urns_loot"
   ],
   "replace": false
 }
