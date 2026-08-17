@@ -1856,7 +1856,7 @@
   "jei.better_tools.prismarine_crystallite_info": "§lCrystallite Upgrades: \n§3Prismarine§r\n\nTheme:\nWater",
   "jei.better_tools.progressive_tools_info": "These tools have improved abilities after they have been used for a while.\nFor all tools, breaking any correct block for that tool counts as a use.\nFor hoes, tilling farmland also counts as a use.",
   "jei.better_tools.purple_mushroom_info": "Purple Mushrooms generate in Fungal Caves, along with giant variants.\nThey can be bone-mealed to become giant, if there is enough space.\nStanding on one makes you take damage, however!",
-  "jei.better_tools.quark_monster_box_info": "If Quark is installed:\nCan drop from mobs spawned by a Monster Box.",
+  "jei.better_tools.quark_monster_box_info": "If Quark is installed:\nCan drop from mobs spawned by a Monster Box.\n\nIf Supplementaries is installed:\nCan drop from Cave Urns.",
   "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.",
   "jei.better_tools.redstone_crystallite_info": "§lCrystallite Upgrades: \n§cRedstone§r\n\nTheme:\nHP and Growth",
   "jei.better_tools.reduced_detection_range_info": "Reduced Detection Range effect only works in singleplayer worlds.",
