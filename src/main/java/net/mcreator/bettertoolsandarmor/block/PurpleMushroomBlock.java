@@ -10,18 +10,22 @@ import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomSpaceCheckProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomProcedureProcedure;
+import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomHeightConditionProcedure;
 import net.mcreator.bettertoolsandarmor.procedures.PurpleMushroomGrowProcedureProcedure;
 
 public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBlock {
@@ -47,7 +51,15 @@ public class PurpleMushroomBlock extends FlowerBlock implements BonemealableBloc
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(Blocks.MYCELIUM);
+		boolean additionalCondition = true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY() + 1;
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos.above());
+			additionalCondition = PurpleMushroomHeightConditionProcedure.execute(y);
+		}
+		return (groundState.is(Blocks.MYCELIUM) || groundState.is(BlockTags.create(ResourceLocation.parse("c:stones")))) && additionalCondition;
 	}
 
 	@Override

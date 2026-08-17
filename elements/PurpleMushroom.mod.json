@@ -4,7 +4,6 @@
   "definition": {
     "renderType": 12,
     "texture": "purple_mushroom",
-    "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
@@ -78,21 +77,24 @@
     "creativePickItem": "",
     "offsetType": "XZ",
     "aiPathNodeType": "DAMAGE_OTHER",
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [
-      "Blocks.MYCELIUM"
+      "Blocks.MYCELIUM",
+      "TAG:c:stones"
     ],
+    "placingCondition": "PurpleMushroomHeightCondition",
     "isBonemealable": true,
     "bonemealSuccessCondition": "PurpleMushroomSpaceCheck",
     "onBonemealSuccess": "PurpleMushroomGrowProcedure",
-    "frequencyOnChunks": 40,
+    "frequencyOnChunks": 20,
     "generateFeature": true,
     "restrictionBiomes": [
-      "CUSTOM:FungalCaves"
+      "#c:is_mushroom"
     ],
     "generationType": "Grass",
     "patchSize": 64,

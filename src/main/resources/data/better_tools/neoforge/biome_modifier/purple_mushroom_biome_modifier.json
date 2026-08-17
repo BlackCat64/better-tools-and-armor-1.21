@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "better_tools:fungal_caves",
+  "biomes": "#c:is_mushroom",
   "features": "better_tools:purple_mushroom",
   "step": "vegetal_decoration"
 }

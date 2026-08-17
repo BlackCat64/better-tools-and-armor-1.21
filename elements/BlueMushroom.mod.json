@@ -4,7 +4,6 @@
   "definition": {
     "renderType": 12,
     "texture": "blue_mushroom",
-    "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
@@ -78,6 +77,7 @@
     "creativePickItem": "",
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 100,
     "fireSpreadSpeed": 60,
@@ -87,7 +87,7 @@
     "isBonemealable": true,
     "bonemealSuccessCondition": "BlueMushroomSpaceCheck",
     "onBonemealSuccess": "BlueMushroomGrowProcedure",
-    "frequencyOnChunks": 1,
+    "frequencyOnChunks": 2,
     "generateFeature": true,
     "restrictionBiomes": [
       "mushroom_fields"

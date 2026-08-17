@@ -34831,6 +34831,26 @@
           "src/main/resources/data/better_tools/loot_modifiers/modify_supplementaries_urns_loot.json"
         ]
       }
+    },
+    {
+      "name": "PurpleMushroomHeightCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_mushroom_height_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/PurpleMushroomHeightConditionProcedure.java"
+        ]
+      },
+      "path": "~/Purple Mushrooms"
     }
   ],
   "variable_elements": [
@@ -37368,10 +37388,10 @@
       "~KarmaCurse@CUSTOM:KarmaCurse"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~PurpleMushroom@CUSTOM:PurpleMushroom",
       "~ClimbableWall@CUSTOM:ClimbableWall",
       "~CrystalliteClusterAir@CUSTOM:CrystalliteClusterAir",
-      "~FourLeafClover@CUSTOM:FourLeafClover",
-      "~PurpleMushroom@CUSTOM:PurpleMushroom"
+      "~FourLeafClover@CUSTOM:FourLeafClover"
     ],
     "ENCHANTMENTS:minecraft:treasure": [
       "~SmeltingTouch@CUSTOM:SmeltingTouch",
