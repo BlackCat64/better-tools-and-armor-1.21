@@ -1,0 +1,10 @@
+{
+  "_fv": 89,
+  "_type": "loottable",
+  "definition": {
+    "type": "Entity",
+    "pools": [],
+    "name": "supplementaries_urn_loot",
+    "namespace": "mod"
+  }
+}

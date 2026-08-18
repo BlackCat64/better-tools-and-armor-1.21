@@ -1873,7 +1873,7 @@
   "jei.better_tools.thorns_damage_info": "§lThorns Damage§r\n\nSome armor pieces deal Thorns damage 100% of the time.\nThis only applies to §lmelee attackers.",
   "jei.better_tools.topaz_armor_info": "§lFull-set bonus:§r\n§9+4% Lightning Chance§r\n(for a total of §920%§r)",
   "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
-  "jei.better_tools.topaz_ore_gen_info": "§lOre Generation§r\n§6Topaz Ore§r\n\nGenerates between y=0 and y=75, in §6Desert biomes§r only.\nMost common at y=60\nSpawns frequently, in small groups.",
+  "jei.better_tools.topaz_ore_gen_info": "§lOre Generation§r\n§6Topaz Ore§r\n\nGenerates between y=0 and y=75, underneath any §6Desert-like biome§r\nMost common at y=60\nSpawns frequently, in small groups.",
   "jei.better_tools.topaz_pickaxe_info": "May duplicate drops from ores, as long as the ore block itself is not dropped.\nStacks with Fortune.",
   "jei.better_tools.utility_potions_info": "§lUtility Potions§r\n\nThese give various one-off effects when consumed.\nThey spawn in Mineshaft and Dungeon chest loot, or they can be brewed manually.",
   "jei.better_tools.warden_staff_info": "§1When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Sonic Boom.\n\nDamage: +2 per level.\nRange: +3 per level.",

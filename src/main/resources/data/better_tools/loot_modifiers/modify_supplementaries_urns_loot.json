@@ -3,8 +3,15 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "supplementaries:loot/urn_loot/urn_loot"
+      "loot_table_id": "supplementaries:blocks/urn"
+    },
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "supplementaries:urn",
+      "properties": {
+        "treasure": "true"
+      }
     }
   ],
-  "table": "better_tools:inject/monster_box"
+  "table": "better_tools:supplementaries_urn_loot"
 }

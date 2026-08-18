@@ -34485,18 +34485,6 @@
       "path": "~/Vanilla Recipes"
     },
     {
-      "name": "ModifySupplementariesUrnsLoot",
-      "type": "lootmodifier",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modify_supplementaries_urns_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/loot_modifiers/modify_supplementaries_urns_loot.json"
-        ]
-      }
-    },
-    {
       "name": "PurpleMushroomHeightCondition",
       "type": "procedure",
       "compiles": true,
@@ -34515,6 +34503,30 @@
         ]
       },
       "path": "~/Purple Mushrooms"
+    },
+    {
+      "name": "SupplementariesUrnLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "supplementaries_urn_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_table/supplementaries_urn_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "ModifySupplementariesUrnsLoot",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "modify_supplementaries_urns_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/better_tools/loot_modifiers/modify_supplementaries_urns_loot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

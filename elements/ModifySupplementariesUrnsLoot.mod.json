@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "lootmodifier",
   "definition": {
-    "modifiedTable": "supplementaries:loot/urn_loot/urn_loot",
-    "modifierTable": "QuarkMonsterBoxLoot"
+    "modifiedTable": "supplementaries:blocks/urn",
+    "modifierTable": "SupplementariesUrnLoot"
   }
 }
