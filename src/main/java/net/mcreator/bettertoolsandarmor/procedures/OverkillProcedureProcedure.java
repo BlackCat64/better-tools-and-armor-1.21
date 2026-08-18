@@ -33,7 +33,7 @@ public class OverkillProcedureProcedure {
 	private static void execute(@Nullable Event event, DamageSource damagesource, Entity immediatesourceentity, double amount) {
 		if (damagesource == null || immediatesourceentity == null)
 			return;
-		if (immediatesourceentity instanceof Player && damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:is_melee_attack"))) && amount > 30) {
+		if (immediatesourceentity instanceof Player && damagesource.is(TagKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("better_tools:is_melee_attack"))) && amount >= 30) {
 			if (immediatesourceentity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:overkill_adv"));
 				if (_adv != null) {

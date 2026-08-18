@@ -11,7 +11,7 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": "CUSTOM:RubyOre",
+    "blastingInputStack": "TAG:better_tools:ruby_ores",
     "blastingReturnStack": "CUSTOM:Ruby",
     "name": "ruby_smelt",
     "namespace": "mod"

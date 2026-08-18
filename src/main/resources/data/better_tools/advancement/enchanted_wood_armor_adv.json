@@ -15,8 +15,44 @@
     "hidden": false
   },
   "criteria": {
-    "enchanted_wood_armor_adv_0": {
-      "trigger": "minecraft:impossible"
+    "enchanted_wood_armor": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "head": {
+                  "items": "better_tools:wooden_helmet",
+                  "predicates": {
+                    "minecraft:enchantments": [{}]
+    			  }
+                },
+                "chest": {
+                  "items": "better_tools:wooden_chestplate",
+                  "predicates": {
+                    "minecraft:enchantments": [{}]
+    			  }
+                },
+                "legs": {
+                  "items": "better_tools:wooden_leggings",
+                  "predicates": {
+                    "minecraft:enchantments": [{}]
+    			  }
+                },
+                "feet": {
+                  "items": "better_tools:wooden_boots",
+                  "predicates": {
+                    "minecraft:enchantments": [{}]
+    			  }
+                }
+              }
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "better_tools:nether_diamond_dagger"
+      "id": "better_tools:end_titanium_dagger"
     },
     "title": {
       "translate": "advancements.daggers_adv.title"
@@ -15,8 +15,247 @@
     "hidden": false
   },
   "criteria": {
-    "daggers_adv_0": {
-      "trigger": "minecraft:impossible"
+    "daggers_adv_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:wood_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:stone_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:iron_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:gold_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:diamond_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_11": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:netherite_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:ruby_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:sapphire_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_17": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:topaz_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_19": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:redstone_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_21": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:lapis_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_23": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:emerald_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_25": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:flint_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_27": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:nether_diamond_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_29": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:end_titanium_dagger",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "daggers_adv_32": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:crystallite_dagger",
+              "better_tools:crystallite_dagger_iron",
+              "better_tools:crystallite_dagger_gold",
+              "better_tools:crystallite_dagger_lapis",
+              "better_tools:crystallite_dagger_redstone",
+              "better_tools:crystallite_dagger_diamond",
+              "better_tools:crystallite_dagger_netherite",
+              "better_tools:crystallite_dagger_ruby",
+              "better_tools:crystallite_dagger_sapphire",
+              "better_tools:crystallite_dagger_topaz",
+              "better_tools:crystallite_dagger_nether_diamond",
+              "better_tools:crystallite_dagger_emerald",
+              "better_tools:crystallite_dagger_sculk",
+              "better_tools:crystallite_dagger_sky",
+              "better_tools:crystallite_dagger_amethyst",
+              "better_tools:crystallite_dagger_prismarine",
+              "better_tools:crystallite_dagger_honey"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

@@ -5,7 +5,7 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "better_tools:ruby_ore"
+    "tag": "better_tools:ruby_ores"
   },
   "result": {
     "id": "better_tools:ruby"

@@ -16,7 +16,24 @@
   },
   "criteria": {
     "enchanted_staff_adv_0": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:staffs",
+            "predicates": {
+              "minecraft:enchantments": [
+  {
+    "enchantments": "better_tools:ensorcellation"
+  },
+  {
+    "enchantments": "better_tools:swift_cast"
+  }
+]
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

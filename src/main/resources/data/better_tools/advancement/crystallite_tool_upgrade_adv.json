@@ -15,8 +15,15 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_tool_upgrade_adv_0": {
-      "trigger": "minecraft:impossible"
+    "has_upgraded_tool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_tools"
+          }
+        ]
+      }
     }
   },
   "rewards": {

@@ -7,7 +7,10 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModMobEffects;
 
@@ -23,6 +26,18 @@ public class ApplyLeggingsEffectProcedure {
 		} else if (leggings.is(ItemTags.create(ResourceLocation.parse("better_tools:crystal_leggings")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(BetterToolsModMobEffects.SWIFT_SWIM, 200, (int) (leggings.is(ItemTags.create(ResourceLocation.parse("better_tools:diamond_tier_effect_armor"))) ? 2 : 1), true, false));
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("better_tools:cactus_shirts")))) {
+				if (entity instanceof ServerPlayer _player) {
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:cactus_crystal_adv"));
+					if (_adv != null) {
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
+				}
+			}
 		} else if (leggings.is(ItemTags.create(ResourceLocation.parse("better_tools:gilded_blackstone_leggings")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0, true, false));

@@ -12,7 +12,7 @@
       "CUSTOM:LifeAura"
     ],
     "supportedItems": [
-      "TAG:forge:armors/chestplates"
+      "TAG:minecraft:enchantable/chest_armor"
     ],
     "isTreasureEnchantment": false,
     "isCurse": false,

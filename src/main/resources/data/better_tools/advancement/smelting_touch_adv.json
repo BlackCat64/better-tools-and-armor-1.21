@@ -16,7 +16,26 @@
   },
   "criteria": {
     "smelting_touch_adv_0": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:pickaxes",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "better_tools:smelting_touch": {
+                    "levels": {
+                      "min": 1,
+                      "max": 1
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

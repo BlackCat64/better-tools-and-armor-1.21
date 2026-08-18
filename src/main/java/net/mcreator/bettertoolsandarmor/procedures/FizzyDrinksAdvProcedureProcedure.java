@@ -6,7 +6,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.advancements.AdvancementProgress;
@@ -30,7 +29,7 @@ public class FizzyDrinksAdvProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_food_was_carbonated && entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_food_eaten.is(ItemTags.create(ResourceLocation.parse("better_tools:drinks")))) {
+		if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).last_food_was_carbonated) {
 			if (entity.getData(BetterToolsModVariables.PLAYER_VARIABLES).time_since_non_carbonated_food_eaten >= 24000) {
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:fizzy_drinks_adv"));

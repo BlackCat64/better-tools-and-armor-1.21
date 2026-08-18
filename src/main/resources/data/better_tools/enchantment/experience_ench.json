@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.better_tools.experience_ench"
   },
-  "supported_items": "#enchantable/weapon",
+  "supported_items": "#minecraft:enchantable/weapon",
   "weight": 5,
   "max_level": 3,
   "min_cost": {

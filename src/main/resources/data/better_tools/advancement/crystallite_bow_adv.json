@@ -15,8 +15,15 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_bow_adv_0": {
-      "trigger": "minecraft:impossible"
+    "has_upgraded_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_bows"
+          }
+        ]
+      }
     }
   },
   "rewards": {

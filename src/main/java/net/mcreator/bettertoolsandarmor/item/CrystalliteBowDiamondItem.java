@@ -63,14 +63,10 @@ public class CrystalliteBowDiamondItem extends BowItem {
 		double random = Math.random();
 		double chance = 0.25;
 		chance = chance + (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity9.getAttribute(Attributes.LUCK).getValue() : 0) * 0.05;
-		if (random < chance && this.firedArrow != null) {
+		if (random < chance && this.firedArrow != null && !world.isClientSide()) {
 			this.firedArrow.setBaseDamage(this.firedArrow.getBaseDamage() + 2.5);
-			if (!world.isClientSide()) {
-				world.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2);
-			} else {
-				world.playLocalSound(entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("better_tools:crystallite_place")), SoundSource.PLAYERS, 5, (float) 1.2, false);
-			}
-			this.firedArrow = null;
+			world.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("minecraft:block.amethyst_block.hit")), SoundSource.PLAYERS, 5, (float) 1.2);
+			//			this.firedArrow = null;
 		}
 	}
 }

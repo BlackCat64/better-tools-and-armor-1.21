@@ -15,10 +15,85 @@
     "hidden": false
   },
   "criteria": {
-    "all_crystallite_tools_adv_0": {
-      "trigger": "minecraft:impossible"
+    "has_upgraded_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_swords"
+          }
+        ]
+      }
+    },
+    "has_upgraded_dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_daggers"
+          }
+        ]
+      }
+    },
+    "has_upgraded_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_pickaxes"
+          }
+        ]
+      }
+    },
+    "has_upgraded_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_axes"
+          }
+        ]
+      }
+    },
+    "has_upgraded_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_shovels"
+          }
+        ]
+      }
+    },
+    "has_upgraded_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_hoes"
+          }
+        ]
+      }
     }
   },
+  "requirements": [
+    [
+      "has_upgraded_sword",
+      "has_upgraded_dagger"
+    ],
+    [
+      "has_upgraded_pickaxe"
+    ],
+    [
+      "has_upgraded_axe"
+    ],
+    [
+      "has_upgraded_shovel"
+    ],
+    [
+      "has_upgraded_hoe"
+    ]
+  ],
   "rewards": {
     "experience": 100
   },

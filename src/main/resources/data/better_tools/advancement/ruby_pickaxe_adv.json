@@ -23,7 +23,7 @@
             "items": "better_tools:ruby_pickaxe",
             "count": {
               "min": 1,
-              "max": 64
+              "max": 1
             }
           }
         ]

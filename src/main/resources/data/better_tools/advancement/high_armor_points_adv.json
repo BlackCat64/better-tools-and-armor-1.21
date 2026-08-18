@@ -22,5 +22,5 @@
   "rewards": {
     "experience": 30
   },
-  "parent": "better_tools:crystallite_upgrades_section"
+  "parent": "better_tools:high_max_hp_adv"
 }

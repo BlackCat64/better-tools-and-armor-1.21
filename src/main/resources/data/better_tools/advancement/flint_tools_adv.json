@@ -15,8 +15,78 @@
     "hidden": false
   },
   "criteria": {
-    "flint_tools_adv_0": {
-      "trigger": "minecraft:impossible"
+    "flint_tools_adv_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:flint_sword",
+              "better_tools:flint_dagger"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "flint_tools_adv_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:flint_pickaxe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "flint_tools_adv_6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:flint_axe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "flint_tools_adv_8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:flint_shovel",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "flint_tools_adv_10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:flint_hoe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

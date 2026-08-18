@@ -10,7 +10,7 @@
     "damageModifier": 0,
     "incompatibleEnchantments": [],
     "supportedItems": [
-      "TAG:enchantable/weapon"
+      "TAG:minecraft:enchantable/weapon"
     ],
     "isTreasureEnchantment": false,
     "isCurse": false,

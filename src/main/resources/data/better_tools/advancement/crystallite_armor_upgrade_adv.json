@@ -15,8 +15,15 @@
     "hidden": false
   },
   "criteria": {
-    "crystallite_armor_upgrade_adv_0": {
-      "trigger": "minecraft:impossible"
+    "has_upgraded_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#better_tools:upgraded_crystallite_armor"
+          }
+        ]
+      }
     }
   },
   "rewards": {

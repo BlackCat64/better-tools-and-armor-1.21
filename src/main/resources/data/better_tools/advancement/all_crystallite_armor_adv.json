@@ -15,8 +15,32 @@
     "hidden": false
   },
   "criteria": {
-    "all_crystallite_armor_adv_0": {
-      "trigger": "minecraft:impossible"
+    "upgraded_crystallite_armor": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "head": {
+                  "items": "#better_tools:upgraded_crystallite_armor"
+                },
+                "chest": {
+                  "items": "#better_tools:upgraded_crystallite_armor"
+                },
+                "legs": {
+                  "items": "#better_tools:upgraded_crystallite_armor"
+                },
+                "feet": {
+                  "items": "#better_tools:upgraded_crystallite_armor"
+                }
+              }
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

@@ -32,7 +32,7 @@ public class ArrowDamageAdvProcedureProcedure {
 		if (immediatesourceentity == null || sourceentity == null)
 			return;
 		if (sourceentity instanceof Player && immediatesourceentity instanceof Arrow) {
-			if (amount > 35) {
+			if (amount >= 30) {
 				if (sourceentity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("better_tools:high_arrow_damage_adv"));
 					if (_adv != null) {

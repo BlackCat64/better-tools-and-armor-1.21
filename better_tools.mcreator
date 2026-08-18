@@ -694,25 +694,6 @@
       "path": "~/Effect Armor/Rabbit Boots"
     },
     {
-      "name": "RabbitBootsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rabbit_boots_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RabbitBootsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Effect Armor/Rabbit Boots"
-    },
-    {
       "name": "PhantomBoots",
       "type": "armor",
       "compiles": true,
@@ -1032,25 +1013,6 @@
       "path": "~/Effect Armor/Ruby Leggings"
     },
     {
-      "name": "RubyLegsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_legs_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RubyLegsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Effect Armor/Ruby Leggings"
-    },
-    {
       "name": "RubyLegsRecipe",
       "type": "recipe",
       "compiles": true,
@@ -1082,25 +1044,6 @@
       "path": "~/Effect Armor/Crystal Leggings"
     },
     {
-      "name": "CrystalLegsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal_legs_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalLegsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Effect Armor/Crystal Leggings"
-    },
-    {
       "name": "GoldCarrotArmor",
       "type": "armor",
       "compiles": true,
@@ -1114,25 +1057,6 @@
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/item/GoldCarrotArmorItem.java",
           "src/main/resources/assets/better_tools/models/item/gold_carrot_helmet.json"
-        ]
-      },
-      "path": "~/Effect Armor/Golden Carrot Hat"
-    },
-    {
-      "name": "GoldCarrotHatProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_carrot_hat_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/GoldCarrotHatProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/Effect Armor/Golden Carrot Hat"
@@ -1692,67 +1616,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/advancement/pirate_adv.json"
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "FlintToolsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flint_tools_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/FlintToolsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "RubyToolsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_tools_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/RubyToolsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "DaggersProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daggers_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/DaggersProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Advancements/Progression"
@@ -2676,25 +2539,6 @@
       "path": "~/Advancements/Progression"
     },
     {
-      "name": "EndTitaniumToolsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_titanium_tools_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EndTitaniumToolsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
       "name": "SugarClumpProcedure",
       "type": "procedure",
       "compiles": true,
@@ -2743,34 +2587,11 @@
       "name": "ExperiencedAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "experienced_adv",
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/advancement/experienced_adv.json"
-        ]
-      },
-      "path": "~/Advancements/Consumables"
-    },
-    {
-      "name": "ExperiencedAdvProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "experienced_adv_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/ExperiencedAdvProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Advancements/Consumables"
@@ -8951,34 +8772,11 @@
       "name": "SmeltingTouchAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "smelting_touch_adv",
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/advancement/smelting_touch_adv.json"
-        ]
-      },
-      "path": "~/Advancements/Consumables"
-    },
-    {
-      "name": "SmeltingTouchAdvProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smelting_touch_adv_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/SmeltingTouchAdvProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Advancements/Consumables"
@@ -9021,6 +8819,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "entity",
             "type": "entity"
           }
@@ -9045,7 +8847,7 @@
       "name": "CrystalliteToolUpgradeAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_tool_upgrade_adv",
       "metadata": {
         "files": [
@@ -9055,33 +8857,10 @@
       "path": "~/Advancements/Progression"
     },
     {
-      "name": "CrystalliteToolUpgradeAdvProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystallite_tool_upgrade_adv_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/CrystalliteToolUpgradeAdvProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
       "name": "CrystalliteArmorUpgradeAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_armor_upgrade_adv",
       "metadata": {
         "files": [
@@ -9094,7 +8873,7 @@
       "name": "AllCrystalliteToolsAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "all_crystallite_tools_adv",
       "metadata": {
         "files": [
@@ -9104,56 +8883,14 @@
       "path": "~/Advancements/Progression"
     },
     {
-      "name": "AllCrystalliteToolsProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "all_crystallite_tools_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/AllCrystalliteToolsProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
       "name": "AllCrystalliteArmorAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "all_crystallite_armor_adv",
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/advancement/all_crystallite_armor_adv.json"
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "AllCrystalliteArmorProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "all_crystallite_armor_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/AllCrystalliteArmorProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/Advancements/Progression"
@@ -22412,7 +22149,7 @@
       "name": "CrystalliteBowAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystallite_bow_adv",
       "metadata": {
         "files": [
@@ -22425,34 +22162,11 @@
       "name": "EnchantedStaffAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "enchanted_staff_adv",
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/advancement/enchanted_staff_adv.json"
-        ]
-      },
-      "path": "~/Advancements/Consumables"
-    },
-    {
-      "name": "StaffEnchantmentsAdvProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "staff_enchantments_adv_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/StaffEnchantmentsAdvProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Advancements/Consumables"
@@ -23786,30 +23500,11 @@
       "name": "EnchantedWoodArmorAdv",
       "type": "achievement",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "enchanted_wood_armor_adv",
       "metadata": {
         "files": [
           "src/main/resources/data/better_tools/advancement/enchanted_wood_armor_adv.json"
-        ]
-      },
-      "path": "~/Advancements/Progression"
-    },
-    {
-      "name": "EnchantedWoodsAdvProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enchanted_woods_adv_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bettertoolsandarmor/procedures/EnchantedWoodsAdvProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/Advancements/Progression"
@@ -34369,12 +34064,7 @@
       "locked_code": false,
       "registry_name": "test_message_display",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/mcreator/bettertoolsandarmor/procedures/TestMessageDisplayProcedure.java"
         ]
@@ -35304,24 +34994,7 @@
     ],
     "ITEMS:mod:crystallite_shovels": [
       "CUSTOM:CrystalliteShovel",
-      "CUSTOM:CrystalliteShovelIron",
-      "CUSTOM:CrystalliteShovelGold",
-      "CUSTOM:CrystalliteShovelLapis",
-      "CUSTOM:CrystalliteShovelRedstone",
-      "CUSTOM:CrystalliteShovelDiamond",
-      "CUSTOM:CrystalliteShovelNetherite",
-      "CUSTOM:CrystalliteShovelRuby",
-      "CUSTOM:CrystalliteShovelSapphire",
-      "CUSTOM:CrystalliteShovelTopaz",
-      "CUSTOM:CrystalliteShovelNetherDiamond",
-      "CUSTOM:CrystalliteShovelEmerald",
-      "CUSTOM:CrystalliteShovelSculk",
-      "CUSTOM:CrystalliteShovelSky",
-      "CUSTOM:CrystalliteShovelAmethyst",
-      "CUSTOM:CrystalliteShovelPrismarine",
-      "CUSTOM:CrystalliteShovelHoney",
-      "CUSTOM:CrystalliteShovelRedstoneUpgrade1",
-      "CUSTOM:CrystalliteShovelRedstoneUpgrade2"
+      "TAG:mod:upgraded_crystallite_shovels"
     ],
     "BLOCKS:minecraft:slabs": [
       "CUSTOM:DarkPolishedCoalSlab",
@@ -35362,24 +35035,7 @@
     ],
     "ITEMS:mod:crystallite_hoes": [
       "CUSTOM:CrystalliteHoe",
-      "CUSTOM:CrystalliteHoeIron",
-      "CUSTOM:CrystalliteHoeGold",
-      "CUSTOM:CrystalliteHoeLapis",
-      "CUSTOM:CrystalliteHoeRedstone",
-      "CUSTOM:CrystalliteHoeDiamond",
-      "CUSTOM:CrystalliteHoeNetherite",
-      "CUSTOM:CrystalliteHoeRuby",
-      "CUSTOM:CrystalliteHoeSapphire",
-      "CUSTOM:CrystalliteHoeTopaz",
-      "CUSTOM:CrystalliteHoeNetherDiamond",
-      "CUSTOM:CrystalliteHoeEmerald",
-      "CUSTOM:CrystalliteHoeSculk",
-      "CUSTOM:CrystalliteHoeSky",
-      "CUSTOM:CrystalliteHoeAmethyst",
-      "CUSTOM:CrystalliteHoePrismarine",
-      "CUSTOM:CrystalliteHoeHoney",
-      "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
-      "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
+      "TAG:mod:upgraded_crystallite_hoes"
     ],
     "ITEMS:curios:hands": [
       "CUSTOM:GildedBracelet",
@@ -35391,22 +35047,7 @@
     ],
     "ITEMS:mod:crystallite_leggings": [
       "CUSTOM:CrystalliteArmor.legs",
-      "CUSTOM:CrystalliteArmorIron.legs",
-      "CUSTOM:CrystalliteArmorGold.legs",
-      "CUSTOM:CrystalliteArmorLapis.legs",
-      "CUSTOM:CrystalliteArmorRedstone.legs",
-      "CUSTOM:CrystalliteArmorDiamond.legs",
-      "CUSTOM:CrystalliteArmorNetherite.legs",
-      "CUSTOM:CrystalliteArmorRuby.legs",
-      "CUSTOM:CrystalliteArmorSapphire.legs",
-      "CUSTOM:CrystalliteArmorTopaz.legs",
-      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
-      "CUSTOM:CrystalliteArmorEmerald.legs",
-      "CUSTOM:CrystalliteArmorSculk.legs",
-      "CUSTOM:CrystalliteArmorSky.legs",
-      "CUSTOM:CrystalliteArmorAmethyst.legs",
-      "CUSTOM:CrystalliteArmorPrismarine.legs",
-      "CUSTOM:CrystalliteArmorHoney.legs"
+      "TAG:mod:upgraded_crystallite_leggings"
     ],
     "BLOCKS:mod:climbable_with_wall_climbing_leggings": [
       "TAG:minecraft:leaves",
@@ -35414,22 +35055,7 @@
     ],
     "ITEMS:mod:crystallite_helmets": [
       "CUSTOM:CrystalliteArmor.helmet",
-      "CUSTOM:CrystalliteArmorIron.helmet",
-      "CUSTOM:CrystalliteArmorGold.helmet",
-      "CUSTOM:CrystalliteArmorLapis.helmet",
-      "CUSTOM:CrystalliteArmorRedstone.helmet",
-      "CUSTOM:CrystalliteArmorDiamond.helmet",
-      "CUSTOM:CrystalliteArmorNetherite.helmet",
-      "CUSTOM:CrystalliteArmorRuby.helmet",
-      "CUSTOM:CrystalliteArmorSapphire.helmet",
-      "CUSTOM:CrystalliteArmorTopaz.helmet",
-      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
-      "CUSTOM:CrystalliteArmorEmerald.helmet",
-      "CUSTOM:CrystalliteArmorSculk.helmet",
-      "CUSTOM:CrystalliteArmorSky.helmet",
-      "CUSTOM:CrystalliteArmorAmethyst.helmet",
-      "CUSTOM:CrystalliteArmorPrismarine.helmet",
-      "CUSTOM:CrystalliteArmorHoney.helmet"
+      "TAG:mod:upgraded_crystallite_helmets"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
       "CUSTOM:MagicWeaponDamage",
@@ -35532,24 +35158,7 @@
     ],
     "ITEMS:mod:crystallite_pickaxes": [
       "CUSTOM:CrystallitePickaxe",
-      "CUSTOM:CrystallitePickaxeIron",
-      "CUSTOM:CrystallitePickaxeGold",
-      "CUSTOM:CrystallitePickaxeLapis",
-      "CUSTOM:CrystallitePickaxeRedstone",
-      "CUSTOM:CrystallitePickaxeDiamond",
-      "CUSTOM:CrystallitePickaxeNetherite",
-      "CUSTOM:CrystallitePickaxeRuby",
-      "CUSTOM:CrystallitePickaxeSapphire",
-      "CUSTOM:CrystallitePickaxeTopaz",
-      "CUSTOM:CrystallitePickaxeNetherDiamond",
-      "CUSTOM:CrystallitePickaxeEmerald",
-      "CUSTOM:CrystallitePickaxeSculk",
-      "CUSTOM:CrystallitePickaxeSky",
-      "CUSTOM:CrystallitePickaxeAmethyst",
-      "CUSTOM:CrystallitePickaxePrismarine",
-      "CUSTOM:CrystallitePickaxeHoney",
-      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
-      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
+      "TAG:mod:upgraded_crystallite_pickaxes"
     ],
     "ITEMS:minecraft:shovels": [
       "~CrystalliteShovelSculk@CUSTOM:CrystalliteShovelSculk",
@@ -35685,22 +35294,7 @@
     ],
     "ITEMS:mod:crystallite_daggers": [
       "CUSTOM:CrystalliteDagger",
-      "CUSTOM:CrystalliteDaggerIron",
-      "CUSTOM:CrystalliteDaggerGold",
-      "CUSTOM:CrystalliteDaggerLapis",
-      "CUSTOM:CrystalliteDaggerRedstone",
-      "CUSTOM:CrystalliteDaggerDiamond",
-      "CUSTOM:CrystalliteDaggerNetherite",
-      "CUSTOM:CrystalliteDaggerRuby",
-      "CUSTOM:CrystalliteDaggerSapphire",
-      "CUSTOM:CrystalliteDaggerTopaz",
-      "CUSTOM:CrystalliteDaggerNetherDiamond",
-      "CUSTOM:CrystalliteDaggerEmerald",
-      "CUSTOM:CrystalliteDaggerSculk",
-      "CUSTOM:CrystalliteDaggerSky",
-      "CUSTOM:CrystalliteDaggerAmethyst",
-      "CUSTOM:CrystalliteDaggerPrismarine",
-      "CUSTOM:CrystalliteDaggerHoney"
+      "TAG:mod:upgraded_crystallite_daggers"
     ],
     "ITEMS:mod:metal_blocks": [
       "CUSTOM:DarkPolishedCoalBlock",
@@ -35741,22 +35335,7 @@
     ],
     "ITEMS:mod:crystallite_bows": [
       "CUSTOM:CrystalliteBow",
-      "CUSTOM:CrystalliteBowGold",
-      "CUSTOM:CrystalliteBowLapis",
-      "CUSTOM:CrystalliteBowRedstone",
-      "CUSTOM:CrystalliteBowDiamond",
-      "CUSTOM:CrystalliteBowNetherite",
-      "CUSTOM:CrystalliteBowRuby",
-      "CUSTOM:CrystalliteBowSapphire",
-      "CUSTOM:CrystalliteBowTopaz",
-      "CUSTOM:CrystalliteBowNetherDiamond",
-      "CUSTOM:CrystalliteBowEmerald",
-      "CUSTOM:CrystalliteBowSculk",
-      "CUSTOM:CrystalliteBowSky",
-      "CUSTOM:CrystalliteBowAmethyst",
-      "CUSTOM:CrystalliteBowPrismarine",
-      "CUSTOM:CrystalliteBowHoney",
-      "CUSTOM:CrystalliteBowIron"
+      "TAG:mod:upgraded_crystallite_bows"
     ],
     "ITEMS:mod:flint_tools": [
       "CUSTOM:FlintDagger",
@@ -35771,9 +35350,9 @@
       "CUSTOM:CrystallitePickaxeTopaz"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CrystalliteBlock@CUSTOM:CrystalliteBlock",
       "~BlackstoneMagma@CUSTOM:BlackstoneMagma",
       "~CutCrystalliteBlock@CUSTOM:CutCrystalliteBlock",
-      "~CrystalliteBlock@CUSTOM:CrystalliteBlock",
       "~LightPolishedAmethystWall@CUSTOM:LightPolishedAmethystWall",
       "~PolishedAmethystWall@CUSTOM:PolishedAmethystWall",
       "~LightPolishedNetherDiamondWall@CUSTOM:LightPolishedNetherDiamondWall",
@@ -36373,41 +35952,11 @@
     ],
     "ITEMS:mod:crystallite_boots": [
       "CUSTOM:CrystalliteArmor.boots",
-      "CUSTOM:CrystalliteArmorIron.boots",
-      "CUSTOM:CrystalliteArmorGold.boots",
-      "CUSTOM:CrystalliteArmorLapis.boots",
-      "CUSTOM:CrystalliteArmorRedstone.boots",
-      "CUSTOM:CrystalliteArmorDiamond.boots",
-      "CUSTOM:CrystalliteArmorNetherite.boots",
-      "CUSTOM:CrystalliteArmorRuby.boots",
-      "CUSTOM:CrystalliteArmorSapphire.boots",
-      "CUSTOM:CrystalliteArmorTopaz.boots",
-      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
-      "CUSTOM:CrystalliteArmorEmerald.boots",
-      "CUSTOM:CrystalliteArmorSculk.boots",
-      "CUSTOM:CrystalliteArmorSky.boots",
-      "CUSTOM:CrystalliteArmorAmethyst.boots",
-      "CUSTOM:CrystalliteArmorPrismarine.boots",
-      "CUSTOM:CrystalliteArmorHoney.boots"
+      "TAG:mod:upgraded_crystallite_boots"
     ],
     "ITEMS:mod:crystallite_chestplates": [
       "CUSTOM:CrystalliteArmor.body",
-      "CUSTOM:CrystalliteArmorIron.body",
-      "CUSTOM:CrystalliteArmorGold.body",
-      "CUSTOM:CrystalliteArmorLapis.body",
-      "CUSTOM:CrystalliteArmorRedstone.body",
-      "CUSTOM:CrystalliteArmorDiamond.body",
-      "CUSTOM:CrystalliteArmorNetherite.body",
-      "CUSTOM:CrystalliteArmorRuby.body",
-      "CUSTOM:CrystalliteArmorSapphire.body",
-      "CUSTOM:CrystalliteArmorTopaz.body",
-      "CUSTOM:CrystalliteArmorNetherDiamond.body",
-      "CUSTOM:CrystalliteArmorEmerald.body",
-      "CUSTOM:CrystalliteArmorSculk.body",
-      "CUSTOM:CrystalliteArmorSky.body",
-      "CUSTOM:CrystalliteArmorAmethyst.body",
-      "CUSTOM:CrystalliteArmorPrismarine.body",
-      "CUSTOM:CrystalliteArmorHoney.body"
+      "TAG:mod:upgraded_crystallite_chestplates"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_effects": [
       "CUSTOM:KarmaCurseDamage",
@@ -36416,22 +35965,7 @@
     ],
     "ITEMS:mod:crystallite_swords": [
       "CUSTOM:CrystalliteSword",
-      "CUSTOM:CrystalliteSwordIron",
-      "CUSTOM:CrystalliteSwordGold",
-      "CUSTOM:CrystalliteSwordLapis",
-      "CUSTOM:CrystalliteSwordRedstone",
-      "CUSTOM:CrystalliteSwordDiamond",
-      "CUSTOM:CrystalliteSwordNetherite",
-      "CUSTOM:CrystalliteSwordRuby",
-      "CUSTOM:CrystalliteSwordSapphire",
-      "CUSTOM:CrystalliteSwordTopaz",
-      "CUSTOM:CrystalliteSwordNetherDiamond",
-      "CUSTOM:CrystalliteSwordEmerald",
-      "CUSTOM:CrystalliteSwordSculk",
-      "CUSTOM:CrystalliteSwordSky",
-      "CUSTOM:CrystalliteSwordAmethyst",
-      "CUSTOM:CrystalliteSwordPrismarine",
-      "CUSTOM:CrystalliteSwordHoney"
+      "TAG:mod:upgraded_crystallite_swords"
     ],
     "ITEMS:mod:lapis_upgraded_crystallite_items": [
       "CUSTOM:CrystalliteSwordLapis",
@@ -36465,24 +35999,7 @@
     ],
     "ITEMS:mod:crystallite_axes": [
       "CUSTOM:CrystalliteAxe",
-      "CUSTOM:CrystalliteAxeIron",
-      "CUSTOM:CrystalliteAxeGold",
-      "CUSTOM:CrystalliteAxeLapis",
-      "CUSTOM:CrystalliteAxeRedstone",
-      "CUSTOM:CrystalliteAxeDiamond",
-      "CUSTOM:CrystalliteAxeNetherite",
-      "CUSTOM:CrystalliteAxeRuby",
-      "CUSTOM:CrystalliteAxeSapphire",
-      "CUSTOM:CrystalliteAxeTopaz",
-      "CUSTOM:CrystalliteAxeNetherDiamond",
-      "CUSTOM:CrystalliteAxeEmerald",
-      "CUSTOM:CrystalliteAxeSculk",
-      "CUSTOM:CrystalliteAxeSky",
-      "CUSTOM:CrystalliteAxeAmethyst",
-      "CUSTOM:CrystalliteAxePrismarine",
-      "CUSTOM:CrystalliteAxeHoney",
-      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
-      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
+      "TAG:mod:upgraded_crystallite_axes"
     ],
     "ITEMS:mod:sticky_helmets": [
       "CUSTOM:CrystalliteArmorHoney.helmet",
@@ -36563,110 +36080,12 @@
       "CUSTOM:DiamondHeartyBody.body"
     ],
     "ITEMS:mod:upgraded_crystallite_tools": [
-      "CUSTOM:CrystalliteSwordIron",
-      "CUSTOM:CrystallitePickaxeIron",
-      "CUSTOM:CrystalliteAxeIron",
-      "CUSTOM:CrystalliteShovelIron",
-      "CUSTOM:CrystalliteHoeIron",
-      "CUSTOM:CrystalliteDaggerIron",
-      "CUSTOM:CrystalliteSwordGold",
-      "CUSTOM:CrystallitePickaxeGold",
-      "CUSTOM:CrystalliteAxeGold",
-      "CUSTOM:CrystalliteShovelGold",
-      "CUSTOM:CrystalliteHoeGold",
-      "CUSTOM:CrystalliteDaggerGold",
-      "CUSTOM:CrystalliteSwordLapis",
-      "CUSTOM:CrystallitePickaxeLapis",
-      "CUSTOM:CrystalliteAxeLapis",
-      "CUSTOM:CrystalliteShovelLapis",
-      "CUSTOM:CrystalliteHoeLapis",
-      "CUSTOM:CrystalliteDaggerLapis",
-      "CUSTOM:CrystalliteSwordRedstone",
-      "CUSTOM:CrystallitePickaxeRedstone",
-      "CUSTOM:CrystalliteAxeRedstone",
-      "CUSTOM:CrystalliteShovelRedstone",
-      "CUSTOM:CrystalliteHoeRedstone",
-      "CUSTOM:CrystalliteDaggerRedstone",
-      "CUSTOM:CrystalliteSwordDiamond",
-      "CUSTOM:CrystallitePickaxeDiamond",
-      "CUSTOM:CrystalliteAxeDiamond",
-      "CUSTOM:CrystalliteShovelDiamond",
-      "CUSTOM:CrystalliteHoeDiamond",
-      "CUSTOM:CrystalliteDaggerDiamond",
-      "CUSTOM:CrystalliteSwordNetherite",
-      "CUSTOM:CrystallitePickaxeNetherite",
-      "CUSTOM:CrystalliteAxeNetherite",
-      "CUSTOM:CrystalliteShovelNetherite",
-      "CUSTOM:CrystalliteHoeNetherite",
-      "CUSTOM:CrystalliteDaggerNetherite",
-      "CUSTOM:CrystalliteSwordRuby",
-      "CUSTOM:CrystallitePickaxeRuby",
-      "CUSTOM:CrystalliteAxeRuby",
-      "CUSTOM:CrystalliteShovelRuby",
-      "CUSTOM:CrystalliteHoeRuby",
-      "CUSTOM:CrystalliteDaggerRuby",
-      "CUSTOM:CrystalliteSwordSapphire",
-      "CUSTOM:CrystallitePickaxeSapphire",
-      "CUSTOM:CrystalliteAxeSapphire",
-      "CUSTOM:CrystalliteShovelSapphire",
-      "CUSTOM:CrystalliteHoeSapphire",
-      "CUSTOM:CrystalliteDaggerSapphire",
-      "CUSTOM:CrystalliteSwordTopaz",
-      "CUSTOM:CrystallitePickaxeTopaz",
-      "CUSTOM:CrystalliteAxeTopaz",
-      "CUSTOM:CrystalliteShovelTopaz",
-      "CUSTOM:CrystalliteHoeTopaz",
-      "CUSTOM:CrystalliteDaggerTopaz",
-      "CUSTOM:CrystalliteSwordNetherDiamond",
-      "CUSTOM:CrystallitePickaxeNetherDiamond",
-      "CUSTOM:CrystalliteAxeNetherDiamond",
-      "CUSTOM:CrystalliteShovelNetherDiamond",
-      "CUSTOM:CrystalliteHoeNetherDiamond",
-      "CUSTOM:CrystalliteDaggerNetherDiamond",
-      "CUSTOM:CrystalliteSwordEmerald",
-      "CUSTOM:CrystallitePickaxeEmerald",
-      "CUSTOM:CrystalliteAxeEmerald",
-      "CUSTOM:CrystalliteShovelEmerald",
-      "CUSTOM:CrystalliteHoeEmerald",
-      "CUSTOM:CrystalliteDaggerEmerald",
-      "CUSTOM:CrystalliteSwordSculk",
-      "CUSTOM:CrystallitePickaxeSculk",
-      "CUSTOM:CrystalliteAxeSculk",
-      "CUSTOM:CrystalliteShovelSculk",
-      "CUSTOM:CrystalliteHoeSculk",
-      "CUSTOM:CrystalliteDaggerSculk",
-      "CUSTOM:CrystalliteSwordSky",
-      "CUSTOM:CrystallitePickaxeSky",
-      "CUSTOM:CrystalliteAxeSky",
-      "CUSTOM:CrystalliteShovelSky",
-      "CUSTOM:CrystalliteHoeSky",
-      "CUSTOM:CrystalliteDaggerSky",
-      "CUSTOM:CrystalliteSwordAmethyst",
-      "CUSTOM:CrystallitePickaxeAmethyst",
-      "CUSTOM:CrystalliteAxeAmethyst",
-      "CUSTOM:CrystalliteShovelAmethyst",
-      "CUSTOM:CrystalliteHoeAmethyst",
-      "CUSTOM:CrystalliteDaggerAmethyst",
-      "CUSTOM:CrystalliteSwordPrismarine",
-      "CUSTOM:CrystallitePickaxePrismarine",
-      "CUSTOM:CrystalliteAxePrismarine",
-      "CUSTOM:CrystalliteShovelPrismarine",
-      "CUSTOM:CrystalliteHoePrismarine",
-      "CUSTOM:CrystalliteDaggerPrismarine",
-      "CUSTOM:CrystalliteSwordHoney",
-      "CUSTOM:CrystallitePickaxeHoney",
-      "CUSTOM:CrystalliteAxeHoney",
-      "CUSTOM:CrystalliteShovelHoney",
-      "CUSTOM:CrystalliteHoeHoney",
-      "CUSTOM:CrystalliteDaggerHoney",
-      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
-      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
-      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
-      "CUSTOM:CrystalliteAxeRedstoneUpgrade2",
-      "CUSTOM:CrystalliteShovelRedstoneUpgrade1",
-      "CUSTOM:CrystalliteShovelRedstoneUpgrade2",
-      "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
-      "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
+      "TAG:mod:upgraded_crystallite_swords",
+      "TAG:mod:upgraded_crystallite_pickaxes",
+      "TAG:mod:upgraded_crystallite_axes",
+      "TAG:mod:upgraded_crystallite_shovels",
+      "TAG:mod:upgraded_crystallite_hoes",
+      "TAG:mod:upgraded_crystallite_daggers"
     ],
     "ITEMS:mod:ender_titanium_weapons": [
       "CUSTOM:EndTitaniumSword",
@@ -36941,6 +36360,10 @@
       "CUSTOM:DiamondGlassArmor.boots"
     ],
     "ITEMS:minecraft:swords": [
+      "~EndTitaniumDagger@CUSTOM:EndTitaniumDagger",
+      "~WoodDagger@CUSTOM:WoodDagger",
+      "~RubyDagger@CUSTOM:RubyDagger",
+      "~FlintDagger@CUSTOM:FlintDagger",
       "~CrystalliteDaggerGold@CUSTOM:CrystalliteDaggerGold",
       "~CrystalliteSwordGold@CUSTOM:CrystalliteSwordGold",
       "~CrystalliteSwordSapphire@CUSTOM:CrystalliteSwordSapphire",
@@ -36984,16 +36407,12 @@
       "~CrystalliteSword@CUSTOM:CrystalliteSword",
       "~TopazDagger@CUSTOM:TopazDagger",
       "~SapphireDagger@CUSTOM:SapphireDagger",
-      "~EndTitaniumDagger@CUSTOM:EndTitaniumDagger",
-      "~RubyDagger@CUSTOM:RubyDagger",
-      "~FlintDagger@CUSTOM:FlintDagger",
       "~NetherDiamondDagger@CUSTOM:NetherDiamondDagger",
       "~NetheriteDagger@CUSTOM:NetheriteDagger",
       "~DiamondDagger@CUSTOM:DiamondDagger",
       "~GoldDagger@CUSTOM:GoldDagger",
       "~IronDagger@CUSTOM:IronDagger",
       "~StoneDagger@CUSTOM:StoneDagger",
-      "~WoodDagger@CUSTOM:WoodDagger",
       "CUSTOM:NetherDiamondSword",
       "CUSTOM:FlintSword",
       "CUSTOM:RubyToolsSword",
@@ -37010,70 +36429,10 @@
       "CUSTOM:DiamondHeartyBody.body"
     ],
     "ITEMS:mod:upgraded_crystallite_armor": [
-      "CUSTOM:CrystalliteArmorIron.helmet",
-      "CUSTOM:CrystalliteArmorIron.body",
-      "CUSTOM:CrystalliteArmorIron.legs",
-      "CUSTOM:CrystalliteArmorIron.boots",
-      "CUSTOM:CrystalliteArmorGold.helmet",
-      "CUSTOM:CrystalliteArmorGold.body",
-      "CUSTOM:CrystalliteArmorGold.legs",
-      "CUSTOM:CrystalliteArmorGold.boots",
-      "CUSTOM:CrystalliteArmorLapis.helmet",
-      "CUSTOM:CrystalliteArmorLapis.body",
-      "CUSTOM:CrystalliteArmorLapis.legs",
-      "CUSTOM:CrystalliteArmorLapis.boots",
-      "CUSTOM:CrystalliteArmorRedstone.helmet",
-      "CUSTOM:CrystalliteArmorRedstone.body",
-      "CUSTOM:CrystalliteArmorRedstone.legs",
-      "CUSTOM:CrystalliteArmorRedstone.boots",
-      "CUSTOM:CrystalliteArmorDiamond.helmet",
-      "CUSTOM:CrystalliteArmorDiamond.body",
-      "CUSTOM:CrystalliteArmorDiamond.legs",
-      "CUSTOM:CrystalliteArmorDiamond.boots",
-      "CUSTOM:CrystalliteArmorNetherite.helmet",
-      "CUSTOM:CrystalliteArmorNetherite.body",
-      "CUSTOM:CrystalliteArmorNetherite.legs",
-      "CUSTOM:CrystalliteArmorNetherite.boots",
-      "CUSTOM:CrystalliteArmorRuby.helmet",
-      "CUSTOM:CrystalliteArmorRuby.body",
-      "CUSTOM:CrystalliteArmorRuby.legs",
-      "CUSTOM:CrystalliteArmorRuby.boots",
-      "CUSTOM:CrystalliteArmorSapphire.helmet",
-      "CUSTOM:CrystalliteArmorSapphire.body",
-      "CUSTOM:CrystalliteArmorSapphire.legs",
-      "CUSTOM:CrystalliteArmorSapphire.boots",
-      "CUSTOM:CrystalliteArmorTopaz.helmet",
-      "CUSTOM:CrystalliteArmorTopaz.body",
-      "CUSTOM:CrystalliteArmorTopaz.legs",
-      "CUSTOM:CrystalliteArmorTopaz.boots",
-      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
-      "CUSTOM:CrystalliteArmorNetherDiamond.body",
-      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
-      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
-      "CUSTOM:CrystalliteArmorEmerald.helmet",
-      "CUSTOM:CrystalliteArmorEmerald.body",
-      "CUSTOM:CrystalliteArmorEmerald.legs",
-      "CUSTOM:CrystalliteArmorEmerald.boots",
-      "CUSTOM:CrystalliteArmorSculk.helmet",
-      "CUSTOM:CrystalliteArmorSculk.body",
-      "CUSTOM:CrystalliteArmorSculk.legs",
-      "CUSTOM:CrystalliteArmorSculk.boots",
-      "CUSTOM:CrystalliteArmorSky.helmet",
-      "CUSTOM:CrystalliteArmorSky.body",
-      "CUSTOM:CrystalliteArmorSky.legs",
-      "CUSTOM:CrystalliteArmorSky.boots",
-      "CUSTOM:CrystalliteArmorAmethyst.helmet",
-      "CUSTOM:CrystalliteArmorAmethyst.body",
-      "CUSTOM:CrystalliteArmorAmethyst.legs",
-      "CUSTOM:CrystalliteArmorAmethyst.boots",
-      "CUSTOM:CrystalliteArmorPrismarine.helmet",
-      "CUSTOM:CrystalliteArmorPrismarine.body",
-      "CUSTOM:CrystalliteArmorPrismarine.legs",
-      "CUSTOM:CrystalliteArmorPrismarine.boots",
-      "CUSTOM:CrystalliteArmorHoney.helmet",
-      "CUSTOM:CrystalliteArmorHoney.body",
-      "CUSTOM:CrystalliteArmorHoney.legs",
-      "CUSTOM:CrystalliteArmorHoney.boots"
+      "TAG:mod:upgraded_crystallite_helmets",
+      "TAG:mod:upgraded_crystallite_chestplates",
+      "TAG:mod:upgraded_crystallite_leggings",
+      "TAG:mod:upgraded_crystallite_boots"
     ],
     "ITEMS:mod:staffs": [
       "CUSTOM:WardenStaff",
@@ -37198,6 +36557,9 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~IronGoldCarrotHat@CUSTOM:IronGoldCarrotHat.helmet",
+      "~DiamondGoldCarrotHat@CUSTOM:DiamondGoldCarrotHat.helmet",
+      "~GoldCarrotArmor@CUSTOM:GoldCarrotArmor.helmet",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.helmet",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.helmet",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.helmet",
@@ -37226,9 +36588,6 @@
       "~GlassArmor@CUSTOM:GlassArmor.helmet",
       "~DiamondCryingObsidianHelmet@CUSTOM:DiamondCryingObsidianHelmet.helmet",
       "~CryingObsidianHelmet@CUSTOM:CryingObsidianHelmet.helmet",
-      "~DiamondGoldCarrotHat@CUSTOM:DiamondGoldCarrotHat.helmet",
-      "~IronGoldCarrotHat@CUSTOM:IronGoldCarrotHat.helmet",
-      "~GoldCarrotArmor@CUSTOM:GoldCarrotArmor.helmet",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
@@ -37267,6 +36626,10 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CrystalLegs@CUSTOM:CrystalLegs.legs",
+      "~DiamondCrystalLegs@CUSTOM:DiamondCrystalLegs.legs",
+      "~DiamondRubyLegs@CUSTOM:DiamondRubyLegs.legs",
+      "~RubyArmor@CUSTOM:RubyArmor.legs",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.legs",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.legs",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.legs",
@@ -37292,14 +36655,13 @@
       "~SapphireArmor@CUSTOM:SapphireArmor.legs",
       "~GlassArmor@CUSTOM:GlassArmor.legs",
       "~DiamondBlackstoneLegs@CUSTOM:DiamondBlackstoneLegs.legs",
-      "~DiamondCrystalLegs@CUSTOM:DiamondCrystalLegs.legs",
-      "~DiamondRubyLegs@CUSTOM:DiamondRubyLegs.legs",
       "~BlackstoneLegs@CUSTOM:BlackstoneLegs.legs",
-      "~CrystalLegs@CUSTOM:CrystalLegs.legs",
-      "~RubyArmor@CUSTOM:RubyArmor.legs",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~DiamondRabbitBoots@CUSTOM:DiamondRabbitBoots.boots",
+      "~RabbitBoots@CUSTOM:RabbitBoots.boots",
+      "~IronRabbitBoots@CUSTOM:IronRabbitBoots.boots",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.boots",
       "~WingedBoots@CUSTOM:WingedBoots.boots",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.boots",
@@ -37327,13 +36689,10 @@
       "~SapphireArmor@CUSTOM:SapphireArmor.boots",
       "~GlassArmor@CUSTOM:GlassArmor.boots",
       "~DiamondPhantomBoots@CUSTOM:DiamondPhantomBoots.boots",
-      "~DiamondRabbitBoots@CUSTOM:DiamondRabbitBoots.boots",
       "~DiamondSugarBoots@CUSTOM:DiamondSugarBoots.boots",
       "~IronPhantomBoots@CUSTOM:IronPhantomBoots.boots",
-      "~IronRabbitBoots@CUSTOM:IronRabbitBoots.boots",
       "~IronSugarBoots@CUSTOM:IronSugarBoots.boots",
       "~PhantomBoots@CUSTOM:PhantomBoots.boots",
-      "~RabbitBoots@CUSTOM:RabbitBoots.boots",
       "~SugarBoots@CUSTOM:SugarBoots.boots",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.boots"
     ],
@@ -37380,9 +36739,6 @@
       "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
       "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
       "~JewelleryTable@CUSTOM:JewelleryTable"
-    ],
-    "ENCHANTMENTS:minecraft:curse": [
-      "~KarmaCurse@CUSTOM:KarmaCurse"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~PurpleMushroom@CUSTOM:PurpleMushroom",
@@ -38184,6 +37540,206 @@
     ],
     "ITEMS:mod:hive_heart_armor": [
       "CUSTOM:CrystalliteArmorHoney.body"
+    ],
+    "ITEMS:mod:ruby_ores": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:DeepslateRubyOre"
+    ],
+    "BLOCKS:mod:ruby_ores": [
+      "CUSTOM:RubyOre",
+      "CUSTOM:DeepslateRubyOre"
+    ],
+    "ITEMS:mod:upgraded_crystallite_swords": [
+      "CUSTOM:CrystalliteSwordIron",
+      "CUSTOM:CrystalliteSwordGold",
+      "CUSTOM:CrystalliteSwordLapis",
+      "CUSTOM:CrystalliteSwordRedstone",
+      "CUSTOM:CrystalliteSwordDiamond",
+      "CUSTOM:CrystalliteSwordNetherite",
+      "CUSTOM:CrystalliteSwordRuby",
+      "CUSTOM:CrystalliteSwordSapphire",
+      "CUSTOM:CrystalliteSwordTopaz",
+      "CUSTOM:CrystalliteSwordNetherDiamond",
+      "CUSTOM:CrystalliteSwordEmerald",
+      "CUSTOM:CrystalliteSwordSculk",
+      "CUSTOM:CrystalliteSwordSky",
+      "CUSTOM:CrystalliteSwordAmethyst",
+      "CUSTOM:CrystalliteSwordPrismarine",
+      "CUSTOM:CrystalliteSwordHoney"
+    ],
+    "ITEMS:mod:upgraded_crystallite_pickaxes": [
+      "CUSTOM:CrystallitePickaxeIron",
+      "CUSTOM:CrystallitePickaxeGold",
+      "CUSTOM:CrystallitePickaxeLapis",
+      "CUSTOM:CrystallitePickaxeRedstone",
+      "CUSTOM:CrystallitePickaxeDiamond",
+      "CUSTOM:CrystallitePickaxeNetherite",
+      "CUSTOM:CrystallitePickaxeRuby",
+      "CUSTOM:CrystallitePickaxeSapphire",
+      "CUSTOM:CrystallitePickaxeTopaz",
+      "CUSTOM:CrystallitePickaxeNetherDiamond",
+      "CUSTOM:CrystallitePickaxeEmerald",
+      "CUSTOM:CrystallitePickaxeSculk",
+      "CUSTOM:CrystallitePickaxeSky",
+      "CUSTOM:CrystallitePickaxeAmethyst",
+      "CUSTOM:CrystallitePickaxePrismarine",
+      "CUSTOM:CrystallitePickaxeHoney",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
+      "CUSTOM:CrystallitePickaxeRedstoneUpgrade2"
+    ],
+    "ITEMS:mod:upgraded_crystallite_axes": [
+      "CUSTOM:CrystalliteAxeIron",
+      "CUSTOM:CrystalliteAxeGold",
+      "CUSTOM:CrystalliteAxeLapis",
+      "CUSTOM:CrystalliteAxeRedstone",
+      "CUSTOM:CrystalliteAxeDiamond",
+      "CUSTOM:CrystalliteAxeNetherite",
+      "CUSTOM:CrystalliteAxeRuby",
+      "CUSTOM:CrystalliteAxeSapphire",
+      "CUSTOM:CrystalliteAxeTopaz",
+      "CUSTOM:CrystalliteAxeNetherDiamond",
+      "CUSTOM:CrystalliteAxeEmerald",
+      "CUSTOM:CrystalliteAxeSculk",
+      "CUSTOM:CrystalliteAxeSky",
+      "CUSTOM:CrystalliteAxeAmethyst",
+      "CUSTOM:CrystalliteAxePrismarine",
+      "CUSTOM:CrystalliteAxeHoney",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteAxeRedstoneUpgrade2"
+    ],
+    "ITEMS:mod:upgraded_crystallite_shovels": [
+      "CUSTOM:CrystalliteShovelIron",
+      "CUSTOM:CrystalliteShovelGold",
+      "CUSTOM:CrystalliteShovelLapis",
+      "CUSTOM:CrystalliteShovelRedstone",
+      "CUSTOM:CrystalliteShovelDiamond",
+      "CUSTOM:CrystalliteShovelNetherite",
+      "CUSTOM:CrystalliteShovelRuby",
+      "CUSTOM:CrystalliteShovelSapphire",
+      "CUSTOM:CrystalliteShovelTopaz",
+      "CUSTOM:CrystalliteShovelNetherDiamond",
+      "CUSTOM:CrystalliteShovelEmerald",
+      "CUSTOM:CrystalliteShovelSculk",
+      "CUSTOM:CrystalliteShovelSky",
+      "CUSTOM:CrystalliteShovelAmethyst",
+      "CUSTOM:CrystalliteShovelPrismarine",
+      "CUSTOM:CrystalliteShovelHoney",
+      "CUSTOM:CrystalliteShovelRedstoneUpgrade1",
+      "CUSTOM:CrystalliteShovelRedstoneUpgrade2"
+    ],
+    "ITEMS:mod:upgraded_crystallite_hoes": [
+      "CUSTOM:CrystalliteHoeIron",
+      "CUSTOM:CrystalliteHoeGold",
+      "CUSTOM:CrystalliteHoeLapis",
+      "CUSTOM:CrystalliteHoeRedstone",
+      "CUSTOM:CrystalliteHoeDiamond",
+      "CUSTOM:CrystalliteHoeNetherite",
+      "CUSTOM:CrystalliteHoeRuby",
+      "CUSTOM:CrystalliteHoeSapphire",
+      "CUSTOM:CrystalliteHoeTopaz",
+      "CUSTOM:CrystalliteHoeNetherDiamond",
+      "CUSTOM:CrystalliteHoeEmerald",
+      "CUSTOM:CrystalliteHoeSculk",
+      "CUSTOM:CrystalliteHoeSky",
+      "CUSTOM:CrystalliteHoeAmethyst",
+      "CUSTOM:CrystalliteHoePrismarine",
+      "CUSTOM:CrystalliteHoeHoney",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade1",
+      "CUSTOM:CrystalliteHoeRedstoneUpgrade2"
+    ],
+    "ITEMS:mod:upgraded_crystallite_daggers": [
+      "CUSTOM:CrystalliteDaggerIron",
+      "CUSTOM:CrystalliteDaggerGold",
+      "CUSTOM:CrystalliteDaggerLapis",
+      "CUSTOM:CrystalliteDaggerRedstone",
+      "CUSTOM:CrystalliteDaggerDiamond",
+      "CUSTOM:CrystalliteDaggerNetherite",
+      "CUSTOM:CrystalliteDaggerRuby",
+      "CUSTOM:CrystalliteDaggerSapphire",
+      "CUSTOM:CrystalliteDaggerTopaz",
+      "CUSTOM:CrystalliteDaggerNetherDiamond",
+      "CUSTOM:CrystalliteDaggerEmerald",
+      "CUSTOM:CrystalliteDaggerSculk",
+      "CUSTOM:CrystalliteDaggerSky",
+      "CUSTOM:CrystalliteDaggerAmethyst",
+      "CUSTOM:CrystalliteDaggerPrismarine",
+      "CUSTOM:CrystalliteDaggerHoney"
+    ],
+    "ITEMS:mod:upgraded_crystallite_helmets": [
+      "CUSTOM:CrystalliteArmorIron.helmet",
+      "CUSTOM:CrystalliteArmorGold.helmet",
+      "CUSTOM:CrystalliteArmorLapis.helmet",
+      "CUSTOM:CrystalliteArmorRedstone.helmet",
+      "CUSTOM:CrystalliteArmorDiamond.helmet",
+      "CUSTOM:CrystalliteArmorNetherite.helmet",
+      "CUSTOM:CrystalliteArmorRuby.helmet",
+      "CUSTOM:CrystalliteArmorSapphire.helmet",
+      "CUSTOM:CrystalliteArmorTopaz.helmet",
+      "CUSTOM:CrystalliteArmorNetherDiamond.helmet",
+      "CUSTOM:CrystalliteArmorEmerald.helmet",
+      "CUSTOM:CrystalliteArmorSculk.helmet",
+      "CUSTOM:CrystalliteArmorSky.helmet",
+      "CUSTOM:CrystalliteArmorAmethyst.helmet",
+      "CUSTOM:CrystalliteArmorPrismarine.helmet",
+      "CUSTOM:CrystalliteArmorHoney.helmet"
+    ],
+    "ITEMS:mod:upgraded_crystallite_chestplates": [
+      "CUSTOM:CrystalliteArmorIron.body",
+      "CUSTOM:CrystalliteArmorGold.body",
+      "CUSTOM:CrystalliteArmorLapis.body",
+      "CUSTOM:CrystalliteArmorRedstone.body",
+      "CUSTOM:CrystalliteArmorDiamond.body",
+      "CUSTOM:CrystalliteArmorNetherite.body",
+      "CUSTOM:CrystalliteArmorRuby.body",
+      "CUSTOM:CrystalliteArmorSapphire.body",
+      "CUSTOM:CrystalliteArmorTopaz.body",
+      "CUSTOM:CrystalliteArmorNetherDiamond.body",
+      "CUSTOM:CrystalliteArmorEmerald.body",
+      "CUSTOM:CrystalliteArmorSculk.body",
+      "CUSTOM:CrystalliteArmorSky.body",
+      "CUSTOM:CrystalliteArmorAmethyst.body",
+      "CUSTOM:CrystalliteArmorPrismarine.body",
+      "CUSTOM:CrystalliteArmorHoney.body"
+    ],
+    "ITEMS:mod:upgraded_crystallite_leggings": [
+      "CUSTOM:CrystalliteArmorIron.legs",
+      "CUSTOM:CrystalliteArmorGold.legs",
+      "CUSTOM:CrystalliteArmorLapis.legs",
+      "CUSTOM:CrystalliteArmorRedstone.legs",
+      "CUSTOM:CrystalliteArmorDiamond.legs",
+      "CUSTOM:CrystalliteArmorNetherite.legs",
+      "CUSTOM:CrystalliteArmorRuby.legs",
+      "CUSTOM:CrystalliteArmorSapphire.legs",
+      "CUSTOM:CrystalliteArmorTopaz.legs",
+      "CUSTOM:CrystalliteArmorNetherDiamond.legs",
+      "CUSTOM:CrystalliteArmorEmerald.legs",
+      "CUSTOM:CrystalliteArmorSculk.legs",
+      "CUSTOM:CrystalliteArmorSky.legs",
+      "CUSTOM:CrystalliteArmorAmethyst.legs",
+      "CUSTOM:CrystalliteArmorPrismarine.legs",
+      "CUSTOM:CrystalliteArmorHoney.legs"
+    ],
+    "ITEMS:mod:upgraded_crystallite_boots": [
+      "CUSTOM:CrystalliteArmorIron.boots",
+      "CUSTOM:CrystalliteArmorGold.boots",
+      "CUSTOM:CrystalliteArmorLapis.boots",
+      "CUSTOM:CrystalliteArmorRedstone.boots",
+      "CUSTOM:CrystalliteArmorDiamond.boots",
+      "CUSTOM:CrystalliteArmorNetherite.boots",
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:CrystalliteArmorSapphire.boots",
+      "CUSTOM:CrystalliteArmorTopaz.boots",
+      "CUSTOM:CrystalliteArmorNetherDiamond.boots",
+      "CUSTOM:CrystalliteArmorEmerald.boots",
+      "CUSTOM:CrystalliteArmorSculk.boots",
+      "CUSTOM:CrystalliteArmorSky.boots",
+      "CUSTOM:CrystalliteArmorAmethyst.boots",
+      "CUSTOM:CrystalliteArmorPrismarine.boots",
+      "CUSTOM:CrystalliteArmorHoney.boots",
+      "CUSTOM:WingedBoots.boots"
+    ],
+    "ENCHANTMENTS:minecraft:curse": [
+      "~KarmaCurse@CUSTOM:KarmaCurse"
     ]
   },
   "tab_element_order": {
@@ -38930,7 +38486,7 @@
       "item.better_tools.crystallite_shovel_ruby.description_1": "§7Ability:",
       "item.better_tools.crystallite_shovel_ruby.description_2": "§cSpeedy - Increased attack and mining speeds",
       "advancements.hearty_adv.descr": "Gain Absorption health from wearing a Hearty Shirt",
-      "advancements.all_crystallite_armor_adv.descr": "Upgrade and Wear a full set of Crystallite armor",
+      "advancements.all_crystallite_armor_adv.descr": "Upgrade and wear a full set of Crystallite armor",
       "block.better_tools.purple_mushroom": "Purple Mushroom",
       "item.better_tools.crystallite_shovel_ruby.description_0": "§7Upgrade: §cRuby",
       "advancements.combo_jump_adv.descr": "Jump as high as you can using boots with the Combo Jump ability",
@@ -39144,7 +38700,7 @@
       "item.better_tools.ice_staff": "Ice Staff",
       "item.minecraft.potion.effect.potion_of_decay_2": "Potion of Decay",
       "effect.better_tools.criticality": "Criticality",
-      "advancements.overkill_adv.descr": "Deal over 30 damage in a single melee hit",
+      "advancements.overkill_adv.descr": "Deal at least 30 damage in a single melee hit",
       "block.better_tools.gray_metal_sign": "Gray Metal Sign",
       "item.better_tools.crystallite_bow_iron.description_0": "§7Upgrade: §fIron",
       "subtitles.block_dance": "",
@@ -39213,7 +38769,7 @@
       "item.minecraft.lingering_potion.effect.swift_swim_potion": "Lingering Potion of Rapidity",
       "block.better_tools.dark_red_metal_wall_sign": "Dark Red Metal Wall Sign",
       "item.better_tools.crystallite_armor_topaz_helmet.description_0": "§7Upgrade: §6Topaz",
-      "advancements.double_jump_adv.descr": "Get the Double Jump effect",
+      "advancements.double_jump_adv.descr": "Jump in mid-air with the Double Jump effect",
       "item.better_tools.diamond_gold_carrot_helmet.description_0": "§bDiamond Encrusted",
       "item.better_tools.crystallite_armor_topaz_boots.description_2": "§6Shocking - Can summon lightning on attackers",
       "item.minecraft.splash_potion.effect.potion_of_decay": "Splash Potion of Decay",
@@ -40072,7 +39628,7 @@
       "item.better_tools.crystallite_hoe_diamond": "Crystallite Hoe",
       "block.better_tools.light_polished_iron_wall": "White Metal Wall",
       "item.better_tools.diamond_apple": "Diamond Apple",
-      "advancements.high_arrow_damage_adv.descr": "Deal over 35 damage with a single Arrow",
+      "advancements.high_arrow_damage_adv.descr": "Deal at least 30 damage with a single Arrow",
       "block.better_tools.dark_polished_iron_block": "Light Gray Metal Block",
       "item.better_tools.crystallite_axe_emerald": "Crystallite Axe",
       "item.better_tools.crystallite_hoe_nether_diamond": "Crystallite Hoe",
@@ -40176,7 +39732,7 @@
       "block.better_tools.blue_mushroom": "Blue Mushroom",
       "block.better_tools.polished_amethyst_block": "Purple Metal Block",
       "item.better_tools.crystallite_armor_emerald_chestplate": "Crystallite Chestplate",
-      "advancements.ruby_pickaxe_adv.descr": "Craft a fast-mining Ruby Pickaxe",
+      "advancements.ruby_pickaxe_adv.descr": "Craft an efficient Ruby Pickaxe",
       "death.attack.shockwave_damage.player": "%1$s was killed by a shockwave whilst trying to escape %2$s",
       "item.better_tools.crystallite_hoe_redstone_upgrade_2.description_2": "§cCalibrated [Max] - Greatly increased chance for plants to drop Bone Meal",
       "item.better_tools.crystallite_axe_ruby": "Crystallite Axe",
@@ -40248,7 +39804,7 @@
       "block.better_tools.green_metal_sign": "Green Metal Sign",
       "item.better_tools.crystallite_dagger_iron.description_2": "§fHeavy - Deals increased knockback",
       "key.categories.better_tools": "Better Tools and Armor",
-      "advancements.glass_armor_adv.descr": "Wear a full set of glass armor",
+      "advancements.glass_armor_adv.descr": "Wear a full set of Glass armor and become invisible",
       "block.better_tools.light_blue_metal_wall_hanging_sign": "Light Blue Metal Wall Hanging Sign",
       "advancements.luck_adv.title": "The Gambling Miner",
       "item.better_tools.redstone_dagger.description_0": "§cHeals you when striking a target",

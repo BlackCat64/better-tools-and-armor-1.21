@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.better_tools.desperation"
   },
-  "supported_items": "#forge:armors/chestplates",
+  "supported_items": "#minecraft:enchantable/chest_armor",
   "weight": 5,
   "max_level": 1,
   "min_cost": {

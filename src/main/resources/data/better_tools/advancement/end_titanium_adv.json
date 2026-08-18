@@ -15,12 +15,15 @@
     "hidden": false
   },
   "criteria": {
-    "end_titanium_adv_1": {
+    "end_titanium_adv_2": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": "better_tools:end_titanium_ore",
+            "items": [
+              "better_tools:end_titanium_ore",
+              "better_tools:end_titanium_scrap"
+            ],
             "count": {
               "min": 1,
               "max": 64

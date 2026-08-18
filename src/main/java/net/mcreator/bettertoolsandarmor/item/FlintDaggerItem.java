@@ -1,7 +1,6 @@
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.Tier;
@@ -12,12 +11,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.bettertoolsandarmor.procedures.FlintToolsProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModAttributes;
 import net.mcreator.bettertoolsandarmor.BetterToolsMod;
 
@@ -59,11 +56,5 @@ public class FlintDaggerItem extends SwordItem {
 				.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -1.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 				.add(BetterToolsModAttributes.CRITICAL_HIT_MULTIPLIER, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BetterToolsMod.MODID, "flint_dagger_0"), 0.25, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 				.build()));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		FlintToolsProcedureProcedure.execute(entity);
 	}
 }

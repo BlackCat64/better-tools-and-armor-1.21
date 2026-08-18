@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "better_tools:crystallite_upgrades_section"
+  "parent": "better_tools:max_knockback_resistance_adv"
 }

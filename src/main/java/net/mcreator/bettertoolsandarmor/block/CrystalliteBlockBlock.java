@@ -61,7 +61,7 @@ public class CrystalliteBlockBlock extends Block {
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		CrystalliteCaveAdvProcedureProcedure.execute(entity);
+		CrystalliteCaveAdvProcedureProcedure.execute(blockstate, entity);
 		return retval;
 	}
 }

@@ -1,17 +1,14 @@
 package net.mcreator.bettertoolsandarmor.item;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
-import net.mcreator.bettertoolsandarmor.procedures.RubyToolsProcedureProcedure;
 import net.mcreator.bettertoolsandarmor.init.BetterToolsModItems;
 
 public class RubyDaggerItem extends SwordItem {
@@ -49,11 +46,5 @@ public class RubyDaggerItem extends SwordItem {
 
 	public RubyDaggerItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 2.5f, -1f)));
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		RubyToolsProcedureProcedure.execute(entity);
 	}
 }

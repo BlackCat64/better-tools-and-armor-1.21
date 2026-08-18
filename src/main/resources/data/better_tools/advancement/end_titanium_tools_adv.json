@@ -15,8 +15,78 @@
     "hidden": false
   },
   "criteria": {
-    "end_titanium_tools_adv_0": {
-      "trigger": "minecraft:impossible"
+    "end_titanium_tools_adv_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "better_tools:end_titanium_sword",
+              "better_tools:end_titanium_dagger"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "end_titanium_tools_adv_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:end_titanium_pickaxe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "end_titanium_tools_adv_6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:end_titanium_axe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "end_titanium_tools_adv_8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:end_titanium_shovel",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "end_titanium_tools_adv_10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "better_tools:end_titanium_hoe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
     }
   },
   "rewards": {

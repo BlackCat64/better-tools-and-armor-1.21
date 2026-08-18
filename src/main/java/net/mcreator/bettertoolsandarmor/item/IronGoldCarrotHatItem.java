@@ -7,11 +7,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
@@ -19,12 +16,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.Util;
 
-import net.mcreator.bettertoolsandarmor.procedures.GoldCarrotHatProcedureProcedure;
-
 import java.util.List;
 import java.util.EnumMap;
-
-import com.google.common.collect.Iterables;
 
 @EventBusSubscriber
 public abstract class IronGoldCarrotHatItem extends ArmorItem {
@@ -60,14 +53,6 @@ public abstract class IronGoldCarrotHatItem extends ArmorItem {
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.translatable("item.better_tools.iron_gold_carrot_helmet.description_0"));
-		}
-
-		@Override
-		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-			super.inventoryTick(itemstack, world, entity, slot, selected);
-			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				GoldCarrotHatProcedureProcedure.execute(entity);
-			}
 		}
 	}
 }
