@@ -48,7 +48,7 @@ public class NetherDiamondHoeItem extends HoeItem {
 	};
 
 	public NetherDiamondHoeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 1f, 0f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 0f, 0f)).fireResistant());
 	}
 
 	@Override

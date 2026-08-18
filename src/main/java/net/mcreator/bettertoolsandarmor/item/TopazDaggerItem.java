@@ -52,7 +52,7 @@ public class TopazDaggerItem extends SwordItem {
 	};
 
 	public TopazDaggerItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3.5f, -1.2f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3f, -1.2f)));
 	}
 
 	@Override

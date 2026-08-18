@@ -49,7 +49,7 @@ public class CrystalliteAxeHoneyItem extends AxeItem {
 	};
 
 	public CrystalliteAxeHoneyItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 9f, -3f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 9.5f, -3f)).fireResistant());
 	}
 
 	@Override

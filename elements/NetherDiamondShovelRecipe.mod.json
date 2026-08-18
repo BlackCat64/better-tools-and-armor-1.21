@@ -12,9 +12,9 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "",
+      "CUSTOM:BlackstoneMagma",
       "CUSTOM:NetherDiamond",
-      "",
+      "CUSTOM:BlackstoneMagma",
       "",
       "CUSTOM:ObsidianStick",
       "",

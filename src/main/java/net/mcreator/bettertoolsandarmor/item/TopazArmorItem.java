@@ -39,7 +39,7 @@ public abstract class TopazArmorItem extends ArmorItem {
 				map.put(ArmorItem.Type.HELMET, 3);
 				map.put(ArmorItem.Type.BODY, 6);
 			}), 16, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(BetterToolsModItems.TOPAZ.get())),
-					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:topaz_"))), 0.5f, 0.03f);
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:topaz_"))), 0.5f, 0f);
 			registerHelper.register(ResourceLocation.parse("better_tools:topaz"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

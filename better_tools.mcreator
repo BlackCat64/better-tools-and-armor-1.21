@@ -8925,32 +8925,6 @@
       "path": "~/Ruby"
     },
     {
-      "name": "DeepslateRubySmelt",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepslate_ruby_smelt",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipe/deepslate_ruby_smelt.json"
-        ]
-      },
-      "path": "~/Ruby"
-    },
-    {
-      "name": "DeepslateRubyFurnace",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepslate_ruby_furnace",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/better_tools/recipe/deepslate_ruby_furnace.json"
-        ]
-      },
-      "path": "~/Ruby"
-    },
-    {
       "name": "DeepslateRandomOre",
       "type": "block",
       "compiles": true,
@@ -35064,13 +35038,13 @@
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CrystallitePickaxeHoney@CUSTOM:CrystallitePickaxeHoney",
+      "~CrystallitePickaxePrismarine@CUSTOM:CrystallitePickaxePrismarine",
       "~CrystallitePickaxeAmethyst@CUSTOM:CrystallitePickaxeAmethyst",
+      "~CrystallitePickaxeSky@CUSTOM:CrystallitePickaxeSky",
       "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
       "~CrystallitePickaxeRedstone@CUSTOM:CrystallitePickaxeRedstone",
       "~CrystallitePickaxeRedstoneUpgrade2@CUSTOM:CrystallitePickaxeRedstoneUpgrade2",
       "~CrystallitePickaxeRedstoneUpgrade1@CUSTOM:CrystallitePickaxeRedstoneUpgrade1",
-      "~CrystallitePickaxePrismarine@CUSTOM:CrystallitePickaxePrismarine",
-      "~CrystallitePickaxeSky@CUSTOM:CrystallitePickaxeSky",
       "~CrystallitePickaxeSculk@CUSTOM:CrystallitePickaxeSculk",
       "~CrystallitePickaxeNetherDiamond@CUSTOM:CrystallitePickaxeNetherDiamond",
       "~CrystallitePickaxeTopaz@CUSTOM:CrystallitePickaxeTopaz",
@@ -36130,8 +36104,8 @@
       "CUSTOM:GlassArmor.boots"
     ],
     "ITEMS:minecraft:axes": [
-      "~CrystalliteAxeSapphire@CUSTOM:CrystalliteAxeSapphire",
       "~CrystalliteAxeHoney@CUSTOM:CrystalliteAxeHoney",
+      "~CrystalliteAxeSapphire@CUSTOM:CrystalliteAxeSapphire",
       "~CrystalliteAxeAmethyst@CUSTOM:CrystalliteAxeAmethyst",
       "~CrystalliteAxeRedstone@CUSTOM:CrystalliteAxeRedstone",
       "~CrystalliteAxeRedstoneUpgrade2@CUSTOM:CrystalliteAxeRedstoneUpgrade2",
@@ -36360,6 +36334,10 @@
       "CUSTOM:DiamondGlassArmor.boots"
     ],
     "ITEMS:minecraft:swords": [
+      "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
+      "~TopazDagger@CUSTOM:TopazDagger",
+      "~SapphireDagger@CUSTOM:SapphireDagger",
+      "~EmeraldDagger@CUSTOM:EmeraldDagger",
       "~EndTitaniumDagger@CUSTOM:EndTitaniumDagger",
       "~WoodDagger@CUSTOM:WoodDagger",
       "~RubyDagger@CUSTOM:RubyDagger",
@@ -36370,8 +36348,6 @@
       "~CrystalliteDaggerSapphire@CUSTOM:CrystalliteDaggerSapphire",
       "~CrystalliteDaggerAmethyst@CUSTOM:CrystalliteDaggerAmethyst",
       "~CrystalliteSwordAmethyst@CUSTOM:CrystalliteSwordAmethyst",
-      "~CrystallitePickaxeEmerald@CUSTOM:CrystallitePickaxeEmerald",
-      "~EmeraldDagger@CUSTOM:EmeraldDagger",
       "~EmeraldSword@CUSTOM:EmeraldSword",
       "~LapisDagger@CUSTOM:LapisDagger",
       "~LapisSword@CUSTOM:LapisSword",
@@ -36405,8 +36381,6 @@
       "~CrystalliteSwordIron@CUSTOM:CrystalliteSwordIron",
       "~CrystalliteDagger@CUSTOM:CrystalliteDagger",
       "~CrystalliteSword@CUSTOM:CrystalliteSword",
-      "~TopazDagger@CUSTOM:TopazDagger",
-      "~SapphireDagger@CUSTOM:SapphireDagger",
       "~NetherDiamondDagger@CUSTOM:NetherDiamondDagger",
       "~NetheriteDagger@CUSTOM:NetheriteDagger",
       "~DiamondDagger@CUSTOM:DiamondDagger",
@@ -36557,6 +36531,8 @@
       "~NetherDiamondBlock@CUSTOM:NetherDiamondBlock"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~TopazArmor@CUSTOM:TopazArmor.helmet",
+      "~SapphireArmor@CUSTOM:SapphireArmor.helmet",
       "~IronGoldCarrotHat@CUSTOM:IronGoldCarrotHat.helmet",
       "~DiamondGoldCarrotHat@CUSTOM:DiamondGoldCarrotHat.helmet",
       "~GoldCarrotArmor@CUSTOM:GoldCarrotArmor.helmet",
@@ -36583,14 +36559,14 @@
       "~WoodenArmor@CUSTOM:WoodenArmor.helmet",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.helmet",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.helmet",
-      "~TopazArmor@CUSTOM:TopazArmor.helmet",
-      "~SapphireArmor@CUSTOM:SapphireArmor.helmet",
       "~GlassArmor@CUSTOM:GlassArmor.helmet",
       "~DiamondCryingObsidianHelmet@CUSTOM:DiamondCryingObsidianHelmet.helmet",
       "~CryingObsidianHelmet@CUSTOM:CryingObsidianHelmet.helmet",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~TopazArmor@CUSTOM:TopazArmor.body",
+      "~SapphireArmor@CUSTOM:SapphireArmor.body",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.body",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.body",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.body",
@@ -36615,8 +36591,6 @@
       "~WoodenArmor@CUSTOM:WoodenArmor.body",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.body",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.body",
-      "~TopazArmor@CUSTOM:TopazArmor.body",
-      "~SapphireArmor@CUSTOM:SapphireArmor.body",
       "~DiamondMagmaBody@CUSTOM:DiamondMagmaBody.body",
       "~MagmaBody@CUSTOM:MagmaBody.body",
       "~GlassArmor@CUSTOM:GlassArmor.body",
@@ -36626,6 +36600,8 @@
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~TopazArmor@CUSTOM:TopazArmor.legs",
+      "~SapphireArmor@CUSTOM:SapphireArmor.legs",
       "~CrystalLegs@CUSTOM:CrystalLegs.legs",
       "~DiamondCrystalLegs@CUSTOM:DiamondCrystalLegs.legs",
       "~DiamondRubyLegs@CUSTOM:DiamondRubyLegs.legs",
@@ -36651,19 +36627,19 @@
       "~WoodenArmor@CUSTOM:WoodenArmor.legs",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.legs",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.legs",
-      "~TopazArmor@CUSTOM:TopazArmor.legs",
-      "~SapphireArmor@CUSTOM:SapphireArmor.legs",
       "~GlassArmor@CUSTOM:GlassArmor.legs",
       "~DiamondBlackstoneLegs@CUSTOM:DiamondBlackstoneLegs.legs",
       "~BlackstoneLegs@CUSTOM:BlackstoneLegs.legs",
       "~NetherDiamondArmor@CUSTOM:NetherDiamondArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~TopazArmor@CUSTOM:TopazArmor.boots",
+      "~SapphireArmor@CUSTOM:SapphireArmor.boots",
+      "~WingedBoots@CUSTOM:WingedBoots.boots",
       "~DiamondRabbitBoots@CUSTOM:DiamondRabbitBoots.boots",
       "~RabbitBoots@CUSTOM:RabbitBoots.boots",
       "~IronRabbitBoots@CUSTOM:IronRabbitBoots.boots",
       "~EndTitaniumArmor@CUSTOM:EndTitaniumArmor.boots",
-      "~WingedBoots@CUSTOM:WingedBoots.boots",
       "~CrystalliteArmorTopaz@CUSTOM:CrystalliteArmorTopaz.boots",
       "~CrystalliteArmorSky@CUSTOM:CrystalliteArmorSky.boots",
       "~CrystalliteArmorSculk@CUSTOM:CrystalliteArmorSculk.boots",
@@ -36685,8 +36661,6 @@
       "~WoodenArmor@CUSTOM:WoodenArmor.boots",
       "~DiamondGlassArmor@CUSTOM:DiamondGlassArmor.boots",
       "~IronGlassArmor@CUSTOM:IronGlassArmor.boots",
-      "~TopazArmor@CUSTOM:TopazArmor.boots",
-      "~SapphireArmor@CUSTOM:SapphireArmor.boots",
       "~GlassArmor@CUSTOM:GlassArmor.boots",
       "~DiamondPhantomBoots@CUSTOM:DiamondPhantomBoots.boots",
       "~DiamondSugarBoots@CUSTOM:DiamondSugarBoots.boots",

@@ -35,11 +35,11 @@ public abstract class SapphireArmorItem extends ArmorItem {
 			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
 				map.put(ArmorItem.Type.BOOTS, 3);
 				map.put(ArmorItem.Type.LEGGINGS, 5);
-				map.put(ArmorItem.Type.CHESTPLATE, 7);
+				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 3);
-				map.put(ArmorItem.Type.BODY, 7);
+				map.put(ArmorItem.Type.BODY, 6);
 			}), 10, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(BetterToolsModItems.SAPPHIRE.get())),
-					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:sapphire_"))), 0f, 0f);
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("better_tools:sapphire_"))), 0f, 0.03f);
 			registerHelper.register(ResourceLocation.parse("better_tools:sapphire"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

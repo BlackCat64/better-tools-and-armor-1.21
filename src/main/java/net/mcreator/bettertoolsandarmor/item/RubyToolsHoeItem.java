@@ -46,6 +46,6 @@ public class RubyToolsHoeItem extends HoeItem {
 	};
 
 	public RubyToolsHoeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 2f, -2f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 1f, 0f)));
 	}
 }

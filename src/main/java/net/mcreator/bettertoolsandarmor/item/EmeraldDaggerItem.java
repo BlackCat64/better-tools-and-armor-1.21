@@ -46,7 +46,7 @@ public class EmeraldDaggerItem extends SwordItem {
 	};
 
 	public EmeraldDaggerItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5f, -1.5f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 3f, -1.5f)));
 	}
 
 	@Override

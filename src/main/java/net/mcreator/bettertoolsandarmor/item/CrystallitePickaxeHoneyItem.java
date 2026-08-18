@@ -49,7 +49,7 @@ public class CrystallitePickaxeHoneyItem extends PickaxeItem {
 	};
 
 	public CrystallitePickaxeHoneyItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 7f, -2.8f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 6f, -2.8f)).fireResistant());
 	}
 
 	@Override

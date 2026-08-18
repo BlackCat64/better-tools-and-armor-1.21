@@ -8,6 +8,7 @@
     "texture": "emerald_dagger",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Emerald Dagger",
     "rarity": "COMMON",
     "specialInformation": {
@@ -22,7 +23,7 @@
     "efficiency": 6.0,
     "attackSpeed": 2.5,
     "enchantability": 6,
-    "damageVsEntity": 6.0,
+    "damageVsEntity": 4.0,
     "usageCount": 240,
     "glowCondition": {
       "fixedValue": false

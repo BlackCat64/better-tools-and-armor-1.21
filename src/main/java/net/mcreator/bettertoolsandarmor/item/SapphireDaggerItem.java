@@ -52,7 +52,7 @@ public class SapphireDaggerItem extends SwordItem {
 	};
 
 	public SapphireDaggerItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4.5f, -1.8f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4f, -1.8f)));
 	}
 
 	@Override

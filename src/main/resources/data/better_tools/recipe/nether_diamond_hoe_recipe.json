@@ -3,15 +3,18 @@
   "group": "nether_diamond_hoe",
   "category": "misc",
   "pattern": [
-    "aa",
-    " b",
-    " b"
+    "aab",
+    " cb",
+    " c "
   ],
   "key": {
     "a": {
       "item": "better_tools:nether_diamond"
     },
     "b": {
+      "item": "better_tools:blackstone_magma"
+    },
+    "c": {
       "item": "better_tools:obsidian_stick"
     }
   },
