@@ -28,11 +28,9 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				new ItemStack(BetterToolsModItems.CRYSTALLITE_DAGGER_AMETHYST.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_CHESTPLATE.get()),
 				new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_AMETHYST_BOOTS.get()), new ItemStack(BetterToolsModItems.EARTH_CIRCLET.get()),
 				new ItemStack(BetterToolsModItems.CRYSTALLITE_BOW_AMETHYST.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.amethyst_crystallite_info"));
-		registration.addIngredientInfo(
-				List.of(new ItemStack(BetterToolsModBlocks.NETHER_DIAMOND_BLOCK.get()), new ItemStack(BetterToolsModBlocks.RUBY_BLOCK.get()), new ItemStack(BetterToolsModBlocks.END_TITANIUM_BLOCK.get()),
-						new ItemStack(BetterToolsModBlocks.SAPPHIRE_BLOCK.get()), new ItemStack(BetterToolsModBlocks.TOPAZ_BLOCK.get()), new ItemStack(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK.get()), new ItemStack(Blocks.LAPIS_BLOCK),
-						new ItemStack(Blocks.QUARTZ_BLOCK), new ItemStack(Blocks.COPPER_BLOCK), new ItemStack(Blocks.WAXED_COPPER_BLOCK), new ItemStack(Blocks.AMETHYST_BLOCK)),
-				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.beacon_base_blocks_info"));
+		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModBlocks.NETHER_DIAMOND_BLOCK.get()), new ItemStack(BetterToolsModBlocks.RUBY_BLOCK.get()), new ItemStack(BetterToolsModBlocks.END_TITANIUM_BLOCK.get()),
+				new ItemStack(BetterToolsModBlocks.SAPPHIRE_BLOCK.get()), new ItemStack(BetterToolsModBlocks.TOPAZ_BLOCK.get()), new ItemStack(BetterToolsModBlocks.CUT_CRYSTALLITE_BLOCK.get()), new ItemStack(Blocks.LAPIS_BLOCK),
+				new ItemStack(Blocks.QUARTZ_BLOCK), new ItemStack(Blocks.WAXED_COPPER_BLOCK), new ItemStack(Blocks.AMETHYST_BLOCK)), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.beacon_base_blocks_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(BetterToolsModItems.NETHER_DIAMOND.get()), new ItemStack(BetterToolsModItems.RUBY.get()), new ItemStack(BetterToolsModItems.END_TITANIUM_INGOT.get()),
 				new ItemStack(BetterToolsModItems.SAPPHIRE.get()), new ItemStack(BetterToolsModItems.TOPAZ.get()), new ItemStack(Items.LAPIS_LAZULI), new ItemStack(Items.QUARTZ), new ItemStack(BetterToolsModItems.CRYSTALLITE_SHARDS.get()),
 				new ItemStack(Items.AMETHYST_SHARD), new ItemStack(Items.COPPER_INGOT)), VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.beacon_payment_items_info"));
@@ -74,11 +72,10 @@ public class BetterToolsModJeiInformation implements IModPlugin {
 				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_CHESTPLATE.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_REDSTONE_BOOTS.get()), new ItemStack(BetterToolsModItems.HEART_CHARM.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_redstone_info"));
-		registration
-				.addIngredientInfo(
-						List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get()),
-								new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_BOOTS.get())),
-						VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_ruby_info"));
+		registration.addIngredientInfo(
+				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_CHESTPLATE.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_LEGGINGS.get()),
+						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_RUBY_BOOTS.get()), new ItemStack(BetterToolsModItems.SPEEDY_NECKLACE.get())),
+				VanillaTypes.ITEM_STACK, Component.translatable("jei.better_tools.crystallite_armor_ruby_info"));
 		registration.addIngredientInfo(
 				List.of(new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_HELMET.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_CHESTPLATE.get()),
 						new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_LEGGINGS.get()), new ItemStack(BetterToolsModItems.CRYSTALLITE_ARMOR_SAPPHIRE_BOOTS.get())),

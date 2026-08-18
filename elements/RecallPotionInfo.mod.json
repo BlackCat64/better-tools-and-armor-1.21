@@ -8,7 +8,10 @@
     "information": [
       "Teleports you to your current spawn point, if it is in the same dimension.",
       "In the Overworld, if it is obstructed, you will be placed at the world spawn instead.",
-      "To use in the Nether, you must have a Respawn Anchor with charges remaining."
+      "To use in the Nether, you must have a Respawn Anchor with charges remaining.",
+      "",
+      "If your spawnpoint is unsafe, it will attempt to place you directly above/below.",
+      "If no safe location can be found, the potion will fail and won't be used up."
     ]
   }
 }

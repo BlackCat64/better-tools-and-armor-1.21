@@ -37200,7 +37200,8 @@
       "CUSTOM:PolishedRedstoneWall"
     ],
     "ITEMS:c:dyed": [
-      "TAG:better_tools:metallic_building_blocks"
+      "TAG:better_tools:metallic_building_blocks",
+      "TAG:better_tools:all_metal_signs"
     ],
     "ITEMS:c:flowers": [
       "TAG:minecraft:flowers"
@@ -37349,7 +37350,8 @@
       "CUSTOM:LightPolishedIronWall"
     ],
     "BLOCKS:c:dyed": [
-      "TAG:better_tools:metallic_building_blocks"
+      "TAG:better_tools:metallic_building_blocks",
+      "TAG:better_tools:all_metal_signs"
     ],
     "BLOCKS:c:flowers": [
       "TAG:minecraft:flowers"
@@ -39897,7 +39899,7 @@
       "jei.better_tools.crystallite_armor_nether_diamond_info": "§lFull-set bonus:§r\n§9+3s Fire Resistance§r when on fire\n(for a total of §915s§r)",
       "jei.better_tools.crystallite_armor_netherite_info": "§lFull-set bonus:§r\nDamages all mobs within a radius\nAdditional §9+1 Thorns Damage",
       "jei.better_tools.crystallite_armor_redstone_info": "§l3-piece bonus:§r\nAdditional §9+2 Max Health§r",
-      "jei.better_tools.crystallite_armor_ruby_info": "§lFull-set bonus:§r\n§9+10% Movement Speed§r\n(for a total of §9+50%§r)",
+      "jei.better_tools.crystallite_armor_ruby_info": "§l3-piece bonus:§r\nAdditional §9+10% Speed§r",
       "jei.better_tools.crystallite_armor_sapphire_info": "§lFull-set bonus:§r\n§9+8% Freeze Chance§r\n(for a total of §940%§r)",
       "jei.better_tools.crystallite_armor_sculk_info": "§lFull-set bonus:§r\n§9-10% Detection Range§r\n(for a total of §9-50%§r)",
       "jei.better_tools.crystallite_armor_topaz_info": "§lFull-set bonus:§r\n§9+8% Lightning Chance§r\n(for a total of §940%§r)",
@@ -39929,7 +39931,7 @@
       "jei.better_tools.honey_crystallite_info": "§lCrystallite Upgrades: \n§6Honey§r\n\nTheme:\nCombos and Bees",
       "jei.better_tools.ice_effects_info": "Effect improves when used in a cold biome",
       "jei.better_tools.ice_staff_info": "§9When enchanted with Ensorcellation:§r\nProjectiles freeze all mobs in a radius.\nThis applies even when no mob is directly hit.\nRadius increases with level, and in a cold biome.",
-      "jei.better_tools.icy_bracelet_info": "Adds §9+10% Freeze Chance§r for any melee attacks.\nThis stacks with any Sapphire weapons, and any Bows enchanted with Freeze Shot.\nIn a cold biome, this chance doubles.",
+      "jei.better_tools.icy_bracelet_info": "Adds §9+10% Freeze Chance§r for any melee attacks.\nThis stacks with any Sapphire weapons/armor, and any Bows enchanted with Freeze Shot.\nIn a cold biome, this chance doubles.",
       "jei.better_tools.improved_luck_info": "Four Leaf Clovers can be found in Treehouse chest loot, and they are used to brew Luck Potions.\nFour Leaf Clovers can be bone-mealed to grow more of them.\n\n\n§lImproved Luck Effect§r\nHaving an increased Luck value gives a chance for ores to drop double!\nIt also increases the chance for additional effects of items to activate.\nThe chance increase is +5% per +1 Luck",
       "jei.better_tools.infinite_arrows_info": "When no Arrows are in the user\u0027s inventory, this bow will shoot regular Arrows.\nIf any regular Arrows are in the inventory, they will not be used up.\nTipped and Spectral Arrows are used up normally.",
       "jei.better_tools.iron_crystallite_info": "§lCrystallite Upgrades:\n§fIron§r\n\nTheme:\nKnockback and Magnetism",
@@ -39937,7 +39939,7 @@
       "jei.better_tools.lapis_crystallite_info": "§lCrystallite Upgrades: \n§9Lapis Lazuli§r\n\nTheme:\nMagic and Enchanting\nAll items in this set have very high enchantability!",
       "jei.better_tools.lightning_effects_info": "Effect improves when used in a thunderstorm\n(Must be in a location which can see the sky)",
       "jei.better_tools.lightning_staff_info": "§6When enchanted with Ensorcellation:§r\nIncreases the number of Lightning Strikes.\nIncreases the radius where the strikes can hit.\nNumber of strikes increases with level, and when in a thunderstorm.\nWhen the projectile hits a Lightning Rod, a lightning bolt will be summoned.",
-      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIt will fail if you died in lava, or inside a solid block.\nIf you died in the void, you will be placed on a small floating platform.",
+      "jei.better_tools.lost_souls_potion_info": "Teleports you to your last death location, if it is in the same dimension.\nIf your death location is unsafe, it will attempt to place you directly above/below.\nIf you died in the void, you will be placed on a small floating platform.\nIf no safe location can be found, the potion will fail and won\u0027t be used up.",
       "jei.better_tools.metal_blocks_info": "To use Metal Blocks, first use a Stonecutter to make White Metal Blocks, then dye them into your desired colour.",
       "jei.better_tools.mixed_ore_gen_info": "§lOre Generation§r\n§cM§6i§ax§be§9d §aO§6r§ce§r\n\nGenerates below y\u003d40\nBecomes more common the deeper you go.\nSpawns in small veins.",
       "jei.better_tools.multi_block_mining_tools_info": "Multi-block mining effect is disabled while crouching",
@@ -39951,9 +39953,9 @@
       "jei.better_tools.ore_vision_info": "§lOre Vision Effect§r\nDisplays particles on all ores within a 24 block radius",
       "jei.better_tools.prismarine_crystallite_info": "§lCrystallite Upgrades: \n§3Prismarine§r\n\nTheme:\nWater",
       "jei.better_tools.progressive_tools_info": "These tools have improved abilities after they have been used for a while.\nFor all tools, breaking any correct block for that tool counts as a use.\nFor hoes, tilling farmland also counts as a use.",
-      "jei.better_tools.purple_mushroom_info": "Purple Mushrooms generate in Fungal Caves, along with giant variants.\nThey can be bone-mealed to become giant, if there is enough space.\nStanding on one makes you take damage, however!",
+      "jei.better_tools.purple_mushroom_info": "Purple Mushrooms generate in Fungal Caves, or underground in any mushroom-related biome.\nGiant variants spawn in Fungal Caves only.\nThey can be bone-mealed to become giant, if there is enough space.\nStanding on one makes you take damage, however!",
       "jei.better_tools.quark_monster_box_info": "If Quark is installed:\nCan drop from mobs spawned by a Monster Box.\n\nIf Supplementaries is installed:\nCan drop from Cave Urns.",
-      "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.",
+      "jei.better_tools.recall_potion_info": "Teleports you to your current spawn point, if it is in the same dimension.\nIn the Overworld, if it is obstructed, you will be placed at the world spawn instead.\nTo use in the Nether, you must have a Respawn Anchor with charges remaining.\n\nIf your spawnpoint is unsafe, it will attempt to place you directly above/below.\nIf no safe location can be found, the potion will fail and won\u0027t be used up.",
       "jei.better_tools.redstone_crystallite_info": "§lCrystallite Upgrades: \n§cRedstone§r\n\nTheme:\nHP and Growth",
       "jei.better_tools.reduced_detection_range_info": "Reduced Detection Range effect only works in singleplayer worlds.",
       "jei.better_tools.ruby_crystallite_info": "§lCrystallite Upgrades: \n§cRuby§r\n\nTheme:\nSpeed",
@@ -39969,7 +39971,7 @@
       "jei.better_tools.thorns_damage_info": "§lThorns Damage§r\n\nSome armor pieces deal Thorns damage 100% of the time.\nThis only applies to §lmelee attackers.",
       "jei.better_tools.topaz_armor_info": "§lFull-set bonus:§r\n§9+4% Lightning Chance§r\n(for a total of §920%§r)",
       "jei.better_tools.topaz_crystallite_info": "§lCrystallite Upgrades: \n§6Topaz§r\n\nTheme:\nLightning and Loot",
-      "jei.better_tools.topaz_ore_gen_info": "§lOre Generation§r\n§6Topaz Ore§r\n\nGenerates between y\u003d0 and y\u003d75, in §6Desert biomes§r only.\nMost common at y\u003d60\nSpawns frequently, in small groups.",
+      "jei.better_tools.topaz_ore_gen_info": "§lOre Generation§r\n§6Topaz Ore§r\n\nGenerates between y\u003d0 and y\u003d75, underneath any §6Desert-like biome§r\nMost common at y\u003d60\nSpawns frequently, in small groups.",
       "jei.better_tools.topaz_pickaxe_info": "May duplicate drops from ores, as long as the ore block itself is not dropped.\nStacks with Fortune.",
       "jei.better_tools.utility_potions_info": "§lUtility Potions§r\n\nThese give various one-off effects when consumed.\nThey spawn in Mineshaft and Dungeon chest loot, or they can be brewed manually.",
       "jei.better_tools.warden_staff_info": "§1When enchanted with Ensorcellation:§r\nIncreases the damage and range of the Sonic Boom.\n\nDamage: +2 per level.\nRange: +3 per level.",

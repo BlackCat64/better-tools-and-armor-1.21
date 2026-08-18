@@ -7,8 +7,9 @@
     ],
     "information": [
       "Teleports you to your last death location, if it is in the same dimension.",
-      "It will fail if you died in lava, or inside a solid block.",
-      "If you died in the void, you will be placed on a small floating platform."
+      "If your death location is unsafe, it will attempt to place you directly above/below.",
+      "If you died in the void, you will be placed on a small floating platform.",
+      "If no safe location can be found, the potion will fail and won't be used up."
     ]
   }
 }

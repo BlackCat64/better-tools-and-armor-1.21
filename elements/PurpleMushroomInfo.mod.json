@@ -7,7 +7,8 @@
       "CUSTOM:PurpleMushroomBlock"
     ],
     "information": [
-      "Purple Mushrooms generate in Fungal Caves, along with giant variants.",
+      "Purple Mushrooms generate in Fungal Caves, or underground in any mushroom-related biome.",
+      "Giant variants spawn in Fungal Caves only.",
       "They can be bone-mealed to become giant, if there is enough space.",
       "Standing on one makes you take damage, however!"
     ]

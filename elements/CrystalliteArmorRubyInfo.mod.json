@@ -6,12 +6,12 @@
       "CUSTOM:CrystalliteArmorRuby.helmet",
       "CUSTOM:CrystalliteArmorRuby.body",
       "CUSTOM:CrystalliteArmorRuby.legs",
-      "CUSTOM:CrystalliteArmorRuby.boots"
+      "CUSTOM:CrystalliteArmorRuby.boots",
+      "CUSTOM:SpeedyNecklace"
     ],
     "information": [
-      "§lFull-set bonus:§r",
-      "§9+10% Movement Speed§r",
-      "(for a total of §9+50%§r)"
+      "§l3-piece bonus:§r",
+      "Additional §9+10% Speed§r"
     ]
   }
 }

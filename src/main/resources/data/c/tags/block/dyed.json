@@ -4,6 +4,10 @@
     {
       "id": "#better_tools:metallic_building_blocks",
       "required": false
+    },
+    {
+      "id": "#better_tools:all_metal_signs",
+      "required": false
     }
   ]
 }
