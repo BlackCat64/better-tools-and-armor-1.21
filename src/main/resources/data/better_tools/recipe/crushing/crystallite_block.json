@@ -9,19 +9,19 @@
   "results": [
     {
       "count": 1,
-      "item": "better_tools:crystallite_shards"
+      "id": "better_tools:crystallite_shards"
     },
     {
       "chance": 0.1,
-      "item": "better_tools:crystallite_shards"
+      "id": "better_tools:crystallite_shards"
     },
     {
       "count": 1,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.5,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     }
   ]
 }

@@ -9,27 +9,27 @@
   "results": [
     {
       "count": 1,
-      "item": "better_tools:mixed_essence"
+      "id": "better_tools:mixed_essence"
     },
     {
       "chance": 0.25,
-      "item": "better_tools:mixed_essence"
+      "id": "better_tools:mixed_essence"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.5,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.25,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.125,
-      "item": "minecraft:cobbled_deepslate"
+      "id": "minecraft:cobbled_deepslate"
     }
   ]
 }

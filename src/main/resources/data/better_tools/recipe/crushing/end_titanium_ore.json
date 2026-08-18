@@ -9,19 +9,19 @@
   "results": [
     {
       "count": 1,
-      "item": "better_tools:end_titanium_scrap"
+      "id": "better_tools:end_titanium_scrap"
     },
     {
       "chance": 0.1,
-      "item": "better_tools:end_titanium_scrap"
+      "id": "better_tools:end_titanium_scrap"
     },
     {
       "count": 3,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.25,
-      "item": "minecraft:end_stone"
+      "id": "minecraft:end_stone"
     }
   ]
 }

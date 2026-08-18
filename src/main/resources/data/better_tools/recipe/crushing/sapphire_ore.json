@@ -9,19 +9,19 @@
   "results": [
     {
       "count": 1,
-      "item": "better_tools:sapphire"
+      "id": "better_tools:sapphire"
     },
     {
       "chance": 0.75,
-      "item": "better_tools:sapphire"
+      "id": "better_tools:sapphire"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "id": "create:experience_nugget"
     },
     {
       "chance": 0.125,
-      "item": "minecraft:cobblestone"
+      "id": "minecraft:cobblestone"
     }
   ]
 }
