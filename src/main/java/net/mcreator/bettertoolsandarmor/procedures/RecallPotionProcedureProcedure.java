@@ -34,82 +34,25 @@ public class RecallPotionProcedureProcedure {
 		boolean valid_spawn = false;
 		boolean world_spawn = false;
 		boolean success = false;
+		BlockState spawn_block = Blocks.AIR.defaultBlockState();
 		valid_spawn = true;
 		spawn_dimension = GetEntityTextDataProcedure.execute(entity, "SpawnDimension");
-		if ((spawn_dimension).isEmpty()) {
-			valid_spawn = false;
-			world_spawn = true;
-		} else if (("ResourceKey[minecraft:dimension / " + spawn_dimension + "]").equals("" + entity.level().dimension())) {
+		spawn_block = (world.getBlockState(BlockPos.containing(
+				(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+						? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
+						: 0,
+				(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+						? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
+						: 0,
+				(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+						? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
+						: 0)));
+		if ((entity.level().dimension().location().toString()).equals(spawn_dimension)) {
 			if ((entity.level().dimension()) == Level.NETHER) {
-				if ((world.getBlockState(BlockPos.containing(
-						(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-								: 0)))
-						.getBlock() == Blocks.RESPAWN_ANCHOR) {
-					if ((getPropertyByName(
-							(world.getBlockState(BlockPos.containing(
-									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-											: 0))),
-							"charges") instanceof IntegerProperty _getip13
-									? (world.getBlockState(BlockPos.containing((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-											: 0,
-											(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-													? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null)
-															? _player.getRespawnPosition().getY()
-															: _player.level().getLevelData().getSpawnPos().getY())
-													: 0,
-											(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-													? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null)
-															? _player.getRespawnPosition().getZ()
-															: _player.level().getLevelData().getSpawnPos().getZ())
-													: 0)))
-											.getValue(_getip13)
-									: -1) > 0) {
+				if (spawn_block.getBlock() == Blocks.RESPAWN_ANCHOR) {
+					if ((getPropertyByName(spawn_block, "charges") instanceof IntegerProperty _getip9 ? spawn_block.getValue(_getip9) : -1) > 0) {
 						{
-							int _value = (getPropertyByName((world.getBlockState(BlockPos.containing(
-									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
-											: 0,
-									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-											: 0))),
-									"charges") instanceof IntegerProperty _getip21
-											? (world.getBlockState(BlockPos.containing(
-													(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-															? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null)
-																	? _player.getRespawnPosition().getX()
-																	: _player.level().getLevelData().getSpawnPos().getX())
-															: 0,
-													(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-															? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null)
-																	? _player.getRespawnPosition().getY()
-																	: _player.level().getLevelData().getSpawnPos().getY())
-															: 0,
-													(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-															? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null)
-																	? _player.getRespawnPosition().getZ()
-																	: _player.level().getLevelData().getSpawnPos().getZ())
-															: 0)))
-													.getValue(_getip21)
-											: -1)
-									- 1;
+							int _value = (getPropertyByName(spawn_block, "charges") instanceof IntegerProperty _getip13 ? spawn_block.getValue(_getip13) : -1) - 1;
 							BlockPos _pos = BlockPos.containing(
 									(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 											? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
@@ -168,23 +111,16 @@ public class RecallPotionProcedureProcedure {
 						_player.displayClientMessage(Component.literal("\u00A7cYour Respawn Anchor has been destroyed!"), true);
 				}
 			} else if ((entity.level().dimension()) == Level.OVERWORLD) {
-				if (!((world.getBlockState(BlockPos.containing(
-						(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
-								: 0,
-						(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
-								: 0)))
-						.is(BlockTags.create(ResourceLocation.parse("minecraft:beds"))))) {
+				if (!spawn_block.is(BlockTags.create(ResourceLocation.parse("minecraft:beds")))) {
 					valid_spawn = false;
 					world_spawn = true;
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7cYour bed was destroyed, so you have been placed at the world spawn point"), true);
 				}
 			}
+		} else if ((entity.level().dimension()) == Level.OVERWORLD && (spawn_dimension).isEmpty()) {
+			valid_spawn = false;
+			world_spawn = true;
 		} else {
 			valid_spawn = false;
 			if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -201,7 +137,7 @@ public class RecallPotionProcedureProcedure {
 					(entity instanceof ServerPlayer _player && !_player.level().isClientSide())
 							? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
 							: 0,
-					spawn_dimension);
+					entity.level().dimension().location().toString());
 			if (safe_y > -64) {
 				{
 					Entity _ent = entity;
@@ -250,10 +186,13 @@ public class RecallPotionProcedureProcedure {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A7cYour spawn point was not safe, so you have been placed at the world spawn point"), true);
 				world_spawn = true;
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7cCould not find a safe location to teleport to"), true);
 			}
 		}
 		if (world_spawn) {
-			safe_y = FindSafeSpawnLocationProcedure.execute(world, world.getLevelData().getSpawnPos().getX(), world.getLevelData().getSpawnPos().getY(), world.getLevelData().getSpawnPos().getZ(), spawn_dimension);
+			safe_y = FindSafeSpawnLocationProcedure.execute(world, world.getLevelData().getSpawnPos().getX(), world.getLevelData().getSpawnPos().getY(), world.getLevelData().getSpawnPos().getZ(), entity.level().dimension().location().toString());
 			if (safe_y > -64) {
 				{
 					Entity _ent = entity;
@@ -278,11 +217,12 @@ public class RecallPotionProcedureProcedure {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7cYour spawn point was not safe, so you were placed directly above/below"), true);
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7cCould not find a safe location to teleport to"), true);
 			}
 		}
 		if (!success) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A7cCould not find a safe location to teleport to"), true);
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(BetterToolsModItems.RECALL_POTION.get()).copy();

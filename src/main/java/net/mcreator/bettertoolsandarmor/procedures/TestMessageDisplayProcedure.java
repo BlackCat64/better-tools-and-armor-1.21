@@ -1,6 +1,6 @@
 package net.mcreator.bettertoolsandarmor.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -10,10 +10,8 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class TestMessageDisplayProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
-		if (event.getEntity() != null) {
-			execute(event);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event);
 	}
 
 	public static void execute() {
@@ -22,5 +20,7 @@ public class TestMessageDisplayProcedure {
 
 	private static void execute(@Nullable Event event) {
 		double num = 0;
+		double num2 = 0;
+		double num3 = 0;
 	}
 }
