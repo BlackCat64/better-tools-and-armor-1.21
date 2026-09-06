@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "experienced_adv_3": {
+    "has_experienced": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -24,12 +24,7 @@
             "predicates": {
               "minecraft:enchantments": [
                 {
-                  "better_tools:experience_ench": {
-                    "levels": {
-                      "min": 1,
-                      "max": 3
-                    }
-                  }
+                  "enchantments": "better_tools:experience_ench"
                 }
               ]
             }

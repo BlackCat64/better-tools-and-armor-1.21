@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#better_tools:staffs",
+      "required": false
+    },
+    {
+      "id": "#better_tools:crystallite_bows",
+      "required": false
+    }
+  ]
+}

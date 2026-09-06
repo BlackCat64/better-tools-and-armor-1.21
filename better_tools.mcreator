@@ -37728,6 +37728,14 @@
     ],
     "ENCHANTMENTS:minecraft:curse": [
       "~KarmaCurse@CUSTOM:KarmaCurse"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "TAG:mod:crystallite_bows",
+      "TAG:mod:staffs"
+    ],
+    "ITEMS:minecraft:enchantable/vanishing": [
+      "TAG:mod:crystallite_bows",
+      "TAG:mod:staffs"
     ]
   },
   "tab_element_order": {
