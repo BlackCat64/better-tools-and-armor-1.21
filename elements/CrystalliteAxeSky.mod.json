@@ -33,7 +33,7 @@
     "repairItems": [
       "CUSTOM:CrystalliteShards",
       "CUSTOM:CrystaliteGem",
-      "Items.PHANTOM_MEMBRANE"
+      "Items.WIND_CHARGE"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",

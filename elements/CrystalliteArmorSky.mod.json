@@ -115,7 +115,7 @@
     "repairItems": [
       "CUSTOM:CrystalliteShards",
       "CUSTOM:CrystaliteGem",
-      "Items.PHANTOM_MEMBRANE"
+      "Items.WIND_CHARGE"
     ],
     "rarity": "COMMON",
     "attributeModifiers": [
